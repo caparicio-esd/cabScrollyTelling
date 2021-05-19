@@ -1,16 +1,9 @@
+
 <template>
   <div class="section_content">
     <div class="section_col_a">
       <h2>{{ content.data.title }}</h2>
       <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
-      <div class="logos">
-        <div class="logo" v-for="(logo, i) in content.assets.logos" :key="i">
-          <img :src="logo" alt="logo" width="30" />
-        </div>
-      </div>
-    </div>
-    <div class="section_col_b">
-      <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
     </div>
   </div>
 </template>
@@ -25,7 +18,7 @@ export default Vue.extend({
     }
   },
   async fetch() {
-    const content = await (this as any).$content('01_sectionWelcome').fetch()
+    const content = await (this as any).$content('02_sectionExplorersHome').fetch()
     this.content = content
   },
 })

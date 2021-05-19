@@ -2,7 +2,7 @@
 # https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
 
 title: Sección
-menuTitle: Inicio
+menuTitle: Los exploradores son las nuevas máquinas
 
 data:
   title: Hendrerit facilisi magna est massa tempus consequat neque lacinia quis.\n Sed pellentesque sit vulputate quisque amet tortor.
@@ -10,13 +10,6 @@ data:
     - Nisi enim ac faucibus lacus. Mi felis tellus viverra turpis vitae velit eget suspendisse ut. Laoreet scelerisque leo sollicitudin quam. Tristique nec cursus facilisi vitae sit at.
     - Neque commodo maecenas risus sed. Convallis magna non amet pretium faucibus diam. Mauris ipsum egestas eget sollicitudin dictum mi magnis diam. Tortor, ac duis aliquam eu cursus.
     - Egestas gravida metus egestas eros, scelerisque tincidunt non. Amet commodo id turpis duis mauris. Velit odio nulla ipsum eu dui gravida ac volutpat faucibus. Tristique urna, nunc sit congue. Et imperdiet sagittis mi suscipit ultrices interdum massa lectus.
-  secondaryText:
-    - Neque commodo maecenas risus sed. Convallis magna non amet pretium faucibus diam. Mauris ipsum egestas eget sollicitudin dictum mi magnis diam. Tortor, ac duis aliquam eu cursus.
-    - Egestas gravida metus egestas eros, scelerisque tincidunt non. Amet commodo id turpis duis mauris. Velit odio nulla ipsum eu dui gravida ac volutpat faucibus. Tristique urna, nunc sit congue. Et imperdiet sagittis mi suscipit ultrices interdum massa lectus.
 
 assets:
   backgroundIllustration: /bgIllustration/01.png
-  logos:
-    - /img/placeholder_logo.png
-    - /img/placeholder_logo.png
-    - /img/placeholder_logo.png
