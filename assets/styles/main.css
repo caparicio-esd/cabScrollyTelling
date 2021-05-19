@@ -1,5 +1,9 @@
 @import "./lib/fontface.css";
 
+* {
+  @apply border border-blue-400;
+}
+
 .root {
     @apply font-serif;
 }

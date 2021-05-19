@@ -12,9 +12,3 @@ export default Vue.extend({
   
 })
 </script>
-
-<style lang="postcss">
-* {
-  @apply border border-purple-400;
-}
-</style>  
