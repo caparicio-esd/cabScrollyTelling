@@ -15,7 +15,7 @@ export default Vue.extend({
 
 <style lang="postcss">
 .section {
-  background-image: url("@/static/000010 1.png");
+  background-image: url("/img/000010 1.png");
   background-size: cover;
   background-position: center center;
 }

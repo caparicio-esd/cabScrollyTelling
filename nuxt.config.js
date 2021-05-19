@@ -6,14 +6,14 @@ export default {
   head: {
     title: 'cabScrollyTelling',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'es',
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=no' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/img/favicon.ico' }],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
