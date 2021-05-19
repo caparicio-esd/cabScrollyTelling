@@ -18,11 +18,11 @@ export default Vue.extend({
   methods: {
     initHeaderScrollBehaviour() {
       const w = window
-      window.onscroll = () => {
+      window.addEventListener('scroll', () => {
         if (scrollY > this.scrollBehaviour.lastScroll) this.hideHeader()
         else this.showHeader()
         this.scrollBehaviour.lastScroll = scrollY
-      }
+      })
     },
     hideHeader() {
       Object.assign((this.$refs.header as HTMLElement).style, {
