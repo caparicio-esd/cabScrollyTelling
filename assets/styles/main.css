@@ -1,0 +1,13 @@
+@import "./lib/fontface.css";
+
+.root {
+    @apply font-serif;
+}
+
+h2 {
+    @apply text-xl mb-4 font-medium;
+}
+
+p {
+    @apply text-base mb-2;
+}
