@@ -1,17 +1,17 @@
-@import "./lib/fontface.css";
+@import './lib/fontface.css';
 
 * {
-  @apply border border-blue-400;
+  /* @apply border border-blue-400; */
 }
 
 .root {
-    @apply font-serif;
+  @apply font-serif;
 }
 
 h2 {
-    @apply text-xl mb-4 font-medium;
+  @apply text-xl mb-4 font-bold;
 }
 
 p {
-    @apply text-base mb-2;
+  @apply text-base mb-2;
 }
