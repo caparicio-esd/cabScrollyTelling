@@ -1,6 +1,7 @@
 <template>
   <div class="section_content">
-    {{ content.title }}
+    <h2>{{ content.title }}</h2>
+    <p>{{ content.description }}</p>  
   </div>
 </template>
 
