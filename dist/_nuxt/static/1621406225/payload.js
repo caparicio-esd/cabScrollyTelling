@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{}],fetch:{"0":{content:{slug:"01_sectionWelcome",title:"Introduction",description:"Learn how to use @nuxt\u002Fcontent.",dir:"\u002F",path:"\u002F01_sectionWelcome",extension:".yaml",createdAt:"2021-05-18T21:20:03.968Z",updatedAt:"2021-05-18T21:28:31.497Z"}}},mutations:[]});
