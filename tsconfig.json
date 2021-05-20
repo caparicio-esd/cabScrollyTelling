@@ -21,13 +21,17 @@
       ],
       "@/*": [
         "./*"
+      ], 
+      "@/lib/types": [
+        "node_modules/phosphor-vue/src/lib/types"
       ]
     },
     "types": [
       "@nuxt/types",
       "@nuxtjs/axios",
       "@types/node",
-      "@nuxt/content"
+      "@nuxt/content", 
+      "phosphor-vue/src/lib/types"
     ]
   },
   "exclude": [
