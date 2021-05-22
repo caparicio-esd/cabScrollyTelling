@@ -3,7 +3,9 @@
 
 title: Sección
 menuTitle: Los exploradores son las nuevas máquinas
-
+assets:
+  backgroundIllustration: /img/000010 1.webp
+  
 data:
   - title: "jelow..."
     position: 

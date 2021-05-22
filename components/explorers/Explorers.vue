@@ -19,6 +19,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { getContent } from '~/lib/sectionUtils'
 //@ts-ignore
 import { PhArrowLeft } from 'phosphor-vue'
 import { mapState } from 'vuex'
@@ -40,7 +41,7 @@ export default Vue.extend({
     }
   },
   async fetch() {
-    this.content = await (this as any).$content('03_sectionExplorers').fetch()
+    this.content = await getContent(this, '03_sectionExplorers')
   },
 })
 </script>
