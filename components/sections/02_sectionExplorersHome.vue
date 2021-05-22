@@ -1,7 +1,9 @@
-
 <template>
   <div class="section_content">
-    <div class="section_content_background">
+    <div
+      class="section_content_background"
+      :style="{ width: `${width}px`, height: `${height}px` }"
+    >
       <img :src="content.assets.backgroundIllustration" :alt="content.title" />
     </div>
     <div class="section_content_holder">
@@ -25,12 +27,19 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
+import { mapState } from 'vuex'
 
 export default Vue.extend({
   data() {
     return {
       content: {},
     }
+  },
+  computed: {
+    ...mapState({
+      width: (state: any) => state.main.ui.viewPort.width,
+      height: (state: any) => state.main.ui.viewPort.height,
+    }),
   },
   methods: {
     n2br,
