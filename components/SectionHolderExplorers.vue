@@ -1,7 +1,7 @@
 
 <template>
-  <section class="section min-h-screen bg-gray-800 text-white">
-    <div class="section_holder xl:container xl:m-auto min-h-screen py-20 ">
+  <section class="section min-h-screen bg-black text-white">
+    <div class="section_holder">
         <explorers />
     </div>
   </section>
@@ -18,11 +18,3 @@ export default Vue.extend({
     }
 })
 </script>
-
-<style lang="postcss">
-.section {
-  background-image: url("/img/000010 1.webp");
-  background-size: cover;
-  background-position: center center;
-}
-</style>
