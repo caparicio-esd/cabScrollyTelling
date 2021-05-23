@@ -17,10 +17,42 @@
       <!-- ============================== -->
       <!-- section navegador histórico de máquinas -->
       <!-- ============================== -->
-      <section-holder-explorers>...cab...</section-holder-explorers>
+      <section-holder-explorers />
       <!-- ============================== -->
       <!-- section final exploradores -->
       <!-- ============================== -->
+      <section-holder-default>
+        <section-welcome-02 />
+      </section-holder-default>
+      <!-- ============================== -->
+      <!-- section máquinas CAB -->
+      <!-- ============================== -->
+      <!--  -->
+      <!-- <section-holder-machines> -->
+      <!-- <section-machine /> -->
+      <!-- </section-holder-machines> -->
+      <!--  -->
+      <!-- ============================== -->
+      <!-- sección volviendo a la tierra -->
+      <!-- ============================== -->
+      <section-holder-default>
+        <section-welcome-02 />
+        <section-welcome-02 />
+        <section-welcome-02 />
+      </section-holder-default>
+      <!-- ============================== -->
+      <!-- sección en el CAB -->
+      <!-- ============================== -->
+      <section-holder-default>
+        <section-welcome-02 />
+        <section-welcome-02 />
+      </section-holder-default>
+      <!-- ============================== -->
+      <!-- sección créditos y links -->
+      <!-- ============================== -->
+      <section-holder-default>
+        <section-welcome-02 />
+      </section-holder-default>
       <section-holder-default>
         <section-welcome-02 />
       </section-holder-default>
