@@ -5,6 +5,10 @@ export const state = () => ({
       height: 0,
       scroll: 0,
     },
+    document: {
+      width: 0,
+      height: 0,
+    },
   },
 })
 
@@ -34,6 +38,13 @@ export const mutations = {
       scroll,
     }
   },
+  SET_DOCUMENT_SIZE(state, { width, height }) {
+    state.ui.document = {
+      ...state.ui.document,
+      width,
+      height,
+    }
+  }
 }
 
 export const actions = {
@@ -42,5 +53,8 @@ export const actions = {
   },
   setScrollLevel({ commit }, scroll) {
     commit('SET_SCROLL', { scroll })
+  },
+  setDocumentSize({ commit }, { width, height }) {
+    commit('SET_DOCUMENT_SIZE', { width, height })
   },
 }

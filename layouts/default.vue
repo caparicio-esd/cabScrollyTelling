@@ -14,22 +14,33 @@ export default Vue.extend({
     ...mapActions({
       setViewportSize: 'main/setViewportSize',
       setScrollLevel: 'main/setScrollLevel',
+      setDocumentSize: 'main/setDocumentSize',
     }),
-    setViewportSizeInComponent() {
+    setViewportSizeInComponent(): void {
       this.setViewportSize({
         width: window.innerWidth,
         height: window.innerHeight,
       })
     },
-    setScrollLevelInComponent() {
+    setScrollLevelInComponent(): void {
       this.setScrollLevel(scrollY)
+    },
+    setDocumentSizeInComponent(): void {
+      this.setDocumentSize({
+        width: document.body.getBoundingClientRect().width,
+        height: document.body.getBoundingClientRect().height,
+      })
     },
   },
   mounted(): void {
     this.setViewportSizeInComponent()
     this.setScrollLevelInComponent()
+    this.setDocumentSizeInComponent()
 
-    window.addEventListener('resize', this.setViewportSizeInComponent)
+    window.addEventListener('resize', () => {
+      this.setViewportSizeInComponent()
+      this.setDocumentSizeInComponent()
+    })
     window.addEventListener('scroll', this.setScrollLevelInComponent)
   },
 })
