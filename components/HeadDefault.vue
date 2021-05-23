@@ -1,12 +1,17 @@
 <template>
   <header class="header fixed top-0 left-0 w-full text-white" ref="header">
-    <div class="header_holder xl:container xl:m-auto py-2">header...</div>
+    <header-brand />
+    <header-timeline />
   </header>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import HeaderBrand from '@/components/header/HeaderBrand.vue'
+import HeaderTimeline from '@/components/header/HeaderTimeline.vue'
+
 export default Vue.extend({
+  components: { HeaderBrand, HeaderTimeline },
   name: 'HeadDefault',
   data() {
     return {
@@ -26,7 +31,7 @@ export default Vue.extend({
     },
     hideHeader() {
       Object.assign((this.$refs.header as HTMLElement).style, {
-        transform: 'translateY(-100%)',
+        transform: 'translateY(calc(-100% + 8px))',
         transition: 'transform 300ms ease',
       })
     },
