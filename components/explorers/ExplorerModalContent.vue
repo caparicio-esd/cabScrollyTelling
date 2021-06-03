@@ -1,5 +1,7 @@
 <template>
     <div class="explorer_modal_content">
+        <h3>{{activeContent.title}}</h3>
+        <p>{{activeContent.year}}</p>
         {{activeContent.position}}
     </div>
 </template>

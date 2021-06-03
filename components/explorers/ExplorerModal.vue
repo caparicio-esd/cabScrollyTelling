@@ -53,11 +53,12 @@ export default Vue.extend({
   }
 }
 .explorer_modal {
-  @apply absolute z-20 top-0 h-full;
+  @apply absolute z-20 top-0;
   @apply bg-white px-4 py-4 text-gray-800;
   width: calc(100% * 2 / 7);
   min-width: 300px;
   transition: transform 350ms ease;
+  height: calc(100% - 6rem);
   &.explorer_modal_left {
     @apply absolute left-0;
     transform: translate(-100%);

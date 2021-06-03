@@ -1,5 +1,5 @@
 <template>
-  <section class="section min-h-screen bg-black text-white border relative">
+  <section class="section min-h-screen bg-black text-white relative overflow-hidden">
     <explorers />
     <explorer-modal />
     <explorer-modal-tutorial />

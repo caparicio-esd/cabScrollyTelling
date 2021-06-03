@@ -8,28 +8,43 @@ assets:
   
 data:
   - title: "jelow..."
+    year: 1976 
     position: 
       lon: 10
       lat: 20
-  - position: 
+  - title: "jarl"
+    year: 1976 
+    position: 
       lon: 20
       lat: 30
-  - position: 
+  - title: "jarl"
+    year: 1976 
+    position: 
       lon: 32
       lat: 43
-  - position: 
+  - title: "jarl"
+    year: 1976 
+    position: 
       lon: 30
       lat: 15
-  - position: 
+  - title: "jarl"
+    year: 1976 
+    position: 
       lon: 70
       lat: 70
-  - position: 
+  - title: "jarl"
+    year: 1976 
+    position: 
       lon: 60
       lat: 80
-  - position: 
+  - title: "jarl"
+    year: 1976 
+    position: 
       lon: 67
       lat: 54
-  - position: 
+  - title: "jarl"
+    year: 1976 
+    position: 
       lon: 50
       lat: 52
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="explorer_modal_tutorial">
+    <div class="explorer_modal_tutorial" v-if="2>3">
         modal...
     </div>
 </template>
