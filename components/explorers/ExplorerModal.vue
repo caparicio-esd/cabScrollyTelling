@@ -14,6 +14,7 @@
 import Vue from 'vue'
 import { mapState } from 'vuex'
 import ExplorerModalContent from './ExplorerModalContent.vue'
+import { ExploreModalClasses, ExplorerModalDirection } from './ModalTypes'
 
 export default Vue.extend({
   name: 'ExplorerModal',
@@ -28,7 +29,7 @@ export default Vue.extend({
     }),
   },
   methods: {
-    getClasses(dir: string): object {
+    getClasses(dir: ExplorerModalDirection): ExploreModalClasses {
       return {
         explorer_modal: true,
         explorer_modal_left: dir == 'left',
