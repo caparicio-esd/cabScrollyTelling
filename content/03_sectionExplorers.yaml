@@ -7,11 +7,31 @@ assets:
   backgroundIllustration: /img/000010 1.webp
   
 data:
-  - title: "jelow..."
-    year: 1976 
+
+  - 
+    title: "MARS 3 (Módulo de descenso y Rover)"
+    subtitle: "Primer amartizaje controlado."
+    meta: 
+      launch: "28.03.1971 - 15:26 UTC"
+      arrival: "02.12.1971 - 13.50 UTC"
+      place: "Cráter Ptolomeo (Terra Sirenum)"
+      activity: "2 minutos (Orbitador 452 días)"
+      land: "Unión Soviética"
+      agency: "USSR"
+      status: "Exito parcial"
     position: 
       lon: 10
       lat: 20
+    goals: "
+      Realizar un amartizaje suave en Marte
+      Devolver fotografías de la superficie
+      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
+    instruments: "" 
+    curiosities: ""
+    contribution: ""
+    picture: ""
+
+
   - title: "jarl"
     year: 1976 
     position: 
