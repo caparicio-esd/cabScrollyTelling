@@ -17,7 +17,7 @@
           `explorer`,
           openedId == i ? `explorer_active` : ``,
           focusedId == i ? `explorer_focused` : ``,
-          focusedId != i && focusedId >= 0 ? `explorer_unfocused` : ``
+          focusedId != i && focusedId >= 0 ? `explorer_unfocused` : ``,
         ]"
       >
         <ph-arrow-left />
@@ -38,7 +38,7 @@ export default Vue.extend({
   components: {
     PhArrowLeft,
   },
-  data() {
+  data(): any {
     return {
       content: {},
     }
@@ -58,13 +58,13 @@ export default Vue.extend({
       blurExplorer: 'explorers/blurExplorer',
       closeExplorer: 'explorers/closeExplorer',
     }),
-    getExplorerStyle(explorer: any, i: number) {
+    getExplorerStyle(explorer: any, i: number): object {
       return {
         top: `${explorer.position.lat}%`,
         left: `${explorer.position.lon}%`,
       }
     },
-    openExplorerModal(explorer: any, i: number, ev: Event) {
+    openExplorerModal(explorer: any, i: number, ev: Event): void {
       this.setExplorerOpened({
         explorerId: i,
         //@ts-ignore
@@ -72,7 +72,7 @@ export default Vue.extend({
       })
     },
   },
-  async fetch() {
+  async fetch(): Promise<void> {
     this.content = await getContent(this, '03_sectionExplorers')
   },
 })
@@ -102,7 +102,7 @@ export default Vue.extend({
       transition: all 350ms ease;
     }
     &.explorer_unfocused {
-      opacity: .6;
+      opacity: 0.6;
       transition: all 350ms ease;
     }
   }
