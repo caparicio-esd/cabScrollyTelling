@@ -1,4 +1,5 @@
 export const state = () => ({
+  content: {},
   explorer: {
     focusedId: -1,
     openedId: -1,
@@ -24,6 +25,9 @@ export const mutations = {
       activeContent: activeContent
     }
   },
+  FETCH_CONTENT(state, content) {
+    state.content = content;
+  }
 }
 
 export const actions = {
@@ -43,5 +47,8 @@ export const actions = {
     const explorerId = -1
     const activeContent = {};
     commit('SET_EXPLORER_OPENED', { explorerId, activeContent })
+  },
+  fetchContent({ commit }, content) {
+    commit('FETCH_CONTENT', content)
   }
 }

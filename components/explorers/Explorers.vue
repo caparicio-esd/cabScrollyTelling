@@ -57,6 +57,7 @@ export default Vue.extend({
       setExplorerOpened: 'explorers/setExplorerOpened',
       blurExplorer: 'explorers/blurExplorer',
       closeExplorer: 'explorers/closeExplorer',
+      fetchContent: 'explorers/fetchContent'
     }),
     getExplorerStyle(explorer: any, i: number): object {
       return {
@@ -74,6 +75,7 @@ export default Vue.extend({
   },
   async fetch(): Promise<void> {
     this.content = await getContent(this, '03_sectionExplorers')
+    this.fetchContent(this.content);
   },
 })
 </script>

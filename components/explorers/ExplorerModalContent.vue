@@ -66,6 +66,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import Collapsible from '../dsys/Collapsible.vue'
+
 export default Vue.extend({
   name: 'ExplorerModalContent',
   components: {
