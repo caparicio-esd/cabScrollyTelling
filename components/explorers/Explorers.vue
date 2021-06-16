@@ -98,7 +98,8 @@ export default Vue.extend({
       border: 3px solid transparent;
       transition: all 350ms ease;
     }
-    &.explorer_focused {
+    &.explorer_focused, 
+    &:hover {
       @apply ring-white ring-4 ring-opacity-40;
       border: 3px solid transparent;
       transition: all 350ms ease;
