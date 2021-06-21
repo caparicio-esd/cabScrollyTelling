@@ -1,5 +1,5 @@
 <template>
-  <div class="section_content">
+  <div class="section_content" ref="section">
     <div
       class="section_content_background"
       :style="{ width: `${width}px`, height: `${height}px` }"
@@ -32,6 +32,7 @@ import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
 import { mapState } from 'vuex'
+import AnimationType_01 from './../mixins/AnimationType_01'
 
 export default Vue.extend({
   data() {
@@ -48,8 +49,15 @@ export default Vue.extend({
   methods: {
     n2br,
   },
+  mixins: [AnimationType_01],
+  props: ['refIn'],
   async fetch() {
     this.content = await getContent(this, '01_sectionWelcome')
   },
+  async mounted() {
+    await this.$nextTick()
+    //@ts-ignore
+    this.setSceneScrollable(this.$refs);
+  }
 })
 </script>
