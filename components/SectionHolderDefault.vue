@@ -1,5 +1,5 @@
 <template>
-  <section class="section min-h-screen bg-black text-white">
+  <section class="section">
     <slot />
   </section>
 </template>
@@ -10,3 +10,9 @@ export default Vue.extend({
   name: 'SectionHolderDefault',
 })
 </script>
+
+<style lang="postcss" scoped>
+.section {
+  @apply min-h-screen bg-black text-white;
+}
+</style>

@@ -1,5 +1,5 @@
 <template>
-  <section class="section min-h-screen bg-black text-white relative overflow-hidden">
+  <section class="section" ref="section">
     <explorers />
     <explorer-modal />
     <explorer-modal-tutorial />
@@ -13,6 +13,7 @@ import Explorers from '~/components/explorers/Explorers.vue'
 import ExplorerModal from '~/components/explorers/ExplorerModal.vue'
 import ExplorerTimeLine from '~/components/explorers/ExplorerTimeLine.vue'
 import ExplorerModalTutorial from './explorers/ExplorerModalTutorial.vue'
+import AnimationType_02 from './mixins/AnimationType_02'
 
 export default Vue.extend({
   name: 'SectionHolderExplorers',
@@ -22,5 +23,17 @@ export default Vue.extend({
     ExplorerTimeLine,
     ExplorerModalTutorial,
   },
+  mixins: [AnimationType_02],
+  async mounted() {
+    await this.$nextTick()
+    //@ts-ignore
+    this.setSceneScrollable(this.$refs)
+  },
 })
 </script>
+
+<style lang="postcss" scoped>
+.section {
+  @apply min-h-screen bg-black text-white relative overflow-hidden;
+}
+</style>

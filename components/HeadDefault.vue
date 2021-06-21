@@ -1,5 +1,5 @@
 <template>
-  <header class="header fixed top-0 left-0 w-full z-50 text-white" ref="header">
+  <header class="header" ref="header">
     <header-brand />
     <header-timeline />
   </header>
@@ -49,4 +49,8 @@ export default Vue.extend({
 })
 </script>
 
-<style></style>
+<style lang="postcss" scoped>
+.header {
+  @apply fixed top-0 left-0 w-full z-50 text-white;
+}
+</style>
