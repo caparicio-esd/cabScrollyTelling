@@ -9,11 +9,18 @@
         <section-holder-default>
           <section-welcome-01 />
         </section-holder-default>
+
+        <!-- ============================== -->
+        <!-- section intro misions -->
+        <!-- ============================== -->
+        <section-holder-default>
+          <section-misions-02 />
+        </section-holder-default>
         <!-- ============================== -->
         <!-- section exploradores son las nuevas máquinas -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-welcome-02 />
+          <section-intro-explorers-03 />
         </section-holder-default>
         <!-- ============================== -->
         <!-- section navegador histórico de máquinas -->
@@ -23,7 +30,7 @@
         <!-- section final exploradores -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-welcome-02 />
+          <section-intro-explorers-03 />
         </section-holder-default>
         <!-- ============================== -->
         <!-- section máquinas CAB -->
@@ -37,25 +44,25 @@
         <!-- sección volviendo a la tierra -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-welcome-02 />
-          <section-welcome-02 />
-          <section-welcome-02 />
+          <section-intro-explorers-03 />
+          <section-intro-explorers-03 />
+          <section-intro-explorers-03 />
         </section-holder-default>
         <!-- ============================== -->
         <!-- sección en el CAB -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-welcome-02 />
-          <section-welcome-02 />
+          <section-intro-explorers-03 />
+          <section-intro-explorers-03 />
         </section-holder-default>
         <!-- ============================== -->
         <!-- sección créditos y links -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-welcome-02 />
+          <section-intro-explorers-03 />
         </section-holder-default>
         <section-holder-default>
-          <section-welcome-02 />
+          <section-intro-explorers-03 />
         </section-holder-default>
       </main>
     </main-scroll-controller>
@@ -68,7 +75,8 @@ import SectionHolderDefault from '~/components/SectionHolderDefault.vue'
 import SectionHolderExplorers from '~/components/SectionHolderExplorers.vue'
 import HeadDefault from '~/components/HeadDefault.vue'
 import SectionWelcome01 from '~/components/sections/01_sectionWelcome.vue'
-import SectionWelcome02 from '~/components/sections/02_sectionExplorersHome.vue'
+import SectionMisions02 from '~/components/sections/02_sectionIntroMisions.vue'
+import SectionIntroExplorers03 from '~/components/sections/03_sectionExplorersHome.vue'
 import MainScrollController from '~/components/MainScrollController.vue'
 
 export default Vue.extend({
@@ -77,7 +85,8 @@ export default Vue.extend({
     SectionHolderExplorers,
     HeadDefault,
     SectionWelcome01,
-    SectionWelcome02,
+    SectionMisions02,
+    SectionIntroExplorers03,
     MainScrollController,
   },
 })

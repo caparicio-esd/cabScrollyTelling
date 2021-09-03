@@ -1,6 +1,6 @@
 <template>
   <div class="header_brand">
-      <div class="header_holder xl:container xl:m-auto py-2">header...</div>
+      <div class="header_holder xl:container xl:m-auto py-2">VIAJE A MARTE</div>
   </div>
 </template>
 

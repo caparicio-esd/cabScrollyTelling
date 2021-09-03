@@ -1,0 +1,16 @@
+# Importante mirar la guía de figma para rellenar datos
+# https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
+
+title: Sección
+menuTitle: Los exploradores son las nuevas máquinas
+
+data:
+  title: La exploración de la superficie marciana a partir de los 1960s. Marte como lugar.
+  mainText:
+    - El debate sobre la existencia de vida presente o remota en Marte no pasa por la interpretación de rasgos geológicos como construcciones megalíticas del pasado, sino por la existencia de agua. R. A. Proctor (1837-1888) determinó la presencia de casquetes de hielo en ambos polos planetarios. Hoy son irrefutables las evidencias de que agua líquida –procedente de lluvia o deshielos debido a actividad volcánica o impactos de asteroides- fluyó por la superficie marciana formando vías fluviales semejantes a las terrícolas, en un pasado remoto.
+    - Desde los 1960s, las distintas misiones rusas, las Mariner y las Vikingo americanas, han aportado ingentes datos sobre la geografía marciana que han permitido a los científicos abrir otra línea de investigación centrada en la edad e historia del planeta, estableciendo relaciones con la Tierra a partir de ciertas similitudes orográficas.
+  secondaryText:
+    - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
+
+assets:
+  backgroundIllustration: /img/000010 1.webp

@@ -5,18 +5,19 @@ title: Sección
 menuTitle: Inicio
 
 data:
-  title: Facilisi magna est massa tempus consequat neque lacinia quis.\n Sed pellentesque sit vulputate quisque amet tortor.
+  title: Aquí tenemos que poner un título que mole :)
   mainText:
-    - Nisi enim ac faucibus lacus. Mi felis tellus viverra turpis vitae velit eget suspendisse ut. Laoreet scelerisque leo sollicitudin quam. Tristique nec cursus facilisi vitae sit at.
-    - Neque commodo maecenas risus sed. Convallis magna non amet pretium faucibus diam. Mauris ipsum egestas eget sollicitudin dictum mi magnis diam. Tortor, ac duis aliquam eu cursus.
-    - Egestas gravida metus egestas eros, scelerisque tincidunt non. Amet commodo id turpis duis mauris. Velit odio nulla ipsum eu dui gravida ac volutpat faucibus. Tristique urna, nunc sit congue. Et imperdiet sagittis mi suscipit ultrices interdum massa lectus.
+    - El Centro de Astrobiología nace en 1998-1999 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).
+    - Las instalaciones principales del CAB se sitúan en Torrejón de Ardoz (campus del INTA) y en Villanueva de la Cañada (sede del Centro Europeo de Astronomía Espacial, ESAC) ambas localidades cercanas a Madrid.
+    - Su equipo multidisciplinar de científicos e ingenieros lo convierten en un centro de investigación transdisciplinar ideal para abordar la astrobiología.
+    - El  CAB ha sido reconocido con el premio de Excelencia Científica «María de Maeztu» por el Ministerio de Ciencia español.
   secondaryText:
-    - Neque commodo maecenas risus sed. Convallis magna non amet pretium faucibus diam. Mauris ipsum egestas eget sollicitudin dictum mi magnis diam. Tortor, ac duis aliquam eu cursus.
-    - Egestas gravida metus egestas eros, scelerisque tincidunt non. Amet commodo id turpis duis mauris. Velit odio nulla ipsum eu dui gravida ac volutpat faucibus. Tristique urna, nunc sit congue. Et imperdiet sagittis mi suscipit ultrices interdum massa lectus.
+    - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
+    - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
 
 assets:
-  backgroundIllustration: /img/000010 1.webp
+  backgroundIllustration: /img/01_1200.webp
   logos:
-    - /img/placeholder_logo.png
-    - /img/placeholder_logo.png
-    - /img/placeholder_logo.png
+    - /img/cab_logo.png
+    - /img/inta_logo.png
+    #- /img/placeholder_logo.png

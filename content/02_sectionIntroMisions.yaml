@@ -1,0 +1,16 @@
+# Importante mirar la guía de figma para rellenar datos
+# https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
+
+title: Sección
+menuTitle: Los exploradores son las nuevas máquinas
+
+data:
+  title: La observación de Marte en su órbita desde la Antigüedad hasta los 1960s. Marte como imaginario.
+  mainText:
+    - Galileo Galilei fue el primero en observar Marte a través del telescopio en 1610, pero no alcanzó a detallar su superficie. Los siglos XVII y XVIII asistieron al avance progresivo en la observación del Planeta Rojo (Giovanni Cassini, William Herschel, Robert Hooke, Christiaan Huygens); hasta que, en torno a 1840, los astrónomos alemanes Johann Mädler (1794-1874) y Wilhelm Beer (1797-1850) se convirtieron en verdaderos cartógrafos del segundo planeta vecino de la Tierra.
+    - Desde aquellas tempranas cartografías, la evolución de los sucesivos mapas, dibujados gracias a las observaciones telescópicas y, desde la década de los 1960s, con los datos registrados por las distintas misiones internacionales, ha ido moldeando el conocimiento que del Planeta Rojo tenemos; dando forma a nuestra idea de Marte que, en el imaginario colectivo y hasta época no muy lejana, transitó entre los progresos de la ciencia  (unos logros apoyados en los anteriores, éxitos sobre fracasos) y las visiones de horror cósmico recreadas por la literatura de ficción. En muchos sentidos, Marte está hoy mejor cartografiado que la misma Tierra pues allí no existen orografías ocultas para nuestro entendimiento.
+  secondaryText:
+    - Conocer la orografía de Marte y cartografiarla fue sin duda el objeto inicial en la observación del planeta. Algunos rasgos geográficos de la superficie marciana son característicos y bien reconocibles desde los primeros mapas, por ejemplo, el cráter Hellas Planitia o el Solis Lacus ya se identifican en los trazados de Mädler y Beer. El astrónomo británico Richard Anthony Proctor (1837-1888) -cuyos mapas fueron resueltos a partir de los dibujos del Reverendo William Rutter Dawes (1799-1868)- sostuvo que las manchas claras y oscuras de la superficie marciana correspondían a continentes y mares, provocando con ello un encendido debate entre sus coetáneos.
+
+assets:
+  backgroundIllustration: /img/02_1200.webp
