@@ -15,7 +15,9 @@
   .section_content_holder {
     @apply row-start-1 row-span-full col-start-1 col-span-full self-center justify-center;
     @apply grid grid-cols-5 gap-4 xl:container xl:m-auto min-h-screen p-20;
+    @apply bg-black bg-opacity-50;
   }
+
 
   p {
       max-width: 60ch;

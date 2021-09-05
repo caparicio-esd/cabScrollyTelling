@@ -2,17 +2,17 @@
 # https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
 
 title: Sección
-menuTitle: Los exploradores son las nuevas máquinas
+menuTitle: Histórico de misiones
 assets:
-  backgroundIllustration: /img/000010 1.webp
-  
+  backgroundIllustration: /img/03_2_1200.webp
+
 data:
 
   - # 0 - MARS 3 (Módulo de descenso y Rover)
     id: 0
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1971 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -20,14 +20,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 10
       lat: 20
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
@@ -36,7 +36,7 @@ data:
     id: 1
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1973 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -44,14 +44,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 20
       lat: 30
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
@@ -60,7 +60,7 @@ data:
     id: 2
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1975 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -68,14 +68,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 32
       lat: 43
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
@@ -84,7 +84,7 @@ data:
     id: 3
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1979 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -92,14 +92,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 30
       lat: 15
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
@@ -108,7 +108,7 @@ data:
     id: 4
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1982 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -116,14 +116,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 70
       lat: 70
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
@@ -132,7 +132,7 @@ data:
     id: 5
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1984 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -140,14 +140,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 60
       lat: 80
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
@@ -156,7 +156,7 @@ data:
     id: 6
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1991 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -164,14 +164,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 67
       lat: 54
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
@@ -180,7 +180,7 @@ data:
     id: 7
     title: "MARS 3 (Módulo de descenso y Rover)"
     subtitle: "Primer amartizaje controlado."
-    meta: 
+    meta:
       launch: "28.03.1994 - 15:26 UTC"
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
@@ -188,14 +188,14 @@ data:
       land: "Unión Soviética"
       agency: "USSR"
       status: "Exito parcial"
-    position: 
+    position:
       lon: 50
       lat: 52
     goals: "
       Realizar un amartizaje suave en Marte
       Devolver fotografías de la superficie
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: "" 
+    instruments: ""
     curiosities: ""
     contribution: ""
     picture: ""
