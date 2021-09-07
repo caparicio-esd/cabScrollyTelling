@@ -20,7 +20,7 @@
     font-family: 'Alegreya Sans';
     src: url('~/static/fonts/alegreya/AlegreyaSans-Bold.woff2') format('woff2'),
         url('~/static/fonts/alegreya/AlegreyaSans-Bold.woff') format('woff');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -29,7 +29,7 @@
     font-family: 'Alegreya Sans';
     src: url('~/static/fonts/alegreya/AlegreyaSans-BoldItalic.woff2') format('woff2'),
         url('~/static/fonts/alegreya/AlegreyaSans-BoldItalic.woff') format('woff');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
     font-display: swap;
 }
@@ -38,7 +38,7 @@
     font-family: 'Alegreya Sans';
     src: url('~/static/fonts/alegreya/AlegreyaSans-MediumItalic.woff2') format('woff2'),
         url('~/static/fonts/alegreya/AlegreyaSans-MediumItalic.woff') format('woff');
-    font-weight: 500;
+    font-weight: 600;
     font-style: italic;
     font-display: swap;
 }
@@ -47,7 +47,7 @@
     font-family: 'Alegreya Sans';
     src: url('~/static/fonts/alegreya/AlegreyaSans-Medium.woff2') format('woff2'),
         url('~/static/fonts/alegreya/AlegreyaSans-Medium.woff') format('woff');
-    font-weight: 500;
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
