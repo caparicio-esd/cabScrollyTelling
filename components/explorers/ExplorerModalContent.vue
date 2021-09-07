@@ -62,7 +62,7 @@
       </div>
     </div>
     <div class="explorer_modal_content_collapsible" v-if="activeContent.goals">
-      <collapsible :opened="false">
+      <collapsible :opened="true">
         <template v-slot:handler>Objetivos</template>
         <template v-slot:content>
           <ul>
