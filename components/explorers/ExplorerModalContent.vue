@@ -1,105 +1,127 @@
 <template>
-  <div class="explorer_modal_content">
+  <div class="explorer_modal_content" v-if="activeContent.meta">
     <div class="explorer_modal_content_header">
       <div class="explorer_modal_content_picture">pic</div>
       <div class="explorer_modal_content_agency_meta">
         <div class="explorer_modal_content_land">
           <div class="explorer_modal_content_land_picture">pic</div>
-          <div class="explorer_modal_content_land_name">USSR</div>
+          <div class="explorer_modal_content_land_name">
+            {{ activeContent.meta.land }}
+          </div>
         </div>
         <div class="explorer_modal_content_agency">
-          Agencia espacial de la Union soviética
+          {{ activeContent.meta.agency }}
         </div>
       </div>
     </div>
     <div class="explorer_modal_content_title">
       <div class="explorer_modal_content_title_top">
         <h3 class="title">{{ activeContent.title }}</h3>
-        <div class="explorer_modal_content_success_flag">Éxito parcial</div>
+        <div class="explorer_modal_content_success_flag">
+          {{ activeContent.meta.status }}
+        </div>
       </div>
       <div class="explorer_modal_content_title_tagline">
-        Primer amartizaje controlado.
+        {{ activeContent.subtitle }}
       </div>
     </div>
     <div class="explorer_modal_content_meta">
       <div class="explorer_modal_content_meta_launch_arrival">
-        <div class="explorer_modal_content_meta_launch">
+        <div
+          class="explorer_modal_content_meta_launch"
+          v-if="activeContent.meta.launch"
+        >
           <span class="label">Lanzamiento</span>
           <ph-dots-three :size="20" />
-          <span class="content">28.03.1971 - 15:26 UTC</span>
+          <span class="content">{{ activeContent.meta.launch }}</span>
         </div>
-        <div class="explorer_modal_content_meta_arrival">
+        <div
+          class="explorer_modal_content_meta_arrival"
+          v-if="activeContent.meta.arrival"
+        >
           <span class="label">Llegada</span>
           <ph-dots-three :size="20" />
-          <span class="content">02.12.1971 - 13.50 UTC</span>
+          <span class="content">{{ activeContent.meta.arrival }}</span>
         </div>
       </div>
-      <div class="explorer_modal_content_meta_place">
+      <div
+        class="explorer_modal_content_meta_place"
+        v-if="activeContent.meta.place"
+      >
         <span class="label">Lugar</span>
         <ph-dots-three :size="20" />
-        <span class="content">Cráter Ptolomeo (Terra Sirenum)</span>
+        <span class="content">{{ activeContent.meta.place }}</span>
       </div>
-      <div class="explorer_modal_content_meta_activity">
+      <div
+        class="explorer_modal_content_meta_activity"
+        v-if="activeContent.meta.activity"
+      >
         <span class="label">Período de actividad</span>
         <ph-dots-three :size="20" />
-        <span class="content">2 minutos (Orbitador 452 días)</span>
+        <span class="content">{{ activeContent.meta.activity }}</span>
       </div>
     </div>
-    <div class="explorer_modal_content_collapsible">
+    <div class="explorer_modal_content_collapsible" v-if="activeContent.goals">
       <collapsible :opened="false">
         <template v-slot:handler>Objetivos</template>
         <template v-slot:content>
           <ul>
-            <li>Realizar un amartizaje suave en Marte</li>
-            <li>Devolver fotografías de la superficie</li>
-            <li>
-              Enviar datos de las condiciones meteorológicas, de la composición
-              atmosférica y de las propiedades mecánicas y químicas del suelo.
+            <li v-for="(item, i) in n2Array(activeContent.goals)" :key="i">
+              {{ item }}
             </li>
           </ul>
         </template>
       </collapsible>
     </div>
-    <div class="explorer_modal_content_collapsible">
+    <div
+      class="explorer_modal_content_collapsible"
+      v-if="activeContent.instruments"
+    >
       <collapsible :opened="false">
         <template v-slot:handler>Instrumentos que transporta</template>
         <template v-slot:content>
           <ul>
-            <li>Realizar un amartizaje suave en Marte</li>
-            <li>Devolver fotografías de la superficie</li>
-            <li>
-              Enviar datos de las condiciones meteorológicas, de la composición
-              atmosférica y de las propiedades mecánicas y químicas del suelo.
+            <li
+              v-for="(item, i) in n2Array(activeContent.instruments)"
+              :key="i"
+            >
+              {{ item }}
             </li>
           </ul>
         </template>
       </collapsible>
     </div>
-    <div class="explorer_modal_content_collapsible">
+    <div
+      class="explorer_modal_content_collapsible"
+      v-if="activeContent.curiosities"
+    >
       <collapsible :opened="false">
         <template v-slot:handler>Curiosidades</template>
         <template v-slot:content>
           <ul>
-            <li>Realizar un amartizaje suave en Marte</li>
-            <li>Devolver fotografías de la superficie</li>
-            <li>
-              Enviar datos de las condiciones meteorológicas, de la composición
-              atmosférica y de las propiedades mecánicas y químicas del suelo.
+            <li
+              v-for="(item, i) in n2Array(activeContent.curiosities)"
+              :key="i"
+            >
+              {{ item }}
             </li>
           </ul>
         </template>
       </collapsible>
     </div>
-    <div class="explorer_modal_content_collapsible">
+    <div
+      class="explorer_modal_content_collapsible"
+      v-if="activeContent.contribution"
+    >
       <collapsible :opened="false">
         <template v-slot:handler>Contribución</template>
         <template v-slot:content>
           <ul>
-            <li>Realizar un amartizaje suave en Marte</li>
-            <li>Devolver fotografías de la superficie</li>
-            <li>
-              Enviar datos de las condiciones meteorológicas, de la composición
-              atmosférica y de las propiedades mecánicas y químicas del suelo.
+            <li
+              v-for="(item, i) in n2Array(activeContent.contribution)"
+              :key="i"
+            >
+              {{ item }}
             </li>
           </ul>
         </template>
@@ -112,6 +134,7 @@ import Vue from 'vue'
 import Collapsible from '../dsys/Collapsible.vue'
 //@ts-ignore
 import { PhDotsThree } from 'phosphor-vue'
+import { n2Array } from './../../lib/sectionUtils'
 
 export default Vue.extend({
   name: 'ExplorerModalContent',
@@ -120,6 +143,11 @@ export default Vue.extend({
     PhDotsThree,
   },
   props: ['activeContent'],
+  methods: {
+    n2Array(textIn: string): string[] {
+      return n2Array(textIn)
+    },
+  },
 })
 </script>
 <style lang="postcss" scoped>
