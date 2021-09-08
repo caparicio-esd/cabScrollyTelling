@@ -56,7 +56,7 @@ export default Vue.extend({
   },
   methods: {
     setCurrentStep(direction: string): void {
-      if (direction == 'next' && this.state.current < this.steps.length-1) {
+      if (direction == 'next' && this.state.current < this.steps.length - 1) {
         this.state.current++
       } else {
         this.state.current = -1
