@@ -4,7 +4,11 @@
       class="section_content_background"
       :style="{ width: `${width}px`, height: `${height}px` }"
     >
-      <img :src="content.assets.backgroundIllustration" :alt="content.title" />
+      <img
+        :src="content.assets.backgroundIllustration"
+        :alt="content.title"
+        :height="height"
+      />
     </div>
     <div class="section_content_holder">
       <div class="section_col_a col-span-2 self-end">
@@ -55,7 +59,7 @@ export default Vue.extend({
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
-    this.setSceneScrollable(this.$refs);
+    this.setSceneScrollable(this.$refs)
   },
 })
 </script>

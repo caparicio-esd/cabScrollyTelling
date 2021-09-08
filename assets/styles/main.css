@@ -2,10 +2,15 @@
 
 * {
   /* @apply border border-blue-400; */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
 }
 
 .root {
-  @apply font-serif;
+  /* @apply font-serif; */
 }
 
 h2 {
@@ -18,4 +23,8 @@ p {
 
 .main_scroll_controller{
   overflow: hidden;
+}
+
+.scrollmagic-pin-spacer{
+   top:0 !important
 }

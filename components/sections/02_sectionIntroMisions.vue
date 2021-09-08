@@ -4,7 +4,11 @@
       class="section_content_background"
       :style="{ width: `${width}px`, height: `${height}px` }"
     >
-      <img :src="content.assets.backgroundIllustration" :alt="content.title" />
+      <img
+        :src="content.assets.backgroundIllustration"
+        :alt="content.title"
+        :height="height"
+      />
     </div>
 
     <div class="section_content_holder">
@@ -25,7 +29,6 @@
         <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
       </div>
     </div>
-
   </div>
 </template>
 <script lang="ts">
@@ -57,8 +60,7 @@ export default Vue.extend({
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
-    this.setSceneScrollable(this.$refs);
+    this.setSceneScrollable(this.$refs)
   },
 })
 </script>
-
