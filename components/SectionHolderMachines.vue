@@ -1,26 +1,27 @@
 <template>
   <section class="section" ref="section">
-    nueva seccion maquinas
+    <machines />
 
   </section>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import Machines from '~/components/machines/Machines.vue'
 // import ExplorerModal from '~/components/explorers/ExplorerModal.vue'
 // import ExplorerTimeLine from '~/components/explorers/ExplorerTimeLine.vue'
 // import ExplorerModalTutorial from './explorers/ExplorerModalTutorial.vue'
-import AnimationType_02 from './mixins/AnimationType_02'
+import AnimationType_01 from './mixins/AnimationType_01'
 
 export default Vue.extend({
   name: 'SectionHolderMachines',
   components: {
-
+    Machines
     // ExplorerModal,
     // ExplorerTimeLine,
     // ExplorerModalTutorial,
   },
-  mixins: [AnimationType_02],
+  mixins: [AnimationType_01],
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
