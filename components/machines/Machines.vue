@@ -32,6 +32,12 @@
       </div>
     </div>
 
+    <div
+      class="machine_icon"
+      :style="getMachinePosition(content.data[index])"
+      >
+      <ph-triangle :size="64" />
+    </div>
   </div>
 
 </div>
@@ -40,12 +46,18 @@
 <script lang="ts">
 import Vue from 'vue'
 import AnimationType_03 from '../mixins/AnimationType_03'
+//@ts-ignore
+import { PhTriangle } from "phosphor-vue"
 import { n2br, getContent } from '~/lib/sectionUtils'
 import { mapState } from 'vuex'
 
 
+
 export default Vue.extend({
   name: 'Machines',
+  components: {
+    PhTriangle
+  },
   data(): any {
     return {
       content: {},
@@ -53,6 +65,13 @@ export default Vue.extend({
   },
   methods: {
     n2br,
+    getMachinePosition(machine: any){
+      //console.log(machine)
+      return {
+        top: `${machine.position.lat}%`,
+        left: `${machine.position.lon}%`,
+      }
+    },
   },
 
   computed: {
@@ -80,3 +99,33 @@ export default Vue.extend({
 
 })
 </script>
+
+<style lang="postcss" scoped>
+
+  .machine_icon {
+
+    @apply absolute rounded-full text-white;
+    transform: translate(-50%, -50%);
+    pointer-events: initial;
+    transition: all 350ms ease;
+    background-clip: padding-box;
+
+
+    /* &.explorer_active {
+      @apply ring-white ring-8 ring-opacity-40;
+      border: 3px solid transparent;
+      transition: all 350ms ease;
+    }
+    &.explorer_focused,
+    &:hover {
+      @apply ring-white ring-4 ring-opacity-40;
+      border: 3px solid transparent;
+      transition: all 350ms ease;
+    }
+    &.explorer_unfocused {
+      opacity: 0.6;
+      transition: all 350ms ease;
+    } */
+  }
+
+</style>

@@ -10,13 +10,16 @@ data:
     title: "Cráter Jezero // PERSEVERANCE"
     subtitle: "Primer amartizaje controlado."
     mainText:
-      - El Centro de Astrobiología nace en 1998-1999 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).
-      - Las instalaciones principales del CAB se sitúan en Torrejón de Ardoz (campus del INTA) y en Villanueva de la Cañada (sede del Centro Europeo de Astronomía Espacial, ESAC) ambas localidades cercanas a Madrid.
-      - Su equipo multidisciplinar de científicos e ingenieros lo convierten en un centro de investigación transdisciplinar ideal para abordar la astrobiología.
-      - El  CAB ha sido reconocido con el premio de Excelencia Científica «María de Maeztu» por el Ministerio de Ciencia español.
+      - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
+      - Hace más de 3.500 millones de años, vías fluviales alimentaron el cráter generando el lago y el delta con su peculiar forma de abanico.
+      - Perseverance es el nuevo vehículo Mars rover creado por el Laboratorio de Propulsión a Reacción dentro de la Mars 2020 del Programa de Exploración de Marte de la NASA.
     secondaryText:
-      - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
-      - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+      - Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
+      - Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos. En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar.
+    position:
+      lon: 70
+      lat: 50
+
 
   - # 1 - Cráter Gale // CURIOSITY
     id: 1
@@ -30,6 +33,9 @@ data:
     secondaryText:
       - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
       - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+    position:
+      lon: 70
+      lat: 50
 
   - # 2 - Elyseum Planitia // INSIGHT
     id: 2
@@ -43,6 +49,9 @@ data:
     secondaryText:
       - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
       - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+    position:
+      lon: 70
+      lat: 50
 
 
 assets:

@@ -7035,10 +7035,10 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-phosphor-vue@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/phosphor-vue/-/phosphor-vue-1.2.1.tgz#c5d3b7ca231df4efae78e39ee403a0da607c81df"
-  integrity sha512-kELFZrt/Knn+4nl5wWvHgP6h+T71z2DbuBnemEdyRb/zUJq50fc7x5sSgkeuVpWFsG7HjR2uJNH+s+t+Sa0iJg==
+phosphor-vue@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/phosphor-vue/-/phosphor-vue-1.3.1.tgz#34ccc177a5404eddc04038f5a0e136b6fadc73e4"
+  integrity sha512-aJ9a67Z0It9LvMV1rTAG6K5Ohebwbvm6EsVUf2KHnxVKFxKhCJFXWulE8aNp83RSCjUCCbsXjYIGhsdqOhQzEg==
 
 picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   version "2.2.3"
