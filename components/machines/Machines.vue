@@ -4,7 +4,7 @@
     class="section_machines min-h-screen grid grid-cols-1 grid-rows-1"
     v-for="(machine, index) in content.data"
     :key="index"
-
+    :ref="`section${index}`"
     >
     <div
       class="section_content_background"
@@ -39,8 +39,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import AnimationType_03 from '../mixins/AnimationType_03'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import { mapState } from 'vuex'
+
 
 export default Vue.extend({
   name: 'Machines',
@@ -59,6 +61,18 @@ export default Vue.extend({
       height: (state: any) => state.main.ui.viewPort.height,
     }),
   },
+
+  mixins: [AnimationType_03],
+  async mounted() {
+    await this.$nextTick()
+    //@ts-ignore
+    for (let key in this.$refs){
+      if(this.$refs.hasOwnProperty(key)){
+        this.setSceneScrollable(this.$refs[key])
+      }
+    }
+  },
+
   async fetch(): Promise<void> {
     this.content = await getContent(this, '04_sectionMachines')
     //this.fetchContent(this.content);

@@ -16,7 +16,7 @@ export default Vue.extend({
             //@ts-ignore
             this.subscene[0] = new ScrollMagic.Scene({
                 triggerElement: ref.constructor === Object ? ref.section : ref[0],
-                duration: '800%',
+                duration: '200%',
                 triggerHook: 'onLeave',
             })
                 .setPin(ref.constructor === Object ? ref.section : ref[0])

@@ -9,17 +9,17 @@ export default Vue.extend({
         }
     },
     methods: {
-        setSceneScrollable(ref:any) {  
+        setSceneScrollable(ref:any) {
             const ScrollMagic = require('scrollmagic')
             //@ts-ignore
             this.animation = anime({})
             //@ts-ignore
             this.subscene[0] = new ScrollMagic.Scene({
-                triggerElement: ref.section,
+                triggerElement: ref.constructor === Object ? ref.section : ref[0],
                 duration: '100%',
                 triggerHook: 'onLeave',
             })
-                .setPin(ref.section)
+                .setPin(ref.constructor === Object ? ref.section : ref[0])
                 .addIndicators()
                 .on('progress', (ev: Event) => {
                     // this.animation.seek(ev.progress * this.animation.duration)

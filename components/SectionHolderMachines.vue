@@ -23,9 +23,9 @@ export default Vue.extend({
   },
   mixins: [AnimationType_01],
   async mounted() {
-    await this.$nextTick()
+    //await this.$nextTick()
     //@ts-ignore
-    this.setSceneScrollable(this.$refs)
+    //this.setSceneScrollable(this.$refs)
   },
 })
 </script>
