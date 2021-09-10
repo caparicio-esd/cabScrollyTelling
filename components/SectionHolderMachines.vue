@@ -8,25 +8,15 @@
 <script lang="ts">
 import Vue from 'vue'
 import Machines from '~/components/machines/Machines.vue'
-// import ExplorerModal from '~/components/explorers/ExplorerModal.vue'
-// import ExplorerTimeLine from '~/components/explorers/ExplorerTimeLine.vue'
-// import ExplorerModalTutorial from './explorers/ExplorerModalTutorial.vue'
 import AnimationType_01 from './mixins/AnimationType_01'
 
 export default Vue.extend({
   name: 'SectionHolderMachines',
   components: {
-    Machines
-    // ExplorerModal,
-    // ExplorerTimeLine,
-    // ExplorerModalTutorial,
+    Machines,
+
   },
   mixins: [AnimationType_01],
-  async mounted() {
-    //await this.$nextTick()
-    //@ts-ignore
-    //this.setSceneScrollable(this.$refs)
-  },
 })
 </script>
 
