@@ -45,6 +45,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@chakra-ui/nuxt',
+    '@nuxtjs/emotion'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -54,8 +56,8 @@ export default {
   build: {
     postcss: {
       plugins: {
-        'postcss-nested': {}, 
-        'autoprefixer': {}, 
+        'postcss-nested': {},
+        'autoprefixer': {},
         'postcss-import': {}
       },
     },

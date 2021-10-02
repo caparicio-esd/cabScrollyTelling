@@ -38,7 +38,7 @@
       >
       <ph-triangle :size="64" />
     </div>
-    <machine-modal :id="`modal${index}`"/>
+    <machine-modal :id="`modal${index}`" :data="content.data[index]" />
   </div>
 
 </div>

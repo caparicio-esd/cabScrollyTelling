@@ -19,6 +19,32 @@ data:
     position:
       lon: 70
       lat: 50
+    tabs:
+      mision:
+        title: "Misión"
+        illustration: /img/perseverance.webp
+        content: "Perseverance es el nuevo vehículo Mars rover creado por el Laboratorio de Propulsión a Reacción dentro de la Mars 2020 del Programa de Exploración de Marte de la NASA.
+Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
+Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos.
+En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar."
+        nationality: "EEUU"
+        agency: "NASA"
+        dateHourLaunch: "30 de julio de 2020, a las 4:50 a.m. PDT (7:50 a.m. EDT) desde Cabo Cañaveral en Florida"
+        dateHourLanding: "18 de febrero de 2021 a las 12:55 p.m. PST (3:55 p.m. EDT)"
+      goals:
+        title: "Objetivos"
+        illustration: /img/perseverance.webp
+        content: "Localizar signos de vida microbiana antigua: Identificar entornos pasados capaces de albergar vida microbiana. Buscar trazas de posible vida microbiana particularmente en determinado tipo de rocas que se sabe conservan muestras de vida a lo largo del tiempo.
+Recolectar y almacenar rocas y regolitos (fragmentos rotos y polvo).
+Intentar producir oxígeno a partir de la atmósfera marciana para allanar el camino hacia la exploración humana del planeta y procurar combustible de cohete para misiones de retorno."
+      instruments:
+        title: "Instrumentos"
+        illustration: /img/perseverance.webp
+        content: "Instrumento Planetario para Litio-química en rayos X (PIXL, Planetary Instrument for X-Ray Lithochemistry): es un espectrómetro de fluorescencia de rayos X que determina con detalle la composición elemental de materiales de la superficie marciana.
+El PIXL es pequeño, compacto y poco pesado (4,5 kg), muy flexible y con gran libertad de movimiento.
+Su rayo X focaliza trazas en rocas tan diminutas como un grano de sal, hallando el punto preciso donde se ubiquen posibles pistas: cambios en las texturas y químicos, que puedan ser signos de vida microbiana pasada.
+
+Investigadora principal: Abigail Allwood, Laboratorio de Propulsión a Chorro de la NASA, Pasadena, California."
 
 
   - # 1 - Cráter Gale // CURIOSITY
@@ -36,6 +62,30 @@ data:
     position:
       lon: 70
       lat: 50
+    tabs:
+      mision:
+        title: "Misión"
+        illustration: /img/perseverance.webp
+        content: "Perseverance es el nuevo vehículo Mars rover creado por el Laboratorio de Propulsión a Reacción dentro de la Mars 2020 del Programa de Exploración de Marte de la NASA.
+Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
+Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos.
+En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar."
+
+      goals:
+        title: "Objetivos"
+        illustration: /img/perseverance.webp
+        content: "Localizar signos de vida microbiana antigua: Identificar entornos pasados capaces de albergar vida microbiana. Buscar trazas de posible vida microbiana particularmente en determinado tipo de rocas que se sabe conservan muestras de vida a lo largo del tiempo.
+Recolectar y almacenar rocas y regolitos (fragmentos rotos y polvo).
+Intentar producir oxígeno a partir de la atmósfera marciana para allanar el camino hacia la exploración humana del planeta y procurar combustible de cohete para misiones de retorno."
+      instruments:
+        title: "Instrumentos"
+        illustration: /img/perseverance.webp
+        content: "Instrumento Planetario para Litio-química en rayos X (PIXL, Planetary Instrument for X-Ray Lithochemistry): es un espectrómetro de fluorescencia de rayos X que determina con detalle la composición elemental de materiales de la superficie marciana.
+El PIXL es pequeño, compacto y poco pesado (4,5 kg), muy flexible y con gran libertad de movimiento.
+Su rayo X focaliza trazas en rocas tan diminutas como un grano de sal, hallando el punto preciso donde se ubiquen posibles pistas: cambios en las texturas y químicos, que puedan ser signos de vida microbiana pasada.
+
+Investigadora principal: Abigail Allwood, Laboratorio de Propulsión a Chorro de la NASA, Pasadena, California."
+
 
   - # 2 - Elyseum Planitia // INSIGHT
     id: 2
@@ -52,6 +102,29 @@ data:
     position:
       lon: 70
       lat: 50
+    tabs:
+      mision:
+        title: "Misión"
+        illustration: /img/perseverance.webp
+        content: "Perseverance es el nuevo vehículo Mars rover creado por el Laboratorio de Propulsión a Reacción dentro de la Mars 2020 del Programa de Exploración de Marte de la NASA.
+Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
+Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos.
+En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar."
+      goals:
+        title: "Objetivos"
+        illustration: /img/perseverance.webp
+        content: "Localizar signos de vida microbiana antigua: Identificar entornos pasados capaces de albergar vida microbiana. Buscar trazas de posible vida microbiana particularmente en determinado tipo de rocas que se sabe conservan muestras de vida a lo largo del tiempo.
+Recolectar y almacenar rocas y regolitos (fragmentos rotos y polvo).
+Intentar producir oxígeno a partir de la atmósfera marciana para allanar el camino hacia la exploración humana del planeta y procurar combustible de cohete para misiones de retorno."
+      instruments:
+        title: "Instrumentos"
+        illustration: /img/perseverance.webp
+        content: "Instrumento Planetario para Litio-química en rayos X (PIXL, Planetary Instrument for X-Ray Lithochemistry): es un espectrómetro de fluorescencia de rayos X que determina con detalle la composición elemental de materiales de la superficie marciana.
+El PIXL es pequeño, compacto y poco pesado (4,5 kg), muy flexible y con gran libertad de movimiento.
+Su rayo X focaliza trazas en rocas tan diminutas como un grano de sal, hallando el punto preciso donde se ubiquen posibles pistas: cambios en las texturas y químicos, que puedan ser signos de vida microbiana pasada.
+
+Investigadora principal: Abigail Allwood, Laboratorio de Propulsión a Chorro de la NASA, Pasadena, California."
+
 
 
 assets:
