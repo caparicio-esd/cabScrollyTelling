@@ -24,12 +24,21 @@ data:
       lon: 10
       lat: 20
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
-    curiosities: ""
-    contribution: ""
+    instruments: "
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
+      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
+    curiosities: "
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
+      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
+    contribution: "
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
+      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     picture: ""
 
   - # 1 - MARS 3 (Módulo de descenso y Rover)
@@ -48,8 +57,8 @@ data:
       lon: 20
       lat: 30
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: ""
     curiosities: ""
@@ -72,8 +81,8 @@ data:
       lon: 32
       lat: 43
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: ""
     curiosities: ""
@@ -96,8 +105,8 @@ data:
       lon: 30
       lat: 15
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: ""
     curiosities: ""
@@ -120,8 +129,8 @@ data:
       lon: 70
       lat: 70
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: ""
     curiosities: ""
@@ -144,8 +153,8 @@ data:
       lon: 60
       lat: 80
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: ""
     curiosities: ""
@@ -168,8 +177,8 @@ data:
       lon: 67
       lat: 54
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: ""
     curiosities: ""
@@ -192,8 +201,8 @@ data:
       lon: 50
       lat: 52
     goals: "
-      Realizar un amartizaje suave en Marte
-      Devolver fotografías de la superficie
+      Realizar un amartizaje suave en Marte\\n
+      Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: ""
     curiosities: ""

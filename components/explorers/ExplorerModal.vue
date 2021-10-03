@@ -56,8 +56,9 @@ export default Vue.extend({
 .explorer_modal {
   @apply absolute z-20 top-0;
   @apply bg-white px-4 py-4 text-gray-800;
+  @apply overflow-y-auto;
   width: calc(100% * 2 / 7);
-  min-width: 300px;
+  min-width: 550px;
   transition: transform 350ms ease;
   height: calc(100% - 6rem);
   &.explorer_modal_left {
