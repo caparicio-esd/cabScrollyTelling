@@ -85,13 +85,13 @@ export default Vue.extend({
       }
     },
     setStepDomElements() {
-      const overlay = document.querySelector(
-        '.explorer_modal_tutorial .overlay'
+      const header = document.querySelector(
+        '.header'
       )
       const firstExplorer = document.querySelector('.explorers .explorer')
       const timeLine = document.querySelector('.explorer_timeline')
 
-      this.steps[0].component.dom = overlay
+      this.steps[0].component.dom = header
       this.steps[1].component.dom = firstExplorer
       this.steps[2].component.dom = timeLine
     },

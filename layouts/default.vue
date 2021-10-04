@@ -28,8 +28,6 @@ export default Vue.extend({
       })
     },
     setScrollLevelInComponent(ev: Event = {} as Event): void | false {
-      console.log(this.scrollable);
-      
       if (this.scrollable) { 
         this.setScrollLevel(scrollY)
       } else {

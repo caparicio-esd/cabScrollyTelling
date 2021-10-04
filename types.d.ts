@@ -1,2 +1,2 @@
-declare module 'scrollmagic'
+// declare module 'scrollmagic'
 declare module 'phosphor-vue'
