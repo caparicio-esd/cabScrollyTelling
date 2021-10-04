@@ -60,14 +60,14 @@ export default Vue.extend({
     onProgressScene(ev: any) {
       // TODO: refactorizable into animationType
       // TODO: create cross bind function, and launch index
-      const id = () => {
-        throw new Error("not implemented method...")
-      }
-      this.setExplorerOpened({
-        explorerId: id, 
-        //@ts-ignore
-        activeContent: this.content.data[id]
-      })
+      // const id = () => {
+      //   throw new Error("not implemented method...")
+      // }
+      // this.setExplorerOpened({
+      //   explorerId: id, 
+      //   //@ts-ignore
+      //   activeContent: this.content.data[id]
+      // })
       console.log(ev)
     },
   },
