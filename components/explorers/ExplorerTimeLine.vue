@@ -48,6 +48,7 @@ export default Vue.extend({
       focusedId: (state: any) => state.explorers.explorer.focusedId,
       activeContent: (state: any) => state.explorers.explorer.activeContent,
       content: (state: any) => state.explorers.content?.data,
+      scrollable: (state: any) => state.main.ui.viewPort.scrollable,
     }),
     years(): Array<dayjs.Dayjs> {
       return this.content.map((el: any) =>
@@ -80,11 +81,13 @@ export default Vue.extend({
       setExplorerOpened: 'explorers/setExplorerOpened',
     }),
     openExplorerModal(explorer: any, i: number, ev: Event): void {
-      this.setExplorerOpened({
-        explorerId: i,
-        //@ts-ignore
-        activeContent: this.content[i],
-      })
+      if (this.scrollable) {
+        this.setExplorerOpened({
+          explorerId: i,
+          //@ts-ignore
+          activeContent: this.content[i],
+        })
+      }
     },
   },
 })
