@@ -2,7 +2,7 @@
   <div class="header_timeline">
     <div
       class="header_timeline_completed"
-      :style="{ width: `${(scroll / documentHeight) * 100}%` }"
+      :style="{ width: `${(scroll/documentTotalHeight) * 100}%` }"
     ></div>
   </div>
 </template>
@@ -15,8 +15,12 @@ export default Vue.extend({
   computed: {
     ...mapState({
       scroll: (state: any) => state.main.ui.viewPort.scroll,
-      documentHeight: (state: any) => state.main.ui.document.height,
+      viewportHeight: (state: any) => state.main.ui.viewPort.height,
+      scenesAmount: (state: any) => state.main.scenes.amount
     }),
+    documentTotalHeight() {
+      return (this.viewportHeight * 2) * (this.scenesAmount + 2)
+    }
   },
 })
 </script>

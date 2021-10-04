@@ -10,6 +10,11 @@ export const state = () => ({
       height: 0,
     },
   },
+  scenes: {
+    amount: 0, 
+    currentScene: -1,
+    tutorial: false
+  }
 })
 
 export const getters = {
@@ -44,6 +49,13 @@ export const mutations = {
       width,
       height,
     }
+  },
+  ADD_SCENE(state) {
+    const amount = state.scenes.amount + 1;
+    state.scenes = {
+      ...state.scenes,
+      amount, 
+    }
   }
 }
 
@@ -57,4 +69,7 @@ export const actions = {
   setDocumentSize({ commit }, { width, height }) {
     commit('SET_DOCUMENT_SIZE', { width, height })
   },
+  addScene({commit}) {
+    commit('ADD_SCENE')
+  }
 }
