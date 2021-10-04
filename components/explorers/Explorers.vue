@@ -29,7 +29,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import { getContent } from '~/lib/sectionUtils'
-//@ts-ignore
 import { PhArrowLeft } from 'phosphor-vue'
 import { mapState, mapActions } from 'vuex'
 

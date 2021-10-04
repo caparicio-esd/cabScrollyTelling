@@ -1,12 +1,15 @@
 import Vue from "vue";
 import anime from "animejs";
+import { Scene } from "scrollmagic"
+import { SceneProgressEvent } from "scrollmagic";
 
 export default Vue.extend({
     data() {
         return {
             animation: {},
             subscene: [] as any[],
-            duration: 200
+            duration: 200, 
+            progress: 0
         }
     },
     methods: {
@@ -27,16 +30,16 @@ export default Vue.extend({
             this.subscene[0].on("enter", (ev: any) => {
                 this.onEnterScene(ev);
             })
-            this.subscene[0].on("leave", (ev:any) => {
+            this.subscene[0].on("leave", (ev: any) => {
                 this.onLeaveScene(ev);
             })
             this.subscene[0].on("progress", (ev: any) => {
+                this.progress = ev.progress                
                 this.onProgressScene(ev);
             })
         },
         onEnterScene(ev: any) {
-            console.log(ev);   
-            console.log(this);
+
         },
         onLeaveScene(ev: any) {
 
@@ -44,7 +47,7 @@ export default Vue.extend({
         onProgressScene(ev: any) {
 
         },
-        addSubAnimations(scene: any) {
+        addSubAnimations(scene: ScrollMagic.Scene) {
             this.subscene.push(scene)
         }
     },

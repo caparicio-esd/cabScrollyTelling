@@ -81,6 +81,7 @@ export default Vue.extend({
         this.state.opened = false
         this.setTutorial(false)
         this.setScrollable(true)
+        document.body.style.overflow = ""
       }
     },
     setStepDomElements() {

@@ -13,9 +13,9 @@ import Explorers from '~/components/explorers/Explorers.vue'
 import ExplorerModal from '~/components/explorers/ExplorerModal.vue'
 import ExplorerTimeLine from '~/components/explorers/ExplorerTimeLine.vue'
 import ExplorerModalTutorial from './explorers/ExplorerModalTutorial.vue'
-import AnimationType_02 from './mixins/AnimationType_02'
 import { mapActions, mapState } from 'vuex'
 import { getContent } from '~/lib/sectionUtils'
+import Scrollable from './mixins/Scrollable'
 
 export default Vue.extend({
   name: 'SectionHolderExplorers',
@@ -25,11 +25,13 @@ export default Vue.extend({
     ExplorerTimeLine,
     ExplorerModalTutorial,
   },
-  mixins: [AnimationType_02],
+  mixins: [Scrollable],
   data() {
     return {
       duration: 1600,
       content: {},
+      progress: 0,
+      lastBin: 0,
     }
   },
   async mounted() {
@@ -45,6 +47,9 @@ export default Vue.extend({
     ...mapState({
       tutorial: (state: any) => state.main.scenes.tutorial,
     }),
+    dataLength(): number {
+      return (this.content as any).data.length
+    },
   },
   methods: {
     ...mapActions({
@@ -58,17 +63,14 @@ export default Vue.extend({
       }
     },
     onProgressScene(ev: any) {
-      // TODO: refactorizable into animationType
-      // TODO: create cross bind function, and launch index
-      // const id = () => {
-      //   throw new Error("not implemented method...")
-      // }
-      // this.setExplorerOpened({
-      //   explorerId: id, 
-      //   //@ts-ignore
-      //   activeContent: this.content.data[id]
-      // })
-      console.log(ev)
+      const bin = Math.max(Math.ceil(this.progress * this.dataLength) - 1, 0)
+      if (this.lastBin != bin) {
+        this.setExplorerOpened({
+          explorerId: bin,
+          activeContent: (this.content as any).data[bin],
+        })
+        this.lastBin = bin
+      }
     },
   },
 })
@@ -79,5 +81,3 @@ export default Vue.extend({
   @apply min-h-screen bg-black text-white relative overflow-hidden;
 }
 </style>
-
-

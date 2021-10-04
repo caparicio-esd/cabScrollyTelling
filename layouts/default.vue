@@ -27,11 +27,13 @@ export default Vue.extend({
         height: window.innerHeight,
       })
     },
-    setScrollLevelInComponent(ev: Event = {} as Event): void {
+    setScrollLevelInComponent(ev: Event = {} as Event): void | false {
+      console.log(this.scrollable);
+      
       if (this.scrollable) { 
         this.setScrollLevel(scrollY)
       } else {
-        ev.preventDefault()
+        document.body.style.overflow = "hidden"
       }
     },
     setDocumentSizeInComponent(): void {
