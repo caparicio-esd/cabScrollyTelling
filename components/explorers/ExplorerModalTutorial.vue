@@ -33,7 +33,11 @@ export default Vue.extend({
             content:
               'Puedes navegar entre las diferentes misiones, haciendo click en los iconos, simplemente, haciendo scroll hacia abajo.',
           },
-          component: null,
+          component: {
+            dom: null as Element | null,
+            origin: ["top", "left"],
+            direction: ["bottom", "right"]
+          },
         },
         {
           description: {
@@ -41,7 +45,11 @@ export default Vue.extend({
             content:
               'Puedes viajar a diferentes años consultando la línea de tiempo',
           },
-          component: null,
+          component: {
+            dom: null as Element | null,
+            origin: ["top", "left"],
+            direction: ["bottom", "right"]
+          },
         },
         {
           description: {
@@ -49,7 +57,11 @@ export default Vue.extend({
             content:
               'Puedes saltarte esta sección e ir directamente a ver las misiones donde está el CAB participando',
           },
-          component: null,
+          component: {
+            dom: null as Element | null,
+            origin: ["top", "left"],
+            direction: ["top", "right"]
+          },
         },
       ],
     }
@@ -63,6 +75,21 @@ export default Vue.extend({
         this.state.opened = false
       }
     },
+    setStepDomElements() {
+      const overlay = document.querySelector(
+        '.explorer_modal_tutorial .overlay'
+      )
+      const firstExplorer = document.querySelector('.explorers .explorer')
+      const timeLine = document.querySelector('.explorer_timeline')
+
+      this.steps[0].component.dom = overlay
+      this.steps[1].component.dom = firstExplorer
+      this.steps[2].component.dom = timeLine
+    },
+  },
+  async mounted() {
+    await this.$nextTick()
+    this.setStepDomElements()
   },
 })
 </script>
