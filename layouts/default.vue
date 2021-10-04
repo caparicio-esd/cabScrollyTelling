@@ -7,9 +7,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import 'assets/styles/main.css'
-import { mapActions } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 
 export default Vue.extend({
+  computed: {
+    ...mapState({
+      scrollable: (state: any) => state.main.ui.viewPort.scrollable
+    })
+  },
   methods: {
     ...mapActions({
       setViewportSize: 'main/setViewportSize',
@@ -22,8 +27,12 @@ export default Vue.extend({
         height: window.innerHeight,
       })
     },
-    setScrollLevelInComponent(): void {
-      this.setScrollLevel(scrollY)
+    setScrollLevelInComponent(ev: Event = {} as Event): void {
+      if (this.scrollable) { 
+        this.setScrollLevel(scrollY)
+      } else {
+        ev.preventDefault()
+      }
     },
     setDocumentSizeInComponent(): void {
       this.setDocumentSize({

@@ -4,6 +4,7 @@ export const state = () => ({
       width: 0,
       height: 0,
       scroll: 0,
+      scrollable: true
     },
     document: {
       width: 0,
@@ -11,10 +12,10 @@ export const state = () => ({
     },
   },
   scenes: {
-    amount: 0, 
+    amount: 0,
     currentScene: -1,
-    tutorial: false
-  }
+    tutorial: true,
+  },
 })
 
 export const getters = {
@@ -51,10 +52,22 @@ export const mutations = {
     }
   },
   ADD_SCENE(state) {
-    const amount = state.scenes.amount + 1;
+    const amount = state.scenes.amount + 1
     state.scenes = {
       ...state.scenes,
-      amount, 
+      amount,
+    }
+  },
+  SET_TUTORIAL(state, { isSet }) {
+    state.scenes = {
+      ...state.scenes,
+      tutorial: isSet,
+    }
+  },
+  SET_SCROLLABLE(state, { scrollable }) {
+    state.ui.viewPort = {
+      ...state.ui.viewPort,
+      scrollable,
     }
   }
 }
@@ -69,7 +82,13 @@ export const actions = {
   setDocumentSize({ commit }, { width, height }) {
     commit('SET_DOCUMENT_SIZE', { width, height })
   },
-  addScene({commit}) {
+  setScrollable({ commit }, scrollable) {
+    commit('SET_SCROLLABLE', { scrollable })
+  },
+  addScene({ commit }) {
     commit('ADD_SCENE')
-  }
+  },
+  setTutorial({ commit }, isSet) {
+    commit('SET_TUTORIAL', { isSet })
+  },
 }

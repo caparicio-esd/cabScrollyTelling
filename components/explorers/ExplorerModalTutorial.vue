@@ -16,7 +16,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapActions } from 'vuex'
 import ExplorerModalTutorialStep from './ExplorerModalTutorialStep.vue'
+
 export default Vue.extend({
   components: { ExplorerModalTutorialStep },
   name: 'ExplorerModalTutorial',
@@ -67,12 +69,18 @@ export default Vue.extend({
     }
   },
   methods: {
+    ...mapActions({
+      setTutorial: 'main/setTutorial', 
+      setScrollable: 'main/setScrollable'
+    }),
     setCurrentStep(direction: string): void {
       if (direction == 'next' && this.state.current < this.steps.length - 1) {
         this.state.current++
       } else {
         this.state.current = -1
         this.state.opened = false
+        this.setTutorial(false)
+        this.setScrollable(true)
       }
     },
     setStepDomElements() {
