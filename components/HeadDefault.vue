@@ -30,20 +30,24 @@ export default Vue.extend({
       })
     },
     hideHeader() {
-      Object.assign((this.$refs.header as HTMLElement).style, {
-        transform: 'translateY(calc(-100% + 8px))',
-        transition: 'transform 300ms ease',
-      })
+      if (this.$refs.header) {
+        Object.assign((this.$refs.header as HTMLElement).style, {
+          transform: 'translateY(calc(-100% + 8px))',
+          transition: 'transform 300ms ease',
+        })
+      }
     },
     showHeader() {
-      Object.assign((this.$refs.header as HTMLElement).style, {
-        transform: '',
-        transition: 'transform 300ms ease',
-      })
+      if (this.$refs.header) {
+        Object.assign((this.$refs.header as HTMLElement).style, {
+          transform: '',
+          transition: 'transform 300ms ease',
+        })
+      }
     },
   },
   async mounted() {
-    await setTimeout(() => {}, 1)
+    await this.$nextTick()
     this.initHeaderScrollBehaviour()
   },
 })
