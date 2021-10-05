@@ -1,6 +1,7 @@
 .section_content,
 .section_explorers,
-.section_machines {
+.section_machines, 
+.section_cab {
   @apply grid grid-cols-1 pb-2;
   grid-template-rows: 1fr minmax(auto, 100%) 1fr;
   
