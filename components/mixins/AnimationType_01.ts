@@ -12,8 +12,6 @@ export default Vue.extend({
     },
     methods: {
         onEnterScene(ev: any) {
-            console.log("animate primo...");
-            console.log(this.refDom);
             const title = (this.refDom as HTMLElement).querySelector("h2")
             const paragraphs = (this.refDom as HTMLElement).querySelectorAll("p")
             const logos = (this.refDom as HTMLElement).querySelector(".logos")
