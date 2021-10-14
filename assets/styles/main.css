@@ -28,3 +28,15 @@ p {
 .scrollmagic-pin-spacer{
    top:0 !important
 }
+
+.btn_primary{
+  @apply flex items-center py-2 px-4 bg-gray-400;
+  svg {
+    @apply ml-2;
+  }
+}
+
+.btn_next{
+  @apply absolute bottom-12 w-36 text-center flex bg-white text-black;
+  left: calc(50% - 36px);
+}

@@ -12,40 +12,44 @@ export default Vue.extend({
     },
     methods: {
         onEnterScene(ev: any) {
-            const title = (this.refDom as HTMLElement).querySelector("h2")
-            const paragraphs = (this.refDom as HTMLElement).querySelectorAll("p")
-            const logos = (this.refDom as HTMLElement).querySelector(".logos")
-            
+            //const title = (this.refDom as HTMLElement).querySelector("h2")
+            //const paragraphs = (this.refDom as HTMLElement).querySelectorAll("p")
+            //const logos = (this.refDom as HTMLElement).querySelector(".logos")
+
+            const title = document.querySelector("h2");
+            const paragraphs = document.querySelector("h2");
+            const logos = document.querySelector(".logos");
+
             anime.set([title, paragraphs, logos], {
                 opacity: 0,
                 translateY: 30
             })
 
             this.animation = anime.timeline({
-                delay: 1000, 
+                delay: 1000,
                 endDelay: 1000,
                 autoplay: false
             })
             .add({
-                targets: [title], 
-                translateY: [30, 0], 
+                targets: [title],
+                translateY: [30, 0],
                 opacity: [0, 100]
             }, "0")
             .add({
-                targets: [paragraphs], 
-                translateY: [30, 0], 
-                opacity: [0, 1], 
+                targets: [paragraphs],
+                translateY: [30, 0],
+                opacity: [0, 100],
             }, "-200")
             .add({
-                targets: [logos], 
-                translateY: [30, 0], 
+                targets: [logos],
+                translateY: [30, 0],
                 opacity: [0, 100]
             }, "-200")
         },
         onProgressScene(ev: any) {
             this.animation.seek(ev.progress * this.animation.duration)
         },
-    }, 
+    },
     async mounted() {
         await this.$nextTick()
 

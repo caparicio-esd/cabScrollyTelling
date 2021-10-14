@@ -25,8 +25,10 @@ export default Vue.extend({
       const ScrollMagic = require('scrollmagic')
       const ScrollMagicPluginIndicator = require('scrollmagic-plugins').ScrollMagicPluginIndicator
       ScrollMagicPluginIndicator(ScrollMagic)
+
       this.controller = new ScrollMagic.Controller({ addIndicators: true })
       this.$root.$emit('controller_created', this.controller)
+
       this.$root.$on('scene_created', (scene: any) => {
         this.controller.addScene(scene)
         this.addScene()
@@ -34,4 +36,6 @@ export default Vue.extend({
     },
   },
 })
+/**  TODO: Add function to go next slide "goNextSlide" method */
 </script>
+

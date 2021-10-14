@@ -1,10 +1,10 @@
 .section_content,
 .section_explorers,
-.section_machines, 
+.section_machines,
 .section_cab {
   @apply grid grid-cols-1 pb-2;
   grid-template-rows: 1fr minmax(auto, 100%) 1fr;
-  
+
   .section_content_background {
     @apply row-start-1 row-span-full col-start-1 col-span-full;
     min-height: 100%;
@@ -15,16 +15,16 @@
       object-position: center;
     }
   }
-  
+
   .section_content_holder {
     @apply row-start-1 row-span-full col-start-1 col-span-full self-center justify-center;
     @apply grid grid-cols-5 gap-4 xl:container xl:m-auto min-h-screen p-20;
-    @apply bg-black bg-opacity-50;
+    /*@apply bg-black bg-opacity-50;*/
   }
   .section_content_holder_8 {
     @apply row-start-1 row-span-full col-start-1 col-span-full self-center justify-center;
     @apply grid grid-cols-8 gap-4 xl:container xl:m-auto min-h-screen p-20;
-    @apply bg-black bg-opacity-50;
+    /*@apply bg-black bg-opacity-50;*/
   }
 
   p {

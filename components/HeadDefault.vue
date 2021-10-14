@@ -24,9 +24,9 @@ export default Vue.extend({
     initHeaderScrollBehaviour() {
       const w = window
       window.addEventListener('scroll', () => {
-        if (scrollY > this.scrollBehaviour.lastScroll) this.hideHeader()
-        else this.showHeader()
-        this.scrollBehaviour.lastScroll = scrollY
+        // if (scrollY > this.scrollBehaviour.lastScroll) this.hideHeader()
+        // else this.showHeader()
+        // this.scrollBehaviour.lastScroll = scrollY
       })
     },
     hideHeader() {

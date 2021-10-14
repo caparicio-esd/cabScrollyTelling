@@ -11,7 +11,7 @@
       />
     </div>
     <div class="section_content_holder">
-      <div class="section_col_a col-span-2 self-end">
+      <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
         <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
         <div class="logos flex mt-8">
@@ -24,10 +24,11 @@
           </div>
         </div>
       </div>
-      <div class="section_col_b col-start-4 col-span-2 self-end">
+      <div class="section_col_b col-start-4 col-span-2 self-center">
         <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
       </div>
     </div>
+    <button-next-screen />
   </div>
 </template>
 
@@ -37,12 +38,16 @@ import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
 import { mapState } from 'vuex'
 import AnimationType_01 from './../mixins/AnimationType_01'
+import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 
 export default Vue.extend({
   data() {
     return {
       content: {},
     }
+  },
+  components: {
+   ButtonNextScreen
   },
   computed: {
     ...mapState({

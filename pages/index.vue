@@ -39,6 +39,7 @@
         <!-- ============================== -->
         <!--  -->
         <section-holder-machines />
+
         <section-holder-default>
           <section-intro-explorers-03 />
         </section-holder-default>
@@ -56,7 +57,7 @@
         <section-holder-cab>
           <section-cab-01 />
           <section-cab-02 />
-        </section-holder-cab> 
+        </section-holder-cab>
         <!-- ============================== -->
         <!-- sección créditos y links -->
         <!-- ============================== -->
