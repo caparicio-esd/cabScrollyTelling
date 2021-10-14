@@ -64,9 +64,6 @@ import {
   CTab,
   CTabPanel } from '@chakra-ui/vue'
 
-//import ExplorerModalContent from './ExplorerModalContent.vue'
-//import { ExploreModalClasses, ExplorerModalDirection } from './ModalTypes'
-
 export default Vue.extend({
   name: 'MachineModal',
   components: {
@@ -81,22 +78,7 @@ export default Vue.extend({
   computed: {
     ...mapState({
       width: (state: any) => state.main.ui.viewPort.width,
-      //explorerId: (state: any) => state.explorers.explorer.openedId,
-      //activeContent: (state: any) => state.explorers.explorer.activeContent,
     }),
-  },
-  methods: {
-    // getClasses(dir: ExplorerModalDirection): ExploreModalClasses {
-    //   return {
-    //     explorer_modal: true,
-    //     explorer_modal_left: dir == 'left',
-    //     explorer_modal_right: dir == 'right',
-    //     opened:
-    //       dir == 'right'
-    //         ? this.activeContent?.position?.lon < 50
-    //         : this.activeContent?.position?.lon >= 50,
-    //   }
-    // },
   },
   mixins: [AnimationType_04],
   async mounted() {
