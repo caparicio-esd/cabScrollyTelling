@@ -39,6 +39,7 @@
       <ph-triangle :size="64" />
     </div>
     <machine-modal :id="`modal${index}`" :data="content.data[index]" />
+    <button-next-screen />
   </div>
 
 </div>
@@ -52,7 +53,7 @@ import { PhTriangle } from "phosphor-vue"
 import { n2br, getContent } from '~/lib/sectionUtils'
 import { mapState } from 'vuex'
 import MachineModal from '~/components/machines/MachineModal.vue'
-
+import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 
 
 export default Vue.extend({
@@ -60,6 +61,7 @@ export default Vue.extend({
   components: {
     PhTriangle,
     MachineModal,
+    ButtonNextScreen
   },
   data(): any {
     return {
@@ -69,7 +71,6 @@ export default Vue.extend({
   methods: {
     n2br,
     getMachinePosition(machine: any){
-      //console.log(machine)
       return {
         top: `${machine.position.lat}%`,
         left: `${machine.position.lon}%`,

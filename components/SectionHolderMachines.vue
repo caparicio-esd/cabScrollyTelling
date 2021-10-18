@@ -1,7 +1,6 @@
 <template>
   <section class="section" ref="section">
     <machines />
-
   </section>
 </template>
 
