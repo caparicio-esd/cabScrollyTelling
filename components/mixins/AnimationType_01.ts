@@ -16,9 +16,9 @@ export default Vue.extend({
             //const paragraphs = (this.refDom as HTMLElement).querySelectorAll("p")
             //const logos = (this.refDom as HTMLElement).querySelector(".logos")
 
-            const title = document.querySelector("h2");
-            const paragraphs = document.querySelector("p");
-            const logos = document.querySelector(".logos");
+            const title = "h2";
+            const paragraphs = "p";
+            const logos = ".logos";
 
             anime.set([title, paragraphs, logos], {
                 opacity: 0,
