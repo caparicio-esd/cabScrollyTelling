@@ -20,7 +20,7 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
-import Scrollable from './mixins/Scrollable'
+import AnimationType_02 from './mixins/AnimationType_02'
 import { mapState } from 'vuex'
 
 export default Vue.extend({
@@ -31,7 +31,7 @@ export default Vue.extend({
       duration: 1200,
     }
   },
-  mixins: [Scrollable],
+  mixins: [AnimationType_02],
   computed: {
     ...mapState({
       width: (state: any) => state.main.ui.viewPort.width,
@@ -42,7 +42,7 @@ export default Vue.extend({
     n2br,
   },
   async fetch() {
-    this.content = await getContent(this, '04_sectionIntroMachines')
+    this.content = await getContent(this, '05_sectionTrip')
   },
   async mounted() {
     await this.$nextTick()

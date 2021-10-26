@@ -39,19 +39,19 @@ export default Vue.extend({
                 targets: [paragraphs],
                 translateY: [30, 0],
                 opacity: [0, 100],
-            }, "-200")
+            }, "0")
             .add({
                 targets: [logos],
                 translateY: [30, 0],
                 opacity: [0, 100]
-            }, "-200")
+            }, "0")
         },
         onProgressScene(ev: any) {
             this.animation.seek(ev.progress * this.animation.duration)
         },
     },
     async mounted() {
-        await this.$nextTick()
+        //await this.$nextTick()
 
     }
 });
