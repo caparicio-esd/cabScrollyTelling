@@ -27,6 +27,11 @@
       </div>
       <div class="section_col_b col-start-4 col-span-2 self-center">
         <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
+        <!-- extra resources -->
+        <div class="resources">
+          <extra-resource v-for="(resource, i) in content.assets.resources" :key="i"/>
+        </div>
+
       </div>
     </div>
     <button-next-screen />
@@ -39,6 +44,8 @@ import '~/assets/styles/partials/section_content.css'
 import { mapState } from 'vuex'
 import AnimationType_01 from '../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
+import ExtraResource from '~/components/ExtraResource.vue'
+
 
 export default Vue.extend({
   data() {
@@ -47,7 +54,8 @@ export default Vue.extend({
     }
   },
   components: {
-   ButtonNextScreen
+   ButtonNextScreen,
+    ExtraResource
   },
   computed: {
     ...mapState({
@@ -69,3 +77,10 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.resources{
+  @apply m-4;
+}
+
+</style>
