@@ -49,19 +49,19 @@
         </section-holder-default>
 
         <!-- ============================== -->
-        <!-- sección volviendo a la tierra -->
+        <!-- 05 sección volviendo a la tierra -->
         <!-- ============================== -->
         <section-holder-trip />
 
         <!-- ============================== -->
-        <!-- sección en el CAB -->
+        <!-- 06, 07 sección en el CAB -->
         <!-- ============================== -->
         <section-holder-cab>
           <section-cab-01 />
           <section-cab-02 />
         </section-holder-cab>
         <!-- ============================== -->
-        <!-- sección créditos y links -->
+        <!-- 08, 09 sección créditos y links -->
         <!-- ============================== -->
         <section-holder-default>
           <section-credits />
@@ -86,10 +86,10 @@ import SectionMisions02 from '~/components/sections/02_sectionIntroMisions.vue'
 import SectionIntroExplorers03 from '~/components/sections/03_sectionExplorersHome.vue'
 import SectionIntroMachines04 from '~/components/sections/04_sectionIntroMachines.vue'
 import SectionFarewellMachines04 from '~/components/sections/04_sectionFarewellMachines.vue'
-import SectionCab01 from '~/components/sections/05_sectionCab_01.vue'
-import SectionCab02 from '~/components/sections/05_sectionCab_02.vue'
-import SectionCredits from '~/components/sections/06_sectionCredits.vue'
-import SectionFoot from '~/components/sections/07_sectionFoot.vue'
+import SectionCab01 from '~/components/sections/06_sectionCab_01.vue'
+import SectionCab02 from '~/components/sections/07_sectionCab_02.vue'
+import SectionCredits from '~/components/sections/08_sectionEsd.vue'
+import SectionFoot from '~/components/sections/09_sectionFoot.vue'
 import MainScrollController from '~/components/MainScrollController.vue'
 import SectionHolderCab from '~/components/SectionHolderCab.vue'
 

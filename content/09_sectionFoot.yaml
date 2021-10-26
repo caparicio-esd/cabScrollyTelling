@@ -1,0 +1,21 @@
+# Importante mirar la guía de figma para rellenar datos
+# https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
+
+title: Sección
+menuTitle: Créditos y despedida
+
+data:
+  title: Créditos y despedida
+  mainText:
+    - Este proyecto es una colaboración del Centro de Astrobiología y la Escuela Superior de Diseño de Madrid.
+    - Su realización ha sido posible gracias a la implicación de Francisco Torrego, Gonzalo Cordero, Santiago Liébana, Carlos Aparicio, Estrella Juárez, ...
+  secondaryText:
+    - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
+    - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+
+assets:
+  backgroundIllustration: /img/009.webp
+  logos:
+    - /img/cab_logo.png
+    - /img/inta_logo.png
+    - /img/placeholder_logo.png

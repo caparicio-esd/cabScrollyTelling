@@ -5,19 +5,26 @@ title: Sección
 menuTitle: Inicio
 
 data:
-  title: Aquí tenemos que poner un título que mole :)
+  title: La atmósfera marciana
   mainText:
-    - El Centro de Astrobiología nace en 1998-1999 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).
-    - Las instalaciones principales del CAB se sitúan en Torrejón de Ardoz (campus del INTA) y en Villanueva de la Cañada (sede del Centro Europeo de Astronomía Espacial, ESAC) ambas localidades cercanas a Madrid.
-    - Su equipo multidisciplinar de científicos e ingenieros lo convierten en un centro de investigación transdisciplinar ideal para abordar la astrobiología.
-    - El  CAB ha sido reconocido con el premio de Excelencia Científica «María de Maeztu» por el Ministerio de Ciencia español.
-  secondaryText:
-    - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
+    - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
     - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
-
+  secondaryText:
+    - Temperatura en Marte
+    - Fecha y hora marciana
+    - ¿a qué suena marte?
 assets:
   backgroundIllustration: /img/001.webp
   logos:
     - /img/cab_logo.png
     - /img/inta_logo.png
     #- /img/placeholder_logo.png
+  resources:
+    - #1
+      title: El murmullo de Marte
+      author: RicardoHorcajada
+      url: /docs/El_murmullo_de_Marte_Ricardo_Horcajada.docx
+    - #2
+      title: El murmullo de Marte
+      author: RicardoHorcajada
+      url: /docs/El_murmullo_de_Marte_Ricardo_Horcajada.docx

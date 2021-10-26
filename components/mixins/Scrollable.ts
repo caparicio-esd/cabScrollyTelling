@@ -33,6 +33,7 @@ export default Vue.extend({
             this.subscene[0].on("leave", (ev: any) => {
                 this.onLeaveScene(ev);
             })
+
             this.subscene[0].on("progress", (ev: any) => {
                 this.progress = ev.progress
                 this.onProgressScene(ev);
@@ -47,6 +48,7 @@ export default Vue.extend({
         onProgressScene(ev: any) {
 
         },
+
         // addSubAnimations(scene: ScrollMagic.Scene) {
         //     this.subscene.push(scene)
         // }

@@ -19,10 +19,11 @@ export default Vue.extend({
             const title = "h2";
             const paragraphs = "p";
             const logos = ".logos";
+            const btnext = ".btn_next";
 
-            anime.set([title, paragraphs, logos], {
+            anime.set([title, paragraphs, logos, btnext], {
                 opacity: 0,
-                translateY: 30
+                translateY: 50
             })
 
             this.animation = anime.timeline({
@@ -32,19 +33,24 @@ export default Vue.extend({
             })
             .add({
                 targets: [title],
-                translateY: [30, 0],
+                translateY: [50, 0],
                 opacity: [0, 100]
-            }, "0")
+            }, "-300")
             .add({
                 targets: [paragraphs],
-                translateY: [30, 0],
+                translateY: [50, 0],
                 opacity: [0, 100],
-            }, "0")
+            }, "-200")
             .add({
                 targets: [logos],
-                translateY: [30, 0],
+                translateY: [50, 0],
                 opacity: [0, 100]
-            }, "0")
+            }, "-100")
+            .add({
+              targets: [btnext],
+              translateY: [50, 0],
+              opacity: [0, 100]
+          }, "0")
         },
         onProgressScene(ev: any) {
             this.animation.seek(ev.progress * this.animation.duration)

@@ -12,7 +12,7 @@
     </div>
 
     <div class="section_content_holder">
-      <div class="section_col_a col-span-2 self-end">
+      <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
         <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
         <div class="logos flex mt-8">
@@ -55,7 +55,7 @@ export default Vue.extend({
   },
   mixins: [AnimationType_01],
   async fetch() {
-    this.content = await getContent(this, '04_sectionIntroMachines')
+    this.content = await getContent(this, '08_sectionEsd')
   },
   async mounted() {
     await this.$nextTick()

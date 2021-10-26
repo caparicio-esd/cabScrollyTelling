@@ -14,3 +14,12 @@ data:
 
 assets:
   backgroundIllustration: /img/002.webp
+  resources:
+    - #1
+      title: El murmullo de Marte
+      author: RicardoHorcajada
+      url: /docs/El_murmullo_de_Marte_Ricardo_Horcajada.docx
+    - #2
+      title: El murmullo de Marte
+      author: RicardoHorcajada
+      url: /docs/El_murmullo_de_Marte_Ricardo_Horcajada.docx
