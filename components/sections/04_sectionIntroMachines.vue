@@ -27,6 +27,18 @@
       </div>
     </div>
     <button-next-screen />
+    <!-- explorers-->
+    <div class="machines">
+      <div
+        v-for="(explorer, i) in content.data.explorers"
+        :key="i"
+        :style="getExplorerStyle(explorer, i)"
+        class="machine"
+      >
+        {{ explorer.name }}
+        <!-- <ph-arrow-left /> -->
+      </div>
+    </div>
   </div>
 </template>
 <script lang="ts">
@@ -54,6 +66,12 @@ export default Vue.extend({
   },
   methods: {
     n2br,
+    getExplorerStyle(explorer: any, i: number): object {
+      return {
+        top: `${explorer.position.lat}%`,
+        left: `${explorer.position.lon}%`,
+      }
+    },
   },
   mixins: [AnimationType_01],
   async fetch() {
@@ -66,3 +84,37 @@ export default Vue.extend({
   },
 })
 </script>
+
+
+<style lang="postcss" scoped>
+.machines {
+  @apply col-span-full row-span-full relative;
+  pointer-events: none;
+  cursor: pointer;
+  .machine {
+    @apply absolute rounded-full bg-white text-black p-2;
+    @apply ring-white ring-0 ring-opacity-50;
+    transform: translate(-50%, -50%);
+    pointer-events: initial;
+    transition: all 350ms ease;
+    background-clip: padding-box;
+    border: 3px solid white;
+
+    &.explorer_active {
+      @apply ring-white ring-8 ring-opacity-40;
+      border: 3px solid transparent;
+      transition: all 350ms ease;
+    }
+    &.explorer_focused,
+    &:hover {
+      @apply ring-white ring-4 ring-opacity-40;
+      border: 3px solid transparent;
+      transition: all 350ms ease;
+    }
+    &.explorer_unfocused {
+      opacity: 0.6;
+      transition: all 350ms ease;
+    }
+  }
+}
+</style>

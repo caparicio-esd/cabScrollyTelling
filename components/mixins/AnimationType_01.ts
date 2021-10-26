@@ -21,7 +21,8 @@ export default Vue.extend({
             const logos = ".logos";
             const btnext = ".btn_next";
             const resources = ".resource";
-            const machine = ".machine_icon";
+            const machineIcon = ".machine_icon";
+            const machine = ".machine";
 
             anime.set([title, paragraphs, logos, btnext, resources], {
                 opacity: 0,
@@ -49,7 +50,7 @@ export default Vue.extend({
                 opacity: [0, 100]
             }, "-100")
             .add({
-              targets: [btnext, resources, machine],
+              targets: [btnext, resources, machine, machineIcon],
               translateY: [50, 0],
               opacity: [0, 100]
           }, "0")
