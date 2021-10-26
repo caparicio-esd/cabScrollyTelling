@@ -40,12 +40,14 @@
         <!--  -->
         <section-holder-machines />
 
+        <!-- ============================== -->
+        <!-- 04 section despedida máquinas, hola viaje a la tierra -->
+        <!-- ============================== -->
+
         <section-holder-default>
-          <section-intro-explorers-03 />
+          <section-farewell-machines-04 />
         </section-holder-default>
-        <!-- <section-machine /> -->
-        <!-- </section-holder-machines> -->
-        <!--  -->
+
         <!-- ============================== -->
         <!-- sección volviendo a la tierra -->
         <!-- ============================== -->
@@ -83,6 +85,7 @@ import SectionWelcome01 from '~/components/sections/01_sectionWelcome.vue'
 import SectionMisions02 from '~/components/sections/02_sectionIntroMisions.vue'
 import SectionIntroExplorers03 from '~/components/sections/03_sectionExplorersHome.vue'
 import SectionIntroMachines04 from '~/components/sections/04_sectionIntroMachines.vue'
+import SectionFarewellMachines04 from '~/components/sections/04_sectionFarewellMachines.vue'
 import SectionCab01 from '~/components/sections/05_sectionCab_01.vue'
 import SectionCab02 from '~/components/sections/05_sectionCab_02.vue'
 import SectionCredits from '~/components/sections/06_sectionCredits.vue'
@@ -92,15 +95,16 @@ import SectionHolderCab from '~/components/SectionHolderCab.vue'
 
 export default Vue.extend({
   components: {
+    MainScrollController,
+    HeadDefault,
     SectionHolderDefault,
     SectionHolderExplorers,
     SectionHolderMachines,
-    HeadDefault,
     SectionWelcome01,
     SectionMisions02,
     SectionIntroExplorers03,
     SectionIntroMachines04,
-    MainScrollController,
+    SectionFarewellMachines04,
     SectionHolderTrip,
     SectionHolderCab,
     SectionCab01,
