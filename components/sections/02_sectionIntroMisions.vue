@@ -29,7 +29,7 @@
         <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
         <!-- extra resources -->
         <div class="resources">
-          <extra-resource v-for="(resource, i) in content.assets.resources" :key="i"/>
+          <extra-resource v-for="(resource, i) in content.assets.resources" :key="i" :resource="resource" />
         </div>
 
       </div>

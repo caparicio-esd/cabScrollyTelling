@@ -1,9 +1,9 @@
 <template>
-  <a class="resource" href="/docs/El_murmullo_de_Marte_Ricardo_Horcajada.docx">
+  <a class="resource" :href="resource.url">
     <ph-file :size="32" />
     <div class="txt_box">
-      <div class="title">El murmullo de marte</div>
-      <div class="author">Ricardo Horcajada</div>
+      <div class="title">{{resource.title}}</div>
+      <div class="author">{{resource.author}}</div>
     </div>
   </a>
 </template>
@@ -16,6 +16,7 @@ export default {
   components: {
     PhFile
   },
+  props: ['resource']
 }
 </script>
 
