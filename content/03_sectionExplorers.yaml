@@ -17,8 +17,8 @@ data:
       arrival: "02.12.1971 - 13.50 UTC"
       place: "Cráter Ptolomeo (Terra Sirenum)"
       activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
+      land: "URSS"
+      agency: "Unión Soviética"
       status: "Exito parcial"
     position:
       lon: 10
@@ -28,183 +28,283 @@ data:
       Devolver fotografías de la superficie\\n
       Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
     instruments: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
+      Aterrizador\\n
+      Dos cámaras de televisión para la obtención de vistas de 360º.\\n
+      Espectrómetro de masa.\\n
+      Sensores de temperatura, presión, composición y velocidad del viento.\\n
+      Dispositivos para medición de propiedades mecánicas y químicas del suelo.\\n
+      Pala mecánica para buscar compuestos orgánicos y signos de vida.\\n
+      Rover\\n
+      Penetrómetro dinámico \\n
+      Medidor de radiación."
     curiosities: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
+      A los 90 segundos tras el aterrizaje el módulo de descenso comenzó a transmitir datos hacia el orbitador. A los 20 segundos se perdió la conexión. Consiguió mandar una imagen parcial de 70 líneas que muestran un fondo gris sin detalles."
     contribution: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    picture: ""
+      La sonda Mars 3 fue la primera que realizó un amartizaje suave en la superficie de Marte."
+    picture: "/img/explorers/01.webp"
+    picture_flag: "/img/flags/URSS.svg"
 
-  - # 1 - MARS 3 (Módulo de descenso y Rover)
+  - # 1 - VIKING 1 (Sonda de amartizaje)
     id: 1
-    title: "MARS 3 (Módulo de descenso y Rover)"
-    subtitle: "Primer amartizaje controlado."
+    title: "VIKING 1 (Sonda de amartizaje)"
+    subtitle: "Misión conjunta de 2 orbitadores y sendas sondas de amartizaje (Viking 1 y 2) para explorar la superficie marciana con un detalle sin precedentes."
     meta:
-      launch: "28.03.1973 - 15:26 UTC"
-      arrival: "02.12.1971 - 13.50 UTC"
-      place: "Cráter Ptolomeo (Terra Sirenum)"
-      activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
-      status: "Exito parcial"
+      launch: "20.08.1975 - 21:22 UTC"
+      arrival: "20.07.1976 - 11.53 UTC"
+      place: "Chryse Planitia"
+      activity: "2306 días (6,3 años) o 2245 soles"
+      land: "EEUU"
+      agency: "NASA"
+      status: "Exito"
     position:
       lon: 20
       lat: 30
     goals: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
-    curiosities: ""
-    contribution: ""
-    picture: ""
+      Obtener imágenes de alta resolución de la superficie marciana.\\n
+      Caracterizar la estructura y composición de la atmósfera.\\n
+      Caracterizar la estructura y composición de la superficie.\\n
+      Buscar evidencias de vida."
+    instruments: "
+      Sistema de imágenes (2 cámaras).\\n
+      Espectrómetro de masa y cromatógrafo de gases (GCMS).\\n
+      Sismómetro.\\n
+      Espectrómetro de fluorescencia de rayos X.\\n
+      Laboratorio Biológico.\\n
+      Paquete de instrumentos meteorológicos (temperatura, presión, velocidad del viento).\\n
+      Brazo robótico por control remoto."
+    curiosities: "Hasta la llegada del Opportunity en 2010, albergaba el récord de longevidad de una misión en la superficie de Marte.
+      Envió la primera imagen nítida de la superficie marciana y la primera imagen panorámica.
+      Un fallo humano en una actualización de software hizo que se perdieran las comunicaciones, terminando la misión."
+    contribution: "Los orbitadores de las misiones Viking enviaron 52.663 imágenes y mapearon alrededor del 97% de la superficie marciana y las sondas de amartizaje mandaron 4.500 fotografías de los dos lugares de amartizaje."
+    picture: "/img/explorers/02.webp"
+    picture_flag: "/img/flags/EEUU.svg"
 
-  - # 2 - MARS 3 (Módulo de descenso y Rover)
+  - # 2 - VIKING 2 (Sonda de amartizaje)
     id: 2
-    title: "MARS 3 (Módulo de descenso y Rover)"
-    subtitle: "Primer amartizaje controlado."
+    title: "VIKING 2 (Sonda de amartizaje)"
+    subtitle: "Misión conjunta de 2 orbitadores y sendas sondas de amartizaje (Viking 1 y 2) para explorar la superficie marciana con un detalle sin precedentes."
     meta:
-      launch: "28.03.1975 - 15:26 UTC"
-      arrival: "02.12.1971 - 13.50 UTC"
-      place: "Cráter Ptolomeo (Terra Sirenum)"
-      activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
+      launch: "09.09.1975 - 18:39 UTC"
+      arrival: "03.09.1976 - 22:37 UTC"
+      place: "Utopia Planitia"
+      activity: "1316 días (3,6 años) o 1281 soles"
+      land: "EEUU"
+      agency: "NASA"
       status: "Exito parcial"
     position:
       lon: 32
       lat: 43
     goals: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
+      Obtener imágenes de alta resolución de la superficie marciana.\\n
+      Caracterizar la estructura y composición de la atmósfera y de la superficie.\\n
+      Buscar evidencias de vida."
+    instruments: "
+      Sistema de imágenes (2 cámaras).\\n
+      Espectrómetro de masa y cromatógrafo de gases (GCMS).\\n
+      Sismómetro.\\n
+      Espectrómetro de fluorescencia de rayos X.\\n
+      Laboratorio Biológico.\\n
+      Paquete de instrumentos meteorológicos (temperatura, presión, velocidad del viento).\\n
+      Brazo robótico por control remoto."
     curiosities: ""
-    contribution: ""
-    picture: ""
+    contribution: "Los orbitadores de las misiones Viking enviaron 52.663 imágenes y mapearon alrededor del 97% de la superficie marciana y las sondas de amartizaje mandaron 4.500 fotografías de los dos lugares de amartizaje."
+    picture: "/img/explorers/03.webp"
+    picture_flag: "/img/flags/EEUU.svg"
 
-  - # 3 - MARS 3 (Módulo de descenso y Rover)
+  - # 3 - MARS PATHFINDER Y SOJOURNER
     id: 3
-    title: "MARS 3 (Módulo de descenso y Rover)"
-    subtitle: "Primer amartizaje controlado."
+    title: "MARS PATHFINDER Y SOJOURNER"
+    subtitle: "Probar nuevas tecnologías de bajo coste para estudiar Marte desde la superficie."
     meta:
-      launch: "28.03.1979 - 15:26 UTC"
-      arrival: "02.12.1971 - 13.50 UTC"
-      place: "Cráter Ptolomeo (Terra Sirenum)"
-      activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
-      status: "Exito parcial"
+      launch: "04.12.1996 - 06:58 UTC"
+      arrival: "27.09.1997 - 10.23 UTC"
+      place: "Ares Vallis, Chryse Planitia"
+      activity: "85 días (83 soles)"
+      land: "EEUU"
+      agency: "NASA"
+      status: "Exito"
     position:
       lon: 30
       lat: 15
     goals: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
-    curiosities: ""
-    contribution: ""
-    picture: ""
+      Probar nuevas tecnologías y métodos para futuras misiones.\\n
+      Probar un sistema simple y de bajo costo para colocar una carga científica en la superficie de Marte.\\n
+      Probar la movilidad y la utilidad de un microróver en la superficie de Marte.\\n
+      Analizar la atmósfera marciana, la climatología, la geología y la composición de sus rocas y suelo."
+    instruments: "
+    Sonda Pathfinder\\n
+    - Imager para Mars Pathfinder (IMP), (incluye magnetómetro y anemómetro)\\n
+    - Sensores atmosféricos y meteorológicos (ASI / MET)\\n
+    Rover Sojourner\\n
+    - Sistema de imágenes (tres cámaras: estéreo en blanco y negro frontal, 1 color en la parte posterior)\\n
+    - Sistema de detección de peligros con trazador de líneas láser\\n
+    - Espectrómetro de rayos X Alpha Proton (APXS)\\n
+    - Experimento de abrasión de ruedas\\n
+    - Experimento de adherencia de materiales\\n
+    - Acelerómetros"
+    curiosities: "
+      Primera misión en utilizar un paracaídas.\\n
+      La Sojouner fue el primer rover operativo en la superficie marciana.\\n
+      El lander, por su parte, transmitió más de 16 500 imágenes y realizó 8,5 millones de mediciones de la presión atmosférica, temperatura y velocidad del viento."
+    contribution: "
+      Determinó que el centro de marte está solidificado y que su núcleo metálico tiene entre 1300 m y 2000 m de radio.\\n
+      Estimó en una micra el diámetro de las partículas de polvo en suspensión.\\n
+      Identificó la composición de rocas.\\n
+      Encontró dunas con forma de luna creciente, idénticas a las dunas barcanoides que se forman en la Tierra."
+    picture: "/img/explorers/04.webp"
+    picture_flag: "/img/flags/EEUU.svg"
 
-  - # 4 - MARS 3 (Módulo de descenso y Rover)
+  - # 4 - SPIRIT
     id: 4
-    title: "MARS 3 (Módulo de descenso y Rover)"
-    subtitle: "Primer amartizaje controlado."
+    title: "SPIRIT"
+    subtitle: "Estudiar la composición de Marte."
     meta:
-      launch: "28.03.1982 - 15:26 UTC"
-      arrival: "02.12.1971 - 13.50 UTC"
-      place: "Cráter Ptolomeo (Terra Sirenum)"
-      activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
+      launch: "10.06.2003 - 17:58 UTC"
+      arrival: "04.01.2004 - 4:35 UTC"
+      place: "Crater Gusev"
+      activity: "2249 días (6,2 años) o 2208 soles"
+      land: "EEUU"
+      agency: "NASA"
       status: "Exito parcial"
     position:
       lon: 70
       lat: 70
     goals: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
-    curiosities: ""
-    contribution: ""
-    picture: ""
+      Búsqueda de pistas sobre la actividad del agua en el pasado.\\n
+      Determinación de la distribución y composición de minerales, rocas y suelos que rodean el sitio de aterrizaje.\\n
+      Determinación de qué procesos geológicos han dado forma al terreno local e influido en la química.\\n
+      Calibración y validación de las observaciones de superficie realizadas por los instrumentos de la Mars Reconnaissance Orbiter.\\n
+      Búsqueda de minerales que contengan hierro, que contengan agua o se formaran en el agua.\\n
+      Caracterización la mineralogía y texturas de rocas y suelos y determinar los procesos que los crearon.\\n
+      Búsqueda de pistas geológicas sobre las condiciones ambientales que existían cuando había agua líquida.\\n
+      Evaluación de si esos entornos son propicios para la vida."
+    instruments: "
+      Cámara panorámica (PanCam).\\n
+      Microscopio de imágenes (MI).\\n
+      Espectrómetro de emisión térmica en miniatura (Mini-TES).\\n
+      Espectrómetro Mössbauer (MB).\\n
+      Espectrómetro de partículas alfa de rayos X (APXS).\\n
+      Instrumento de abrasión de rocas (RAT).\\n
+      Red de imanes (Magnet Array)."
+    curiosities: "
+      Tomó la primera fotografía de 12Mpíxels en la superficie de otro planeta.\\n
+      Realizó el primer taladro en una roca marciana para analizar el material fresco del interior."
+    contribution: "
+      Encontró evidencias de antiguos manantiales en ebullición.\\n
+      Descubrió evidencias de la existencia pasada de una atmósfera densa y de agua dulce.\\n
+      Identificó evidencias de un ciclo activo del agua."
+    picture: "/img/explorers/05.webp"
+    picture_flag: "/img/flags/EEUU.svg"
 
-  - # 5 - MARS 3 (Módulo de descenso y Rover)
+  - # 5 - OPPORTUNITY (Rover)
     id: 5
-    title: "MARS 3 (Módulo de descenso y Rover)"
-    subtitle: "Primer amartizaje controlado."
+    title: "OPPORTUNITY (Rover)"
+    subtitle: "Estudiar la composición de Marte."
     meta:
-      launch: "28.03.1984 - 15:26 UTC"
-      arrival: "02.12.1971 - 13.50 UTC"
-      place: "Cráter Ptolomeo (Terra Sirenum)"
-      activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
+      launch: "07.07.2003 - 03:18 UTC"
+      arrival: "25.01.2004 - 05:05 UTC"
+      place: "Meridiani Planun"
+      activity: "14 años. (previstos 92,5 días terrestres)."
+      land: "EEUU"
+      agency: "NASA"
       status: "Exito parcial"
     position:
       lon: 60
       lat: 80
     goals: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
-    curiosities: ""
-    contribution: ""
-    picture: ""
-
-  - # 6 - MARS 3 (Módulo de descenso y Rover)
+      Buscar y analizar la superficie y una gama de rocas para ver la actividad del agua en Marte."
+    instruments: "
+      Cámara panorámica (PanCam).\\n
+      Microscopio de imágenes (MI).\\n
+      Espectrómetro de emisión térmica en miniatura (Mini-TES).\\n
+      Espectrómetro Mössbauer (MB).\\n
+      Espectrómetro de partículas alfa de rayos X (APXS).\\n
+      Instrumento de abrasión de rocas (RAT) '.\\n
+      Red de imanes (Magnet Array)."
+    curiosities: "Fin de actividad: 13 de febrero de 2019 (declarado) pero el 10 de junio de 2018 se perdió la conexión tras una tormenta de polvo."
+    contribution: "
+      Primera vista panorámica de 360º que revela el afloramiento rocoso que los científicos están planeando investigar.\\n
+      Pudo abrir zanjas para investigar los detalles del subsuelo, revelando que la composición de la superficie es distinta que en el interior de la zanja.\\n
+      Encontró hallazgos de indicios de agua y condiciones para la vida:\\n
+      Encontró hematita, que suele formarse en el agua.\\n
+      Encontró cerca del borde del cráter Endeavor, vetas de yeso de colores brillantes en las rocas. Estas rocas probablemente se formaron cuando el agua fluyó a través de las fracturas subterráneas de las rocas, dejando calcio.\\n
+      Encontró minerales de arcilla formados en agua de pH neutro.\\n
+      Ha visitado y estudiado la geología de más de 100 cráteres de impacto aportando información que permite estudiar cómo se forman y erosionan a lo largo del tiempo.\\n
+      Ha recogido datos que permiten estudiar las nubes y el polvo de Marte, la opacidad (tau) de su atmósfera y cómo afecta a los paneles solares (energía solar)."
+    picture: "/img/explorers/06.webp"
+    picture_flag: "/img/flags/EEUU.svg"
+  - # 6 - PHOENIX (sonda)
     id: 6
-    title: "MARS 3 (Módulo de descenso y Rover)"
-    subtitle: "Primer amartizaje controlado."
+    title: "PHOENIX (sonda)"
+    subtitle: "Hacer prospecciones a diferentes profundidades en una región cercana al Polo Norte marciano para examinar el subsuelo."
     meta:
-      launch: "28.03.1991 - 15:26 UTC"
-      arrival: "02.12.1971 - 13.50 UTC"
-      place: "Cráter Ptolomeo (Terra Sirenum)"
-      activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
+      launch: "04.08.2007 - 09:26 UTC"
+      arrival: "25.05.2008 - 11:54 UTC"
+      place: "Polo Norte marciano"
+      activity: "157 soles"
+      land: "EEUU"
+      agency: "NASA"
       status: "Exito parcial"
     position:
       lon: 67
       lat: 54
     goals: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
-    curiosities: ""
-    contribution: ""
-    picture: ""
-
-  - # 7 - MARS 3 (Módulo de descenso y Rover)
+      Determinar si hubo o pudo haber vida en Marte.\\n
+      Caracterizar el clima de Marte.\\n
+      Estudiar la geología de Marte.\\n
+      Efectuar estudios de la historia geológica del agua, factor clave para descifrar el pasado de los cambios climáticos del planeta."
+    instruments: "
+      Brazo robótico (RA)\\n
+      Cámara del brazo robótico (RAM) \\n
+      Cámara de Descenso (MARDI)\\n
+      Estación Meteorológica (MET)\\n
+      Imagen estereoscópica de superficie (SSI)\\n
+      Analizador de microscopía, electroquímica y conductividad (MECA)\\n
+      Analizador de gases térmicos y evolucionados (TEGA)"
+    curiosities: "El 29 de octubre de 2008, la sonda entró en 'modo seguro' o 'hibernación' debido a la disminución de la luz solar conforme avanza el invierno en Marte. La sonda fue reactivada pero la poca energía solar disponible obligó a la desconexión de la mayoría de los calentadores necesarios para la función de los sistemas mecánicos y electrónicos, así como suspender todas las operaciones científicas, a excepción del monitoreo climatológico. Finalmente se decidió dar la misión por finalizada al no recibirse señales de ella, como era esperado con el avance del invierno. El 25 de mayo de 2010 se da oficialmente por muerta a Phoenix."
+    contribution: "
+      Encontró hielo al realizar una excavación cerca del Polo Norte de Marte.\\n
+      Se determinó que el suelo marciano —al menos dónde aterrizó la sonda— es alcalino, con un PH análogo al suelo de la superficie cercana en los valles de la Antártida.
+      Se confirmó la presencia de agua:\\n
+      Phoenix detectó nieve en la atmósfera de Marte, que se sublimó antes de llegar a la superficie.\\n
+      Distintos experimentos revelaron rastros de reacciones químicas entre minerales del suelo marciano y agua líquida en el pasado. \\n
+      Algunos datos de muestras sugieren la presencia de carbonato cálcico.\\n
+      El análisis de algunas imágenes muestra lo que parecen ser gotas de agua líquida salina que salpicaron las patas de la sonda tras su aterrizaje"
+    picture: "/img/explorers/07.webp"
+    picture_flag: "/img/flags/EEUU.svg"
+  - # 7 - ZHURONG (Rover)
     id: 7
-    title: "MARS 3 (Módulo de descenso y Rover)"
-    subtitle: "Primer amartizaje controlado."
+    title: "ZHURONG (Rover)"
+    subtitle: "Primera misión interplanetaria china."
     meta:
-      launch: "28.03.1994 - 15:26 UTC"
-      arrival: "02.12.1971 - 13.50 UTC"
-      place: "Cráter Ptolomeo (Terra Sirenum)"
-      activity: "2 minutos (Orbitador 452 días)"
-      land: "Unión Soviética"
-      agency: "USSR"
+      launch: "23.07.2020 - 4:41 UTC"
+      arrival: "14.05.2021"
+      place: "Utopía Planitia"
+      activity: "Sigue en activo"
+      land: "China"
+      agency: "CNSA"
       status: "Exito parcial"
     position:
       lon: 50
       lat: 52
     goals: "
-      Realizar un amartizaje suave en Marte\\n
-      Devolver fotografías de la superficie\\n
-      Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo."
-    instruments: ""
-    curiosities: ""
-    contribution: ""
-    picture: ""
+      Validar las tecnologías de comunicación y control en el espacio profundo, la puesta en órbita alrededor del planeta y el aterrizaje en su superficie.\\n
+      Estudiar la morfología y estructura geológica de Marte, así como su evolución y sus causas. \\n
+      Estudiar las características de las capas superficiales y subterráneas del suelo de Marte, así como la distribución del hielo de agua. \\n
+      Estudiar la composición y el tipo de rocas, así como los minerales y elementos presentes en la superficie de Marte. \\n
+      Estudiar la ionosfera, el clima, las estaciones y, en general, la atmósfera de Marte, tanto en su entorno espacial cercano como en su superficie. \\n
+      Estudiar la estructura interna de Marte, su campo magnético, la historia de su evolución geológica, la distribución interna de su masa y su campo gravitacional. \\n
+      Buscar evidencias de vida actual y pasada, producir mapas de superficie, caracterizar la composición del suelo y la distribución del hielo de agua, y examinar la atmósfera marciana, y en particular su ionosfera.\\n
+      La misión también sirve como demostración de tecnología que será necesaria para una misión china anticipada de retorno de muestras a Marte propuesta para la década de 2030. \\n
+      Almacenar en caché muestras de roca y suelo para su posterior recuperación en la misión de devolución de muestras."
+    instruments: "
+      Radar de penetración en el suelo (GPR).\\n
+      Detector de campo magnético de superficie de Marte (MSMFD).\\n
+      Instrumento de Medición Meteorológica de Marte (MMMI).\\n
+      Detector de compuestos de superficie de Marte (MSCD).\\n
+      Cámara multiespectro (MSC).\\n
+      Cámara de navegación y topografía (NTC)."
+    curiosities: "Zhurong es un dios del fuego y del sur."
+    contribution: "Primera misión y primer éxito de la CNSA en la exploración de Marte con tecnología propia, no dependiendo ni de otras agencias ni del sector privado."
+    picture: "/img/explorers/011.webp"
+    picture_flag: "/img/flags/EEUU.svg"

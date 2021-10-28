@@ -1,10 +1,14 @@
 <template>
   <div class="explorer_modal_content" v-if="activeContent.meta">
     <div class="explorer_modal_content_header">
-      <div class="explorer_modal_content_picture">pic</div>
+      <div class="explorer_modal_content_picture">
+        <img :src="activeContent.picture" :alt="activeContent.title">
+      </div>
       <div class="explorer_modal_content_agency_meta">
         <div class="explorer_modal_content_land">
-          <div class="explorer_modal_content_land_picture">pic</div>
+          <div class="explorer_modal_content_land_picture">
+            <img :src="activeContent.picture_flag" :alt="activeContent.title">
+          </div>
           <div class="explorer_modal_content_land_name">
             {{ activeContent.meta.land }}
           </div>
@@ -157,7 +161,8 @@ export default Vue.extend({
 .explorer_modal_content_header {
   @apply flex justify-between items-end mb-4;
   .explorer_modal_content_picture {
-    @apply bg-gray-200 flex-1 h-52 mr-4;
+    @apply bg-gray-200 flex-1 h-64 mr-4;
+    overflow: hidden;
   }
   .explorer_modal_content_agency_meta {
     max-width: 20ch;
@@ -165,6 +170,10 @@ export default Vue.extend({
       @apply flex items-center;
       .explorer_modal_content_land_picture {
         @apply bg-gray-200 w-8 h-8 rounded-full mr-2;
+        overflow: hidden;
+        img{
+          height: 100%;
+        }
       }
       .explorer_modal_content_land_name {
         @apply my-1 font-bold text-black;
