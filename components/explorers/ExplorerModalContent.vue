@@ -7,7 +7,7 @@
       <div class="explorer_modal_content_agency_meta">
         <div class="explorer_modal_content_land">
           <div class="explorer_modal_content_land_picture">
-            <img :src="activeContent.picture_flag" :alt="activeContent.title">
+            <img :src="activeContent.picture_flag" :alt="`bandera de ${activeContent.meta.land}`">
           </div>
           <div class="explorer_modal_content_land_name">
             {{ activeContent.meta.land }}

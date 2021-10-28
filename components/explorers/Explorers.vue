@@ -20,7 +20,7 @@
           focusedId != i && focusedId >= 0 ? `explorer_unfocused` : ``,
         ]"
       >
-        <ph-arrow-left />
+        <ph-rocket />
       </div>
     </div>
   </div>
@@ -29,13 +29,14 @@
 <script lang="ts">
 import Vue from 'vue'
 import { getContent } from '~/lib/sectionUtils'
-import { PhArrowLeft } from 'phosphor-vue'
+import { PhArrowLeft, PhRocket } from 'phosphor-vue'
 import { mapState, mapActions } from 'vuex'
 
 export default Vue.extend({
   name: 'Explorers',
   components: {
     PhArrowLeft,
+    PhRocket
   },
   data(): any {
     return {
@@ -97,7 +98,7 @@ export default Vue.extend({
       border: 3px solid transparent;
       transition: all 350ms ease;
     }
-    &.explorer_focused, 
+    &.explorer_focused,
     &:hover {
       @apply ring-white ring-4 ring-opacity-40;
       border: 3px solid transparent;
