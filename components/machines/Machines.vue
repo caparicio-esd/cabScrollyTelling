@@ -27,7 +27,7 @@
       class="machine_icon"
       :style="getMachinePosition(content.data[index])"
       >
-      <ph-triangle :size="64" />
+      <ph-rocket :size="64" />
     </div>
     <machine-modal :id="`modal${index}`" :data="content.data[index]" />
     <button-next-screen />
@@ -40,7 +40,7 @@
 import Vue from 'vue'
 import AnimationType_01 from '../mixins/AnimationType_01'
 //@ts-ignore
-import { PhTriangle } from "phosphor-vue"
+import { PhTriangle,PhRocket } from "phosphor-vue"
 import { n2br, getContent } from '~/lib/sectionUtils'
 import { mapState } from 'vuex'
 import MachineModal from '~/components/machines/MachineModal.vue'
@@ -51,6 +51,7 @@ export default Vue.extend({
   name: 'Machines',
   components: {
     PhTriangle,
+    PhRocket,
     MachineModal,
     ButtonNextScreen
   },

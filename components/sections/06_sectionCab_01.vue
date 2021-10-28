@@ -9,23 +9,9 @@
         <div class="col_01">
           <div class="pic">pic</div>
           <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-            aperiam neque, fuga assumenda ullam blanditiis eaque?
+            {{ content.data.title}}
           </h2>
-          <p>
-            Aliquam consectetur aliquam leo. Nulla tempus euismod orci et
-            ornare. Proin id hendrerit nibh, in vulputate eros. Ut ut dignissim
-            leo. Donec hendrerit, tellus eget pretium feugiat, nulla nunc
-            pretium nisl, et fermentum elit sem vel tortor. Maecenas posuere,
-            purus et sagittis ultricies, odio odio aliquet erat, eget sodales
-            velit augue quis augue.
-          </p>
-          <p>
-            Nam vestibulum orci vitae enim ultrices tempor. Suspendisse
-            porttitor, ipsum vel posuere egestas, elit arcu placerat ligula, et
-            laoreet massa lorem nec nunc. Cras consequat euismod est, sed
-            feugiat ante tempor eu. Curabitur egestas vehicula porta.
-          </p>
+          <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
         </div>
         <div class="col_02">
           <div class="pic">pic</div>
@@ -34,22 +20,9 @@
         </div>
         <div class="col_03">
           <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-            aperiam neque, fuga assumenda ullam blanditiis eaque?
+            {{ content.data.secondaryTitle}}
           </h2>
-          <p>
-            Nulla tempus euismod orci et ornare. Proin id hendrerit nibh, in
-            vulputate eros. Ut ut dignissim leo. Donec hendrerit, tellus eget
-            pretium feugiat, nulla nunc pretium nisl, et fermentum elit sem vel
-            tortor. Maecenas posuere, purus et sagittis ultricies, odio odio
-            aliquet erat, eget sodales velit augue quis augue.
-          </p>
-          <p>
-            Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Fusce posuere libero eu dolor molestie
-            ultricies. Duis tortor leo, interdum ac metus at, varius posuere
-            dui. Proin eget feugiat nulla.
-          </p>
+          <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
           <div class="pic">pic</div>
         </div>
       </div>
@@ -80,7 +53,7 @@ export default Vue.extend({
   },
   mixins: [Scrollable],
   async fetch() {
-    this.content = await getContent(this, '04_sectionIntroMachines')
+    this.content = await getContent(this, '06_sectionCab01')
   },
   async mounted() {
     await this.$nextTick()
