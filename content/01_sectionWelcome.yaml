@@ -9,15 +9,13 @@ data:
   mainText:
     - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
     - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
-  secondaryText:
-    - Temperatura en Marte
-    - Fecha y hora marciana
-    - ¿a qué suena marte?
+    - ¿Quieres saber más sobre cómo nos llegan estos datos?
+
 assets:
   backgroundIllustration: /img/001.webp
-  logos:
-    - /img/cab_logo.png
-    - /img/inta_logo.png
+  #logos:
+    #- /img/cab_logo.png
+    #- /img/inta_logo.png
     #- /img/placeholder_logo.png
   resources:
     - #1
