@@ -7,7 +7,7 @@ assets:
   backgroundIllustration: /img/003_b.webp
 
 data:
-
+#top: lat, left: lon
   - # 0 - MARS 3 (Módulo de descenso y Rover)
     id: 0
     title: "MARS 3 (Módulo de descenso y Rover)"
@@ -21,8 +21,8 @@ data:
       agency: "Unión Soviética"
       status: "Exito parcial"
     position:
-      lon: 10
-      lat: 20
+      lon: 7
+      lat: 82
     goals: "
       Realizar un amartizaje suave en Marte\\n
       Devolver fotografías de la superficie\\n
@@ -43,7 +43,6 @@ data:
       La sonda Mars 3 fue la primera que realizó un amartizaje suave en la superficie de Marte."
     picture: "/img/explorers/01.webp"
     picture_flag: "/img/flags/URSS.svg"
-
   - # 1 - VIKING 1 (Sonda de amartizaje)
     id: 1
     title: "VIKING 1 (Sonda de amartizaje)"
@@ -57,8 +56,8 @@ data:
       agency: "NASA"
       status: "Exito"
     position:
-      lon: 20
-      lat: 30
+      lon: 35
+      lat: 38
     goals: "
       Obtener imágenes de alta resolución de la superficie marciana.\\n
       Caracterizar la estructura y composición de la atmósfera.\\n
@@ -78,7 +77,6 @@ data:
     contribution: "Los orbitadores de las misiones Viking enviaron 52.663 imágenes y mapearon alrededor del 97% de la superficie marciana y las sondas de amartizaje mandaron 4.500 fotografías de los dos lugares de amartizaje."
     picture: "/img/explorers/02.webp"
     picture_flag: "/img/flags/EEUU.svg"
-
   - # 2 - VIKING 2 (Sonda de amartizaje)
     id: 2
     title: "VIKING 2 (Sonda de amartizaje)"
@@ -92,8 +90,8 @@ data:
       agency: "NASA"
       status: "Exito parcial"
     position:
-      lon: 32
-      lat: 43
+      lon: 88
+      lat: 20
     goals: "
       Obtener imágenes de alta resolución de la superficie marciana.\\n
       Caracterizar la estructura y composición de la atmósfera y de la superficie.\\n
@@ -110,7 +108,6 @@ data:
     contribution: "Los orbitadores de las misiones Viking enviaron 52.663 imágenes y mapearon alrededor del 97% de la superficie marciana y las sondas de amartizaje mandaron 4.500 fotografías de los dos lugares de amartizaje."
     picture: "/img/explorers/03.webp"
     picture_flag: "/img/flags/EEUU.svg"
-
   - # 3 - MARS PATHFINDER Y SOJOURNER
     id: 3
     title: "MARS PATHFINDER Y SOJOURNER"
@@ -124,8 +121,8 @@ data:
       agency: "NASA"
       status: "Exito"
     position:
-      lon: 30
-      lat: 15
+      lon: 40
+      lat: 40
     goals: "
       Probar nuevas tecnologías y métodos para futuras misiones.\\n
       Probar un sistema simple y de bajo costo para colocar una carga científica en la superficie de Marte.\\n
@@ -153,7 +150,6 @@ data:
       Encontró dunas con forma de luna creciente, idénticas a las dunas barcanoides que se forman en la Tierra."
     picture: "/img/explorers/04.webp"
     picture_flag: "/img/flags/EEUU.svg"
-
   - # 4 - SPIRIT
     id: 4
     title: "SPIRIT"
@@ -167,8 +163,8 @@ data:
       agency: "NASA"
       status: "Exito parcial"
     position:
-      lon: 70
-      lat: 70
+      lon: 97
+      lat: 55
     goals: "
       Búsqueda de pistas sobre la actividad del agua en el pasado.\\n
       Determinación de la distribución y composición de minerales, rocas y suelos que rodean el sitio de aterrizaje.\\n
@@ -195,7 +191,6 @@ data:
       Identificó evidencias de un ciclo activo del agua."
     picture: "/img/explorers/05.webp"
     picture_flag: "/img/flags/EEUU.svg"
-
   - # 5 - OPPORTUNITY (Rover)
     id: 5
     title: "OPPORTUNITY (Rover)"
@@ -209,8 +204,8 @@ data:
       agency: "NASA"
       status: "Exito parcial"
     position:
-      lon: 60
-      lat: 80
+      lon: 50
+      lat: 50
     goals: "
       Buscar y analizar la superficie y una gama de rocas para ver la actividad del agua en Marte."
     instruments: "
@@ -246,8 +241,8 @@ data:
       agency: "NASA"
       status: "Exito parcial"
     position:
-      lon: 67
-      lat: 54
+      lon: 15
+      lat: 10
     goals: "
       Determinar si hubo o pudo haber vida en Marte.\\n
       Caracterizar el clima de Marte.\\n
@@ -279,14 +274,14 @@ data:
     meta:
       launch: "23.07.2020 - 4:41 UTC"
       arrival: "14.05.2021"
-      place: "Utopía Planitia"
+      place: "Utopia Planitia"
       activity: "Sigue en activo"
       land: "China"
       agency: "CNSA"
       status: "Exito parcial"
     position:
-      lon: 50
-      lat: 52
+      lon: 85
+      lat: 23
     goals: "
       Validar las tecnologías de comunicación y control en el espacio profundo, la puesta en órbita alrededor del planeta y el aterrizaje en su superficie.\\n
       Estudiar la morfología y estructura geológica de Marte, así como su evolución y sus causas. \\n
