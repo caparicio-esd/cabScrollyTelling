@@ -1,8 +1,14 @@
-export interface ExploreModalClasses {
+interface ExploreModalClasses {
     explorer_modal: boolean,
     explorer_modal_left: boolean,
     explorer_modal_right: boolean,
     opened: boolean,
 }
 
-export type ExplorerModalDirection = "right" | "left";
+type ExplorerModalDirection = "right" | "left";
+
+export default ExploreModalClasses
+export {
+    ExploreModalClasses, 
+    ExplorerModalDirection
+}

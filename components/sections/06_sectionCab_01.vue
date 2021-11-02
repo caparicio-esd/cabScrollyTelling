@@ -53,7 +53,7 @@ export default Vue.extend({
   },
   mixins: [Scrollable],
   async fetch() {
-    this.content = await getContent(this, '06_sectionCab01')
+    this.content = await getContent(this, '06_SectionCab01')    
   },
   async mounted() {
     await this.$nextTick()
