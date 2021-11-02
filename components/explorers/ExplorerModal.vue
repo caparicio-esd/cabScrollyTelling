@@ -14,7 +14,7 @@
 import Vue from 'vue'
 import { mapState } from 'vuex'
 import ExplorerModalContent from './ExplorerModalContent.vue'
-import { ExploreModalClasses, ExplorerModalDirection } from './ModalTypes'
+import ExploreModalClasses, { ExplorerModalDirection } from './ModalTypes'
 
 export default Vue.extend({
   name: 'ExplorerModal',

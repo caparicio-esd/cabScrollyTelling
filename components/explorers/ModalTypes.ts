@@ -9,6 +9,5 @@ type ExplorerModalDirection = "right" | "left";
 
 export default ExploreModalClasses
 export {
-    ExploreModalClasses, 
     ExplorerModalDirection
 }

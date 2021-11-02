@@ -22,7 +22,7 @@ export default {
 
 <style lang="postcss" scoped>
 .resource{
-  @apply flex p-2 m-2 rounded-md block box-border;
+  @apply p-2 m-2 rounded-md block box-border;
   transition: all 350ms ease;
   &:hover {
     @apply ring-white ring-4 ring-opacity-40;
