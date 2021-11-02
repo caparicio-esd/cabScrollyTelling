@@ -8,6 +8,7 @@ export default Vue.extend({
         return {
             animation: {},
             subscene: [] as any[],
+            refDom: null as HTMLElement | null,
             duration: 200,
             progress: 0
         }
@@ -25,15 +26,21 @@ export default Vue.extend({
                 triggerHook: 'onLeave',
             })
             this.subscene[0].setPin(ref.constructor === Object ? ref.section : ref[0])
+            this.refDom = ref.constructor === Object ? ref.section : ref[0]
             this.$root.$emit('scene_created', this.subscene[0])
 
+            this.subscene[0].on("start", (ev: any) => {
+                this.onStartScene(ev);
+            })
+            this.subscene[0].on("end", (ev: any) => {
+                this.onEndScene(ev);
+            })
             this.subscene[0].on("enter", (ev: any) => {
                 this.onEnterScene(ev);
             })
             this.subscene[0].on("leave", (ev: any) => {
                 this.onLeaveScene(ev);
             })
-
             this.subscene[0].on("progress", (ev: any) => {
                 this.progress = ev.progress
                 this.onProgressScene(ev);
@@ -48,6 +55,15 @@ export default Vue.extend({
         onProgressScene(ev: any) {
 
         },
+        onStartScene(ev: any) {
+
+        },
+        onEndScene(ev: any) {
+
+        },
+        setUpComponent() {
+
+        }
 
         // addSubAnimations(scene: ScrollMagic.Scene) {
         //     this.subscene.push(scene)

@@ -6,61 +6,87 @@ export default Vue.extend({
     mixins: [Scrollable],
     data() {
         return {
-            refDom: null as HTMLElement | null,
+            // refDom: null as HTMLElement | null,
             animation: {} as AnimeTimelineInstance
         }
     },
     methods: {
         onEnterScene(ev: any) {
-            //const title = (this.refDom as HTMLElement).querySelector("h2")
-            //const paragraphs = (this.refDom as HTMLElement).querySelectorAll("p")
-            //const logos = (this.refDom as HTMLElement).querySelector(".logos")
+            //@ts-ignore
+            const dom = this.refDom
+            if (!dom) return false
 
-            const title = "h2";
-            const paragraphs = "p";
-            const logos = ".logos";
-            const btnext = ".btn_next";
-            const resources = ".resource";
-            const machineIcon = ".machine_icon";
-            const machine = ".machine";
+            const title = dom.querySelectorAll("h2");
+            const paragraphs = dom.querySelectorAll("p");
+            const logos = dom.querySelectorAll(".logos");
+            const btnext = dom.querySelectorAll(".btn_next");
+            const resources = dom.querySelectorAll(".resource");
+            const machineIcon = dom.querySelectorAll(".machine_icon");
+            const machine = dom.querySelectorAll(".machine");
 
-            anime.set([title, paragraphs, logos, btnext, resources], {
-                opacity: 0,
-                translateY: 50
-            })
+            if (ev.scrollDirection == "FORWARD") {                
+                anime.set([title, paragraphs, logos, btnext, resources], {
+                    opacity: 0,
+                    translateY: 50
+                })
+            } 
 
             this.animation = anime.timeline({
-                delay: 1000,
-                endDelay: 1000,
-                autoplay: false
+                delay: 500,
+                endDelay: 500,
+                autoplay: false, 
+                direction: ev.scrollDirection !== "REVERSE" ? "normal" : "reverse"
             })
-            .add({
-                targets: [title],
-                translateY: [50, 0],
-                opacity: [0, 100]
-            }, "-300")
-            .add({
-                targets: [paragraphs],
-                translateY: [50, 0],
-                opacity: [0, 100],
-            }, "-200")
-            .add({
-                targets: [logos],
-                translateY: [50, 0],
-                opacity: [0, 100]
-            }, "-100")
-            .add({
-              targets: [btnext, resources, machine, machineIcon],
-              translateY: [50, 0],
-              opacity: [0, 100]
-          }, "0")
+                .add({
+                    targets: [title],
+                    translateY: [50, 0],
+                    opacity: [0, 100]
+                }, "-300")
+                .add({
+                    targets: [paragraphs],
+                    translateY: [50, 0],
+                    opacity: [0, 100],
+                }, "-200")
+                .add({
+                    targets: [logos],
+                    translateY: [50, 0],
+                    opacity: [0, 100]
+                }, "-100")
+                .add({
+                    targets: [btnext, resources, machine, machineIcon],
+                    translateY: [50, 0],
+                    opacity: [0, 100]
+                }, "0")
+
+
+        },
+        onLeaveScene(ev: any) {
+            this.animation.pause()
+            this.animation = {} as AnimeTimelineInstance
         },
         onProgressScene(ev: any) {
             this.animation.seek(ev.progress * this.animation.duration)
         },
+        setUpComponent() {
+            //@ts-ignore
+            const dom = this.refDom            
+            if (!dom) return false
+            
+            const title = dom.querySelectorAll("h2");
+            const paragraphs = dom.querySelectorAll("p");
+            const logos = dom.querySelectorAll(".logos");
+            const btnext = dom.querySelectorAll(".btn_next");
+            const resources = dom.querySelectorAll(".resource");
+            const machineIcon = dom.querySelectorAll(".machine_icon");
+            const machine = dom.querySelectorAll(".machine");
+
+            anime.set([...title, ...paragraphs, ...logos, ...btnext, ...resources], {
+                opacity: 0,
+                translateY: 50
+            })
+        }
     },
     async mounted() {
-        //await this.$nextTick()
-
+        await this.$nextTick()
     }
 });

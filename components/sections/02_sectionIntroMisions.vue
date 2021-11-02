@@ -29,9 +29,12 @@
         <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
         <!-- extra resources -->
         <div class="resources">
-          <extra-resource v-for="(resource, i) in content.assets.resources" :key="i" :resource="resource" />
+          <extra-resource
+            v-for="(resource, i) in content.assets.resources"
+            :key="i"
+            :resource="resource"
+          />
         </div>
-
       </div>
     </div>
     <button-next-screen />
@@ -46,7 +49,6 @@ import AnimationType_01 from '../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 import ExtraResource from '~/components/ExtraResource.vue'
 
-
 export default Vue.extend({
   data() {
     return {
@@ -54,8 +56,8 @@ export default Vue.extend({
     }
   },
   components: {
-   ButtonNextScreen,
-    ExtraResource
+    ButtonNextScreen,
+    ExtraResource,
   },
   computed: {
     ...mapState({
@@ -74,13 +76,14 @@ export default Vue.extend({
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
+    //@ts-ignore
+    this.setUpComponent()
   },
 })
 </script>
 
 <style lang="postcss" scoped>
-.resources{
+.resources {
   @apply m-4;
 }
-
 </style>
