@@ -24,15 +24,26 @@
           </div>
         </div>
       </div>
-      <div class="section_col_b col-start-4 col-span-2 self-center mars_data">
-        <div>{{ remsData.weather_report.terrestrial_date[0] }}</div>
-        <div class="mars_sol">Sol {{ remsData.weather_report.sol[0] }}</div>
-        <div class="mars_month_opacity">{{ rems.season[0] }} - {{ rems.atmo_opacity[0] }}</div>
-        <!-- <div class="mars_sunrise_sunset">Amanecer: {{rems.sunrise[0]}} - Anochecer: {{rems.sunset[0]}}</div>-->
-        <!-- gts_temp: suelo, temp: aire -->
-        <div class="mars_temp">
-          <ph-thermometer />
-          {{ rems.max_temp[0]}}º | {{ rems.min_temp[0]}}º
+      <div class="section_col_b col-start-4 col-span-2 self-center">
+        <!-- weather from REMS -->
+        <div class="mars_data">
+          <div>{{ remsData.weather_report.terrestrial_date[0] }}</div>
+          <div class="mars_sol">Sol {{ remsData.weather_report.sol[0] }}</div>
+          <div class="mars_month_opacity">{{ rems.season[0] }} - {{ rems.atmo_opacity[0] }}</div>
+          <!-- <div class="mars_sunrise_sunset">Amanecer: {{rems.sunrise[0]}} - Anochecer: {{rems.sunset[0]}}</div>-->
+          <!-- gts_temp: suelo, temp: aire -->
+          <div class="mars_temp">
+            <ph-thermometer />
+            {{ rems.max_temp[0]}}º | {{ rems.min_temp[0]}}º
+          </div>
+        </div>
+        <!-- player -->
+        <div class="players">
+          <player
+            v-for="(player, i) in content.assets.players"
+            :key="i"
+            :player="player"
+          />
         </div>
 
       </div>
@@ -48,6 +59,7 @@ import '~/assets/styles/partials/section_content.css'
 import { mapState } from 'vuex'
 import AnimationType_01 from './../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
+import Player from '~/components/Player.vue'
 import { PhThermometer } from 'phosphor-vue'
 const xml2js = require('xml2js');
 
@@ -61,6 +73,7 @@ export default Vue.extend({
   },
   components: {
    ButtonNextScreen,
+   Player,
    PhThermometer
   },
   computed: {
@@ -106,6 +119,7 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .mars_data{
   font-size: 1.4em;
+  padding: 2em;
   .mars_sol{
     font-size: 2em;
   }

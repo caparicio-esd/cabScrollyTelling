@@ -17,12 +17,8 @@ assets:
     #- /img/cab_logo.png
     #- /img/inta_logo.png
     #- /img/placeholder_logo.png
-  resources:
+  players:
     - #1
-      title: El murmullo de Marte
-      author: RicardoHorcajada
-      url: /docs/El_murmullo_de_Marte_Ricardo_Horcajada.docx
-    - #2
-      title: El murmullo de Marte
-      author: RicardoHorcajada
-      url: /docs/El_murmullo_de_Marte_Ricardo_Horcajada.docx
+      title: El viento en Marte
+      author: Perseverance Rover - SuperCam Mic
+      url: /audio/Sounds-of-Mars_wind-on-mars.mp3
