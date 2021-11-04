@@ -13,7 +13,7 @@
     <div class="section_content_holder">
       <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
-        <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
+        <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
         <div class="logos flex mt-8">
           <div
             class="logo mr-1"
