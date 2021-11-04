@@ -12,8 +12,9 @@ import { mapActions, mapState } from 'vuex'
 export default Vue.extend({
   computed: {
     ...mapState({
-      scrollable: (state: any) => state.main.ui.viewPort.scrollable
-    })
+      scrollable: (state: any) => state.main.ui.viewPort.scrollable,
+      debug: (state: any) => state.explorers.debug,
+    }),
   },
   methods: {
     ...mapActions({
@@ -28,10 +29,12 @@ export default Vue.extend({
       })
     },
     setScrollLevelInComponent(ev: Event = {} as Event): void | false {
-      if (this.scrollable) { 
+      if (this.scrollable) {
         this.setScrollLevel(scrollY)
       } else {
-        document.body.style.overflow = "hidden"
+        if (!this.debug) {
+          document.body.style.overflow = 'hidden'
+        }
       }
     },
     setDocumentSizeInComponent(): void {

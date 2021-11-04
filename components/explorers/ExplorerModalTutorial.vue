@@ -1,5 +1,5 @@
 <template>
-  <div class="explorer_modal_tutorial" v-if="state.opened">
+  <div class="explorer_modal_tutorial" v-if="state.opened && !debug">
     <div class="overlay"></div>
     <div class="steps">
       <explorer-modal-tutorial-step
@@ -16,7 +16,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { mapActions } from 'vuex'
+import { mapActions, mapState } from 'vuex'
 import ExplorerModalTutorialStep from './ExplorerModalTutorialStep.vue'
 import steps from './ExploreModalTutorial.model'
 
@@ -31,6 +31,11 @@ export default Vue.extend({
       },
       steps: steps 
     }
+  },
+  computed: {
+    ...mapState({
+      debug: (state: any) => state.explorers.debug
+    })
   },
   methods: {
     ...mapActions({

@@ -1,4 +1,5 @@
 export const state = () => ({
+  debug: true, 
   content: {},
   explorer: {
     focusedId: -1,
