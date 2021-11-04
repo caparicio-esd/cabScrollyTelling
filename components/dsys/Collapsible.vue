@@ -74,7 +74,7 @@ export default Vue.extend({
     }
   }
   .collapsible_content {
-    @apply overflow-hidden opacity-100 transition-all;
+    @apply opacity-100 transition-all px-6;
     ul {
       list-style: initial;
       margin: initial;
