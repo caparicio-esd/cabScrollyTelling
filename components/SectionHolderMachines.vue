@@ -1,21 +1,35 @@
 <template>
-  <section class="section" ref="section">
-    <machines />
+  <section class="section">
+    <!-- <machines /> -->
+    <div>
+      <machine
+        v-for="(content, i) in content.data"
+        :key="i"
+        :content="content"
+      />
+    </div>
   </section>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Machines from '~/components/machines/Machines.vue'
-import AnimationType_01 from './mixins/AnimationType_01'
+// import Machines from '~/components/machines/Machines.vue'
+import Machine from '~/components/machines/Machine.vue'
+import { getContent } from '~/lib/sectionUtils'
 
 export default Vue.extend({
   name: 'SectionHolderMachines',
   components: {
-    Machines,
-
+    Machine,
   },
-  mixins: [AnimationType_01],
+  data(): any {
+    return {
+      content: {},
+    }
+  },
+  async fetch(): Promise<void> {
+    this.content = await getContent(this, '04_sectionMachines')
+  },
 })
 </script>
 

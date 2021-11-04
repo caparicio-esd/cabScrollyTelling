@@ -1,6 +1,8 @@
 <template>
-  <div class="machine_modal" ref="section">
-    <CThemeProvider>
+  <div class="machine_modal">
+    <span>hola...</span>
+    
+    <!-- <CThemeProvider>
       <c-box w="100%">
         <c-tabs>
           <c-tab-list>
@@ -45,7 +47,7 @@
           </c-tab-panels>
         </c-tabs>
       </c-box>
-    </CThemeProvider>
+    </CThemeProvider> -->
 
     <div class="btn_close">x</div>
   </div>
@@ -84,7 +86,7 @@ export default Vue.extend({
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
-    this.setSceneScrollable(this.$refs)
+    // this.setSceneScrollable(this.$refs)
   },
 })
 </script>
