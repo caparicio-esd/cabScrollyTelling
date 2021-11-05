@@ -1,0 +1,30 @@
+# Importante mirar la guía de figma para rellenar datos
+# https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
+
+title: Sección
+menuTitle: Inicio
+
+data:
+  title: La investigación en el CAB
+  mainText:
+    - Para abordar estas cuestiones fundamentales, la investigación en el CAB se centra en las siguientes líneas de investigación
+    - <strong>Formación y evolución de galaxias, el medio interestelar, estrellas y planetas</strong>. Astrofísica extragaláctica y estelar, planetología comparativa y astrofísica molecular.
+    - <strong>Evolución y adaptación molecular</strong>. Química prebiótica; adaptación molecular de sistemas replicativos; adaptación molecular metabólica y dependiente del medio ambiente; biomarcadores moleculares.
+  secondaryText:
+    - <strong>Evolución y caracterización de los posibles entornos habitables en el Sistema Solar</strong>. Geomicrobiología de los ambientes extremos, geología y atmósferas planetarias, y firmas ambientales y biológicas.
+    - <strong>Desarrollo de instrumentación avanzada</strong>. Instrumentación astronómica e instrumentación para la exploración planetaria in situ; cámaras de simulación terrestre.
+    - Los científicos del CAB contribuirán a la ciencia y operación de RLS (Raman Laser Spectrometer) que volará en la misión ExoMars de la ESA a bordo del rover Rosalind Franklin a Marte después de su lanzamiento en 2022.
+    - Particularmente relevante será la misión PLATO (ESA), que buscará y caracterizará planetas similares a la Tierra y sus atmósferas.
+
+assets:
+  backgroundIllustration: /img/001.webp
+  pictures:
+    - /img/CAB/intro_01.webp
+    - /img/CAB/intro_02.webp
+    - /img/CAB/intro_03.webp
+    - /img/CAB/intro_04.webp
+    - /img/CAB/intro_05.webp
+  logos:
+    - /img/cab_logo.png
+    - /img/inta_logo.png
+    #- /img/placeholder_logo.png
