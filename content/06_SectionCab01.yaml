@@ -5,19 +5,23 @@ title: Sección
 menuTitle: Inicio
 
 data:
-  title: Un Centro de Astrobiología en España
+  title: El CAB
   mainText:
     - El Centro de Astrobiología nace en 1998-1999 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).
     - Las instalaciones principales del CAB se sitúan en Torrejón de Ardoz (campus del INTA) y en Villanueva de la Cañada (sede del Centro Europeo de Astronomía Espacial, ESAC) ambas localidades cercanas a Madrid.
-  secondaryTitle: Equipo multidisciplinar de científicos e ingenieros
-  secondaryText:
     - Su equipo multidisciplinar de científicos e ingenieros lo convierten en un centro de investigación transdisciplinar ideal para abordar la astrobiología.
     - El  CAB ha sido reconocido con el premio de Excelencia Científica «María de Maeztu» por el Ministerio de Ciencia español.
-
-
+  secondaryText:
+    - Actualmente el CAB cuenta con más de 150 trabajadores organizados funcionalmente en cuatro departamentos, Astrofísica, Evolución Molecular, Planetología y Habitabilidad e Instrumentación Avanzada. Varios laboratorios están equipados con instalaciones e instrumentación para múltiples técnicas, tales como bioquímica, ecología molecular, secuenciación de ADN, microbiología, geología, geomineralogía, geoquímica, química orgánica, análisis de isótopos estables, capacidades de nano dispensación y microarrays, instalaciones para la simulación de impactos de meteoritos, cámaras de simulación de alto vacío, cámaras de alta presión, una cámara medioambiental y un simulador de viento marciano, y un criostato para el desarrollo de detectores IR para aplicaciones astronómicas.
 
 assets:
   backgroundIllustration: /img/001.webp
+  pictures:
+    - /img/CAB/intro_01.webp
+    - /img/CAB/intro_02.webp
+    - /img/CAB/intro_03.webp
+    - /img/CAB/intro_04.webp
+    - /img/CAB/intro_05.webp
   logos:
     - /img/cab_logo.png
     - /img/inta_logo.png
