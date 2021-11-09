@@ -14,20 +14,19 @@
     <div class="section_content_holder">
       <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
-        <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
-        <div class="logos flex mt-8">
-          <div
-            class="logo mr-1"
-            v-for="(logo, i) in content.assets.logos"
+        <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
+      </div>
+      <div class="section_col_b col-start-4 col-span-2 self-center">
+        <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
+        <!-- extra resources -->
+        <div class="resources">
+          <extra-resource
+            v-for="(resource, i) in content.assets.resources"
             :key="i"
-          >
-            <img :src="logo" alt="logo" width="30" />
-          </div>
+            :resource="resource"
+          />
         </div>
       </div>
-      <!-- <div class="section_col_b col-start-4 col-span-2 self-end">
-        <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
-      </div> -->
     </div>
   </div>
 </template>
