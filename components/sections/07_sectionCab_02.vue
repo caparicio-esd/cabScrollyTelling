@@ -7,23 +7,26 @@
     <div class="section_content_holder">
       <div class="grid_holder">
         <div class="col_01">
-          <div class="pic">pic</div>
+          <div class="pic"><img :src="content.assets.pictures[3]" alt="dibujo de las instalaciones del CAB"></div>
           <h2>
             {{ content.data.title}}
           </h2>
           <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
         </div>
         <div class="col_02">
-          <div class="pic">pic</div>
-          <div class="pic">pic</div>
-          <div class="pic">pic</div>
+          <div class="pic pic_large">
+            <img :src="content.assets.pictures[0]" alt="dibujo de las instalaciones del CAB">
+          </div>
         </div>
+
         <div class="col_03">
           <h2>
             {{ content.data.secondaryTitle}}
           </h2>
           <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
-          <div class="pic">pic</div>
+          <div class="pic">
+            <img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB">
+          </div>
         </div>
       </div>
     </div>
@@ -85,8 +88,16 @@ export default Vue.extend({
   }
 
   .pic {
-    @apply bg-gray-400 h-36 my-4;
+    @apply bg-gray-400 h-64 my-4;
+    overflow: hidden;
     img {
+    }
+  }
+  .pic_large{
+    height: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
     }
   }
 }

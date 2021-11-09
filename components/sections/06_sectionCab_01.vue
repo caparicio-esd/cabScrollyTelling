@@ -7,7 +7,7 @@
     <div class="section_content_holder bg-transparent">
       <div class="grid_holder">
         <div class="col_01">
-          <div class="pic"><img :src="content.assets.pictures[1]" alt="dibujo de las instalaciones del CAB"></div>
+          <div class="pic pic_horizontal"><img :src="content.assets.pictures[1]" alt="dibujo de las instalaciones del CAB"></div>
           <h2>
             {{ content.data.title}}
           </h2>
@@ -23,7 +23,7 @@
             {{ content.data.secondaryTitle}}
           </h2>
           <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
-          <div class="pic"><img :src="content.assets.pictures[4]" alt="dibujo de las instalaciones del CAB"></div>
+          <div class="pic pic_horizontal"><img :src="content.assets.pictures[4]" alt="dibujo de las instalaciones del CAB"></div>
         </div>
       </div>
     </div>
@@ -85,11 +85,16 @@ export default Vue.extend({
   }
 
   .pic {
-    @apply bg-gray-400 h-36 my-4;
+    @apply bg-gray-400 h-44 my-4;
     overflow: hidden;
     img {
       object-fit: cover;
-
+      height: 100%;
+    }
+  }
+  .pic_horizontal{
+    img {
+      width: 100%;
     }
   }
 }
