@@ -26,6 +26,14 @@
       </div>
       <div class="section_col_b col-start-4 col-span-2 self-center">
         <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
+        <!-- extra resources -->
+        <div class="resources">
+          <extra-resource
+            v-for="(resource, i) in content.assets.resources"
+            :key="i"
+            :resource="resource"
+          />
+        </div>
       </div>
     </div>
     <button-next-screen />
