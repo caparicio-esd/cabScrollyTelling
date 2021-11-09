@@ -5,38 +5,40 @@
       :style="{ width: `${width}px`, height: `${height}px` }"
     ></div>
     <div class="section_content_holder">
-      <div class="grid_holder">
-        <div class="col_01">
-          <div class="pic"><img :src="content.assets.pictures[3]" alt="dibujo de las instalaciones del CAB"></div>
+
+        <div class="section_col_a col-span-2 self-center">
+
           <h2>
             {{ content.data.title}}
           </h2>
           <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
+          <div class="pic"><img :src="content.assets.pictures[3]" alt="dibujo de las instalaciones del CAB"></div>
         </div>
-        <div class="col_02">
+        <!-- <div class="col_02">
           <div class="pic pic_large">
             <img :src="content.assets.pictures[0]" alt="dibujo de las instalaciones del CAB">
           </div>
-        </div>
+        </div> -->
 
-        <div class="col_03">
-          <h2>
-            {{ content.data.secondaryTitle}}
-          </h2>
+        <div class="section_col_b col-start-4 col-span-2 self-center">
+          <div class="pic">
+            <img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB">
+          </div>
           <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
           <!-- extra resources -->
           <div class="resources">
             <extra-resource
+              class="dark"
               v-for="(resource, i) in content.assets.resources"
               :key="i"
               :resource="resource"
             />
           </div>
-          <div class="pic">
-            <img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB">
-          </div>
+
+
+
         </div>
-      </div>
+
     </div>
   </div>
 </template>
@@ -81,22 +83,16 @@ export default Vue.extend({
 .grid_holder {
   @apply w-full grid;
   grid-gap: 2.5rem;
-  grid-template-columns: 4fr 2fr 4fr;
+  grid-template-columns: 4fr 4fr;
   grid-area: 1 / 1 / -1 / -1;
 
   > div {
     align-self: stretch;
   }
-
-  .col_01 {
-  }
-  .col_02 {
-  }
-  .col_03 {
-  }
-
-  .pic {
-    @apply bg-gray-400 h-64 my-4;
+}
+.pic {
+    @apply bg-gray-400 my-6;
+    height: 20rem;
     overflow: hidden;
     img {
     }
@@ -108,5 +104,4 @@ export default Vue.extend({
       height: 100%;
     }
   }
-}
 </style>

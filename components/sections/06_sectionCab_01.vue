@@ -74,7 +74,7 @@ export default Vue.extend({
   grid-area: 1 / 1 / -1 / -1;
 
   > div {
-    align-self: stretch;
+    align-self: center;
   }
 
   .col_01 {
@@ -85,7 +85,7 @@ export default Vue.extend({
   }
 
   .pic {
-    @apply bg-gray-400 h-44 my-4;
+    @apply bg-gray-400 h-44 my-6;
     overflow: hidden;
     img {
       object-fit: cover;

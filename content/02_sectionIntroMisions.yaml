@@ -20,11 +20,17 @@ assets:
       title: Marte como imaginario
       author: Grupo de investigación e/s/d
       url: /docs/02/Marte_como_imaginario.pdf
+      icon: file-pdf
+      target: false
     - #2
       title: Cronologia de las observaciones de Marte hasta 1960
       author: Grupo de investigación e/s/d
       url: /docs/02/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
+      icon: file-pdf
+      target: false
     - #3
       title: El murmullo de Marte
       author: Ricardo Horcajada
       url: /docs/02/El_murmullo_de_marte_Ricardo_Horcajada.pdf
+      icon: file-pdf
+      target: false

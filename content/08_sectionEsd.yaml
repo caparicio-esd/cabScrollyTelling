@@ -20,3 +20,5 @@ assets:
       title: Visita la web e/s/d Madrid
       author: Para conocer mejor la escuela
       url: https://esdmadrid.es/
+      icon: link
+      target: true

@@ -31,3 +31,5 @@ assets:
       title: Visita la web CAB
       author: Para conocer mejor sus proyectos
       url: https://cab.inta-csic.es/investigacion/proyectos/
+      icon: link
+      target: true
