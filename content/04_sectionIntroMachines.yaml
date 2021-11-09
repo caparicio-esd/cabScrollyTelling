@@ -5,13 +5,11 @@ title: Sección
 menuTitle: Las máquinas son los nuevos exploradores
 
 data:
-  title: Las máquinas son los nuevos exploradores.
+  title: Las máquinas son los nuevos exploradores. Misiones con participación española en Marte.
   mainText:
-    - España es el primer país en tener tres estaciones meteorológicas operando en Marte a la vez, TWINS (en módulo de aterrizaje Insight) REMS (en el rover Curiosity) y MEDA (en el rover Mars2020 Perseverance). Así, el Centro de Astrobiología español es mundialmente conocido por haber diseñado y fabricado tales instrumentos para la exploración de Marte.
-    - Cronología de las misiones con equipos del CAB.
-    - Curiosity (2011-12)
-    - Insight (2018)
-    - Mars 2020 Perseverance (2020-21)
+    - El <strong>Centro de Astrobiología (CAB)</strong>, fue creado en 1998 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).  En 2.000 se integró en el <strong>NASA Astrobiology Institute (NAI)</strong> convirtiéndose en el primer Miembro Asociado fuera de los Estados Unidos.
+    - <strong>Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo</strong>.
+    - <ul><li><strong>REMS</strong> (desde 2012, en el rover Curiosity, en el Cráter Gale)</li><li><strong>TWINS</strong> (desde 2018, en el Insight, en la región de Elyseum Planitia)</li><li><strong>MEDA</strong> (desde febrero de 2021 en el rover Perseverance, en al Cráter Jezero)</li></ul>
   # secondaryText:
     # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
   explorers:

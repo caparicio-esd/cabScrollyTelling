@@ -24,6 +24,14 @@
             {{ content.data.secondaryTitle}}
           </h2>
           <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
+          <!-- extra resources -->
+          <div class="resources">
+            <extra-resource
+              v-for="(resource, i) in content.assets.resources"
+              :key="i"
+              :resource="resource"
+            />
+          </div>
           <div class="pic">
             <img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB">
           </div>

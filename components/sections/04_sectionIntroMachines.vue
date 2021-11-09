@@ -14,16 +14,7 @@
     <div class="section_content_holder">
       <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
-        <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
-        <div class="logos flex mt-8">
-          <div
-            class="logo mr-1"
-            v-for="(logo, i) in content.assets.logos"
-            :key="i"
-          >
-            <img :src="logo" alt="logo" width="30" />
-          </div>
-        </div>
+        <p class="with-ul" v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
       </div>
     </div>
     <button-next-screen />
@@ -35,8 +26,8 @@
         :style="getExplorerStyle(explorer, i)"
         class="machine"
       >
+        <ph-rocket />
         {{ explorer.name }}
-        <!-- <ph-arrow-left /> -->
       </div>
     </div>
   </div>
@@ -48,6 +39,7 @@ import '~/assets/styles/partials/section_content.css'
 import { mapState } from 'vuex'
 import AnimationType_01 from '../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
+import { PhRocket } from 'phosphor-vue'
 
 export default Vue.extend({
   data() {
@@ -61,8 +53,9 @@ export default Vue.extend({
       height: (state: any) => state.main.ui.viewPort.height,
     }),
   },
-   components: {
-   ButtonNextScreen
+  components: {
+    ButtonNextScreen,
+    PhRocket
   },
   methods: {
     n2br,
@@ -87,19 +80,25 @@ export default Vue.extend({
 
 
 <style lang="postcss" scoped>
+.section_content_holder p.with-ul ul{
+  list-style: circle;
+}
 .machines {
   @apply col-span-full row-span-full relative;
   pointer-events: none;
   cursor: pointer;
   .machine {
-    @apply absolute rounded-full bg-white text-black p-2;
+    @apply flex absolute rounded-full bg-white text-black p-2 ;
     @apply ring-white ring-0 ring-opacity-50;
+    align-items: center;
     transform: translate(-50%, -50%);
     pointer-events: initial;
     transition: all 350ms ease;
     background-clip: padding-box;
     border: 3px solid white;
-
+    svg{
+      @apply mr-1;
+    }
     &.explorer_active {
       @apply ring-white ring-8 ring-opacity-40;
       border: 3px solid transparent;
@@ -116,5 +115,7 @@ export default Vue.extend({
       transition: all 350ms ease;
     }
   }
+
 }
+
 </style>

@@ -11,7 +11,7 @@
           <h2>
             {{ content.data.title}}
           </h2>
-          <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
+          <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
         </div>
         <div class="col_02">
           <div class="pic"><img :src="content.assets.pictures[0]" alt="dibujo de las instalaciones del CAB"></div>
@@ -22,7 +22,7 @@
           <h2>
             {{ content.data.secondaryTitle}}
           </h2>
-          <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
+          <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
           <div class="pic pic_horizontal"><img :src="content.assets.pictures[4]" alt="dibujo de las instalaciones del CAB"></div>
         </div>
       </div>
