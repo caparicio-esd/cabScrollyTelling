@@ -1,4 +1,5 @@
 @import './lib/fontface.css';
+@import './partials/resources.css';
 
 * {
   /* @apply border border-blue-400; */
@@ -40,3 +41,4 @@ p {
   @apply absolute bottom-12 w-36 text-center flex bg-white text-black;
   left: calc(50% - 36px);
 }
+

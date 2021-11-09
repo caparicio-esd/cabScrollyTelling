@@ -83,8 +83,4 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="postcss" scoped>
-.resources {
-  @apply m-4;
-}
-</style>
+
