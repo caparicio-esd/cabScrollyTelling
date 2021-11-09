@@ -40,5 +40,14 @@ p {
 .btn_next{
   @apply absolute bottom-12 w-36 text-center flex bg-white text-black;
   left: calc(50% - 36px);
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  height: 2.5rem;
+  &:hover{
+    @apply ring-white ring-4 ring-opacity-40;
+    border: 3px solid transparent;
+    transition: all 350ms ease;
+  }
 }
 
