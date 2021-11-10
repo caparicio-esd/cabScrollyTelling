@@ -30,7 +30,6 @@
 <script lang="ts">
 import Vue from 'vue'
 import AnimationType_01 from '../mixins/AnimationType_01'
-import DataSavable from '../mixins/DataSavable'
 
 //@ts-ignore
 import { PhTriangle, PhRocket } from 'phosphor-vue'
