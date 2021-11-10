@@ -36,9 +36,13 @@ export default Vue.extend({
                 this.onEndScene(ev);
             })
             this.subscene[0].on("enter", (ev: any) => {
+                console.log(ev);
+                
                 this.onEnterScene(ev);
             })
             this.subscene[0].on("leave", (ev: any) => {
+                console.log(ev);
+
                 this.onLeaveScene(ev);
             })
             this.subscene[0].on("progress", (ev: any) => {

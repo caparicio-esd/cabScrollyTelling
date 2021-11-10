@@ -29,28 +29,30 @@ export default Vue.extend({
         current: 0,
         opened: true,
       },
-      steps: steps 
+      steps: steps,
     }
   },
   computed: {
     ...mapState({
-      debug: (state: any) => state.explorers.debug
-    })
+      debug: (state: any) => state.explorers.debug,
+    }),
   },
   methods: {
     ...mapActions({
-      setTutorial: 'main/setTutorial', 
-      setScrollable: 'main/setScrollable'
+      setTutorial: 'main/setTutorial',
+      setScrollable: 'main/setScrollable',
     }),
     setCurrentStep(direction: string): void {
-      if (direction == 'next' && this.state.current < this.steps.length - 1) {
-        this.state.current++
-      } else {
-        this.state.current = -1
-        this.state.opened = false
-        this.setTutorial(false)
-        this.setScrollable(true)
-        document.body.style.overflow = ""
+      if (!this.debug) {
+        if (direction == 'next' && this.state.current < this.steps.length - 1) {
+          this.state.current++
+        } else {
+          this.state.current = -1
+          this.state.opened = false
+          this.setTutorial(false)
+          this.setScrollable(true)
+          document.body.style.overflow = ''
+        }
       }
     },
     setStepDomElements() {

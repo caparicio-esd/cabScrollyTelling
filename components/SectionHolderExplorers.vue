@@ -45,7 +45,7 @@ export default Vue.extend({
   },
   computed: {
     ...mapState({
-      tutorial: (state: any) => state.main.scenes.tutorial,
+      debug: (state: any) => state.explorers.debug,
     }),
     dataLength(): number {
       return (this.content as any).data.length
@@ -58,7 +58,7 @@ export default Vue.extend({
       setExplorerOpened: 'explorers/setExplorerOpened',
     }),
     onEnterScene(ev: any) {
-      if (this.tutorial) {
+      if (!this.debug) {
         this.setScrollable(false)
       }
     },
