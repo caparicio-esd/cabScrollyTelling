@@ -39,13 +39,13 @@ export default {
     // Options
   },
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: false
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    '@chakra-ui/nuxt',
+    // '@chakra-ui/nuxt',
     '@nuxtjs/emotion'
   ],
 
