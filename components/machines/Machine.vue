@@ -70,8 +70,6 @@ export default Vue.extend({
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
-    //@ts-ignore
-    this.setUpComponent()
     //@ts-ignore    
     this.addData({index: this.index, data: this.content})
   },
