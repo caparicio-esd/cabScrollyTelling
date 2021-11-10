@@ -19,11 +19,12 @@ export default Vue.extend({
   },
   methods: {
     ...mapActions({
-      addScene: "main/addScene"
+      addScene: 'main/addScene',
     }),
     createController() {
       const ScrollMagic = require('scrollmagic')
-      const ScrollMagicPluginIndicator = require('scrollmagic-plugins').ScrollMagicPluginIndicator
+      const ScrollMagicPluginIndicator =
+        require('scrollmagic-plugins').ScrollMagicPluginIndicator
       ScrollMagicPluginIndicator(ScrollMagic)
 
       this.controller = new ScrollMagic.Controller({ addIndicators: true })
@@ -31,11 +32,10 @@ export default Vue.extend({
 
       this.$root.$on('scene_created', (scene: any) => {
         this.controller.addScene(scene)
-        this.addScene()
+        this.addScene(scene)
       })
     },
   },
 })
 /**  TODO: Add function to go next slide "goNextSlide" method */
 </script>
-
