@@ -9,6 +9,9 @@
   -ms-backface-visibility: hidden;
   -o-backface-visibility: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .root {
   @apply font-serif;
