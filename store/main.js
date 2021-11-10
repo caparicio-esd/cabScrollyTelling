@@ -4,7 +4,7 @@ export const state = () => ({
       width: 0,
       height: 0,
       scroll: 0,
-      scrollable: true
+      scrollable: true,
     },
     document: {
       width: 0,
@@ -30,10 +30,15 @@ export const getters = {
     return state.ui.viewPort.scroll
   },
   getSceneDuration(state) {
-    return id => {
+    return (id) => {
       return state.scenes.scenes[id].duration()
     }
-  }, 
+  },
+  getSceneScrollOffset(state) {
+    return (id) => {
+      return state.scenes.scenes[id].scrollOffset()
+    }
+  },
   getTotalScenesDuration(state) {
     return state.scenes.scenes.reduce((total, scene, i) => {
       return total + scene.duration()
@@ -41,11 +46,27 @@ export const getters = {
   },
   getTotalScenesDuration02(state) {
     const scenes = state.scenes.scenes
-    const lastScene = scenes[scenes.length-1]
+    const lastScene = scenes[scenes.length - 1]
     if (lastScene) {
       return lastScene.scrollOffset() + lastScene.duration() + 8 // 8 for the last padding
     }
-  }
+  },
+  inWhichSceneIAm(state) {
+    const scroll = getters.getScroll(state)
+    const index = state.scenes.scenes.findIndex((scene, id) => {
+      const slimits = getters.scrollOffsetLimitsByScene(state)(id)
+      return scroll > slimits[0] && scroll <= slimits[1]
+    })
+    return Math.max(0, index)
+  },
+  scrollOffsetLimitsByScene(state) {
+    return (id) => {
+      const gss = getters.getSceneScrollOffset(state)(id)
+      const dur = getters.getSceneDuration(state)(id)
+      const height = getters.getViewportSizes(state).height
+      return [gss, gss + dur + height + 8]
+    }
+  },
 }
 
 export const mutations = {
@@ -69,14 +90,14 @@ export const mutations = {
       height,
     }
   },
-  ADD_SCENE(state, scene) {
+  ADD_SCENE(state, { scene }) {
     const amount = state.scenes.amount + 1
     const scenes = [...state.scenes.scenes]
     scenes.push(scene)
     state.scenes = {
       ...state.scenes,
       amount,
-      scenes
+      scenes,
     }
   },
   SET_TUTORIAL(state, { isSet }) {
@@ -90,7 +111,7 @@ export const mutations = {
       ...state.ui.viewPort,
       scrollable,
     }
-  }
+  },
 }
 
 export const actions = {
@@ -106,8 +127,8 @@ export const actions = {
   setScrollable({ commit }, scrollable) {
     commit('SET_SCROLLABLE', { scrollable })
   },
-  addScene({ commit }, scene) {
-    commit('ADD_SCENE', scene)
+  addScene({ commit }, { scene }) {
+    commit('ADD_SCENE', { scene })
   },
   setTutorial({ commit }, isSet) {
     commit('SET_TUTORIAL', { isSet })

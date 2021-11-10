@@ -9,7 +9,7 @@
         <div class="col_01">
           <div class="pic">pic</div>
           <h2>
-            {{ content.data.title}}
+            {{ content.data.title }}
           </h2>
           <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
         </div>
@@ -20,7 +20,7 @@
         </div>
         <div class="col_03">
           <h2>
-            {{ content.data.secondaryTitle}}
+            {{ content.data.secondaryTitle }}
           </h2>
           <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
           <div class="pic">pic</div>
@@ -33,10 +33,12 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import Scrollable from '../mixins/Scrollable'
 
 export default Vue.extend({
+  props: ['index'],
+
   data() {
     return {
       content: {},
@@ -49,11 +51,15 @@ export default Vue.extend({
     }),
   },
   methods: {
+    ...mapActions({
+      addData: 'data/addData',
+    }),
     n2br,
   },
   mixins: [Scrollable],
   async fetch() {
-    this.content = await getContent(this, '06_SectionCab01')    
+    this.content = await getContent(this, '06_SectionCab01')
+    this.addData({ index: this.index, data: this.content })
   },
   async mounted() {
     await this.$nextTick()
