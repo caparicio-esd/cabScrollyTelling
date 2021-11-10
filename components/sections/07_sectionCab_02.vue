@@ -70,7 +70,7 @@ export default Vue.extend({
   },
   mixins: [Scrollable],
   async fetch() {
-    this.content = await getContent(this, '04_sectionIntroMachines')
+    this.content = await getContent(this, '07_SectionCab02')
     this.addData({ index: this.index, data: this.content })
   },
   async mounted() {

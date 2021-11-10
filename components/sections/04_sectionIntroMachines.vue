@@ -14,7 +14,7 @@
     <div class="section_content_holder">
       <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
-        <p class="with-ul" v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
+        <div class="with-ul" v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></div>
       </div>
     </div>
     <button-next-screen />
