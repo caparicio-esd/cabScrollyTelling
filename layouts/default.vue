@@ -7,13 +7,16 @@
 <script lang="ts">
 import Vue from 'vue'
 import 'assets/styles/main.css'
-import { mapActions, mapState } from 'vuex'
+import { mapActions, mapState, mapGetters } from 'vuex'
 
 export default Vue.extend({
   computed: {
     ...mapState({
       scrollable: (state: any) => state.main.ui.viewPort.scrollable,
       debug: (state: any) => state.explorers.debug,
+    }),
+    ...mapGetters({
+      inWhichSceneIAm: 'main/inWhichSceneIAm',
     }),
   },
   methods: {
@@ -29,8 +32,10 @@ export default Vue.extend({
       })
     },
     setScrollLevelInComponent(ev: Event = {} as Event): void | false {
-      if (this.scrollable) {        
+      if (this.scrollable) {
         this.setScrollLevel(scrollY)
+        console.log('scroll: ' + scrollY)
+        console.log('scene:  ' + this.inWhichSceneIAm)
       } else {
         if (!this.debug) {
           document.body.style.overflow = 'hidden'
@@ -54,6 +59,13 @@ export default Vue.extend({
       this.setDocumentSizeInComponent()
     })
     window.addEventListener('scroll', this.setScrollLevelInComponent)
+
+    if (process.browser) {
+      //@ts-ignore
+      window.onNuxtReady((app) => {
+        console.log('Nuxt ready!')
+      })
+    }
   },
 })
 </script>

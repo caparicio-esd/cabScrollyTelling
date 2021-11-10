@@ -7,67 +7,67 @@
         <!-- 01 section welcome -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-welcome-01 />
+          <section-welcome-01 :index="0" />
         </section-holder-default>
 
         <!-- ============================== -->
         <!-- 02 section intro misions -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-misions-02 />
+          <section-misions-02 :index="1" />
         </section-holder-default>
 
         <!-- ============================== -->
         <!-- 03 section Histórico de misiones -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-intro-explorers-03 />
+          <section-intro-explorers-03 :index="2" />
         </section-holder-default>
         <!-- ============================== -->
         <!-- 03 section navegador histórico de misiones -->
         <!-- ============================== -->
-        <section-holder-explorers />
+        <section-holder-explorers :index="3" />
 
         <!-- ============================== -->
         <!-- 04 section Las máquinas son los nuevos exploradores -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-intro-machines-04 />
+          <section-intro-machines-04 :index="4" />
         </section-holder-default>
         <!-- ============================== -->
         <!-- section máquinas CAB -->
         <!-- ============================== -->
         <!--  -->
-        <section-holder-machines />
+        <section-holder-machines  />
 
         <!-- ============================== -->
         <!-- 04 section despedida máquinas, hola viaje a la tierra -->
         <!-- ============================== -->
 
         <section-holder-default>
-          <section-farewell-machines-04 />
+          <section-farewell-machines-04 :index="8" />
         </section-holder-default>
 
         <!-- ============================== -->
         <!-- 05 sección volviendo a la tierra -->
         <!-- ============================== -->
-        <section-holder-trip />
+        <section-holder-trip :index="9" />
 
         <!-- ============================== -->
         <!-- 06, 07 sección en el CAB -->
         <!-- ============================== -->
         <section-holder-cab>
-          <section-cab-01 />
-          <section-cab-02 />
+          <section-cab-01 :index="10" />
+          <section-cab-02 :index="11" />
         </section-holder-cab>
         <!-- ============================== -->
         <!-- 08, 09 sección créditos y links -->
         <!-- ============================== -->
         <section-holder-default>
-          <section-credits />
+          <section-credits :index="12" />
         </section-holder-default>
         <section-holder-default>
-          <section-foot />
+          <section-foot :index="13" />
         </section-holder-default>
       </main>
     </main-scroll-controller>

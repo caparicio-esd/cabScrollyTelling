@@ -32,7 +32,7 @@ export default Vue.extend({
 
       this.$root.$on('scene_created', (scene: any) => {
         this.controller.addScene(scene)
-        this.addScene(scene)
+        this.addScene({ scene })
       })
     },
   },
