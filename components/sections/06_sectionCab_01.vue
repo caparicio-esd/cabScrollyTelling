@@ -7,23 +7,23 @@
     <div class="section_content_holder bg-transparent">
       <div class="grid_holder">
         <div class="col_01">
-          <div class="pic">pic</div>
+          <div class="pic pic_horizontal"><img :src="content.assets.pictures[1]" alt="dibujo de las instalaciones del CAB"></div>
           <h2>
             {{ content.data.title}}
           </h2>
-          <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
+          <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
         </div>
         <div class="col_02">
-          <div class="pic">pic</div>
-          <div class="pic">pic</div>
-          <div class="pic">pic</div>
+          <div class="pic"><img :src="content.assets.pictures[0]" alt="dibujo de las instalaciones del CAB"></div>
+          <div class="pic"><img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB"></div>
+          <div class="pic"><img :src="content.assets.pictures[3]" alt="dibujo de las instalaciones del CAB"></div>
         </div>
         <div class="col_03">
           <h2>
             {{ content.data.secondaryTitle}}
           </h2>
-          <p v-for="(p, i) in content.data.secondaryText" :key="i">{{ p }}</p>
-          <div class="pic">pic</div>
+          <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
+          <div class="pic pic_horizontal"><img :src="content.assets.pictures[4]" alt="dibujo de las instalaciones del CAB"></div>
         </div>
       </div>
     </div>
@@ -53,7 +53,7 @@ export default Vue.extend({
   },
   mixins: [Scrollable],
   async fetch() {
-    this.content = await getContent(this, '06_SectionCab01')    
+    this.content = await getContent(this, '06_SectionCab01')
   },
   async mounted() {
     await this.$nextTick()
@@ -74,7 +74,7 @@ export default Vue.extend({
   grid-area: 1 / 1 / -1 / -1;
 
   > div {
-    align-self: stretch;
+    align-self: center;
   }
 
   .col_01 {
@@ -85,8 +85,16 @@ export default Vue.extend({
   }
 
   .pic {
-    @apply bg-gray-400 h-36 my-4;
+    @apply bg-gray-400 h-44 my-6;
+    overflow: hidden;
     img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
+  .pic_horizontal{
+    img {
+      width: 100%;
     }
   }
 }

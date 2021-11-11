@@ -5,54 +5,40 @@
       :style="{ width: `${width}px`, height: `${height}px` }"
     ></div>
     <div class="section_content_holder">
-      <div class="grid_holder">
-        <div class="col_01">
-          <div class="pic">pic</div>
+
+        <div class="section_col_a col-span-2 self-center">
+
           <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-            aperiam neque, fuga assumenda ullam blanditiis eaque?
+            {{ content.data.title}}
           </h2>
-          <p>
-            Aliquam consectetur aliquam leo. Nulla tempus euismod orci et
-            ornare. Proin id hendrerit nibh, in vulputate eros. Ut ut dignissim
-            leo. Donec hendrerit, tellus eget pretium feugiat, nulla nunc
-            pretium nisl, et fermentum elit sem vel tortor. Maecenas posuere,
-            purus et sagittis ultricies, odio odio aliquet erat, eget sodales
-            velit augue quis augue.
-          </p>
-          <p>
-            Nam vestibulum orci vitae enim ultrices tempor. Suspendisse
-            porttitor, ipsum vel posuere egestas, elit arcu placerat ligula, et
-            laoreet massa lorem nec nunc. Cras consequat euismod est, sed
-            feugiat ante tempor eu. Curabitur egestas vehicula porta.
-          </p>
+          <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
+          <div class="pic"><img :src="content.assets.pictures[3]" alt="dibujo de las instalaciones del CAB"></div>
         </div>
-        <div class="col_02">
-          <div class="pic">pic</div>
-          <div class="pic">pic</div>
-          <div class="pic">pic</div>
+        <!-- <div class="col_02">
+          <div class="pic pic_large">
+            <img :src="content.assets.pictures[0]" alt="dibujo de las instalaciones del CAB">
+          </div>
+        </div> -->
+
+        <div class="section_col_b col-start-4 col-span-2 self-center">
+          <div class="pic">
+            <img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB">
+          </div>
+          <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
+          <!-- extra resources -->
+          <div class="resources">
+            <extra-resource
+              class="dark"
+              v-for="(resource, i) in content.assets.resources"
+              :key="i"
+              :resource="resource"
+            />
+          </div>
+
+
+
         </div>
-        <div class="col_03">
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-            aperiam neque, fuga assumenda ullam blanditiis eaque?
-          </h2>
-          <p>
-            Nulla tempus euismod orci et ornare. Proin id hendrerit nibh, in
-            vulputate eros. Ut ut dignissim leo. Donec hendrerit, tellus eget
-            pretium feugiat, nulla nunc pretium nisl, et fermentum elit sem vel
-            tortor. Maecenas posuere, purus et sagittis ultricies, odio odio
-            aliquet erat, eget sodales velit augue quis augue.
-          </p>
-          <p>
-            Orci varius natoque penatibus et magnis dis parturient montes,
-            nascetur ridiculus mus. Fusce posuere libero eu dolor molestie
-            ultricies. Duis tortor leo, interdum ac metus at, varius posuere
-            dui. Proin eget feugiat nulla.
-          </p>
-          <div class="pic">pic</div>
-        </div>
-      </div>
+
     </div>
   </div>
 </template>
@@ -80,7 +66,7 @@ export default Vue.extend({
   },
   mixins: [Scrollable],
   async fetch() {
-    this.content = await getContent(this, '04_sectionIntroMachines')
+    this.content = await getContent(this, '07_SectionCab02')
   },
   async mounted() {
     await this.$nextTick()
@@ -97,24 +83,25 @@ export default Vue.extend({
 .grid_holder {
   @apply w-full grid;
   grid-gap: 2.5rem;
-  grid-template-columns: 4fr 2fr 4fr;
+  grid-template-columns: 4fr 4fr;
   grid-area: 1 / 1 / -1 / -1;
 
   > div {
     align-self: stretch;
   }
-
-  .col_01 {
-  }
-  .col_02 {
-  }
-  .col_03 {
-  }
-
-  .pic {
-    @apply bg-gray-400 h-36 my-4;
+}
+.pic {
+    @apply bg-gray-400 my-6;
+    height: 20rem;
+    overflow: hidden;
     img {
     }
   }
-}
+  .pic_large{
+    height: 100%;
+    img {
+      object-fit: cover;
+      height: 100%;
+    }
+  }
 </style>

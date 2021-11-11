@@ -5,15 +5,20 @@ title: Sección
 menuTitle: Viaje de vuelta a la tierra
 
 data:
-  title: Viaje de vuelta a la tierra.
-  mainText:
-    - España es el primer país en tener tres estaciones meteorológicas operando en Marte a la vez, TWINS (en módulo de aterrizaje Insight) REMS (en el rover Curiosity) y MEDA (en el rover Mars2020 Perseverance). Así, el Centro de Astrobiología español es mundialmente conocido por haber diseñado y fabricado tales instrumentos para la exploración de Marte.
-    - Cronología de las misiones con equipos del CAB.
-    - Curiosity (2011-12)
-    - Insight (2018)
-    - Mars 2020 Perseverance (2020-21)
-  # secondaryText:
-    # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
-
+  - #1
+    mainText:
+      - “No se trata única y exclusivamente de hacer un instrumento, sino después de sacarle el mayor partido. Requiere científicos de muchas disciplinas (biólogos, geólogos, atmosféricos, físicos...) Y necesitas también a las mejores personas que puedas encontrar para poder materializar esos requisitos científicos (ingenieros electrónicos, ingenieros mecánicos, ingenieros en estructuras, ingenieros térmicos, ingenieros de software...) Y que todos tengan una visión global. Después, entran de nuevo en la cadena los científicos, una vez que esté el dispositivo operando en Marte, para analizar toda esa información”.
+    author: José Antonio Rodríguez Manfredi
+    position: Investigador principal del CAB para las misiones REMS, TWINS y MEDA
+  - #2
+    mainText:
+      - “Nuestras incógnitas esconden problemas extremadamente complejos. La forma que tiene la ciencia de abordarlos es a través de un doble camino; por un lado descomponerlo en aspectos parciales, desmenuzarlo en problemas más sencillos, y una vez que se han estudiado las particularidades, combinarlas para explicar el problema inicial, sintentizándolo”.
+    author: Javier Gómez-Elvira
+    position: Director del CAB
+  - #3
+    mainText:
+      - “Cuando repasas la historia de la vida en la Tierra te encuentras con grandes eventos de pérdida de biodiversidad y extinciones masivas, pero la vida, como tal, siempre ha prevalecido. Eso nos lleva a pensar que, si la vida ha surgido en otro lugar (sea por ejemplo en Marte, Encélado o Europa), probablemente haya sido capaz de sobrevivir a pesar de lo que haya ocurrido allí a lo largo del tiempo”.
+    author: Carlos Briones
+    position: Investigador en el CAB
 assets:
   backgroundIllustration: /img/005.webp

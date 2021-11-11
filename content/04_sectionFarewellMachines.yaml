@@ -2,16 +2,15 @@
 # https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
 
 title: Sección
-menuTitle: Despedida de cacharros?? Presentación del viaje a la tierra??
+menuTitle: Viaje a la tierra
 
 data:
-  title: Despedida de cacharros?? Presentación del viaje a la tierra??.
+  title: El destino de los datos
   mainText:
-    - España es el primer país en tener tres estaciones meteorológicas operando en Marte a la vez, TWINS (en módulo de aterrizaje Insight) REMS (en el rover Curiosity) y MEDA (en el rover Mars2020 Perseverance). Así, el Centro de Astrobiología español es mundialmente conocido por haber diseñado y fabricado tales instrumentos para la exploración de Marte.
-    - Cronología de las misiones con equipos del CAB.
-    - Curiosity (2011-12)
-    - Insight (2018)
-    - Mars 2020 Perseverance (2020-21)
+    - Los datos recogidos por las misiones TWINS, REMS y MEDA son enviados a la Tierra para su estudio y análisis.
+    - Y te preguntarás, ¿qué se hace en el CAB con la información recibida?
+    - Volvamos a la Tierra...
+
   # secondaryText:
     # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
 

@@ -1,0 +1,35 @@
+# Importante mirar la guía de figma para rellenar datos
+# https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
+
+title: Sección
+menuTitle: Inicio
+
+data:
+  title: La investigación en el CAB
+  mainText:
+    - <strong>Los científicos del CAB contribuirán a la ciencia y operación de RLS (Raman Laser Spectrometer)</strong> que volará en la misión ExoMars de la ESA a bordo del <strong>rover Rosalind Franklin</strong> a Marte después de su lanzamiento en 2022.
+    - Particularmente relevante será la <strong>misión PLATO (ESA), que buscará y caracterizará planetas similares a la Tierra y sus atmósferas</strong>.
+
+  secondaryText:
+    - También desarrolla proyectos de <strong>investigación en ambientes y procesos análogos aquí, en la Tierra</strong>, para mejorar nuestra comprensión de cómo la vida puede existir e interactuar tanto en entornos de superficie como en el subsuelo profundo.
+    - <strong>El CAB tiene los medios, las instalaciones, los científicos y un magnífico centro para abordar y contribuir a los principales retos de la Astrobiología en el futuro cercano</strong>.
+
+
+assets:
+  backgroundIllustration: /img/001.webp
+  pictures:
+    - /img/CAB/futu_01.webp
+    - /img/CAB/futu_02.webp
+    - /img/CAB/futu_03.webp
+    - /img/CAB/futu_04.webp
+  logos:
+    - /img/cab_logo.png
+    - /img/inta_logo.png
+    #- /img/placeholder_logo.png
+  resources:
+    - #1
+      title: Visita la web CAB
+      author: Para conocer mejor sus proyectos
+      url: https://cab.inta-csic.es/investigacion/proyectos/
+      icon: link
+      target: true

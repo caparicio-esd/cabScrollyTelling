@@ -5,17 +5,23 @@ title: Sección
 menuTitle: Créditos y despedida
 
 data:
-  title: Créditos y despedida
+  title: Este proyecto es una colaboración del Centro de Astrobiología y la Escuela Superior de Diseño de Madrid. Créditos.
   mainText:
-    - Este proyecto es una colaboración del Centro de Astrobiología y la Escuela Superior de Diseño de Madrid.
-    - Su realización ha sido posible gracias a la implicación de Francisco Torrego, Gonzalo Cordero, Santiago Liébana, Carlos Aparicio, Estrella Juárez, ...
+    - <strong>Centro de Astrobiología (CAB)</strong>
+    - Director. Víctor Parro García
+    - Coordinador del proyecto CAB. David Barrado Navascués
+    - Responsable de comunicación del proyecto Cultura con C de Cosmos (C3). Susana Cabañero Rodríguez
+    - Asesor Científico. Juan Ángel Vaquerizo
   secondaryText:
-    - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
-    - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+    - <strong>Escuela Superior de Diseño de Madrid (e/s/d)</strong>
+    - Directora. Marina Arespacochaga Maroto
+    - Coordinador del Grupo de Investigación de Diseño para la Divulgación Científica. Francisco Torrego Graña
+    - Profesores integrantes del grupo de Investigación. Carlos Aparicio de Santiago, Antonio Cobo Arévalo, Gonzalo Cordero de Ciria, Iván Huelves Illas, Óscar Jiménez Salvador, Estrella Juárez Millán, Santiago Liébana García, Lourdes Marco Pascual
+    - Colaborador en el proyecto. Ricardo Horcajada González (Profesor titular UCM)
 
 assets:
   backgroundIllustration: /img/009.webp
   logos:
     - /img/cab_logo.png
     - /img/inta_logo.png
-    - /img/placeholder_logo.png
+    - /img/logo_esd.jpg

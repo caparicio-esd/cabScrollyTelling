@@ -161,7 +161,7 @@ export default Vue.extend({
 .explorer_modal_content_header {
   @apply flex justify-between items-end mb-4;
   .explorer_modal_content_picture {
-    @apply bg-gray-200 flex-1 h-64 mr-4;
+    @apply bg-gray-200 flex-1 h-60 mr-4;
     overflow: hidden;
   }
   .explorer_modal_content_agency_meta {

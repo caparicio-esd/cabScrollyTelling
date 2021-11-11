@@ -2,24 +2,35 @@
 # https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
 
 title: Sección
-menuTitle: Los exploradores son las nuevas máquinas
+menuTitle: Marte como imaginario
 
 data:
-  title: La observación de Marte en su órbita desde la Antigüedad hasta los 1960s. Marte como imaginario.
+  title: Marte como imaginario. La observación de Marte en su órbita desde la Antigüedad hasta la década de 1960
   mainText:
-    - Galileo Galilei fue el primero en observar Marte a través del telescopio en 1610, pero no alcanzó a detallar su superficie. Los siglos XVII y XVIII asistieron al avance progresivo en la observación del Planeta Rojo (Giovanni Cassini, William Herschel, Robert Hooke, Christiaan Huygens); hasta que, en torno a 1840, los astrónomos alemanes Johann Mädler (1794-1874) y Wilhelm Beer (1797-1850) se convirtieron en verdaderos cartógrafos del segundo planeta vecino de la Tierra.
-    - Desde aquellas tempranas cartografías, la evolución de los sucesivos mapas, dibujados gracias a las observaciones telescópicas y, desde la década de los 1960s, con los datos registrados por las distintas misiones internacionales, ha ido moldeando el conocimiento que del Planeta Rojo tenemos; dando forma a nuestra idea de Marte que, en el imaginario colectivo y hasta época no muy lejana, transitó entre los progresos de la ciencia  (unos logros apoyados en los anteriores, éxitos sobre fracasos) y las visiones de horror cósmico recreadas por la literatura de ficción. En muchos sentidos, Marte está hoy mejor cartografiado que la misma Tierra pues allí no existen orografías ocultas para nuestro entendimiento.
+    - Desde los astrónomos Egipcios en el segundo milenio antes de Cristo, Marte ha sido sujeto de observación y estudio desde la Tierra.
+    - En 1660 Galileo lo observó con su telescopio y posteriormente otros astrónomos como Huygens, Cassini, Proctor y Dawes o Schiaparelli, dibujaron su cartografía e hicieron sus observaciones con mayor o menor precisión.
+    - <strong>A las preguntas que presentaba al inicio su aparente movimiento retrógrado y su color rojizo, se sumó después la supuesta percepción de construcciones en su superficie</strong>. Creemos que motivadas fundamentalmente por el interés en hallar vida en otro planeta.
+    - En 1964, Estados Unidos lanza la Mariner 4 y doce meses después envía 19 fotografías de su superficie. <strong>Comienza la era de las misiones</strong>.
   secondaryText:
-    - Conocer la orografía de Marte y cartografiarla fue sin duda el objeto inicial en la observación del planeta. Algunos rasgos geográficos de la superficie marciana son característicos y bien reconocibles desde los primeros mapas, por ejemplo, el cráter Hellas Planitia o el Solis Lacus ya se identifican en los trazados de Mädler y Beer. El astrónomo británico Richard Anthony Proctor (1837-1888) -cuyos mapas fueron resueltos a partir de los dibujos del Reverendo William Rutter Dawes (1799-1868)- sostuvo que las manchas claras y oscuras de la superficie marciana correspondían a continentes y mares, provocando con ello un encendido debate entre sus coetáneos.
 
 assets:
   backgroundIllustration: /img/002.webp
   resources:
     - #1
+      title: Marte como imaginario
+      author: Grupo de investigación e/s/d
+      url: /docs/02/Marte_como_imaginario.pdf
+      icon: file-pdf
+      target: false
+    - #2
+      title: Cronologia de las observaciones de Marte hasta 1960
+      author: Grupo de investigación e/s/d
+      url: /docs/02/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
+      icon: file-pdf
+      target: false
+    - #3
       title: El murmullo de Marte
       author: Ricardo Horcajada
-      url: /docs/El_murmullo_de_Marte_Ricardo_Horcajada.pdf
-    - #2
-      title: Marte en el mito poético grecolatino
-      author: Francisco Torrego
-      url: /docs/Marte_en_el_mito_poético_grecolatino_Francisco_Torrego.pdf
+      url: /docs/02/El_murmullo_de_marte_Ricardo_Horcajada.pdf
+      icon: file-pdf
+      target: false

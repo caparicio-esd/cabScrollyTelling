@@ -2,15 +2,33 @@
 # https://www.figma.com/file/LVJsJViTo0ivzgnE0rgW3D/rems_wireframes?node-id=2873%3A1486
 
 title: Sección
-menuTitle: Los exploradores son las nuevas máquinas
+menuTitle: Marte como lugar
 
 data:
-  title: La exploración de la superficie marciana a partir de los 1960s. Marte como lugar.
+  title: Marte como lugar. La exploración de la superficie marciana a partir de la década de 1960.
   mainText:
-    - El debate sobre la existencia de vida presente o remota en Marte no pasa por la interpretación de rasgos geológicos como construcciones megalíticas del pasado, sino por la existencia de agua. R. A. Proctor (1837-1888) determinó la presencia de casquetes de hielo en ambos polos planetarios. Hoy son irrefutables las evidencias de que agua líquida –procedente de lluvia o deshielos debido a actividad volcánica o impactos de asteroides- fluyó por la superficie marciana formando vías fluviales semejantes a las terrícolas, en un pasado remoto.
-    - Desde los 1960s, las distintas misiones rusas, las Mariner y las Viking americanas, han aportado ingentes datos sobre la geografía marciana que han permitido a los científicos abrir otra línea de investigación centrada en la edad e historia del planeta, estableciendo relaciones con la Tierra a partir de ciertas similitudes orográficas.
-  secondaryText:
-    - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
+    - Las distintas misiones enviadas a Marte, ya sea para orbitar a su alrededor o para posarse en él, han aportado ingentes datos sobre la geografía marciana.
+    - <strong>La observación orográfica en alto detalle del planeta ha demostrado que alguna vez fue geológicamente tan activo como la Tierra</strong>.
+    - Uno de los objetivos principales desde el inicio fue buscar pruebas de la posible existencia de agua.
+    - <strong>Hoy se da por supuesto que, en algún momento, hubo agua líquida por su superficie y que actualmente hay hielo debajo del casquete polar y en el subsuelo</strong>.
+    - Esa presencia de agua en Marte sugiere que <strong>el planeta pudo haber sido habitable o habitado</strong>.
+  #secondaryText:
+    #- Desde la década de 1960, las distintas misiones rusas, las <em>Mariner</em> y las <em>Viking</em> americanas, han aportado ingentes datos sobre la geografía marciana que han permitido a los científicos <strong>abrir otra línea de investigación&#58; la edad e historia de Marte</strong>, estableciendo relaciones con la Tierra a partir de ciertas similitudes orográficas.
+    #- En 1971, la Mariner 9 proporcionó tal cantidad de imágenes de la superficie marciana que en 1978 se pudo publicar el primer gran mapa geológico representando el relieve del planeta de un modo hasta entonces sólo posible para la Luna o la Tierra. <strong>La observación orográfica en alto detalle de Marte ha demostrado que alguna vez, fue geológicamente tan activo como la Tierra</strong>.
 
 assets:
   backgroundIllustration: /img/003.webp
+  resources:
+    - #1
+      title: Marte como lugar
+      author: Grupo de investigación e/s/d
+      url: /docs/02/Marte_como_lugar.pdf
+      icon: file-pdf
+      target: false
+    - #2
+      title: Relación histórica de misiones a Marte desde 1960
+      author: Grupo de investigación e/s/d
+      url: /docs/02/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
+      icon: file-pdf
+      target: false
+

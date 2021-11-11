@@ -11,7 +11,14 @@
           :height="height"
         />
       </div>
-      <div class="section_content_holder"></div>
+      <div class="section_content_holder">
+        <div class="section_col_a col-span-2 self-center">
+          <p v-for="(p, i) in content.data[0].mainText" :key="i" v-html="p"></p>
+          <p class="author" v-html="content.data[0].author"></p>
+          <p class="position" v-html="content.data[0].position"></p>
+        </div>
+
+      </div>
     </div>
   </section>
 </template>
@@ -55,5 +62,12 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .section {
   @apply min-h-screen bg-black text-white;
+  .author{
+    margin-top: 40px;
+    font-weight: bold;
+  }
+  .position{
+    font-style: italic;
+  }
 }
 </style>

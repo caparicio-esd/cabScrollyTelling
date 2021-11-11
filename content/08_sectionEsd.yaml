@@ -5,13 +5,20 @@ title: Sección
 menuTitle: ESD
 
 data:
-  title: e/s/d Madrid
+  title: La e/s/d y el CAB
   mainText:
-    - La Escuela Superior de Diseño forma parte de la red de centros públicos Superiores de la Consejería de Ciencia, Universidades e Innovación de la Comunidad de Madrid.
-    - La Escuela Superior de Diseño de Madrid, como escuela pública, entiende el diseño como un servicio a la sociedad dirigido a promover la mejora de la calidad de vida y la igualdad entre las personas y como un factor central para la innovación y la humanización de las tecnologías y el intercambio cultural y económico.
+    - La <strong>Escuela Superior de Diseño de Madrid (e/s/d)</strong> es un centro público perteneciente a las Enseñanzas Artísticas Superiores (Dirección General de Universidades) de la Comunidad de Madrid. En él se imparten los grados y posgrados oficiales en Diseño.
+    - En 2020, un grupo de profesores conformamos el <strong>seminario “Diseño para la Ciencia”</strong> con la línea de investigación <strong>“Análisis del rol del diseñador en equipos científicos”</strong>. Desde él, propusimos al CAB la creación de un producto de comunicación sobre el aterrizaje del Perseverance en Marte, <strong>que pusiera en valor la participación en la misión de dicho organismo español</strong> de excelencia, con el MEDA. Y aprovechar tal evento para destacar las presencias previas del CAB en el Planeta Rojo, con el REMS y el TWINS.
 
-  # secondaryText:
-    # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
+  secondaryText:
+    - Con ello queremos contribuir a la difusión del conocimiento científico y tecnológico, sobre todo a nivel divulgativo; y fomentar el trabajo conjunto entre científicos y diseñadores. Y así surge este scrollytelling …
 
 assets:
   backgroundIllustration: /img/008.webp
+  resources:
+    - #1
+      title: Visita la web e/s/d Madrid
+      author: Para conocer mejor la escuela
+      url: https://esdmadrid.es/
+      icon: link
+      target: true
