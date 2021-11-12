@@ -35,7 +35,8 @@ export default Vue.extend({
                 delay: 500,
                 endDelay: 500,
                 autoplay: false, 
-                direction: ev.scrollDirection !== "REVERSE" ? "normal" : "reverse"
+                direction: ev.scrollDirection !== "REVERSE" ? "normal" : "reverse", 
+                easing: "easeInOutCubic"
             })
                 .add({
                     targets: [title],

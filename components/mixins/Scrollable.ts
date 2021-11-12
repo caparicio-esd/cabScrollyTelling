@@ -1,7 +1,5 @@
 import Vue from "vue";
 import anime from "animejs";
-// import { Scene } from "scrollmagic"
-// import { SceneProgressEvent } from "scrollmagic";
 
 export default Vue.extend({
     data() {
@@ -28,6 +26,7 @@ export default Vue.extend({
             this.subscene[0].setPin(ref.constructor === Object ? ref.section : ref[0])
             this.refDom = ref.constructor === Object ? ref.section : ref[0]
             this.$root.$emit('scene_created', this.subscene[0])
+            
 
             this.subscene[0].on("start", (ev: any) => {
                 this.onStartScene(ev);
@@ -35,14 +34,10 @@ export default Vue.extend({
             this.subscene[0].on("end", (ev: any) => {
                 this.onEndScene(ev);
             })
-            this.subscene[0].on("enter", (ev: any) => {
-                console.log(ev);
-                
+            this.subscene[0].on("enter", (ev: any) => {                
                 this.onEnterScene(ev);
             })
             this.subscene[0].on("leave", (ev: any) => {
-                console.log(ev);
-
                 this.onLeaveScene(ev);
             })
             this.subscene[0].on("progress", (ev: any) => {

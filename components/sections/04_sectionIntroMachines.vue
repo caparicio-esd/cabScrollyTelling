@@ -14,7 +14,7 @@
     <div class="section_content_holder">
       <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
-        <p class="with-ul" v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
+        <div class="with-ul" v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></div>
       </div>
     </div>
     <button-next-screen />
@@ -36,12 +36,14 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import AnimationType_01 from '../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 import { PhRocket } from 'phosphor-vue'
 
 export default Vue.extend({
+  props: ['index'],
+
   data() {
     return {
       content: {},
@@ -58,6 +60,9 @@ export default Vue.extend({
     PhRocket
   },
   methods: {
+    ...mapActions({
+      addData: 'data/addData',
+    }),
     n2br,
     getExplorerStyle(explorer: any, i: number): object {
       return {
@@ -69,6 +74,7 @@ export default Vue.extend({
   mixins: [AnimationType_01],
   async fetch() {
     this.content = await getContent(this, '04_sectionIntroMachines')
+    this.addData({ index: this.index, data: this.content })
   },
   async mounted() {
     await this.$nextTick()
@@ -77,7 +83,6 @@ export default Vue.extend({
   },
 })
 </script>
-
 
 <style lang="postcss" scoped>
 .section_content_holder p.with-ul ul{

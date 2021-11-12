@@ -46,10 +46,11 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import Scrollable from '../mixins/Scrollable'
 
 export default Vue.extend({
+  props: ['index'],
   data() {
     return {
       content: {},
@@ -62,11 +63,15 @@ export default Vue.extend({
     }),
   },
   methods: {
+    ...mapActions({
+      addData: 'data/addData',
+    }),
     n2br,
   },
   mixins: [Scrollable],
   async fetch() {
     this.content = await getContent(this, '07_SectionCab02')
+    this.addData({ index: this.index, data: this.content })
   },
   async mounted() {
     await this.$nextTick()

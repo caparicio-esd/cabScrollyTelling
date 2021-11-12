@@ -45,7 +45,6 @@
             :player="player"
           />
         </div>
-
       </div>
     </div>
     <button-next-screen />
@@ -56,19 +55,19 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import AnimationType_01 from './../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 import Player from '~/components/Player.vue'
 import { PhThermometer } from 'phosphor-vue'
-const xml2js = require('xml2js');
+const xml2js = require('xml2js')
 
 export default Vue.extend({
   data() {
     return {
       content: {},
       remsData: [] as any,
-      rems: {}
+      rems: {},
     }
   },
   components: {
@@ -82,30 +81,34 @@ export default Vue.extend({
       height: (state: any) => state.main.ui.viewPort.height,
     }),
   },
-  async fetch() {
-    this.content = await getContent(this, '01_sectionWelcome');
-    const xmlData = await fetch('http://cab.inta-csic.es/rems/rems_weather.xml')
-      .then(res => res.text());
-
-    this.remsData = await this.xmlToJSON(xmlData);
-    this.rems = this.remsData.weather_report.magnitudes[0];
-  },
   methods: {
+    ...mapActions({
+      addData: 'data/addData',
+    }),
     n2br,
     xmlToJSON: (str: any) => {
       return new Promise((resolve, reject) => {
         xml2js.parseString(str, (err: any, jsonObj: any) => {
           if (err) {
-            return reject(err);
+            return reject(err)
           }
-          resolve(jsonObj);
-        });
-      });
-    }
+          resolve(jsonObj)
+        })
+      })
+    },
   },
   mixins: [AnimationType_01],
-  props: ['refIn'],
+  props: ['refIn', 'index'],
+  async fetch() {
+    this.content = await getContent(this, '01_sectionWelcome')
+    this.addData({index: this.index, data: this.content})
+    const xmlData = await fetch(
+      'http://cab.inta-csic.es/rems/rems_weather.xml'
+    ).then((res) => res.text())
 
+    this.remsData = await this.xmlToJSON(xmlData)
+    this.rems = this.remsData.weather_report.magnitudes[0]
+  },
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
@@ -117,20 +120,19 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-.mars_data{
+.mars_data {
   font-size: 1.4em;
   padding: 2em;
-  .mars_sol{
+  .mars_sol {
     font-size: 2em;
   }
-  .mars_temp{
+  .mars_temp {
     align-items: center;
     display: flex;
     font-size: 1.5em;
-    svg{
+    svg {
       margin-right: 5px;
     }
   }
-
 }
 </style>

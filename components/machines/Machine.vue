@@ -30,9 +30,10 @@
 <script lang="ts">
 import Vue from 'vue'
 import AnimationType_01 from '../mixins/AnimationType_01'
+
 //@ts-ignore
 import { PhTriangle, PhRocket } from 'phosphor-vue'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import MachineModal from '~/components/machines/MachineModal.vue'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 import { n2br } from '~/lib/sectionUtils'
@@ -45,9 +46,12 @@ export default Vue.extend({
     MachineModal,
     ButtonNextScreen,
   },
-  props: ['content'],
+  props: ['content', 'index'],
   mixins: [AnimationType_01],
   methods: {
+    ...mapActions({
+      addData: "data/addData"
+    }),
     n2br,
     getMachinePosition(machine: any) {
       return {
@@ -66,8 +70,8 @@ export default Vue.extend({
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
-    //@ts-ignore
-    this.setUpComponent()
+    //@ts-ignore    
+    this.addData({index: this.index, data: this.content})
   },
 })
 </script>

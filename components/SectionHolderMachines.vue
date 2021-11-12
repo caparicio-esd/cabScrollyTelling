@@ -6,6 +6,7 @@
         v-for="(content, i) in content.data"
         :key="i"
         :content="content"
+        :index="i+5"
       />
     </div>
   </section>

@@ -45,12 +45,13 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import AnimationType_01 from '../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 import ExtraResource from '~/components/ExtraResource.vue'
 
 export default Vue.extend({
+  props: ['index'],
   data() {
     return {
       content: {},
@@ -67,11 +68,15 @@ export default Vue.extend({
     }),
   },
   methods: {
+    ...mapActions({
+      addData: 'data/addData',
+    }),
     n2br,
   },
   mixins: [AnimationType_01],
   async fetch() {
     this.content = await getContent(this, '02_sectionIntroMisions')
+    this.addData({index: this.index, data: this.content})
   },
   async mounted() {
     await this.$nextTick()
