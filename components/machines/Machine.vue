@@ -11,15 +11,16 @@
     </div>
 
     <div class="section_content_holder_8 relative">
-      <div class="section_col_a col-span-2 self-center">
+      <div class="section_col_a col-span-3 self-center">
         <h2 class="mb-12" v-html="n2br(content.title)" />
-        <p v-for="(p, i) in content.mainText" :key="i">{{ p }}</p>
+        <p v-for="(p, i) in content.mainText" :key="i" v-html="p"></p>
       </div>
-      <div class="section_col_b col-start-3 col-span-2 self-center">
+      <!-- <div class="section_col_b col-start-3 col-span-2 self-center">
         <p v-for="(p, i) in content.secondaryText" :key="i">{{ p }}</p>
-      </div>
+      </div> -->
       <div class="machine_icon" :style="getMachinePosition(content)">
         <ph-rocket :size="64" />
+        {{content.machine}}
       </div>
       <!-- <machine-modal :id="`modal${index}`" :data="content" /> -->
       <button-next-screen />
@@ -83,5 +84,8 @@ export default Vue.extend({
   pointer-events: initial;
   transition: all 350ms ease;
   background-clip: padding-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 </style>
