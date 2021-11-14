@@ -93,7 +93,7 @@ export default Vue.extend({
   pointer-events: none;
   cursor: pointer;
   .machine {
-    @apply flex absolute rounded-full bg-white text-black p-2 ;
+    @apply flex absolute rounded-full bg-white text-black p-2;
     @apply ring-white ring-0 ring-opacity-50;
     align-items: center;
     transform: translate(-50%, -50%);

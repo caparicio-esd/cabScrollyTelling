@@ -1,14 +1,20 @@
 <template>
   <div class="machine_modal" :class="open ? 'opened' : ''">
-    <div class="machine_modal_image">pic</div>
+    <div class="machine_modal_image">
+      <img :src="tab1.picture" :alt="`Imagen del ${machineData.machine}`">
+      <button class="cabBtn">
+      {{ machineData.cabInstrument }}
+      </button>
+    </div>
 
+    <!-- TAB 1 - TODO: create new component-->
     <div class="explorer_modal_content" v-if="tab1">
       <!-- header -->
       <div class="explorer_modal_content_header">
         <div class="explorer_modal_content_agency_meta">
           <div class="explorer_modal_content_land">
             <div class="explorer_modal_content_land_picture">
-              <!-- <img :src="activeContent.picture_flag" :alt="`bandera de ${activeContent.meta.land}`"> -->
+              <img :src="tab1.picture_flag" :alt="`bandera de ${tab1.meta.land}`">
             </div>
             <div class="explorer_modal_content_land_name">
               {{ tab1.meta.land }}
@@ -73,77 +79,58 @@
       </div>
       <!-- Goals -->
       <div class="explorer_modal_content_collapsible" v-if="tab1.goals">
-        Goals
+        <collapsible :opened="false">
+          <template v-slot:handler>Objetivos</template>
+          <template v-slot:content>
+            <ul>
+              <li v-for="(item, i) in tab1.goals" :key="i" v-html="item"></li>
+            </ul>
+          </template>
+        </collapsible>
       </div>
       <!-- Instruments -->
       <div
         class="explorer_modal_content_collapsible"
         v-if="tab1.instruments"
       >
-        Instruments
-      </div>
-      <!-- Curiosities -->
-      <div
-        class="explorer_modal_content_collapsible"
-        v-if="tab1.curiosities"
-      >
-        Curiosities
+        <collapsible :opened="true">
+          <template v-slot:handler>Instrumentos que transporta</template>
+          <template v-slot:content>
+            <ul>
+              <li v-for="(item, i) in tab1.instruments" :key="i" v-html="item"></li>
+            </ul>
+          </template>
+        </collapsible>
       </div>
       <!-- Contribution -->
       <div
         class="explorer_modal_content_collapsible"
         v-if="tab1.contribution"
       >
-        Contribution
+        <collapsible :opened="false">
+          <template v-slot:handler>Contribución</template>
+          <template v-slot:content>
+            <ul>
+              <li v-for="(item, i) in tab1.contribution" :key="i" v-html="item"></li>
+            </ul>
+          </template>
+        </collapsible>
+      </div>
+      <!-- more info -->
+      <div v-if="tab1.moreinfo">
+        <!-- extra resources -->
+        <div class="resources">
+          <extra-resource
+            class="dark"
+            v-for="(resource, i) in tab1.assets.resources"
+            :key="i"
+            :resource="resource"
+          />
+        </div>
       </div>
     </div>
 
-    <!-- <CThemeProvider>
-      <c-box w="100%">
-        <c-tabs>
-          <c-tab-list>
-            <c-tab
-              v-for="(tab, index) in data.tabs"
-              :key="index">{{tab.title}}</c-tab>
-          </c-tab-list>
-          <c-tab-panels class="tabPanels">
-            <c-tab-panel
-              class="tabPanel"
-              v-for="(tab, index) in data.tabs"
-              :key="index">
-              <div class="flex">
-                <img :src="tab.illustration" alt="">
-                <div>
-                  <p>{{tab.content}}</p>
 
-                  <table v-if="index == 'mision'">
-                    <tr>
-                      <th>Nacionalidad</th>
-                      <td>{{tab.nationality}}</td>
-                    </tr>
-                    <tr>
-                      <th>Agencia espacial</th>
-                      <td>{{tab.agency}}</td>
-                    </tr>
-                    <tr>
-                      <th>Fecha / hora Lanzamiento</th>
-                      <td>{{tab.dateHourLaunch}}</td>
-                    </tr>
-                    <tr>
-                      <th>Fecha / hora Aterrizaje</th>
-                      <td>{{tab.dateHourLanding}}</td>
-                    </tr>
-                  </table>
-                </div>
-
-              </div>
-
-            </c-tab-panel>
-
-          </c-tab-panels>
-        </c-tabs>
-      </c-box>
-    </CThemeProvider> -->
   </div>
 
 </template>
@@ -153,6 +140,8 @@ import Vue from 'vue'
 import { mapState } from 'vuex'
 import AnimationType_04 from '../mixins/AnimationType_04'
 import { PhDotsThree } from 'phosphor-vue'
+import Collapsible from '../dsys/Collapsible.vue'
+import ExtraResource from '~/components/ExtraResource.vue'
 import {
   CThemeProvider,
   CTabs,
@@ -165,12 +154,14 @@ export default Vue.extend({
   name: 'MachineModal',
   components: {
     PhDotsThree,
+    Collapsible,
+    ExtraResource,
     CThemeProvider,
     CTabs,
     CTabList,
     CTabPanels,
     CTab,
-  CTabPanel
+    CTabPanel
   },
   data() {
     return {
@@ -214,6 +205,8 @@ export default Vue.extend({
     border: 3px solid white;
     right: 0;
   }
+
+
   .tabPanels{
     @apply p-4;
     .tabPanel{
@@ -233,11 +226,27 @@ export default Vue.extend({
 .machine_modal_image{
   width: 60%;
   height: 100%;
-  @apply bg-gray-200;
+  @apply bg-gray-200 flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .cabBtn{
+    @apply flex absolute rounded-full bg-white text-black p-2;
+    @apply ring-white ring-0 ring-opacity-50;
+    align-items: center;
+    //transform: translate(-50%, -50%);
+    pointer-events: initial;
+    transition: all 350ms ease;
+    background-clip: padding-box;
+    border: 3px solid white;
+    top: 15px;
+    right: 15px;
+  }
 }
 .explorer_modal_content {
   @apply p-6 text-gray-700;
   width: 40%;
+  overflow-y: scroll;
 }
 .explorer_modal_content_header {
   @apply flex justify-between items-end mb-4;

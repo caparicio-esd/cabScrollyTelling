@@ -8,8 +8,9 @@ data:
   - # 0 - Cráter Jezero // PERSEVERANCE
     id: 0
     title: "Cráter Jezero"
-    subtitle: "Primer amartizaje controlado."
+    subtitle: "Perseverance recorrerá el Cráter Jezero, que se cree que fue el lugar que albergó un lago marciano hace miles de millones de años."
     machine: Perseverance
+    cabInstrument: MEDA
     assets:
       backgroundIllustration: /img/004_1.webp
     mainText:
@@ -25,33 +26,43 @@ data:
     tabs:
       - #1
         meta:
-          launch: "28.05.1971 - 15:26 UTC"
-          arrival: "02.12.1971 - 13.50 UTC"
-          place: "Cráter Ptolomeo (Terra Sirenum)"
-          activity: "2 minutos (Orbitador 452 días)"
-          land: "URSS"
-          agency: "Unión Soviética"
-          status: "Exito parcial"
+          launch: "30.07.2020 - 12:50 UTC"
+          arrival: "18.02.2021 - 20.55 UTC"
+          place: "Cráter Jezero"
+          activity: "Sigue en activo. Periodo previsto, al menos un año marciano (unos 687 días terrestres)."
+          land: "USA"
+          agency: "NASA"
+          status: "Exito"
         goals:
-          - Realizar un amartizaje suave en Marte
-          - Devolver fotografías de la superficie
-          - Enviar datos de las condiciones meteorológicas, de la composición atmosférica y de las propiedades mecánicas y químicas del suelo.
+          - Identificar entornos pasados capaces de albergar vida microbiana
+          - Buscar signos de posible vida microbiana en el pasado en esos entornos habitables, particularmente en rocas especiales que se sabe que conservan signos de vida a lo largo del tiempo
+          - Recoger muestras de roca y "suelo" y almacenarlas en la superficie marciana
+          - Probar la producción de oxígeno de la atmósfera marciana
         instruments:
-          - Aterrizador
-          - Dos cámaras de televisión para la obtención de vistas de 360º.
-          - Espectrómetro de masa.
-          - Sensores de temperatura, presión, composición y velocidad del viento.
-          - Dispositivos para medición de propiedades mecánicas y químicas del suelo.
-          - Pala mecánica para buscar compuestos orgánicos y signos de vida.
-          - Rover
-          - Penetrómetro dinámico
-          - Medidor de radiación.
-        curiosities:
-          - A los 90 segundos tras el aterrizaje el módulo de descenso comenzó a transmitir datos hacia el orbitador. A los 20 segundos se perdió la conexión. Consiguió mandar una imagen parcial de 70 líneas que muestran un fondo gris sin detalles.
+          - Espectrómetro de fuorescencia de rayos X (PIXL)
+          - Sensor de imágenes por radar para la exploración del subsuelo marciano (RIMFAX)
+          - <span class="toTab2">Analizador de Dinámica Ambiental Marciana (MEDA)</span>
+          - Experimento ISRU de Oxígeno en Marte (MOXIE)
+          - SuperCam
+          - Mastercam-Z
+          - Escaneo de ambientes habitables con raman y luminiscencia para compuestos orgánicos y químicos (SHERLOC)
+          - Ingenuity
+        #curiosities:
+          #- A los 90 segundos tras el aterrizaje el módulo de descenso comenzó a transmitir datos hacia el orbitador. A los 20 segundos se perdió la conexión. Consiguió mandar una imagen parcial de 70 líneas que muestran un fondo gris sin detalles.
         contribution:
-          - La sonda Mars 3 fue la primera que realizó un amartizaje suave en la superficie de Marte.
-        picture: "/img/explorers/01.webp"
-        picture_flag: "/img/flags/URSS.svg"
+          - Destaca la incorporación del primer “helicóptero explorador” que sobrevuele la superficie marciana, <em>el Ingenuity</em>
+        moreinfo: true
+        assets:
+          resources:
+            - #1
+              title: Más información
+              author: Para conocer mejor el Perseverance
+              url: https://mars.nasa.gov/mars2020/
+              icon: link
+              target: true
+
+        picture: "/img/machines/perseverance.webp"
+        picture_flag: "/img/flags/EEUU.svg"
 
 
   - # 1 - Cráter Gale // CURIOSITY
