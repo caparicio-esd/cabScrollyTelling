@@ -5,113 +5,9 @@ title: Sección
 menuTitle: Inicio
 
 data:
-  - # 0 - Cráter Jezero // PERSEVERANCE
+
+  - # 0 - Cráter Gale // CURIOSITY
     id: 0
-    title: "Cráter Jezero"
-    subtitle: "Perseverance recorrerá el Cráter Jezero, que se cree que fue el lugar que albergó un lago marciano hace miles de millones de años."
-    machine: Perseverance (Rover)
-    cabInstrument: MEDA
-    assets:
-      backgroundIllustration: /img/004_1.webp
-    mainText:
-      - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
-      - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
-      - Hace más de 3.500 millones de años, vías fluviales alimentaron el cráter generando el lago y el delta con su peculiar forma de abanico. Su lecho es rico en sedimentos lacustres arcillosos, convirtiéndolo en un lugar propicio para la búsqueda de biofirmas.
-    #secondaryText:
-      #- Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
-      #- Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos. En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar.
-    position:
-      lon: 70
-      lat: 50
-    tabs:
-      - #0 -- TAB 1
-        meta:
-          launch: "30.07.2020 - 12:50 UTC"
-          arrival: "18.02.2021 - 20.55 UTC"
-          place: "Cráter Jezero"
-          activity: "Sigue en activo. Periodo previsto, al menos un año marciano (unos 687 días terrestres)."
-          land: "USA"
-          agency: "NASA"
-          status: "Exito"
-        goals:
-          - Identificar entornos pasados capaces de albergar vida microbiana
-          - Buscar signos de posible vida microbiana en el pasado en esos entornos habitables, particularmente en rocas especiales que se sabe que conservan signos de vida a lo largo del tiempo
-          - Recoger muestras de roca y "suelo" y almacenarlas en la superficie marciana
-          - Probar la producción de oxígeno de la atmósfera marciana
-        instruments:
-          - Espectrómetro de fuorescencia de rayos X (PIXL)
-          - Sensor de imágenes por radar para la exploración del subsuelo marciano (RIMFAX)
-          - <span class="toTab2">Analizador de Dinámica Ambiental Marciana (MEDA)</span>
-          - Experimento ISRU de Oxígeno en Marte (MOXIE)
-          - SuperCam
-          - Mastercam-Z
-          - Escaneo de ambientes habitables con raman y luminiscencia para compuestos orgánicos y químicos (SHERLOC)
-          - Ingenuity
-        contribution:
-          - Destaca la incorporación del primer “helicóptero explorador” que sobrevuele la superficie marciana, <em>el Ingenuity</em>
-        moreinfo: true
-        assets:
-          resources:
-            - #1
-              title: Para conocer mejor el Perseverance
-              author: Página web de la NASA
-              url: https://mars.nasa.gov/mars2020/
-              icon: link
-              target: true
-
-        picture: "/img/machines/perseverance.webp"
-        picture_flag: "/img/flags/EEUU.svg"
-      - #1 -- TAB 2
-        meta:
-          title: Mars Environmental Dynamics Analyzer
-          translate: "Analizador de Dinámica Ambiental Marciana"
-          activity: "Activo, previsto un año y medio marciano."
-          land: "España"
-          agency: "Centro de Astrobiología (CAB)"
-          head_researcher: José Rodríguez-Manfredi
-          status: "Exito"
-        goals:
-          - Estudiar la dinámica atmosférica de Marte
-          - Cómo se comporta y como se relacionan la temperatura, la radiación o la humedad en sus capas bajas
-          - Cuál es la acción del polvo marciano en dicha atmósfera
-          - Cómo son los cambios cíclicos que allí se producen
-        instruments:
-          - MEDA es un conjunto de sensores ambientales diseñados para registrar las propiedades ópticas del polvo y seis parámetros atmosféricos, <strong>velocidad y dirección del viento, presión, humedad relativa, temperatura del aire, temperatura del suelo y radiación</strong>.
-          - La medición sistemática y según una cadencia y frecuencia configuradas de acuerdo con la disponibilidad de recursos, es uno de sus principales valores. MEDA tiene un alto grado de autonomía operativa, se activa cada hora y después de grabar y almacenar datos, entra en reposo independientemente de las demás actividades del Perseverance, tanto de día como de noche.
-
-        contribution:
-          - Suministra datos sobre las condiciones meteorológicas (temperatura, humedad, velocidad y dirección del viento en torno al Perseverance. Los datos del MEDA contribuyen a predecir el clima de Marte de manera más precisa, lo que será de fundamental importancia en futuras colonizaciones
-          - Estudia el tamaño y forma del polvo en el terreno y en la atmósfera marcianos ya que, siendo muy abundante, condiciona el clima, la temperatura y dirige ciertos procesos químicos. Así se comprobará como afecta al rendimiento del propio rover y su instrumental.
-          - Mide la radiación, con lo que ayuda a entender sus efectos sobre restos de vida que puedan yacer en las rocas. Con su sensor de humedad, detecta cómo este se intercambia entre la atmósfera y el suelo
-        curiosities:
-          - MEDA no es la primera estación meteorológica española en Marte. Ya hay otras dos, una a bordo del InSight (TWINS) y otra con el Curiosity (REMS). Lo que conforma una pequeña red de estaciones meteorológicas españolas.
-
-        moreinfo: true
-        assets:
-          resources:
-            - #1
-              title: Para conocer mejor el MEDA
-              author: Página web del CAB
-              url: https://cab.inta-csic.es/proyectos/mision-mars-2020-meda/
-              icon: link
-              target: true
-            - #2
-              title: Para conocer mejor el MEDA
-              author: Página web de la NASA
-              url: https://mars.nasa.gov/mars2020/spacecraft/instruments/meda/
-              icon: link
-              target: true
-            - #3
-              title: Datos atmosféricos de Marte (MEDA)
-              author: Página web de la NASA
-              url: https://mars.nasa.gov/mars2020/weather/
-              icon: link
-              target: true
-        picture: "/img/machines/perseverance_meda.webp"
-        picture_flag: "/img/flags/spain.svg"
-
-  - # 1 - Cráter Gale // CURIOSITY
-    id: 1
     title: "Cráter Gale"
     subtitle: "El objetivo principal de Curiosity es saber si Marte tuvo alguna vez condiciones ambientales adecuadas para que pudieran surgir formas de vida microbianas."
     machine: Curiosity (Rover)
@@ -218,8 +114,8 @@ data:
         picture: "/img/machines/curiosity_rems.webp"
         picture_flag: "/img/flags/spain.svg"
 
-  - # 2 - Elyseum Planitia // INSIGHT
-    id: 2
+  - # 1 - Elyseum Planitia // INSIGHT
+    id: 1
     title: "Elyseum Planitia"
     subtitle: "Analizar la corteza, el manto y el núcleo de Marte para y buscar las huellas de los procesos que formaron los planetas terrestres"
     machine: Insight
@@ -310,4 +206,109 @@ data:
               icon: link
               target: true
         picture: "/img/machines/insight_twins.webp"
+        picture_flag: "/img/flags/spain.svg"
+
+  - # 2 - Cráter Jezero // PERSEVERANCE
+    id: 2
+    title: "Cráter Jezero"
+    subtitle: "Perseverance recorrerá el Cráter Jezero, que se cree que fue el lugar que albergó un lago marciano hace miles de millones de años."
+    machine: Perseverance (Rover)
+    cabInstrument: MEDA
+    assets:
+      backgroundIllustration: /img/004_1.webp
+    mainText:
+      - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
+      - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
+      - Hace más de 3.500 millones de años, vías fluviales alimentaron el cráter generando el lago y el delta con su peculiar forma de abanico. Su lecho es rico en sedimentos lacustres arcillosos, convirtiéndolo en un lugar propicio para la búsqueda de biofirmas.
+    #secondaryText:
+      #- Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
+      #- Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos. En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar.
+    position:
+      lon: 70
+      lat: 50
+    tabs:
+      - #0 -- TAB 1
+        meta:
+          launch: "30.07.2020 - 12:50 UTC"
+          arrival: "18.02.2021 - 20.55 UTC"
+          place: "Cráter Jezero"
+          activity: "Sigue en activo. Periodo previsto, al menos un año marciano (unos 687 días terrestres)."
+          land: "USA"
+          agency: "NASA"
+          status: "Exito"
+        goals:
+          - Identificar entornos pasados capaces de albergar vida microbiana
+          - Buscar signos de posible vida microbiana en el pasado en esos entornos habitables, particularmente en rocas especiales que se sabe que conservan signos de vida a lo largo del tiempo
+          - Recoger muestras de roca y "suelo" y almacenarlas en la superficie marciana
+          - Probar la producción de oxígeno de la atmósfera marciana
+        instruments:
+          - Espectrómetro de fuorescencia de rayos X (PIXL)
+          - Sensor de imágenes por radar para la exploración del subsuelo marciano (RIMFAX)
+          - <span class="toTab2">Analizador de Dinámica Ambiental Marciana (MEDA)</span>
+          - Experimento ISRU de Oxígeno en Marte (MOXIE)
+          - SuperCam
+          - Mastercam-Z
+          - Escaneo de ambientes habitables con raman y luminiscencia para compuestos orgánicos y químicos (SHERLOC)
+          - Ingenuity
+        contribution:
+          - Destaca la incorporación del primer “helicóptero explorador” que sobrevuele la superficie marciana, <em>el Ingenuity</em>
+        moreinfo: true
+        assets:
+          resources:
+            - #1
+              title: Para conocer mejor el Perseverance
+              author: Página web de la NASA
+              url: https://mars.nasa.gov/mars2020/
+              icon: link
+              target: true
+
+        picture: "/img/machines/perseverance.webp"
+        picture_flag: "/img/flags/EEUU.svg"
+      - #1 -- TAB 2
+        meta:
+          title: Mars Environmental Dynamics Analyzer
+          translate: "Analizador de Dinámica Ambiental Marciana"
+          activity: "Activo, previsto un año y medio marciano."
+          land: "España"
+          agency: "Centro de Astrobiología (CAB)"
+          head_researcher: José Rodríguez-Manfredi
+          status: "Exito"
+        goals:
+          - Estudiar la dinámica atmosférica de Marte
+          - Cómo se comporta y como se relacionan la temperatura, la radiación o la humedad en sus capas bajas
+          - Cuál es la acción del polvo marciano en dicha atmósfera
+          - Cómo son los cambios cíclicos que allí se producen
+        instruments:
+          - MEDA es un conjunto de sensores ambientales diseñados para registrar las propiedades ópticas del polvo y seis parámetros atmosféricos, <strong>velocidad y dirección del viento, presión, humedad relativa, temperatura del aire, temperatura del suelo y radiación</strong>.
+          - La medición sistemática y según una cadencia y frecuencia configuradas de acuerdo con la disponibilidad de recursos, es uno de sus principales valores. MEDA tiene un alto grado de autonomía operativa, se activa cada hora y después de grabar y almacenar datos, entra en reposo independientemente de las demás actividades del Perseverance, tanto de día como de noche.
+
+        contribution:
+          - Suministra datos sobre las condiciones meteorológicas (temperatura, humedad, velocidad y dirección del viento en torno al Perseverance. Los datos del MEDA contribuyen a predecir el clima de Marte de manera más precisa, lo que será de fundamental importancia en futuras colonizaciones
+          - Estudia el tamaño y forma del polvo en el terreno y en la atmósfera marcianos ya que, siendo muy abundante, condiciona el clima, la temperatura y dirige ciertos procesos químicos. Así se comprobará como afecta al rendimiento del propio rover y su instrumental.
+          - Mide la radiación, con lo que ayuda a entender sus efectos sobre restos de vida que puedan yacer en las rocas. Con su sensor de humedad, detecta cómo este se intercambia entre la atmósfera y el suelo
+        curiosities:
+          - MEDA no es la primera estación meteorológica española en Marte. Ya hay otras dos, una a bordo del InSight (TWINS) y otra con el Curiosity (REMS). Lo que conforma una pequeña red de estaciones meteorológicas españolas.
+
+        moreinfo: true
+        assets:
+          resources:
+            - #1
+              title: Para conocer mejor el MEDA
+              author: Página web del CAB
+              url: https://cab.inta-csic.es/proyectos/mision-mars-2020-meda/
+              icon: link
+              target: true
+            - #2
+              title: Para conocer mejor el MEDA
+              author: Página web de la NASA
+              url: https://mars.nasa.gov/mars2020/spacecraft/instruments/meda/
+              icon: link
+              target: true
+            - #3
+              title: Datos atmosféricos de Marte (MEDA)
+              author: Página web de la NASA
+              url: https://mars.nasa.gov/mars2020/weather/
+              icon: link
+              target: true
+        picture: "/img/machines/perseverance_meda.webp"
         picture_flag: "/img/flags/spain.svg"
