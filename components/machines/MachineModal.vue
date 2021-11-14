@@ -6,8 +6,15 @@
     >
       <ph-x-circle :size="32" />
     </button>
+
+    <!-- IMAGEN -->
     <div class="machine_modal_image">
-      <img :src="tab1Active ? tab1.picture : tab2.picture" :alt="`Imagen del ${machineData.machine}`">
+      <img
+        :src="tab1Active ? tab1.picture : tab2.picture"
+        :alt="`Imagen del ${machineData.machine}`"
+        class="image_background"
+      >
+      <div class="backdrop"></div>
       <div class="machine_title">{{ machineData.machine }}</div>
       <button
         class="cabBtn"
@@ -100,45 +107,54 @@ export default Vue.extend({
     right: 15px;
   }
 
+
+  .machine_modal_image{
+    width: 60%;
+    height: 100%;
+    @apply flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .backdrop{
+      @apply flex absolute bg-gray-300;
+      height: 45%;
+      width: 80%;
+    }
+    .image_background{
+      @apply absolute;
+      z-index: 3;
+    }
+    .cabBtn{
+      @apply flex absolute rounded-full bg-gray-200 text-black px-4 py-2;
+      @apply ring-black ring-0 ring-opacity-20;
+      align-items: center;
+      pointer-events: initial;
+      transition: all 350ms ease;
+      background-clip: padding-box;
+      border: 3px solid white;
+      top: 15px;
+      right: 15px;
+      &:hover {
+        @apply ring-black ring-4 ring-opacity-20;
+        border: 3px solid transparent;
+        transition: all 350ms ease;
+      }
+      &.active{
+        background-color: #1188fc;
+        color: white;
+      }
+    }
+    .machine_title{
+      @apply absolute text-black;
+      top: 20px;
+      left: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+  }
+
 }
 
-/** explorer modal */
-.machine_modal_image{
-  width: 60%;
-  height: 100%;
-  @apply bg-gray-200 flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  .cabBtn{
-    @apply flex absolute rounded-full bg-white text-black px-4 py-2;
-    @apply ring-white ring-0 ring-opacity-50;
-    align-items: center;
-    //transform: translate(-50%, -50%);
-    pointer-events: initial;
-    transition: all 350ms ease;
-    background-clip: padding-box;
-    border: 3px solid white;
-    top: 15px;
-    right: 15px;
-    &:hover {
-      @apply ring-white ring-4 ring-opacity-40;
-      border: 3px solid transparent;
-      transition: all 350ms ease;
-    }
-    &.active{
-      background-color: #1188fc;
-      color: white;
-    }
-  }
-  .machine_title{
-    @apply absolute text-black;
-    top: 20px;
-    left: 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-}
 
 </style>
 
