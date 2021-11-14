@@ -1,5 +1,11 @@
 <template>
   <div class="machine_modal" :class="open ? 'opened' : ''">
+    <button
+      class="btn_close"
+      @click="$emit('toggleModal')"
+    >
+      <ph-x-circle :size="32" />
+    </button>
     <div class="machine_modal_image">
       <img :src="tab1Active ? tab1.picture : tab2.picture" :alt="`Imagen del ${machineData.machine}`">
       <div class="machine_title">{{ machineData.machine }}</div>
@@ -37,12 +43,14 @@ import { mapState } from 'vuex'
 import AnimationType_04 from '../mixins/AnimationType_04'
 import MachineModalTab1 from '~/components/machines/MachineModalTab1.vue'
 import MachineModalTab2 from '~/components/machines/MachineModalTab2.vue'
+import { PhXCircle } from 'phosphor-vue'
 
 export default Vue.extend({
   name: 'MachineModal',
   components: {
     MachineModalTab1,
     MachineModalTab2,
+    PhXCircle
   },
   data() {
     return {
@@ -81,10 +89,15 @@ export default Vue.extend({
   @apply absolute z-20 inset-0 m-12 flex;
   @apply bg-white px-4 py-4 text-gray-800;
   min-width: 300px;
-  transition: transform 350ms ease;
+  transition: transform 550ms ease;
   transform: translate(-120%);
   &.opened {
     transform: translate(0);
+  }
+  .btn_close{
+    @apply absolute;
+    top: 15px;
+    right: 15px;
   }
 
 }
