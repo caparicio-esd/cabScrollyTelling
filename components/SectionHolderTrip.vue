@@ -66,6 +66,9 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .section {
   @apply min-h-screen bg-black text-white;
+  .section_content_background {
+    overflow: hidden;
+  }
   .author {
     margin-top: 40px;
     font-weight: bold;
