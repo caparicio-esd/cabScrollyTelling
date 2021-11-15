@@ -26,7 +26,7 @@ assets:
       icon: file-pdf
       target: false
     - #2
-      title: Relación histórica de misiones a Marte a partir de 1960
+      title: Relación histórica de misiones a Marte desde 1960
       author: Grupo de investigación e/s/d
       url: /docs/02/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
       icon: file-pdf

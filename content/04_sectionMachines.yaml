@@ -7,17 +7,18 @@ menuTitle: Inicio
 data:
   - # 0 - Cráter Jezero // PERSEVERANCE
     id: 0
-    title: "Cráter Jezero // PERSEVERANCE"
+    title: "Cráter Jezero"
     subtitle: "Primer amartizaje controlado."
+    machine: Perseverance
     assets:
       backgroundIllustration: /img/004_1.webp
     mainText:
+      - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
       - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
-      - Hace más de 3.500 millones de años, vías fluviales alimentaron el cráter generando el lago y el delta con su peculiar forma de abanico.
-      - Perseverance es el nuevo vehículo Mars rover creado por el Laboratorio de Propulsión a Reacción dentro de la Mars 2020 del Programa de Exploración de Marte de la NASA.
-    secondaryText:
-      - Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
-      - Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos. En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar.
+      - Hace más de 3.500 millones de años, vías fluviales alimentaron el cráter generando el lago y el delta con su peculiar forma de abanico. Su lecho es rico en sedimentos lacustres arcillosos, convirtiéndolo en un lugar propicio para la búsqueda de biofirmas.
+    #secondaryText:
+      #- Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
+      #- Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos. En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar.
     position:
       lon: 70
       lat: 50
@@ -51,18 +52,18 @@ Investigadora principal: Abigail Allwood, Laboratorio de Propulsión a Chorro de
 
   - # 1 - Cráter Gale // CURIOSITY
     id: 1
-    title: "Cráter Gale // CURIOSITY"
+    title: "Cráter Gale"
     subtitle: "Primer amartizaje controlado."
+    machine: Curiosity
     assets:
       backgroundIllustration: /img/004_2.webp
     mainText:
-      - El Centro de Astrobiología nace en 1998-1999 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).
-      - Las instalaciones principales del CAB se sitúan en Torrejón de Ardoz (campus del INTA) y en Villanueva de la Cañada (sede del Centro Europeo de Astronomía Espacial, ESAC) ambas localidades cercanas a Madrid.
-      - Su equipo multidisciplinar de científicos e ingenieros lo convierten en un centro de investigación transdisciplinar ideal para abordar la astrobiología.
-      - El  CAB ha sido reconocido con el premio de Excelencia Científica «María de Maeztu» por el Ministerio de Ciencia español.
-    secondaryText:
-      - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
-      - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+      - <em>Coordenadas en Marte. 5° 22′ 12″ S, 137° 48′ 36″ E  (-5.37°, 137.81°)</em>
+      - Gale es un cráter con un diámetro de 154 km. En su centro se sitúa un pico central de 5.500 m de altitud denominado Aeolis Mons. Algunos científicos piensan que el cráter se llenó con sedimentos a lo largo del tiempo y los vientos de Marte tallaron la montaña en el centro.
+      - Esta formación en secciones de rocas sedimentarias expuestas es un registro que puede revelar  historias que datan de miles de millones de años. La arcilla se deposita lentamente en el agua y forma pequeñas plaquetas que se colocan alrededor de las cosas, endureciéndose con el tiempo y envolviéndolas como un "molde". Si alguna vez existieron en Marte compuestos orgánicos, podrían estar preservados en la arcilla.
+    #secondaryText:
+     #- En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
+     # - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
     position:
       lon: 70
       lat: 50
@@ -93,18 +94,18 @@ Investigadora principal: Abigail Allwood, Laboratorio de Propulsión a Chorro de
 
   - # 2 - Elyseum Planitia // INSIGHT
     id: 2
-    title: "Elyseum Planitia // INSIGHT"
+    title: "Elyseum Planitia"
     subtitle: "Primer amartizaje controlado."
+    machine: Insight
     assets:
       backgroundIllustration: /img/004_3.webp
     mainText:
-      - El Centro de Astrobiología nace en 1998-1999 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).
-      - Las instalaciones principales del CAB se sitúan en Torrejón de Ardoz (campus del INTA) y en Villanueva de la Cañada (sede del Centro Europeo de Astronomía Espacial, ESAC) ambas localidades cercanas a Madrid.
-      - Su equipo multidisciplinar de científicos e ingenieros lo convierten en un centro de investigación transdisciplinar ideal para abordar la astrobiología.
-      - El  CAB ha sido reconocido con el premio de Excelencia Científica «María de Maeztu» por el Ministerio de Ciencia español.
-    secondaryText:
-      - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
-      - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+      - <em>Coordenadas en Marte. 2° 58′ 48″ N, 154° 44′ 24″ E  (2.98°, 154.74°)</em>
+      - Es una llanura lisa y plana justo al norte del ecuador con una elevación lo suficientemente baja como para tener suficiente atmósfera para un amartizaje seguro. Su proximidad al ecuador asegura que el módulo de exploración alimentado por energía solar reciba suficiente luz.
+      - Además es una zona poco rocosa y con una superficie adecuada para que los instrumentos puedan sondear el interior. Por lo tanto es el lugar perfecto desde el que estudiar el interior profundo marciano.
+    #secondaryText:
+     # - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
+     # - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
     position:
       lon: 70
       lat: 50
