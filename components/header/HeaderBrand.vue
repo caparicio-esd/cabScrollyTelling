@@ -22,5 +22,6 @@ export default Vue.extend({
 
 <style lang="postcss" scoped>
 .header_brand {
+  @apply font-sans text-sm uppercase;
 }
 </style>

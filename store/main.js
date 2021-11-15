@@ -31,12 +31,12 @@ export const getters = {
   },
   getSceneDuration(state) {
     return (id) => {
-      return state.scenes.scenes.get(id).duration()
+      return state.scenes.scenes.get(id)?.duration()
     }
   },
   getSceneScrollOffset(state) {
     return (id) => {
-      return state.scenes.scenes.get(id).scrollOffset()
+      return state.scenes.scenes.get(id)?.scrollOffset()
     }
   },
   getTotalScenesDuration(state) {

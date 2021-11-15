@@ -30,7 +30,6 @@ export default {
     goToNextSlide() {
       const currScene = this.inWhichSceneIAm
       const sLimits = this.scrollOffsetLimitsByScene(currScene + 1)
-      const sDuration = this.getSceneScrollOffset(currScene + 1)
       anime({
         targets: { y: window.pageYOffset },
         y: sLimits[0] + this.height * 2, 
@@ -44,3 +43,9 @@ export default {
   },
 }
 </script>
+
+<style lang="postcss" scoped>
+button.btn_primary {
+  @apply font-sans;
+}
+</style>

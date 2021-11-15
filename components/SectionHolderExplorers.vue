@@ -43,6 +43,7 @@ export default Vue.extend({
   async fetch(): Promise<void> {
     this.content = await getContent(this, '03_sectionExplorers')
     this.fetchContent(this.content)
+    this.addData({index: this.index, data: this.content})
   },
   computed: {
     ...mapState({
@@ -57,6 +58,7 @@ export default Vue.extend({
       setScrollable: 'main/setScrollable',
       fetchContent: 'explorers/fetchContent',
       setExplorerOpened: 'explorers/setExplorerOpened',
+      addData: 'data/addData',
     }),
     onEnterScene(ev: any) {
       if (!this.debug) {
