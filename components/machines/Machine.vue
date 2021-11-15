@@ -5,6 +5,7 @@
   >
     <div
       class="section_content_background"
+
       :style="{ width: `${width}px`, height: `${height}px` }"
     >
       <img :src="content.assets.backgroundIllustration" :alt="content.title" />
@@ -15,14 +16,20 @@
         <h2 class="mb-12" v-html="n2br(content.title)" />
         <p v-for="(p, i) in content.mainText" :key="i" v-html="p"></p>
       </div>
-      <!-- <div class="section_col_b col-start-3 col-span-2 self-center">
-        <p v-for="(p, i) in content.secondaryText" :key="i">{{ p }}</p>
-      </div> -->
-      <div class="machine_icon" :style="getMachinePosition(content)">
+
+      <div class="machine_icon"
+        :style="getMachinePosition(content)"
+        @click="toggleModal"
+      >
         <ph-rocket :size="64" />
         {{content.machine}}
       </div>
-      <!-- <machine-modal :id="`modal${index}`" :data="content" /> -->
+      <machine-modal
+        :id="`modal${index}`"
+        :machineData="content"
+        :open="openedModal"
+        @toggleModal="toggleModal"
+      />
       <button-next-screen />
     </div>
   </div>
@@ -47,6 +54,11 @@ export default Vue.extend({
     MachineModal,
     ButtonNextScreen,
   },
+  data() {
+    return {
+      openedModal: false
+    }
+  },
   props: ['content', 'index'],
   mixins: [AnimationType_01],
   methods: {
@@ -60,6 +72,9 @@ export default Vue.extend({
         left: `${machine.position.lon}%`,
       }
     },
+    toggleModal(){
+      this.openedModal = !this.openedModal;
+    }
   },
   computed: {
     ...mapState({
@@ -71,8 +86,8 @@ export default Vue.extend({
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
-    //@ts-ignore    
-    this.addData({index: this.index, data: {...this.content}})
+    //@ts-ignore
+    this.addData({index: this.index, data: this.content})
   },
 })
 </script>

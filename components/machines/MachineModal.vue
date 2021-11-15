@@ -1,55 +1,45 @@
 <template>
-  <div class="machine_modal">
-    <span>hola...</span>
-    
-    <!-- <CThemeProvider>
-      <c-box w="100%">
-        <c-tabs>
-          <c-tab-list>
-            <c-tab
-              v-for="(tab, index) in data.tabs"
-              :key="index">{{tab.title}}</c-tab>
-          </c-tab-list>
-          <c-tab-panels class="tabPanels">
-            <c-tab-panel
-              class="tabPanel"
-              v-for="(tab, index) in data.tabs"
-              :key="index">
-              <div class="flex">
-                <img :src="tab.illustration" alt="">
-                <div>
-                  <p>{{tab.content}}</p>
+  <div class="machine_modal" :class="open ? 'opened' : ''">
+    <button
+      class="btn_close"
+      @click="$emit('toggleModal')"
+    >
+      <ph-x-circle :size="32" />
+    </button>
 
-                  <table v-if="index == 'mision'">
-                    <tr>
-                      <th>Nacionalidad</th>
-                      <td>{{tab.nationality}}</td>
-                    </tr>
-                    <tr>
-                      <th>Agencia espacial</th>
-                      <td>{{tab.agency}}</td>
-                    </tr>
-                    <tr>
-                      <th>Fecha / hora Lanzamiento</th>
-                      <td>{{tab.dateHourLaunch}}</td>
-                    </tr>
-                    <tr>
-                      <th>Fecha / hora Aterrizaje</th>
-                      <td>{{tab.dateHourLanding}}</td>
-                    </tr>
-                  </table>
-                </div>
+    <!-- IMAGEN -->
+    <div class="machine_modal_image">
+      <img
+        :src="tab1Active ? tab1.picture : tab2.picture"
+        :alt="`Imagen del ${machineData.machine}`"
+        class="image_background"
+      >
+      <div class="backdrop"></div>
+      <div class="machine_title">{{ machineData.machine }}</div>
+      <button
+        class="cabBtn"
+        :class="tab2Active ? 'active' : ''"
+        @click="toggleTab"
+      >
+        {{ machineData.cabInstrument }}
+      </button>
+    </div>
 
-              </div>
-
-            </c-tab-panel>
-
-          </c-tab-panels>
-        </c-tabs>
-      </c-box>
-    </CThemeProvider> -->
-
-    <div class="btn_close">x</div>
+    <!-- TAB 1 // machine -->
+    <machine-modal-tab-1
+      :tab1="tab1"
+      :title="machineData.title"
+      :subtitle="machineData.subtitle"
+      v-if="tab1Active"
+      @toggleTab="toggleTab"
+    />
+    <!-- TAB 2 // CAB instrument -->
+    <machine-modal-tab-2
+      :tab2="tab2"
+      :title="machineData.title"
+      :subtitle="machineData.subtitle"
+      v-if="tab2Active"
+    />
   </div>
 
 </template>
@@ -58,29 +48,37 @@
 import Vue from 'vue'
 import { mapState } from 'vuex'
 import AnimationType_04 from '../mixins/AnimationType_04'
-import {
-  CThemeProvider,
-  CTabs,
-  CTabList,
-  CTabPanels,
-  CTab,
-  CTabPanel } from '@chakra-ui/vue'
+import MachineModalTab1 from '~/components/machines/MachineModalTab1.vue'
+import MachineModalTab2 from '~/components/machines/MachineModalTab2.vue'
+import { PhXCircle } from 'phosphor-vue'
 
 export default Vue.extend({
   name: 'MachineModal',
   components: {
-    CThemeProvider,
-    CTabs,
-    CTabList,
-    CTabPanels,
-    CTab,
-  CTabPanel
+    MachineModalTab1,
+    MachineModalTab2,
+    PhXCircle
   },
-  props: ['data'],
+  data() {
+    return {
+      tab1: this.machineData.tabs[0],
+      tab2: this.machineData.tabs[1],
+      tab1Active: true,
+      tab2Active: false,
+    }
+  },
+  props: ['machineData', 'open'],
   computed: {
     ...mapState({
       width: (state: any) => state.main.ui.viewPort.width,
     }),
+  },
+  methods: {
+    toggleTab(){
+      this.tab1Active = !this.tab1Active;
+      this.tab2Active = !this.tab2Active;
+    }
+
   },
   mixins: [AnimationType_04],
   async mounted() {
@@ -95,36 +93,68 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 
 .machine_modal {
-  @apply absolute z-20 inset-0 m-12;
+  @apply absolute z-20 inset-0 m-12 flex;
   @apply bg-white px-4 py-4 text-gray-800;
   min-width: 300px;
-  transition: transform 350ms ease;
+  transition: transform 550ms ease;
   transform: translate(-120%);
   &.opened {
     transform: translate(0);
   }
   .btn_close{
-    @apply absolute rounded-full bg-white text-black p-2;
-    @apply ring-white ring-0 ring-opacity-50;
-    transform: translate(-50%, -50%);
-    pointer-events: initial;
-    transition: all 350ms ease;
-    background-clip: padding-box;
-    border: 3px solid white;
-    right: 0;
+    @apply absolute;
+    top: 15px;
+    right: 15px;
   }
-  .tabPanels{
-    @apply p-4;
-    .tabPanel{
-      img{
 
-        height: 350px;
-        margin: 4em;
+
+  .machine_modal_image{
+    width: 60%;
+    height: 100%;
+    @apply flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .backdrop{
+      @apply flex absolute bg-gray-300;
+      height: 45%;
+      width: 80%;
+    }
+    .image_background{
+      @apply absolute;
+      z-index: 3;
+    }
+    .cabBtn{
+      @apply flex absolute rounded-full bg-gray-200 text-black px-4 py-2;
+      @apply ring-black ring-0 ring-opacity-20;
+      align-items: center;
+      pointer-events: initial;
+      transition: all 350ms ease;
+      background-clip: padding-box;
+      border: 3px solid white;
+      top: 15px;
+      right: 15px;
+      &:hover {
+        @apply ring-black ring-4 ring-opacity-20;
+        border: 3px solid transparent;
+        transition: all 350ms ease;
       }
-      p{
-        @apply p-6 m-12;
+      &.active{
+        background-color: #1188fc;
+        color: white;
       }
     }
+    .machine_title{
+      @apply absolute text-black;
+      top: 20px;
+      left: 20px;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
   }
+
 }
+
+
 </style>
+
