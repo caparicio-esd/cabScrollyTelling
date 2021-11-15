@@ -1,6 +1,5 @@
 <template>
   <div class="wrapper">
-    <head-default />
     <main-scroll-controller>
       <main>
         <!-- ============================== -->
@@ -38,7 +37,7 @@
         <!-- section máquinas CAB -->
         <!-- ============================== -->
         <!--  -->
-        <section-holder-machines  />
+        <section-holder-machines :index="5" />
 
         <!-- ============================== -->
         <!-- 04 section despedida máquinas, hola viaje a la tierra -->
@@ -71,6 +70,7 @@
         </section-holder-default>
       </main>
     </main-scroll-controller>
+    <head-default />
   </div>
 </template>
 

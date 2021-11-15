@@ -32,6 +32,7 @@ import { mapState } from 'vuex'
 
 export default Vue.extend({
   name: 'SectionHolderTrip',
+  props: ['index'],
   data() {
     return {
       content: {},

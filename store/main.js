@@ -13,7 +13,7 @@ export const state = () => ({
   },
   scenes: {
     amount: 0,
-    scenes: [],
+    scenes: new Map(),
     currentScene: -1,
     tutorial: true,
   },
@@ -31,31 +31,43 @@ export const getters = {
   },
   getSceneDuration(state) {
     return (id) => {
-      return state.scenes.scenes[id].duration()
+      return state.scenes.scenes.get(id).duration()
     }
   },
   getSceneScrollOffset(state) {
     return (id) => {
-      return state.scenes.scenes[id].scrollOffset()
+      return state.scenes.scenes.get(id).scrollOffset()
     }
   },
   getTotalScenesDuration(state) {
-    return state.scenes.scenes.reduce((total, scene, i) => {
+    return Array.from(state.scenes.scenes.values()).reduce((total, scene, i) => {
       return total + scene.duration()
     }, 0)
   },
   getTotalScenesDuration02(state) {
     const scenes = state.scenes.scenes
-    const lastScene = scenes[scenes.length - 1]
+    const lastScene = scenes.get(scenes.size - 1)
     if (lastScene) {
       return lastScene.scrollOffset() + lastScene.duration() + 8 // 8 for the last padding
     }
   },
-  inWhichSceneIAm(state) {
+  inWhichSceneIAmOld(state) {
     const scroll = getters.getScroll(state)
     const index = state.scenes.scenes.findIndex((scene, id) => {
       const slimits = getters.scrollOffsetLimitsByScene(state)(id)
+      getters.scrollOffsetLimitsByScene02(state, id)
       return scroll > slimits[0] && scroll <= slimits[1]
+    })
+    return Math.max(0, index)
+  },
+  inWhichSceneIAm(state) {
+    const scroll = getters.getScroll(state)
+    let index = -1;
+    Array.from(state.scenes.scenes.entries()).forEach(([id, scene]) => {
+      const slimits = getters.scrollOffsetLimitsByScene(state)(id)
+      if (scroll > slimits[0] && scroll <= slimits[1]) {
+        index = id
+      } 
     })
     return Math.max(0, index)
   },
@@ -90,10 +102,10 @@ export const mutations = {
       height,
     }
   },
-  ADD_SCENE(state, { scene }) {
-    const amount = state.scenes.amount + 1
-    const scenes = [...state.scenes.scenes]
-    scenes.push(scene)
+  ADD_SCENE(state, { scene, index }) {
+    const scenes = new Map(state.scenes.scenes)
+    scenes.set(index, scene)
+    const amount = scenes.size
     state.scenes = {
       ...state.scenes,
       amount,
@@ -127,8 +139,8 @@ export const actions = {
   setScrollable({ commit }, scrollable) {
     commit('SET_SCROLLABLE', { scrollable })
   },
-  addScene({ commit }, { scene }) {
-    commit('ADD_SCENE', { scene })
+  addScene({ commit }, { scene, index }) {
+    commit('ADD_SCENE', { scene, index })
   },
   setTutorial({ commit }, isSet) {
     commit('SET_TUTORIAL', { isSet })

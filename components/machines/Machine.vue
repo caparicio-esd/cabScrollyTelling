@@ -71,7 +71,7 @@ export default Vue.extend({
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
     //@ts-ignore    
-    this.addData({index: this.index, data: this.content})
+    this.addData({index: this.index, data: {...this.content}})
   },
 })
 </script>

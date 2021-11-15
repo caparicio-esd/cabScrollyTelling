@@ -19,6 +19,7 @@ import Scrollable from './mixins/Scrollable'
 
 export default Vue.extend({
   name: 'SectionHolderExplorers',
+  props: ['index'],
   components: {
     Explorers,
     ExplorerModal,
