@@ -14,7 +14,12 @@
     <div class="section_content_holder">
       <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
-        <div class="with-ul" v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></div>
+        <div
+          class="with-ul"
+          v-for="(p, i) in content.data.mainText"
+          :key="i"
+          v-html="p"
+        ></div>
       </div>
     </div>
     <button-next-screen />
@@ -25,6 +30,7 @@
         :key="i"
         :style="getExplorerStyle(explorer, i)"
         class="machine"
+        @click="getToScrollPoint(i)"
       >
         <ph-rocket />
         {{ explorer.name }}
@@ -36,10 +42,11 @@
 import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
-import { mapState, mapActions } from 'vuex'
+import { mapState, mapActions, mapGetters } from 'vuex'
 import AnimationType_01 from '../mixins/AnimationType_01'
 import ButtonNextScreen from '~/components/ButtonNextScreen.vue'
 import { PhRocket } from 'phosphor-vue'
+import anime from 'animejs'
 
 export default Vue.extend({
   props: ['index'],
@@ -54,10 +61,14 @@ export default Vue.extend({
       width: (state: any) => state.main.ui.viewPort.width,
       height: (state: any) => state.main.ui.viewPort.height,
     }),
+    ...mapGetters({
+      inWhichSceneIAm: 'main/inWhichSceneIAm',
+      scrollOffsetLimitsByScene: 'main/scrollOffsetLimitsByScene',
+    }),
   },
   components: {
     ButtonNextScreen,
-    PhRocket
+    PhRocket,
   },
   methods: {
     ...mapActions({
@@ -69,6 +80,21 @@ export default Vue.extend({
         top: `${explorer.position.lat}%`,
         left: `${explorer.position.lon}%`,
       }
+    },
+    getToScrollPoint(index: number): void {
+      // TODO - refactor navigations to file
+      const currScene = this.inWhichSceneIAm
+      const sLimits = this.scrollOffsetLimitsByScene(index + this.index + 1)
+      anime({
+        targets: { y: window.pageYOffset },
+        y: sLimits[0] + this.height * 2,
+        duration: 2500,
+        easing: 'easeInOutCubic',
+        update: ({ animations }) => {
+          //@ts-ignore
+          scrollTo(0, animations[0].currentValue)
+        },
+      })
     },
   },
   mixins: [AnimationType_01],
@@ -85,7 +111,7 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-.section_content_holder p.with-ul ul{
+.section_content_holder p.with-ul ul {
   list-style: circle;
 }
 .machines {
@@ -93,7 +119,7 @@ export default Vue.extend({
   pointer-events: none;
   cursor: pointer;
   .machine {
-    @apply flex absolute rounded-full bg-white text-black p-2 ;
+    @apply flex absolute rounded-full bg-white text-black p-2;
     @apply ring-white ring-0 ring-opacity-50;
     align-items: center;
     transform: translate(-50%, -50%);
@@ -101,7 +127,7 @@ export default Vue.extend({
     transition: all 350ms ease;
     background-clip: padding-box;
     border: 3px solid white;
-    svg{
+    svg {
       @apply mr-1;
     }
     &.explorer_active {
@@ -120,7 +146,5 @@ export default Vue.extend({
       transition: all 350ms ease;
     }
   }
-
 }
-
 </style>

@@ -17,7 +17,6 @@
           <p class="author" v-html="content.data[0].author"></p>
           <p class="position" v-html="content.data[0].position"></p>
         </div>
-
       </div>
     </div>
   </section>
@@ -28,7 +27,7 @@ import Vue from 'vue'
 import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
 import AnimationType_02 from './mixins/AnimationType_02'
-import { mapState } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 
 export default Vue.extend({
   name: 'SectionHolderTrip',
@@ -47,10 +46,14 @@ export default Vue.extend({
     }),
   },
   methods: {
+    ...mapActions({
+      addData: 'data/addData',
+    }),
     n2br,
   },
   async fetch() {
     this.content = await getContent(this, '05_sectionTrip')
+    this.addData({ index: this.index, data: this.content })
   },
   async mounted() {
     await this.$nextTick()
@@ -63,11 +66,11 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .section {
   @apply min-h-screen bg-black text-white;
-  .author{
+  .author {
     margin-top: 40px;
     font-weight: bold;
   }
-  .position{
+  .position {
     font-style: italic;
   }
 }
