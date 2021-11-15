@@ -25,8 +25,8 @@ export default Vue.extend({
             })
             this.subscene[0].setPin(ref.constructor === Object ? ref.section : ref[0])
             this.refDom = ref.constructor === Object ? ref.section : ref[0]
-            this.$root.$emit('scene_created', this.subscene[0])
-            
+            //@ts-ignore
+            this.$root.$emit('scene_created', this.subscene[0], this.index)            
 
             this.subscene[0].on("start", (ev: any) => {
                 this.onStartScene(ev);

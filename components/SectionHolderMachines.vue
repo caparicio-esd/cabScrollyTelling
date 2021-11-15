@@ -6,7 +6,7 @@
         v-for="(content, i) in content.data"
         :key="i"
         :content="content"
-        :index="i+5"
+        :index="index+i"
       />
     </div>
   </section>
@@ -20,6 +20,7 @@ import { getContent } from '~/lib/sectionUtils'
 
 export default Vue.extend({
   name: 'SectionHolderMachines',
+  props: ['index'],
   components: {
     Machine,
   },

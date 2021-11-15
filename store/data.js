@@ -14,7 +14,7 @@ export const getters = {
 
 export const mutations = {
   ADD_DATA(state, { index, data }) {
-    const newDataItems = state.dataItems
+    const newDataItems = new Map(state.dataItems)
     newDataItems.set(index, data)
     state.dataItems = newDataItems
   },
