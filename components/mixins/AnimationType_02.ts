@@ -20,7 +20,7 @@ export default Vue.extend({
             })
                 .add({
                     targets: [background],
-                    scale: [1, 4]
+                    scale: [1, 2]
                 }, "0")
         },
         onProgressScene(ev: any) {

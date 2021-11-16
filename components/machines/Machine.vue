@@ -102,5 +102,10 @@ export default Vue.extend({
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+  transition: all .5s ease;
+  &:hover{
+    transform: scale(1.1) !important;
+  }
 }
 </style>

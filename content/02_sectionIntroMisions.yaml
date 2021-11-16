@@ -14,7 +14,7 @@ data:
   secondaryText:
 
 assets:
-  backgroundIllustration: /img/002.webp
+  backgroundIllustration: /img/backgrounds/002.webp
   resources:
     - #1
       title: Marte como imaginario
