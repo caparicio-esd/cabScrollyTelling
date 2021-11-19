@@ -5,7 +5,7 @@ title: Sección
 menuTitle: Viaje a la tierra
 
 data:
-  title: El destino de los datos
+  title: <span class="primary_color">El destino de los datos</span>
   mainText:
     - Los datos recogidos por las misiones TWINS, REMS y MEDA son enviados a la Tierra para su estudio y análisis.
     - Y te preguntarás, ¿qué se hace en el CAB con la información recibida?

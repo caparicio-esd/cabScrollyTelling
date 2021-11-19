@@ -13,7 +13,7 @@
 
     <div class="section_content_holder_8 relative">
       <div class="section_col_a col-span-3 self-center">
-        <h2 class="mb-12" v-html="n2br(content.title)" />
+        <h2 class="primary_color mb-12" v-html="n2br(content.title)" />
         <p v-for="(p, i) in content.mainText" :key="i" v-html="p"></p>
       </div>
 

@@ -28,14 +28,22 @@
         <!-- weather from REMS -->
         <div class="mars_data">
           <div>{{ remsData.weather_report.terrestrial_date[0] }}</div>
+          <div class="mars_place primary_color">
+            Cráter Gale
+          </div>
+          <div class="mars_coord">
+            Coordenadas.<br> 5° 22′ 12″ S, 137° 48′ 36″ E (-5.37°, 137.81°)
+          </div>
+
           <div class="mars_sol">Sol {{ remsData.weather_report.sol[0] }}</div>
           <div class="mars_month_opacity">{{ rems.season[0] }} - {{ rems.atmo_opacity[0] }}</div>
           <!-- <div class="mars_sunrise_sunset">Amanecer: {{rems.sunrise[0]}} - Anochecer: {{rems.sunset[0]}}</div>-->
           <!-- gts_temp: suelo, temp: aire -->
           <div class="mars_temp">
             <ph-thermometer />
-            {{ rems.max_temp[0]}}º | {{ rems.min_temp[0]}}º
+            <span class="primary_color">{{ rems.max_temp[0]}}º</span> | <span class="primary_color">{{ rems.min_temp[0]}}º</span>
           </div>
+
         </div>
         <!-- player -->
         <div class="players">
@@ -123,6 +131,11 @@ export default Vue.extend({
 .mars_data {
   font-size: 1.4em;
   padding: 2em;
+
+  .mars_coord{
+    font-size: 0.8em;
+    font-style: italic;
+  }
   .mars_sol {
     font-size: 2em;
   }

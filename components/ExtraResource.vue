@@ -1,8 +1,8 @@
 <template>
   <a class="resource" :href="resource.url" :target="resource.target ? '_blank' : '_self'">
-    <ph-file-pdf :size="32" v-if="resource.icon == 'file-pdf'"/>
-    <ph-file :size="32" v-if="resource.icon == 'file'"/>
-    <ph-link :size="32" v-if="resource.icon == 'link'"/>
+    <ph-file-pdf class="primary_color" :size="32" v-if="resource.icon == 'file-pdf'"/>
+    <ph-file class="primary_color" :size="32" v-if="resource.icon == 'file'"/>
+    <ph-link class="primary_color" :size="32" v-if="resource.icon == 'link'"/>
     <div class="txt_box">
       <div class="title">{{resource.title}}</div>
       <div class="author">{{resource.author}}</div>
