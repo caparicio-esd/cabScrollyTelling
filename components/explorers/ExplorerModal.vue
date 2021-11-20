@@ -18,6 +18,7 @@ import ExploreModalClasses, { ExplorerModalDirection } from './ModalTypes'
 
 export default Vue.extend({
   name: 'ExplorerModal',
+  scrollToTop: true,
   components: {
     ExplorerModalContent,
   },

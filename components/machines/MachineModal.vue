@@ -54,6 +54,7 @@ import { PhXCircle } from 'phosphor-vue'
 
 export default Vue.extend({
   name: 'MachineModal',
+  scrollToTop: true,
   components: {
     MachineModalTab1,
     MachineModalTab2,
