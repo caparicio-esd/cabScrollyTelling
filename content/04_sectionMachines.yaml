@@ -49,7 +49,7 @@ data:
           - Mars Hand Lens Imager (MAHLI)
           - Cámara de mástil (Mastcam)
           - Detector de evaluación de la radiación (RAD)
-          - <span class="toTab2">Estación de Monitoreo Ambiental de Rover (REMS)</span>
+          - <span class="bg_primary_color toTab2">Estación de Monitoreo Ambiental de Rover (REMS)</span>
         contribution:
           - Se encuentran evidencias de agua líquida persistente en el pasado
           - Se encuentra azufre, nitrógeno, oxígeno, fósforo y carbono en una muestra de polvo perforada. El antiguo Marte tenía la química adecuada para albergar microbios vivos
@@ -150,7 +150,7 @@ data:
           - Cámara en el brazo (IDC)
           - Cámara en el cuerpo del módulo de aterrizaje (ICC)
           - Sismómetro (SEIS)
-          - <span class="toTab2">Estación meteorológica (TWINS)</span>
+          - <span class="toTab2 bg_primary_color">Estación meteorológica (TWINS)</span>
           - Sensores para el estudio del flujo de calor y propiedades físicas (HP3)
           - Experimento de rotación y estructura interior de InSight (RISE)
         contribution:
@@ -244,7 +244,7 @@ data:
         instruments:
           - Espectrómetro de fuorescencia de rayos X (PIXL)
           - Sensor de imágenes por radar para la exploración del subsuelo marciano (RIMFAX)
-          - <span class="toTab2">Analizador de Dinámica Ambiental Marciana (MEDA)</span>
+          - <span class="toTab2 bg_primary_color">Analizador de Dinámica Ambiental Marciana (MEDA)</span>
           - Experimento ISRU de Oxígeno en Marte (MOXIE)
           - SuperCam
           - Mastercam-Z

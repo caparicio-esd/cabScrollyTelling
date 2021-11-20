@@ -54,11 +54,9 @@ p {
   }
 }
 
-.toTab2{
-  color: #1188fc;
-  cursor: pointer;
-}
-
 .primary_color{
   color: #edcb0a;
+}
+.bg_primary_color{
+  background-color: #edcb0a;
 }

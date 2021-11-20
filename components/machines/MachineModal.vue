@@ -14,8 +14,6 @@
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
       >
-      <div class="backdrop"></div>
-      <div class="machine_title">{{ machineData.machine }}</div>
       <button
         class="cabBtn"
         :class="tab2Active ? 'active' : ''"
@@ -30,6 +28,7 @@
       :tab1="tab1"
       :title="machineData.title"
       :subtitle="machineData.subtitle"
+      :machine="machineData.machine"
       v-if="tab1Active"
       @toggleTab="toggleTab"
     />
@@ -38,6 +37,7 @@
       :tab2="tab2"
       :title="machineData.title"
       :subtitle="machineData.subtitle"
+      :CABInst="machineData.cabInstrument"
       v-if="tab2Active"
     />
   </div>
@@ -93,11 +93,13 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 
 .machine_modal {
-  @apply absolute z-20 inset-0 m-12 flex;
-  @apply bg-white px-4 py-4 text-gray-800;
+  @apply absolute z-20 inset-0 m-auto flex;
+  @apply text-gray-800;
   min-width: 300px;
   transition: transform 550ms ease;
   transform: translate(-120%);
+  height: 70vh;
+  width: 80vw;
   &.opened {
     transform: translate(0);
   }
@@ -106,22 +108,19 @@ export default Vue.extend({
     top: 15px;
     right: 15px;
   }
-
-
   .machine_modal_image{
     width: 60%;
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
     @apply flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    .backdrop{
-      @apply flex absolute bg-gray-300;
-      height: 45%;
-      width: 80%;
-    }
+
     .image_background{
       @apply absolute;
+      width: 55vw;
+      max-width: none;
       z-index: 3;
     }
     .cabBtn{
@@ -132,25 +131,22 @@ export default Vue.extend({
       transition: all 350ms ease;
       background-clip: padding-box;
       border: 3px solid white;
-      top: 15px;
+      bottom: 15px;
       right: 15px;
+      z-index: 3;
       &:hover {
         @apply ring-black ring-4 ring-opacity-20;
         border: 3px solid transparent;
         transition: all 350ms ease;
       }
       &.active{
-        background-color: #1188fc;
-        color: white;
+        background-color: #edcb0a;
       }
     }
-    .machine_title{
-      @apply absolute text-black;
-      top: 20px;
-      left: 20px;
-      font-size: 1.2em;
-      font-weight: bold;
-    }
+  }
+  .explorer_modal_content{
+    @apply p-8 bg-white;
+
   }
 
 }
