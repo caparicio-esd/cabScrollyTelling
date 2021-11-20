@@ -135,8 +135,8 @@ data:
     tabs:
       - #0 -- TAB 1
         meta:
-          launch: "05.05.2018 - ?? UTC"
-          arrival: "26.11.2018 - ?? UTC"
+          launch: "05.05.2018 - 11:05 UTC"
+          arrival: "26.11.2018 - 7:54 UTC"
           place: "Cráter Gale"
           activity: "Sigue en activo."
           land: "USA"
@@ -174,15 +174,15 @@ data:
         meta:
           title: Temperature and Winds for InSight
           translate: "Temperatura y vientos para InSight"
-          activity: "Aún está operativo."
+          activity: "Actualmente no registra datos"
           land: "España"
           agency: "Centro de Astrobiología (CAB)"
           head_researcher: José Antonio Rodríguez-Manfredi
           status: "Exito"
         goals:
-          - '??'
+          - Registrar de modo continuo las condiciones ambientales en el área de posicionamiento del Insight (Elyseum Planitia)
         instruments:
-          - Instrumento auxiliar del Insight pero fundamental para su misión científica. Tiene forma de mástil y se compone de dos sensores, un termómetro para medir la temperatura y un anemómetro para medir la velocidad y la dirección del viento dos veces por segundo. Así, los sensores registran de modo continuo las condiciones ambientales en el área de posicionamiento del Insight (Elyseum Planitia)
+          - Se compone de dos sensores, un termómetro para medir la temperatura y un anemómetro para medir la velocidad y la dirección del viento dos veces por segundo.
         contribution:
           - Registro de la temperatura del aire, la presión y los vientos en superficie, de un modo continuo y más preciso que en misiones previas.
           - Contribuye a una mayor y mejor comprensión del planeta

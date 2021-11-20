@@ -92,7 +92,7 @@
               <li
                 v-for="(item, i) in tab1.instruments"
                 :key="i" v-html="item"
-                @click="item.classList.contains('toTab2') ? $emit('toggleTab') : ''">
+                @click="item.includes('toTab2') ? $emit('toggleTab') : ''">
               </li>
             </ul>
           </template>
@@ -155,7 +155,6 @@ export default {
     ExtraResource,
   },
   props: ['tab1', 'title', 'subtitle', 'machine'],
-
 
 }
 </script>
@@ -231,6 +230,9 @@ export default {
   @apply my-4;
   .collapsible_handle_label {
     @apply font-bold text-black;
+  }
+  .toTab2{
+    cursor: pointer;
   }
 }
 </style>

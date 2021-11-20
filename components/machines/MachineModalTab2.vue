@@ -69,7 +69,7 @@
         v-if="tab2.instruments"
       >
         <collapsible :opened="false">
-          <template v-slot:handler>Instrumentos que transporta</template>
+          <template v-slot:handler>Instrumental del CAB</template>
           <template v-slot:content>
             <p v-for="(item, i) in tab2.instruments" :key="i" v-html="item"></p>
           </template>
