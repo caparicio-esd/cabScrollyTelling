@@ -1,5 +1,6 @@
 <template>
   <div :class="['collapsible', { collapsible_closed: !blockOpened }]">
+
     <div class="collapsible_handle" @click="toggleCollapsible">
       <div class="collapsible_handle_icon">
         <ph-caret-right :size="20" :weight="'bold'" />
@@ -8,6 +9,7 @@
         <slot name="handler" />
       </div>
     </div>
+
     <div
       class="collapsible_content"
       ref="content"
@@ -17,6 +19,7 @@
         <slot name="content" />
       </div>
     </div>
+
   </div>
 </template>
 
@@ -36,7 +39,7 @@ export default Vue.extend({
   },
   methods: {
     toggleCollapsible() {
-      ;(this as any).toggled = !(this as any).toggled
+      (this as any).toggled = !(this as any).toggled;
     },
     calculateHeight() {
       const contentBlock = this.$refs.content
@@ -74,7 +77,8 @@ export default Vue.extend({
     }
   }
   .collapsible_content {
-    @apply opacity-100 transition-all px-6;
+    @apply transition-all px-6;
+    display: block;
     ul {
       list-style: initial;
       margin: initial;
@@ -83,7 +87,8 @@ export default Vue.extend({
   }
   &.collapsible_closed {
     .collapsible_content {
-      @apply h-0 opacity-0 transition-all;
+      @apply h-0 transition-all;
+      display: none;
     }
   }
 }
