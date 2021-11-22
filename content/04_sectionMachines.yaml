@@ -63,7 +63,7 @@ data:
             - #1
               title: Para conocer mejor el Curiosity
               author: Página web de la NASA
-              url: https://mars.nasa.gov/mars2020/
+              url: https://mars.nasa.gov/msl/home/
               icon: link
               target: true
         picture: "/img/machines/curiosity.webp"

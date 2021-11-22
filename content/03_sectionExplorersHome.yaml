@@ -22,13 +22,19 @@ assets:
     - #1
       title: Marte como lugar
       author: Grupo de investigación e/s/d
-      url: /docs/02/Marte_como_lugar.pdf
+      url: /docs/03/Marte_como_lugar.pdf
       icon: file-pdf
       target: false
     - #2
       title: Relación histórica de misiones a Marte desde 1960
       author: Grupo de investigación e/s/d
-      url: /docs/02/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
+      url: /docs/03/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
+      icon: file-pdf
+      target: false
+    - #2
+      title: Marte_en_el_imaginario_colectivo
+      author: Francisco Torrego Graña
+      url: /docs/03/Marte_en_el_imaginario_colectivo.pdf
       icon: file-pdf
       target: false
 

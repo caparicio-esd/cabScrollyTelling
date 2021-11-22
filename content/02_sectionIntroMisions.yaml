@@ -34,3 +34,9 @@ assets:
       url: /docs/02/El_murmullo_de_marte_Ricardo_Horcajada.pdf
       icon: file-pdf
       target: false
+    - #4
+      title: Marte en el mito poético grecolatino
+      author: Francisco Torrego Graña
+      url: /docs/02/Marte_en_el_mito_poetico_grecolatino.pdf
+      icon: file-pdf
+      target: false
