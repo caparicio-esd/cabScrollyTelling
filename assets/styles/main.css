@@ -47,6 +47,8 @@ p {
   box-sizing: border-box;
   background-clip: padding-box;
   height: 2.5rem;
+  border: 3px solid transparent;
+
   &:hover{
     @apply ring-white ring-4 ring-opacity-40;
     border: 3px solid transparent;

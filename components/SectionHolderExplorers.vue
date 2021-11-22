@@ -29,7 +29,7 @@ export default Vue.extend({
   mixins: [Scrollable],
   data() {
     return {
-      duration: 1600,
+      duration: 100, 
       content: {},
       progress: 0,
       lastBin: 0,
@@ -65,16 +65,16 @@ export default Vue.extend({
         this.setScrollable(false)
       }
     },
-    onProgressScene(ev: any) {
-      const bin = Math.max(Math.ceil(this.progress * this.dataLength) - 1, 0)
-      if (this.lastBin != bin) {
-        this.setExplorerOpened({
-          explorerId: bin,
-          activeContent: (this.content as any).data[bin],
-        })
-        this.lastBin = bin
-      }
-    },
+    // onProgressScene(ev: any) {
+    //   const bin = Math.max(Math.ceil(this.progress * this.dataLength) - 1, 0)
+    //   if (this.lastBin != bin) {
+    //     this.setExplorerOpened({
+    //       explorerId: bin,
+    //       activeContent: (this.content as any).data[bin],
+    //     })
+    //     this.lastBin = bin
+    //   }
+    // },
   },
 })
 </script>
