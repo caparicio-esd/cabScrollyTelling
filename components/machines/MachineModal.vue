@@ -32,7 +32,7 @@
       >
         {{ machineData.cabInstrument }}
       </button>
-      <div class="icon360"> <ph-planet :size="48" /> Clic y arrastrar</div>
+      <!-- <div class="icon360"> <ph-planet :size="48" /> Clic y arrastrar</div> -->
     </div>
 
     <!-- TAB 1 // machine -->
@@ -137,7 +137,7 @@ export default Vue.extend({
 
     .image_background{
       @apply absolute;
-      width: 65vw;
+      width: auto;
       max-width: none;
       z-index: 3;
       &:hover ~ .icon360{
