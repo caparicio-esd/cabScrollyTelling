@@ -1,5 +1,9 @@
 <template>
-  <button class="btn_primary btn_next" @click="goToNextSlide">
+  <button
+    class="btn_primary btn_next"
+    :style="[{ position: position || '' }]"
+    @click="goToNextSlide"
+  >
     <span>CONTINUAR</span>
     <ph-arrow-down :size="20" />
   </button>
@@ -16,6 +20,7 @@ export default {
   components: {
     PhArrowDown,
   },
+  props: ['position'],
   computed: {
     ...mapGetters({
       inWhichSceneIAm: 'main/inWhichSceneIAm',
@@ -32,12 +37,12 @@ export default {
       const sLimits = this.scrollOffsetLimitsByScene(currScene + 1)
       anime({
         targets: { y: window.pageYOffset },
-        y: sLimits[0] + this.height * 2, 
-        duration: 2500, 
-        easing: "easeInOutCubic", 
-        update: ({animations}) => {
+        y: sLimits[0] + this.height * 2,
+        duration: 2500,
+        easing: 'easeInOutCubic',
+        update: ({ animations }) => {
           scrollTo(0, animations[0].currentValue)
-        }
+        },
       })
     },
   },
@@ -47,5 +52,6 @@ export default {
 <style lang="postcss" scoped>
 button.btn_primary {
   @apply font-sans;
+  pointer-events: initial;
 }
 </style>

@@ -8,7 +8,7 @@
           v-for="(year, i) in years"
           :key="i"
           :style="{
-            right: ((yearsAsTimestamp[i] - yearMin) / yearDiff) * 100 + '%',
+            right: getLeftPosition(i),
           }"
           :class="[
             `timeline_item`,
@@ -23,6 +23,7 @@
           </div>
         </div>
       </div>
+      <ButtonNextScreen :position="`static`" />
     </div>
   </div>
 </template>
@@ -51,12 +52,13 @@ export default Vue.extend({
       scrollable: (state: any) => state.main.ui.viewPort.scrollable,
     }),
     years(): Array<dayjs.Dayjs> {
+      //@ts-ignore      
       return this.content.map((el: any) =>
         //@ts-ignore
         dayjs(el.meta.launch, 'DD.MM.YYYY - HH:mm UTC')
       )
     },
-    yearsAsTimestamp(): number[] {
+    yearsAsTimestamp(): number[] {      
       //@ts-ignore
       return this.years.map((year) => +dayjs(year).valueOf())
     },
@@ -66,7 +68,7 @@ export default Vue.extend({
     yearMin(): number {
       return this.yearsAsTimestamp.sort((a, b) => a - b)[0]
     },
-    yearDiff(): number {
+    yearDiff(): number {      
       return this.yearMax - this.yearMin
     },
   },
@@ -89,6 +91,9 @@ export default Vue.extend({
         })
       }
     },
+    getLeftPosition(i: number): string {      
+      return -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100 + '%'
+    }
   },
 })
 </script>
@@ -100,15 +105,16 @@ export default Vue.extend({
   @apply h-24 flex items-center px-6;
   pointer-events: none;
   .explorer_timeline_holder {
-    @apply w-full;
+    @apply w-full flex;
   }
 }
 .timeline {
-  @apply relative w-full;
+  @apply relative w-full mr-8;
   pointer-events: none;
   .timeline_line {
-    @apply top-1/2 -translate-x-1/2;
+    @apply  absolute;
     @apply h-1 w-full bg-white opacity-60 rounded;
+    top: 46%;
   }
   .timeline_item {
     @apply absolute top-1/2 w-3 h-3 rounded-full bg-white;
@@ -140,7 +146,7 @@ export default Vue.extend({
     }
 
     .timeline_item_tooltip {
-      @apply px-2 py-1 text-sm rounded-full bg-white text-black;
+      @apply px-2 py-1 text-sm rounded-full bg-white text-black font-sans;
       @apply absolute;
       bottom: calc(100% + 0.25rem);
       left: 50%;
