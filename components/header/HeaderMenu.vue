@@ -1,33 +1,19 @@
 <template>
   <client-only>
     <div class="header_menu">
-      <div
-        class="header_menu_tick_area"
-        v-for="(dItem, i) in menuData"
-        :key="`a` + dItem.index"
-        :style="{ ...setPosition(dItem) }"
-        @mouseenter="setVisible(true, i)"
-        @mouseleave="setVisible(false, i)"
-        @click="goToScrollIndex(dItem.index)"
-      ></div>
-      <div
-        class="header_menu_ticks"
-        v-for="(dItem, i) in menuData"
+      <ticks
+        v-for="(dItem, i) in menuData.slice(1)"
         :key="`b` + dItem.index"
-        :style="{ ...setPosition(dItem) }"
-        :class="[{ active: hovered == i }]"
-      ></div>
-      <div
-        class="header_menu_items"
-        v-for="(dItem, i) in menuData"
-        :key="`c` + dItem.index"
-        :style="{ ...setPosition(dItem), ...getVisible(i) }"
-        @click.stop="goToScrollPointById(dItem)"
+        :style_="setPosition(dItem)"
+        :clickHndlr="(ev) => goToScrollIndex(dItem.index)"
+        :openedId="inWhichSceneIAm - 1"
+        :index="i"
+        :focusedId="999"
       >
-        <div v-if="dItem.index > 0">
+        <div class="header_menu_item" v-if="dItem.index > 0">
           {{ dItem.menuTitle || dItem.title }}
         </div>
-      </div>
+      </ticks>
     </div>
   </client-only>
 </template>
@@ -35,8 +21,10 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapState, mapGetters } from 'vuex'
+import Ticks from '../dsys/Ticks.vue'
 
 export default Vue.extend({
+  components: { Ticks },
   name: 'HeaderMenu',
   props: ['goToScrollIndex'],
   data() {
@@ -50,6 +38,7 @@ export default Vue.extend({
       scenes: (state: any) => state.main.scenes.scenes,
     }),
     ...mapGetters({
+      inWhichSceneIAm: 'main/inWhichSceneIAm',
       scrollOffsetLimitsByScene: 'main/scrollOffsetLimitsByScene',
       getViewportSizes: 'main/getViewportSizes',
       getTotalScenesDuration02: 'main/getTotalScenesDuration02',
@@ -95,33 +84,35 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss">
 .header_menu {
-  .header_menu_tick_area {
-    @apply absolute;
-    width: 50px;
-    height: 50px;
-    transform: translateX(-50%);
-    top: calc(100% - 1rem) !important;
-  }
-  .header_menu_ticks {
-    width: 3px;
-    height: 8px;
-    @apply absolute bg-white opacity-20;
-    top: calc(100% - 0.25rem) !important;
-    pointer-events: none;
-    &.active {
-      @apply opacity-40;
+  .tick_area {
+    transform: translate(50%, -50%);
+    &:hover {
+      .header_menu_item {
+        visibility: visible;
+      }
     }
   }
-  .header_menu_items {
-    @apply absolute;
-    @apply font-sans text-sm uppercase text-center;
-    transform: translateX(-50%);
-    max-width: 15ch;
-    transition: all 350ms ease;
-    cursor: pointer;
-    pointer-events: none;
+  .tick_item {
+    top: 20%;
+    left: 0;
+    &.tick_item_active {
+      .timeline_item_tooltip {
+        visibility: visible;
+      }
+    }
+    .header_menu_item {
+      @apply absolute;
+      @apply font-sans text-sm uppercase text-center;
+      transform: translateX(-50%);
+      top: 1rem;
+      max-width: 20ch;
+      transition: all 350ms ease;
+      cursor: pointer;
+      pointer-events: none;
+      visibility: hidden;
+    }
   }
 }
 </style>
