@@ -69,6 +69,8 @@ export default Vue.extend({
 .collapsible {
   .collapsible_handle {
     @apply flex items-center font-bold py-2 cursor-pointer;
+    user-select: none;
+    cursor: pointer;
     margin-left: -0.25rem;
     .collapsible_handle_icon {
       @apply mr-2;

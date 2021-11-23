@@ -1,13 +1,20 @@
 <template>
-  <div class="explorer_modal_content" v-if="activeContent.meta">
+  <div
+    class="explorer_modal_content"
+    v-if="activeContent.meta"
+    ref="explorer_modal"
+  >
     <div class="explorer_modal_content_header">
       <div class="explorer_modal_content_picture">
-        <img :src="activeContent.picture" :alt="activeContent.title">
+        <img :src="activeContent.picture" :alt="activeContent.title" />
       </div>
       <div class="explorer_modal_content_agency_meta">
         <div class="explorer_modal_content_land">
           <div class="explorer_modal_content_land_picture">
-            <img :src="activeContent.picture_flag" :alt="`bandera de ${activeContent.meta.land}`">
+            <img
+              :src="activeContent.picture_flag"
+              :alt="`bandera de ${activeContent.meta.land}`"
+            />
           </div>
           <div class="explorer_modal_content_land_name">
             {{ activeContent.meta.land }}
@@ -139,6 +146,7 @@ import Collapsible from '../dsys/Collapsible.vue'
 //@ts-ignore
 import { PhDotsThree } from 'phosphor-vue'
 import { n2Array } from './../../lib/sectionUtils'
+import { mapState } from 'vuex'
 
 export default Vue.extend({
   name: 'ExplorerModalContent',
@@ -146,10 +154,31 @@ export default Vue.extend({
     Collapsible,
     PhDotsThree,
   },
+  computed: {
+    ...mapState({
+      explorerId: (state: any) => state.explorers.explorer.openedId,
+    }),
+  },
   props: ['activeContent'],
   methods: {
     n2Array(textIn: string): string[] {
       return n2Array(textIn)
+    },
+  },
+  watch: {
+    explorerId(nv, ov) {
+      if (this.$refs.explorer_modal) {
+        //@ts-ignore
+        this.$refs.explorer_modal.parentNode.scrollTo(0, 0)
+        console.log(this.$children.filter((ch: any) => ch.opened !== undefined))
+        this.$children
+          .filter((ch: any) => ch.opened !== undefined)
+          .slice(1)
+          .forEach((vNode: Vue) => {            
+            //@ts-ignore
+            vNode.toggled = false
+          })
+      }
     },
   },
 })
@@ -171,7 +200,7 @@ export default Vue.extend({
       .explorer_modal_content_land_picture {
         @apply bg-gray-200 w-8 h-8 rounded-full mr-2;
         overflow: hidden;
-        img{
+        img {
           height: 100%;
         }
       }
