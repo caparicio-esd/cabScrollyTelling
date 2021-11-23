@@ -5,7 +5,7 @@ title: Sección
 menuTitle: Las máquinas son los nuevos exploradores
 
 data:
-  title: Las máquinas son los nuevos exploradores. Misiones con participación española en Marte.
+  title: <span class="primary_color">Las máquinas son los nuevos exploradores.</span> Misiones con participación española en Marte.
   mainText:
     - El <strong>Centro de Astrobiología (CAB)</strong>, fue creado en 1998 como centro mixto entre el Centro Superior de Investigaciones Científicas (CSIC) y el Instituto Nacional de Técnica Aeroespacial (INTA).  En 2.000 se integró en el <strong>NASA Astrobiology Institute (NAI)</strong> convirtiéndose en el primer Miembro Asociado fuera de los Estados Unidos.
     - <strong>Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo</strong>.
@@ -14,22 +14,22 @@ data:
     # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
   explorers:
     - # 0
-      name: "Perseverance"
-      position:
-        lon: 74
-        lat: 40
-    - # 1
       name: "Curiosity"
       position:
         lon: 85
         lat: 60
-    - # 2
+    - # 1
       name: "Insight"
       position:
         lon: 84
         lat: 53
+    - # 2
+      name: "Perseverance"
+      position:
+        lon: 74
+        lat: 40
 assets:
-  backgroundIllustration: /img/003_b.webp
+  backgroundIllustration: /img/backgrounds/003_b.webp
 
 
 

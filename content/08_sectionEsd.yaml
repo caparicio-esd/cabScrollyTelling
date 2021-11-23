@@ -5,18 +5,42 @@ title: Sección
 menuTitle: ESD
 
 data:
-  title: La e/s/d y el CAB
+  title: <span class="primary_color">La e/s/d y el CAB</span>
   mainText:
     - La <strong>Escuela Superior de Diseño de Madrid (e/s/d)</strong> es un centro público perteneciente a las Enseñanzas Artísticas Superiores (Dirección General de Universidades) de la Comunidad de Madrid. En él se imparten los grados y posgrados oficiales en Diseño.
-    - En 2020, un grupo de profesores conformamos el <strong>seminario “Diseño para la Ciencia”</strong> con la línea de investigación <strong>“Análisis del rol del diseñador en equipos científicos”</strong>. Desde él, propusimos al CAB la creación de un producto de comunicación sobre el aterrizaje del Perseverance en Marte, <strong>que pusiera en valor la participación en la misión de dicho organismo español</strong> de excelencia, con el MEDA. Y aprovechar tal evento para destacar las presencias previas del CAB en el Planeta Rojo, con el REMS y el TWINS.
-
+    - En 2020, un grupo de profesores conformamos el <strong>seminario “Diseño para la Ciencia”</strong> con la línea de investigación <strong>“Análisis del rol del diseñador en equipos científicos”</strong>. Desde él, propusimos al CAB la creación de un producto de comunicación sobre el aterrizaje del Perseverance en Marte, <strong>que pusiera en valor la participación en la misión de dicho organismo español</strong>.
+    - Con ello queremos contribuir a la difusión del conocimiento científico y tecnológico, sobre todo a nivel divulgativo; y fomentar el trabajo conjunto entre científicos y diseñadores. El esta página puedes ver algunos de los resultados de nuestros alumnos/as fruto de esta colaboración.
   secondaryText:
-    - Con ello queremos contribuir a la difusión del conocimiento científico y tecnológico, sobre todo a nivel divulgativo; y fomentar el trabajo conjunto entre científicos y diseñadores.
+    #- Con ello queremos contribuir a la difusión del conocimiento científico y tecnológico, sobre todo a nivel divulgativo; y fomentar el trabajo conjunto entre científicos y diseñadores.
 
 assets:
-  backgroundIllustration: /img/008.webp
+  backgroundIllustration: /img/backgrounds/008.webp
   resources:
     - #1
+      title: Recetas del CAB. Planeta habitable.
+      author: Aurora Merino, Ana del Pino, Lourdes Ruiz, Inmaculada Martín.
+      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      icon: video
+      target: true
+    - #2
+      title: What on earth? Extremophiles.
+      author: Angélica Jiménez, Delia González, Xeli López.
+      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      icon: video
+      target: true
+    - #3
+      title: Un planeta para cada extremófilo.
+      author: Leonardo Berbesí, Ana Fernández-Golfín, Sara Paniagua, Cristian Iacob.
+      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      icon: video
+      target: true
+    - #4
+      title: LUCA. Una hipótesis sobre el origen de la vida.
+      author: Alba Vera, María Camarillo, Patryk Cesarz, David Güiza.
+      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      icon: video
+      target: true
+    - #5
       title: Visita la web e/s/d Madrid
       author: Para conocer mejor la escuela
       url: https://esdmadrid.es/

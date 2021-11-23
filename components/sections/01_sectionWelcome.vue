@@ -27,15 +27,30 @@
       <div class="section_col_b col-start-4 col-span-2 self-center">
         <!-- weather from REMS -->
         <div class="mars_data">
-          <div>{{ remsData.weather_report.terrestrial_date[0] }}</div>
-          <div class="mars_sol">Sol {{ remsData.weather_report.sol[0] }}</div>
+          <!-- <div>{{ remsData.weather_report.terrestrial_date[0] }}</div> -->
+          <div>{{ formatDate(meda.terrestrial_date) }}</div>
+          <div class="mars_place primary_color">
+            Cráter Jezero
+          </div>
+          <div class="mars_coord">
+            Coordenadas.<br> 18º 26’ 40.56” N, 77º 27’ 3.24” E (18.4446º,77.4509º)
+          </div>
+          <!-- OLD. REMS DATA -->
+          <!-- <div class="mars_sol">Sol {{ remsData.weather_report.sol[0] }}</div>
           <div class="mars_month_opacity">{{ rems.season[0] }} - {{ rems.atmo_opacity[0] }}</div>
-          <!-- <div class="mars_sunrise_sunset">Amanecer: {{rems.sunrise[0]}} - Anochecer: {{rems.sunset[0]}}</div>-->
-          <!-- gts_temp: suelo, temp: aire -->
+
           <div class="mars_temp">
             <ph-thermometer />
-            {{ rems.max_temp[0]}}º | {{ rems.min_temp[0]}}º
+            <span class="primary_color">{{ rems.max_temp[0]}}º</span> | <span class="primary_color">{{ rems.min_temp[0]}}º</span>
+          </div> -->
+          <div class="mars_sol">Sol {{ meda.sol }}</div>
+          <div class="mars_month_opacity">{{ meda.season }}</div>
+
+          <div class="mars_temp">
+            <ph-thermometer />
+            <span class="primary_color">{{ meda.max_temp}}º</span> | <span class="primary_color">{{ meda.min_temp}}º</span>
           </div>
+
         </div>
         <!-- player -->
         <div class="players">
@@ -66,8 +81,9 @@ export default Vue.extend({
   data() {
     return {
       content: {},
-      remsData: [] as any,
-      rems: {},
+      // remsData: [] as any,
+      // rems: {},
+      meda: {}
     }
   },
   components: {
@@ -80,34 +96,48 @@ export default Vue.extend({
       width: (state: any) => state.main.ui.viewPort.width,
       height: (state: any) => state.main.ui.viewPort.height,
     }),
+
   },
   methods: {
     ...mapActions({
       addData: 'data/addData',
     }),
     n2br,
-    xmlToJSON: (str: any) => {
-      return new Promise((resolve, reject) => {
-        xml2js.parseString(str, (err: any, jsonObj: any) => {
-          if (err) {
-            return reject(err)
-          }
-          resolve(jsonObj)
-        })
-      })
+    // xmlToJSON: (str: any) => {
+    //   return new Promise((resolve, reject) => {
+    //     xml2js.parseString(str, (err: any, jsonObj: any) => {
+    //       if (err) {
+    //         return reject(err)
+    //       }
+    //       resolve(jsonObj)
+    //     })
+    //   })
+    // },
+    formatDate(date: any){
+      let medaDate = new Date(date);
+      return medaDate.toDateString();
     },
+    async getMeda() {
+      const medaData = await this.$axios.$get('https://meda.cab.inta-csic.es/api/meda_weather.json')
+      this.meda = medaData.sols[6] //coger solo el último dato
+    }
+
+
   },
   mixins: [AnimationType_01],
   props: ['refIn', 'index'],
   async fetch() {
     this.content = await getContent(this, '01_sectionWelcome')
     this.addData({index: this.index, data: this.content})
-    const xmlData = await fetch(
-      'http://cab.inta-csic.es/rems/rems_weather.xml'
-    ).then((res) => res.text())
+    /** Get REMS DATA */
+    // const xmlData = await fetch(
+    //   'http://cab.inta-csic.es/rems/rems_weather.xml'
+    // ).then((res) => res.text())
+    // this.remsData = await this.xmlToJSON(xmlData)
+    // this.rems = this.remsData.weather_report.magnitudes[0]
+  },
+  async created(){
 
-    this.remsData = await this.xmlToJSON(xmlData)
-    this.rems = this.remsData.weather_report.magnitudes[0]
   },
   async mounted() {
     await this.$nextTick()
@@ -115,6 +145,7 @@ export default Vue.extend({
     this.setSceneScrollable(this.$refs)
     //@ts-ignore
     this.setUpComponent()
+    this.getMeda()
   },
 })
 </script>
@@ -123,6 +154,11 @@ export default Vue.extend({
 .mars_data {
   font-size: 1.4em;
   padding: 2em;
+
+  .mars_coord{
+    font-size: 0.8em;
+    font-style: italic;
+  }
   .mars_sol {
     font-size: 2em;
   }

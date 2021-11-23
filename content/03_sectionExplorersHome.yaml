@@ -5,7 +5,7 @@ title: Sección
 menuTitle: Marte como lugar
 
 data:
-  title: Marte como lugar. <br>La exploración de la superficie marciana a partir de la década de 1960.
+  title: <span class="primary_color">Marte como lugar.</span> <br>La exploración de la superficie marciana a partir de la década de 1960.
   mainText:
     - Las distintas misiones enviadas a Marte, ya sea para orbitar a su alrededor o para posarse en él, han aportado ingentes datos sobre la geografía marciana.
     - <strong>La observación orográfica en alto detalle del planeta ha demostrado que alguna vez fue geológicamente tan activo como la Tierra</strong>.
@@ -17,18 +17,24 @@ data:
     #- En 1971, la Mariner 9 proporcionó tal cantidad de imágenes de la superficie marciana que en 1978 se pudo publicar el primer gran mapa geológico representando el relieve del planeta de un modo hasta entonces sólo posible para la Luna o la Tierra. <strong>La observación orográfica en alto detalle de Marte ha demostrado que alguna vez, fue geológicamente tan activo como la Tierra</strong>.
 
 assets:
-  backgroundIllustration: /img/003.webp
+  backgroundIllustration: /img/backgrounds/003.webp
   resources:
     - #1
       title: Marte como lugar
       author: Grupo de investigación e/s/d
-      url: /docs/02/Marte_como_lugar.pdf
+      url: /docs/03/Marte_como_lugar.pdf
       icon: file-pdf
       target: false
     - #2
       title: Relación histórica de misiones a Marte desde 1960
       author: Grupo de investigación e/s/d
-      url: /docs/02/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
+      url: /docs/03/Cronologia_de_las_observaciones_de_marte_hasta_1960.pdf
+      icon: file-pdf
+      target: false
+    - #2
+      title: Marte_en_el_imaginario_colectivo
+      author: Francisco Torrego Graña
+      url: /docs/03/Marte_en_el_imaginario_colectivo.pdf
       icon: file-pdf
       target: false
 

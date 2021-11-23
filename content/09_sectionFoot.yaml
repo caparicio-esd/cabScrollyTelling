@@ -5,7 +5,7 @@ title: Sección
 menuTitle: Créditos y despedida
 
 data:
-  title: Créditos.<br>Este proyecto es una colaboración del Centro de Astrobiología y la Escuela Superior de Diseño de Madrid.
+  title: <span class="primary_color">Créditos.</span><br>Este proyecto es una colaboración del Centro de Astrobiología y la Escuela Superior de Diseño de Madrid.
   mainText:
     - <strong>Centro de Astrobiología (CAB)</strong>
     - Director. Víctor Parro García
@@ -20,8 +20,21 @@ data:
     - Colaborador en el proyecto. Ricardo Horcajada González (Profesor titular UCM)
 
 assets:
-  backgroundIllustration: /img/009.webp
+  backgroundIllustration: /img/backgrounds/009.webp
   logos:
-    - /img/cab_logo.png
-    - /img/inta_logo.png
-    - /img/logo_esd.jpg
+    - #0
+      src: /img/logos/cab.jpg
+      alt: Página web CAB
+      url: https://cab.inta-csic.es/
+    - #1
+      src: /img/logos/csic.jpg
+      alt: Página web CSIC
+      url: https://www.csic.es/es
+    - #2
+      src: /img/logos/inta.png
+      alt: Página web INTA
+      url: https://www.inta.es/INTA/es/index.html
+    - #3
+      src: /img/logos/esd_logo.svg
+      alt: Página web ESD
+      url: https://esdmadrid.es/

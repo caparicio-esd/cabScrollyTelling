@@ -5,7 +5,7 @@ title: Sección
 menuTitle: Viaje a la tierra
 
 data:
-  title: El destino de los datos
+  title: <span class="primary_color">El destino de los datos</span>
   mainText:
     - Los datos recogidos por las misiones TWINS, REMS y MEDA son enviados a la Tierra para su estudio y análisis.
     - Y te preguntarás, ¿qué se hace en el CAB con la información recibida?
@@ -15,7 +15,7 @@ data:
     # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
 
 assets:
-  backgroundIllustration: /img/004_4.webp
+  backgroundIllustration: /img/backgrounds/004_4.webp
 
 
 

@@ -5,7 +5,7 @@ title: Sección
 menuTitle: Marte como imaginario
 
 data:
-  title: Marte como imaginario. <br>La observación de Marte en su órbita desde la Antigüedad hasta la década de 1960
+  title: <span class="primary_color">Marte como imaginario.</span> <br>La observación de Marte en su órbita desde la Antigüedad hasta la década de 1960
   mainText:
     - Desde los astrónomos Egipcios en el segundo milenio antes de Cristo, Marte ha sido sujeto de observación y estudio desde la Tierra.
     - En 1660 Galileo lo observó con su telescopio y posteriormente otros astrónomos como Huygens, Cassini, Proctor y Dawes o Schiaparelli, dibujaron su cartografía e hicieron sus observaciones con mayor o menor precisión.
@@ -14,7 +14,7 @@ data:
   secondaryText:
 
 assets:
-  backgroundIllustration: /img/002.webp
+  backgroundIllustration: /img/backgrounds/002.webp
   resources:
     - #1
       title: Marte como imaginario
@@ -32,5 +32,11 @@ assets:
       title: El murmullo de Marte
       author: Ricardo Horcajada
       url: /docs/02/El_murmullo_de_marte_Ricardo_Horcajada.pdf
+      icon: file-pdf
+      target: false
+    - #4
+      title: Marte en el mito poético grecolatino
+      author: Francisco Torrego Graña
+      url: /docs/02/Marte_en_el_mito_poetico_grecolatino.pdf
       icon: file-pdf
       target: false

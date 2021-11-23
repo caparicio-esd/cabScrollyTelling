@@ -13,7 +13,7 @@ data:
     machine: Curiosity (Rover)
     cabInstrument: REMS
     assets:
-      backgroundIllustration: /img/004_2.webp
+      backgroundIllustration: /img/backgrounds/004_2.webp
     mainText:
       - <em>Coordenadas en Marte. 5° 22′ 12″ S, 137° 48′ 36″ E  (-5.37°, 137.81°)</em>
       - Gale es un cráter con un diámetro de 154 km. En su centro se sitúa un pico central de 5.500 m de altitud denominado Aeolis Mons. Algunos científicos piensan que el cráter se llenó con sedimentos a lo largo del tiempo y los vientos de Marte tallaron la montaña en el centro.
@@ -49,7 +49,7 @@ data:
           - Mars Hand Lens Imager (MAHLI)
           - Cámara de mástil (Mastcam)
           - Detector de evaluación de la radiación (RAD)
-          - <span class="toTab2">Estación de Monitoreo Ambiental de Rover (REMS)</span>
+          - <span class="bg_primary_color toTab2">Estación de Monitoreo Ambiental de Rover (REMS)</span>
         contribution:
           - Se encuentran evidencias de agua líquida persistente en el pasado
           - Se encuentra azufre, nitrógeno, oxígeno, fósforo y carbono en una muestra de polvo perforada. El antiguo Marte tenía la química adecuada para albergar microbios vivos
@@ -63,7 +63,7 @@ data:
             - #1
               title: Para conocer mejor el Curiosity
               author: Página web de la NASA
-              url: https://mars.nasa.gov/mars2020/
+              url: https://mars.nasa.gov/msl/home/
               icon: link
               target: true
         picture: "/img/machines/curiosity.webp"
@@ -121,7 +121,7 @@ data:
     machine: Insight
     cabInstrument: TWINS
     assets:
-      backgroundIllustration: /img/004_3.webp
+      backgroundIllustration: /img/backgrounds/004_3.webp
     mainText:
       - <em>Coordenadas en Marte. 2° 58′ 48″ N, 154° 44′ 24″ E  (2.98°, 154.74°)</em>
       - Es una llanura lisa y plana justo al norte del ecuador con una elevación lo suficientemente baja como para tener suficiente atmósfera para un amartizaje seguro. Su proximidad al ecuador asegura que el módulo de exploración alimentado por energía solar reciba suficiente luz.
@@ -135,8 +135,8 @@ data:
     tabs:
       - #0 -- TAB 1
         meta:
-          launch: "05.05.2018 - ?? UTC"
-          arrival: "26.11.2018 - ?? UTC"
+          launch: "05.05.2018 - 11:05 UTC"
+          arrival: "26.11.2018 - 7:54 UTC"
           place: "Cráter Gale"
           activity: "Sigue en activo."
           land: "USA"
@@ -150,7 +150,7 @@ data:
           - Cámara en el brazo (IDC)
           - Cámara en el cuerpo del módulo de aterrizaje (ICC)
           - Sismómetro (SEIS)
-          - <span class="toTab2">Estación meteorológica (TWINS)</span>
+          - <span class="toTab2 bg_primary_color">Estación meteorológica (TWINS)</span>
           - Sensores para el estudio del flujo de calor y propiedades físicas (HP3)
           - Experimento de rotación y estructura interior de InSight (RISE)
         contribution:
@@ -174,15 +174,15 @@ data:
         meta:
           title: Temperature and Winds for InSight
           translate: "Temperatura y vientos para InSight"
-          activity: "Aún está operativo."
+          activity: "Actualmente no registra datos"
           land: "España"
           agency: "Centro de Astrobiología (CAB)"
           head_researcher: José Antonio Rodríguez-Manfredi
           status: "Exito"
         goals:
-          - '??'
+          - Registrar de modo continuo las condiciones ambientales en el área de posicionamiento del Insight (Elyseum Planitia)
         instruments:
-          - Instrumento auxiliar del Insight pero fundamental para su misión científica. Tiene forma de mástil y se compone de dos sensores, un termómetro para medir la temperatura y un anemómetro para medir la velocidad y la dirección del viento dos veces por segundo. Así, los sensores registran de modo continuo las condiciones ambientales en el área de posicionamiento del Insight (Elyseum Planitia)
+          - Se compone de dos sensores, un termómetro para medir la temperatura y un anemómetro para medir la velocidad y la dirección del viento dos veces por segundo.
         contribution:
           - Registro de la temperatura del aire, la presión y los vientos en superficie, de un modo continuo y más preciso que en misiones previas.
           - Contribuye a una mayor y mejor comprensión del planeta
@@ -215,7 +215,7 @@ data:
     machine: Perseverance (Rover)
     cabInstrument: MEDA
     assets:
-      backgroundIllustration: /img/004_1.webp
+      backgroundIllustration: /img/backgrounds/004_1.webp
     mainText:
       - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
       - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
@@ -244,7 +244,7 @@ data:
         instruments:
           - Espectrómetro de fuorescencia de rayos X (PIXL)
           - Sensor de imágenes por radar para la exploración del subsuelo marciano (RIMFAX)
-          - <span class="toTab2">Analizador de Dinámica Ambiental Marciana (MEDA)</span>
+          - <span class="toTab2 bg_primary_color">Analizador de Dinámica Ambiental Marciana (MEDA)</span>
           - Experimento ISRU de Oxígeno en Marte (MOXIE)
           - SuperCam
           - Mastercam-Z

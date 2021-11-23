@@ -14,7 +14,7 @@
       <div class="section_col_a col-span-2 self-center">
         <h2 class="mb-12" v-html="n2br(content.data.title)" />
         <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
-        <div class="logos flex mt-8">
+        <!-- <div class="logos flex mt-8">
           <div
             class="logo mr-2"
             v-for="(logo, i) in content.assets.logos"
@@ -22,10 +22,22 @@
           >
             <img :src="logo" alt="logo" width="40" />
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="section_col_b col-start-4 col-span-2 self-center">
         <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
+      </div>
+    </div>
+
+    <div class="logo_bar">
+      <div
+        class="logo"
+        v-for="(logo, i) in content.assets.logos"
+        :key="i"
+      >
+        <a :href="logo.url" target="_blank">
+          <img :src="logo.src" :alt="logo.alt" width="40" />
+        </a>
       </div>
     </div>
   </div>
@@ -68,3 +80,21 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.logo_bar{
+  @apply flex bg-white;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  .logo{
+    @apply mx-4;
+    height: 40px;
+    img{
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+</style>
