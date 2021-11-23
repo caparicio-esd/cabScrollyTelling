@@ -69,15 +69,16 @@ data:
         picture: "/img/machines/curiosity.webp"
         picture_flag: "/img/flags/EEUU.svg"
         images360: [
-          'img/curiosity360/Curiosity_1.png',
-          'img/curiosity360/Curiosity_2.png',
-          'img/curiosity360/Curiosity_3.png',
-          'img/curiosity360/Curiosity_4.png',
-          'img/curiosity360/Curiosity_5.png',
-          'img/curiosity360/Curiosity_6.png',
-          'img/curiosity360/Curiosity_7.png',
-          'img/curiosity360/Curiosity_8.png',
-          'img/curiosity360/Curiosity_9.png',
+          'img/curiosity360/Curiosity_00.png',
+          'img/curiosity360/Curiosity_01.png',
+          'img/curiosity360/Curiosity_02.png',
+          'img/curiosity360/Curiosity_03.png',
+          'img/curiosity360/Curiosity_04.png',
+          'img/curiosity360/Curiosity_05.png',
+          'img/curiosity360/Curiosity_06.png',
+          'img/curiosity360/Curiosity_07.png',
+          'img/curiosity360/Curiosity_08.png',
+          'img/curiosity360/Curiosity_09.png',
           'img/curiosity360/Curiosity_10.png',
           'img/curiosity360/Curiosity_11.png',
           'img/curiosity360/Curiosity_12.png',
@@ -118,8 +119,7 @@ data:
           'img/curiosity360/Curiosity_47.png',
           'img/curiosity360/Curiosity_48.png',
           'img/curiosity360/Curiosity_49.png',
-          'img/curiosity360/Curiosity_50.png',
-          'img/curiosity360/Curiosity_51.png'
+          'img/curiosity360/Curiosity_50.png'
         ]
       - #1 -- TAB 2
         meta:
@@ -224,15 +224,16 @@ data:
         picture: "/img/machines/insight.webp"
         picture_flag: "/img/flags/EEUU.svg"
         images360: [
-          'img/curiosity360/Curiosity_1.png',
-          'img/curiosity360/Curiosity_2.png',
-          'img/curiosity360/Curiosity_3.png',
-          'img/curiosity360/Curiosity_4.png',
-          'img/curiosity360/Curiosity_5.png',
-          'img/curiosity360/Curiosity_6.png',
-          'img/curiosity360/Curiosity_7.png',
-          'img/curiosity360/Curiosity_8.png',
-          'img/curiosity360/Curiosity_9.png',
+          'img/curiosity360/Curiosity_00.png',
+          'img/curiosity360/Curiosity_01.png',
+          'img/curiosity360/Curiosity_02.png',
+          'img/curiosity360/Curiosity_03.png',
+          'img/curiosity360/Curiosity_04.png',
+          'img/curiosity360/Curiosity_05.png',
+          'img/curiosity360/Curiosity_06.png',
+          'img/curiosity360/Curiosity_07.png',
+          'img/curiosity360/Curiosity_08.png',
+          'img/curiosity360/Curiosity_09.png',
           'img/curiosity360/Curiosity_10.png',
           'img/curiosity360/Curiosity_11.png',
           'img/curiosity360/Curiosity_12.png',
@@ -273,8 +274,7 @@ data:
           'img/curiosity360/Curiosity_47.png',
           'img/curiosity360/Curiosity_48.png',
           'img/curiosity360/Curiosity_49.png',
-          'img/curiosity360/Curiosity_50.png',
-          'img/curiosity360/Curiosity_51.png'
+          'img/curiosity360/Curiosity_50.png'
         ]
       - #1 -- TAB 2
         meta:
@@ -371,15 +371,16 @@ data:
         picture: "/img/machines/perseverance.webp"
         picture_flag: "/img/flags/EEUU.svg"
         images360: [
-          'img/curiosity360/Curiosity_1.png',
-          'img/curiosity360/Curiosity_2.png',
-          'img/curiosity360/Curiosity_3.png',
-          'img/curiosity360/Curiosity_4.png',
-          'img/curiosity360/Curiosity_5.png',
-          'img/curiosity360/Curiosity_6.png',
-          'img/curiosity360/Curiosity_7.png',
-          'img/curiosity360/Curiosity_8.png',
-          'img/curiosity360/Curiosity_9.png',
+          'img/curiosity360/Curiosity_00.png',
+          'img/curiosity360/Curiosity_01.png',
+          'img/curiosity360/Curiosity_02.png',
+          'img/curiosity360/Curiosity_03.png',
+          'img/curiosity360/Curiosity_04.png',
+          'img/curiosity360/Curiosity_05.png',
+          'img/curiosity360/Curiosity_06.png',
+          'img/curiosity360/Curiosity_07.png',
+          'img/curiosity360/Curiosity_08.png',
+          'img/curiosity360/Curiosity_09.png',
           'img/curiosity360/Curiosity_10.png',
           'img/curiosity360/Curiosity_11.png',
           'img/curiosity360/Curiosity_12.png',
@@ -420,8 +421,7 @@ data:
           'img/curiosity360/Curiosity_47.png',
           'img/curiosity360/Curiosity_48.png',
           'img/curiosity360/Curiosity_49.png',
-          'img/curiosity360/Curiosity_50.png',
-          'img/curiosity360/Curiosity_51.png'
+          'img/curiosity360/Curiosity_50.png'
         ]
       - #1 -- TAB 2
         meta:

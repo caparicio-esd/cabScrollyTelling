@@ -17,11 +17,13 @@
       <!-- TODO: change tab2 when highlight -->
       <vue-product-spinner
         :images="tab1Active ? tab1.images360 : tab1.images360"
-        :slider="false"
-        :speed="1"
+        :slider="true"
+        :infinite="false"
+        :speed="3"
+        sliderClass="slider_bar"
         class="image_background"
       >
-      <!-- <PreloadSpinnerComponent /> -->
+      <!-- <PreloadSpinnerComponent /> --> Loading...
 
       </vue-product-spinner>
 
@@ -142,6 +144,9 @@ export default Vue.extend({
       z-index: 3;
       &:hover ~ .icon360{
         opacity: 0;
+      }
+      img{
+        outline: none;
       }
     }
     .cabBtn{
