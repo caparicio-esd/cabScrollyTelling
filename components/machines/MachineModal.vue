@@ -9,11 +9,22 @@
 
     <!-- IMAGEN -->
     <div class="machine_modal_image">
-      <img
+      <!-- <img
         :src="tab1Active ? tab1.picture : tab2.picture"
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
+      > -->
+      <!-- TODO: change tab2 when highlight -->
+      <vue-product-spinner
+        :images="tab1Active ? tab1.images360 : tab1.images360"
+        :slider="false"
+        :speed="1"
+        class="image_background"
       >
+      <!-- <PreloadSpinnerComponent /> -->
+
+      </vue-product-spinner>
+
       <button
         class="cabBtn"
         :class="tab2Active ? 'active' : ''"
@@ -21,6 +32,7 @@
       >
         {{ machineData.cabInstrument }}
       </button>
+      <div class="icon360"> <ph-planet :size="48" /> Clic y arrastrar</div>
     </div>
 
     <!-- TAB 1 // machine -->
@@ -50,7 +62,9 @@ import { mapState } from 'vuex'
 import AnimationType_04 from '../mixins/AnimationType_04'
 import MachineModalTab1 from '~/components/machines/MachineModalTab1.vue'
 import MachineModalTab2 from '~/components/machines/MachineModalTab2.vue'
-import { PhXCircle } from 'phosphor-vue'
+import { PhXCircle, PhPlanet } from 'phosphor-vue'
+//@ts-ignore
+import VueProductSpinner from 'vue-product-spinner'
 
 export default Vue.extend({
   name: 'MachineModal',
@@ -58,7 +72,9 @@ export default Vue.extend({
   components: {
     MachineModalTab1,
     MachineModalTab2,
-    PhXCircle
+    PhXCircle,
+    PhPlanet,
+    VueProductSpinner
   },
   data() {
     return {
@@ -66,6 +82,7 @@ export default Vue.extend({
       tab2: this.machineData.tabs[1],
       tab1Active: true,
       tab2Active: false,
+
     }
   },
   props: ['machineData', 'open'],
@@ -120,9 +137,12 @@ export default Vue.extend({
 
     .image_background{
       @apply absolute;
-      width: 55vw;
+      width: 65vw;
       max-width: none;
       z-index: 3;
+      &:hover ~ .icon360{
+        opacity: 0;
+      }
     }
     .cabBtn{
       @apply flex absolute rounded-full bg-gray-200 text-black px-4 py-2;
@@ -143,6 +163,14 @@ export default Vue.extend({
       &.active{
         background-color: #edcb0a;
       }
+    }
+    .icon360{
+      color: white;
+      z-index: 3;
+      transition: all .5s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
   .explorer_modal_content{
