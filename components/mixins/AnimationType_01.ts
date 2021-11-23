@@ -17,7 +17,7 @@ export default Vue.extend({
             if (!dom) return false
 
             const title = dom.querySelectorAll("h2");
-            const paragraphs = dom.querySelectorAll("p");
+            const paragraphs = dom.querySelectorAll("p, .with-ul");
             const logos = dom.querySelectorAll(".logos");
             const btnext = dom.querySelectorAll(".btn_next");
             const resources = dom.querySelectorAll(".resource");
@@ -74,7 +74,7 @@ export default Vue.extend({
             if (!dom) return false
             
             const title = dom.querySelectorAll("h2");
-            const paragraphs = dom.querySelectorAll("p");
+            const paragraphs = dom.querySelectorAll("p, .with-ul");
             const logos = dom.querySelectorAll(".logos");
             const btnext = dom.querySelectorAll(".btn_next");
             const resources = dom.querySelectorAll(".resource");

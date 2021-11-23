@@ -7,23 +7,52 @@
     <div class="section_content_holder bg-transparent">
       <div class="grid_holder">
         <div class="col_01">
-          <div class="pic pic_horizontal"><img :src="content.assets.pictures[1]" alt="dibujo de las instalaciones del CAB"></div>
+          <div class="pic pic_horizontal">
+            <img
+              :src="content.assets.pictures[1]"
+              alt="dibujo de las instalaciones del CAB"
+            />
+          </div>
           <h2>
             {{ content.data.title }}
           </h2>
           <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
         </div>
         <div class="col_02">
-          <div class="pic"><img :src="content.assets.pictures[0]" alt="dibujo de las instalaciones del CAB"></div>
-          <div class="pic"><img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB"></div>
-          <div class="pic"><img :src="content.assets.pictures[3]" alt="dibujo de las instalaciones del CAB"></div>
+          <div class="pic">
+            <img
+              :src="content.assets.pictures[0]"
+              alt="dibujo de las instalaciones del CAB"
+            />
+          </div>
+          <div class="pic">
+            <img
+              :src="content.assets.pictures[2]"
+              alt="dibujo de las instalaciones del CAB"
+            />
+          </div>
+          <div class="pic">
+            <img
+              :src="content.assets.pictures[3]"
+              alt="dibujo de las instalaciones del CAB"
+            />
+          </div>
         </div>
         <div class="col_03">
           <h2>
             {{ content.data.secondaryTitle }}
           </h2>
-          <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
-          <div class="pic pic_horizontal"><img :src="content.assets.pictures[4]" alt="dibujo de las instalaciones del CAB"></div>
+          <p
+            v-for="(p, i) in content.data.secondaryText"
+            :key="i"
+            v-html="p"
+          ></p>
+          <div class="pic pic_horizontal">
+            <img
+              :src="content.assets.pictures[4]"
+              alt="dibujo de las instalaciones del CAB"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -65,6 +94,8 @@ export default Vue.extend({
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
+    //@ts-ignore
+    this.setUpComponent()
   },
 })
 </script>
@@ -98,7 +129,7 @@ export default Vue.extend({
       height: 100%;
     }
   }
-  .pic_horizontal{
+  .pic_horizontal {
     img {
       width: 100%;
     }

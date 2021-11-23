@@ -5,40 +5,42 @@
       :style="{ width: `${width}px`, height: `${height}px` }"
     ></div>
     <div class="section_content_holder">
-
-        <div class="section_col_a col-span-2 self-center">
-
-          <h2>
-            {{ content.data.title}}
-          </h2>
-          <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
-          <div class="pic"><img :src="content.assets.pictures[3]" alt="dibujo de las instalaciones del CAB"></div>
+      <div class="section_col_a col-span-2 self-center">
+        <h2>
+          {{ content.data.title }}
+        </h2>
+        <p v-for="(p, i) in content.data.mainText" :key="i" v-html="p"></p>
+        <div class="pic">
+          <img
+            :src="content.assets.pictures[3]"
+            alt="dibujo de las instalaciones del CAB"
+          />
         </div>
-        <!-- <div class="col_02">
+      </div>
+      <!-- <div class="col_02">
           <div class="pic pic_large">
             <img :src="content.assets.pictures[0]" alt="dibujo de las instalaciones del CAB">
           </div>
         </div> -->
 
-        <div class="section_col_b col-start-4 col-span-2 self-center">
-          <div class="pic">
-            <img :src="content.assets.pictures[2]" alt="dibujo de las instalaciones del CAB">
-          </div>
-          <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
-          <!-- extra resources -->
-          <div class="resources">
-            <extra-resource
-              class="dark"
-              v-for="(resource, i) in content.assets.resources"
-              :key="i"
-              :resource="resource"
-            />
-          </div>
-
-
-
+      <div class="section_col_b col-start-4 col-span-2 self-center">
+        <div class="pic">
+          <img
+            :src="content.assets.pictures[2]"
+            alt="dibujo de las instalaciones del CAB"
+          />
         </div>
-
+        <p v-for="(p, i) in content.data.secondaryText" :key="i" v-html="p"></p>
+        <!-- extra resources -->
+        <div class="resources">
+          <extra-resource
+            class="dark"
+            v-for="(resource, i) in content.assets.resources"
+            :key="i"
+            :resource="resource"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -77,6 +79,8 @@ export default Vue.extend({
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
+    //@ts-ignore
+    this.setUpComponent()
   },
 })
 </script>
@@ -96,17 +100,17 @@ export default Vue.extend({
   }
 }
 .pic {
-    @apply bg-gray-400 my-6;
-    height: 20rem;
-    overflow: hidden;
-    img {
-    }
+  @apply bg-gray-400 my-6;
+  height: 20rem;
+  overflow: hidden;
+  img {
   }
-  .pic_large{
+}
+.pic_large {
+  height: 100%;
+  img {
+    object-fit: cover;
     height: 100%;
-    img {
-      object-fit: cover;
-      height: 100%;
-    }
   }
+}
 </style>
