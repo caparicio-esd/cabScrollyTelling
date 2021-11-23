@@ -16,6 +16,7 @@ export default Vue.extend({
             const dom = this.refDom
             if (!dom) return false
 
+            const bg = dom.querySelectorAll(".section_content_background")
             const title = dom.querySelectorAll("h2");
             const paragraphs = dom.querySelectorAll("p, .with-ul");
             const logos = dom.querySelectorAll(".logos");
@@ -24,40 +25,48 @@ export default Vue.extend({
             const machineIcon = dom.querySelectorAll(".machine_icon");
             const machine = dom.querySelectorAll(".machine");
 
-            if (ev.scrollDirection == "FORWARD") {                
-                anime.set([title, paragraphs, logos, btnext, resources], {
+            if (ev.scrollDirection == "FORWARD") {
+                anime.set([...title, ...paragraphs, ...logos, ...btnext, ...resources], {
                     opacity: 0,
                     translateY: 50
                 })
-            } 
+            }
 
             this.animation = anime.timeline({
-                delay: 500,
-                endDelay: 500,
-                autoplay: false, 
-                direction: ev.scrollDirection !== "REVERSE" ? "normal" : "reverse", 
-                easing: "easeInOutCubic"
+                delay: 400,
+                endDelay: 400,
+                autoplay: false,
+                direction: ev.scrollDirection !== "REVERSE" ? "normal" : "reverse",
+                easing: "linear"
             })
+                // .add({
+                //     targets: [bg],
+                //     opacity: [0, 1]
+                // }, "-=300")
                 .add({
                     targets: [title],
                     translateY: [50, 0],
-                    opacity: [0, 100]
-                }, "-300")
+                    opacity: [0, 1]
+                }, "-=300")
                 .add({
                     targets: [paragraphs],
                     translateY: [50, 0],
-                    opacity: [0, 100],
+                    opacity: [0, 1],
                 }, "-200")
                 .add({
                     targets: [logos],
                     translateY: [50, 0],
-                    opacity: [0, 100]
-                }, "-100")
+                    opacity: [0, 1]
+                }, "-=100")
                 .add({
                     targets: [btnext, resources, machine, machineIcon],
                     translateY: [50, 0],
-                    opacity: [0, 100]
+                    opacity: [0, 1]
                 }, "0")
+                // .add({
+                //     targets: [bg],
+                //     opacity: [1, 0]
+                // }, "+=1000")
 
 
         },
@@ -70,9 +79,10 @@ export default Vue.extend({
         },
         setUpComponent() {
             //@ts-ignore
-            const dom = this.refDom            
+            const dom = this.refDom
             if (!dom) return false
-            
+
+            const bg = dom.querySelectorAll(".section_content_background")
             const title = dom.querySelectorAll("h2");
             const paragraphs = dom.querySelectorAll("p, .with-ul");
             const logos = dom.querySelectorAll(".logos");
