@@ -1,5 +1,6 @@
 <template>
   <div class="explorer_modal_content" v-if="tab2">
+    <div class="machine_title ">{{ CABInst }}</div>
       <!-- header -->
       <div class="explorer_modal_content_header">
         <div class="explorer_modal_content_agency_meta">
@@ -41,25 +42,7 @@
             <ph-dots-three :size="20" />
             <span class="content">{{ tab2.meta.head_researcher }}</span>
           </div>
-          <!-- <div
-            class="explorer_modal_content_meta_arrival"
-            v-if="tab2.meta.arrival"
-          >
-            <span class="label">Llegada</span>
-            <ph-dots-three :size="20" />
-            <span class="content">{{ tab2.meta.arrival }}</span>
-          </div> -->
         </div>
-        <!-- place -->
-        <!-- <div
-          class="explorer_modal_content_meta_place"
-          v-if="tab2.meta.place"
-        >
-          <span class="label">Lugar</span>
-          <ph-dots-three :size="20" />
-          <span class="content">{{ tab2.meta.place }}</span>
-        </div> -->
-        <!-- activity -->
         <div
           class="explorer_modal_content_meta_activity"
           v-if="tab2.meta.activity"
@@ -86,7 +69,7 @@
         v-if="tab2.instruments"
       >
         <collapsible :opened="false">
-          <template v-slot:handler>Instrumentos que transporta</template>
+          <template v-slot:handler>Instrumental del CAB</template>
           <template v-slot:content>
             <p v-for="(item, i) in tab2.instruments" :key="i" v-html="item"></p>
           </template>
@@ -148,7 +131,7 @@ export default {
     Collapsible,
     ExtraResource,
   },
-  props: ['tab2', 'title', 'subtitle'],
+  props: ['tab2', 'title', 'subtitle', 'CABInst'],
 }
 </script>
 
@@ -158,6 +141,11 @@ export default {
   width: 40%;
   overflow-y: scroll;
 }
+.machine_title{
+  font-size: 1.2em;
+  font-weight: bold;
+  @apply mb-4;
+}
 .explorer_modal_content_header {
   @apply flex justify-between items-end mb-4;
   .explorer_modal_content_picture {
@@ -165,7 +153,6 @@ export default {
     overflow: hidden;
   }
   .explorer_modal_content_agency_meta {
-    max-width: 20ch;
     .explorer_modal_content_land {
       @apply flex items-center;
       .explorer_modal_content_land_picture {

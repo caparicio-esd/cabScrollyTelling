@@ -12,7 +12,7 @@ data:
     #- El <strong>CAB</strong> también participará en el <strong>RLS</strong> (Raman Laser Spectrometer) que viajará a Marte a bordo del rover Rosalind Franklin, en la misión ExoMars de la ESA en 2022.
 
 assets:
-  backgroundIllustration: /img/001.webp
+  backgroundIllustration: /img/backgrounds/001.webp
   #logos:
     #- /img/cab_logo.png
     #- /img/inta_logo.png

@@ -23,7 +23,7 @@
       </div>
     </div>
     <button-next-screen />
-    <!-- explorers-->
+    <!-- explorers -->
     <div class="machines">
       <div
         v-for="(explorer, i) in content.data.explorers"

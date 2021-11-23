@@ -1,7 +1,7 @@
 <template>
   <div class="player">
-    <ph-play-circle :size="32" v-show="!isPlaying" @click="play(audio)"/>
-    <ph-pause-circle :size="32" v-show="isPlaying" @click="pause(audio)" />
+    <ph-play-circle class="primary_color" :size="32" v-show="!isPlaying" @click="play(audio)"/>
+    <ph-pause-circle class="primary_color" :size="32" v-show="isPlaying" @click="pause(audio)" />
     <div class="txt_box">
       <div class="title">{{player.title}}</div>
       <div class="author">{{player.author}}</div>

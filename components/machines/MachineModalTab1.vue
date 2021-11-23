@@ -1,5 +1,6 @@
 <template>
   <div class="explorer_modal_content" v-if="tab1">
+      <div class="machine_title ">{{ machine }}</div>
       <!-- header -->
       <div class="explorer_modal_content_header">
         <div class="explorer_modal_content_agency_meta">
@@ -91,7 +92,7 @@
               <li
                 v-for="(item, i) in tab1.instruments"
                 :key="i" v-html="item"
-                @click="item.classList.contains('toTab2') ? $emit('toggleTab') : ''">
+                @click="item.includes('toTab2') ? $emit('toggleTab') : ''">
               </li>
             </ul>
           </template>
@@ -153,8 +154,7 @@ export default {
     Collapsible,
     ExtraResource,
   },
-  props: ['tab1', 'title', 'subtitle'],
-
+  props: ['tab1', 'title', 'subtitle', 'machine'],
 
 }
 </script>
@@ -164,6 +164,11 @@ export default {
   @apply p-6 text-gray-700;
   width: 40%;
   overflow-y: scroll;
+}
+.machine_title{
+  font-size: 1.2em;
+  font-weight: bold;
+  @apply mb-4;
 }
 .explorer_modal_content_header {
   @apply flex justify-between items-end mb-4;
@@ -225,6 +230,9 @@ export default {
   @apply my-4;
   .collapsible_handle_label {
     @apply font-bold text-black;
+  }
+  .toTab2{
+    cursor: pointer;
   }
 }
 </style>

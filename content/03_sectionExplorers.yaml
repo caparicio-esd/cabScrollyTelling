@@ -4,7 +4,7 @@
 title: Sección
 menuTitle: Histórico de misiones
 assets:
-  backgroundIllustration: /img/003_b.webp
+  backgroundIllustration: /img/backgrounds/003_b.webp
 
 data:
 #top: lat, left: lon
