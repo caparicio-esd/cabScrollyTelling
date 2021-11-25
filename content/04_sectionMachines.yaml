@@ -140,8 +140,9 @@ data:
           - Registra la temperatura del aire
           - Resgistra la radiación ultravioleta en superficie y su correlación con cambios en variables ambientales
         curiosities:
-          - REMS forma parte de la red de estaciones meteorológicas creadas por el CAB para las últimas tres misiones en Marte de la NASA.
-          - Una especie de "chimenea" pone en contacto un sensor localizado en el interior del rover con el medio externo. Un filtro lo protege del polvo marciano. De ese modo, puede medir las variaciones de presión motivadas por diferentes sucesos meteorológicos tales como frentes, remolinos, mareas atmosféricas …
+          - A pesar de que el cráter Gale, donde aterrizó Curiosity, está cerca del ecuador, la temperatura más alta que se ha medido en verano ha sido de ocho grados centígrados, en invierno se ha llegado a registrar -90°C. En los polos se alcanzan temperaturas de -150 °C. Los dispositivos electrónicos tienen que ser capaces de trabajar a esas temperaturas tan extremas.
+          - En algunos casos la medición de los vientos ha sido de unos 100 km por hora, pero con la salvedad de que como la atmósfera es muy poco densa esos vientos rápidos no tienen el mismo efecto que en la Tierra. En Marte es como si percibiéramos en la cara una brisa.
+          - El trabajo para realizar el REMS fue de cinco años, desde el 2005 al 2011, llegando a Marte en 2012.
 
         moreinfo: true
         assets:
@@ -293,9 +294,8 @@ data:
           - Registro de la temperatura del aire, la presión y los vientos en superficie, de un modo continuo y más preciso que en misiones previas.
           - Contribuye a una mayor y mejor comprensión del planeta
         curiosities:
-          - El diseño del TWINS está basado en el REMS (Rover Environmental Monitoring Station también creado por el CAB) que transporta el rover Curiosity.
-          - La tecnología del REMS ya demostró la capacidad y ventajas de su diseño, por el corto tiempo de desarrollo y costo, y su adaptabilidad a nuevas misiones y objetivos científicos incorporando ahora mejores prestaciones.
-
+          - Tras el amartizaje de Curiosity en 2012, la NASA hizo pública  la selección de la siguiente misión que iría a Marte, la InSight. Los investigadores del CAB fueron al despacho del responsable de la misión, Bruce Banerdt, y le propusieron que usara las unidades de reemplazo de REMS como la estación meteorológica de la nueva misión, ya que podían adaptarlas fácilmente para esa misión con coste cero y sabiendo que funcionaban, porque ya estaban en Marte. Llamaron al instrumento TWINS, como "gemelos", porque la tecnología es en esencia la misma que usaron para desarrollar REMS en la etapa anterior.
+          - El sismógrafo es tan sensible que cualquier viento que sople alrededor puede hacer que un elemento se mueva y que el sismógrafo detecte vibraciones. TWINS indica al equipo francés que tiene el sismógrafo a qué cosas no deben prestar atención porque son vientos que han perturbado y han hecho que la plataforma se mueva.
         moreinfo: true
         assets:
           resources:
@@ -446,7 +446,9 @@ data:
           - Estudia el tamaño y forma del polvo en el terreno y en la atmósfera marcianos ya que, siendo muy abundante, condiciona el clima, la temperatura y dirige ciertos procesos químicos. Así se comprobará como afecta al rendimiento del propio rover y su instrumental.
           - Mide la radiación, con lo que ayuda a entender sus efectos sobre restos de vida que puedan yacer en las rocas. Con su sensor de humedad, detecta cómo este se intercambia entre la atmósfera y el suelo
         curiosities:
-          - MEDA no es la primera estación meteorológica española en Marte. Ya hay otras dos, una a bordo del InSight (TWINS) y otra con el Curiosity (REMS). Lo que conforma una pequeña red de estaciones meteorológicas españolas.
+          - Hay partículas muy pequeñas de polvo por todo Marte, cuando empieza a soplar el viento se elevan y pueden cubrir todo el planeta. La dinámica de la atmósfera, la temperatura, etc. dependen de ese polvo. Comprender por lo tanto cuál es su papel y cómo se eleva desde el suelo es clave, pensando no solo en entender el planeta, sino más aún en una misión tripulada futura.
+          - La atmósfera marciana tiene una densidad de 1% en comparación con la de la Tierra. En la Tierra la atmósfera nos sirve de protección de la radiación solar, pero en Marte, al ser escasa y tenue, toda la radiación incidente y nociva llega a la superficie y es capaz de hacer fallar a los sistemas. El desarrollo de una tecnología capaz de trabajar en Marte es muy complejo porque tiene que sobrevivir a esas condiciones tan extremas.
+          - La NASA hace una convocatoria abierta internacional por la que plantea una nueva misión espacial con unos determinados objetivos. Y abre un periodo para que se presenten propuestas de instrumentos que los resuelvan. Para la misión Mars 2020 Rover se presentaron 57 de todo el mundo, los expertos de la NASA seleccionaron 7, entre ellas el MEDA del CAB.
 
         moreinfo: true
         assets:
