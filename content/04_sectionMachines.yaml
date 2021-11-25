@@ -13,7 +13,7 @@ data:
     machine: Curiosity (Rover)
     cabInstrument: REMS
     assets:
-      backgroundIllustration: /img/backgrounds/004_2.webp
+      backgroundIllustration: /img/backgrounds/004_2.jpg
     mainText:
       - <em>Coordenadas en Marte. 5° 22′ 12″ S, 137° 48′ 36″ E  (-5.37°, 137.81°)</em>
       - Gale es un cráter con un diámetro de 154 km. En su centro se sitúa un pico central de 5.500 m de altitud denominado Aeolis Mons. Algunos científicos piensan que el cráter se llenó con sedimentos a lo largo del tiempo y los vientos de Marte tallaron la montaña en el centro.
@@ -175,7 +175,7 @@ data:
     machine: Insight
     cabInstrument: TWINS
     assets:
-      backgroundIllustration: /img/backgrounds/004_3.webp
+      backgroundIllustration: /img/backgrounds/004_3.jpg
     mainText:
       - <em>Coordenadas en Marte. 2° 58′ 48″ N, 154° 44′ 24″ E  (2.98°, 154.74°)</em>
       - Es una llanura lisa y plana justo al norte del ecuador con una elevación lo suficientemente baja como para tener suficiente atmósfera para un amartizaje seguro. Su proximidad al ecuador asegura que el módulo de exploración alimentado por energía solar reciba suficiente luz.
@@ -321,7 +321,7 @@ data:
     machine: Perseverance (Rover)
     cabInstrument: MEDA
     assets:
-      backgroundIllustration: /img/backgrounds/004_1.webp
+      backgroundIllustration: /img/backgrounds/004_1.jpg
     mainText:
       - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
       - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
