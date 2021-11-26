@@ -22,7 +22,7 @@ data:
 
 
 assets:
-  backgroundIllustration: /img/backgrounds/009.webp
+  backgroundIllustration: /img/backgrounds/009.jpg
   logos:
     - #0
       src: /img/logos/cab.jpg

@@ -1,5 +1,6 @@
 @import './lib/fontface.css';
 @import './partials/resources.css';
+@import './partials/inputs.css';
 
 * {
   /* @apply border border-blue-400; */
