@@ -10,7 +10,7 @@
     <!-- IMAGEN -->
     <div class="machine_modal_image">
       <img
-        :src="tab1Active ? tab1.images360[src] : tab2.picture"
+        :src="tab1Active ? tab1.images360[src] : tab2.images360[src]"
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
       >
