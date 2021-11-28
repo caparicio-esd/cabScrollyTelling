@@ -9,7 +9,8 @@
 
     <!-- IMAGEN -->
     <div class="machine_modal_image">
-      <img
+      <nuxt-img
+        id="machine_img"
         :src="tab1Active ? tab1.images360[src] : tab2.images360[src]"
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
@@ -25,7 +26,6 @@
             id="spiner"
             min="0"
             max="50"
-            value="0"
             v-model="value"
           >
         </label>
@@ -83,7 +83,7 @@ export default Vue.extend({
       tab2: this.machineData.tabs[1],
       tab1Active: true,
       tab2Active: false,
-      value: "",
+      value: "0",
       src: "0"
     }
   },
@@ -110,16 +110,18 @@ export default Vue.extend({
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
-    // this.setSceneScrollable(this.$refs)
-    this.tab1.images360.forEach(function (imagen, index) {
-      let image = new Image();
-      image.src = imagen;
-    });
-    //@ts-ignore
-    this.tab2.images360.forEach(function (imagen2, index) {
-      let image = new Image();
-      image.src = imagen2;
-    });
+    // // this.setSceneScrollable(this.$refs)
+    // this.tab1.images360.forEach(function (imagen, index) {
+    //   let image = document.querySelector("#machine_img");
+    //   //@ts-ignore
+    //   image.src = imagen;
+    // });
+    // //@ts-ignore
+    // this.tab2.images360.forEach(function (imagen2, index) {
+    //   let image = document.querySelector("#machine_img");
+    //   //@ts-ignore
+    //   image.src = imagen2;
+    // });
   },
 })
 </script>
