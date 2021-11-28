@@ -9,7 +9,7 @@
 
     <!-- IMAGEN -->
     <div class="machine_modal_image">
-      <nuxt-img
+      <img
         :src="tab1Active ? tab1.images360[src] : tab2.images360[src]"
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
@@ -102,7 +102,8 @@ export default Vue.extend({
     toggleTab(){
       this.tab1Active = !this.tab1Active;
       this.tab2Active = !this.tab2Active;
-    }
+    },
+
 
   },
   mixins: [AnimationType_04],
@@ -110,6 +111,15 @@ export default Vue.extend({
     await this.$nextTick()
     //@ts-ignore
     // this.setSceneScrollable(this.$refs)
+    this.tab1.images360.forEach(function (imagen, index) {
+      let image = new Image();
+      image.src = imagen;
+    });
+    //@ts-ignore
+    this.tab2.images360.forEach(function (imagen2, index) {
+      let image = new Image();
+      image.src = imagen2;
+    });
   },
 })
 </script>
