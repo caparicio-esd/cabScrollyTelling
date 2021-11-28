@@ -36,6 +36,7 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@aceforth/nuxt-optimized-images',
+    '@nuxt/image',
   ],
 
   content: {
