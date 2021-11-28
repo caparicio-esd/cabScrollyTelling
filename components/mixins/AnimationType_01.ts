@@ -91,7 +91,7 @@ export default Vue.extend({
             const machineIcon = dom.querySelectorAll(".machine_icon");
             const machine = dom.querySelectorAll(".machine");
 
-            anime.set([...title, ...paragraphs, ...logos, ...btnext, ...resources], {
+            anime.set([...title, ...paragraphs, ...logos, ...btnext, ...resources, ...machine, ...machineIcon], {
                 opacity: 0,
                 translateY: 50
             })

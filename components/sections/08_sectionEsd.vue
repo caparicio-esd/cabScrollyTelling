@@ -60,11 +60,14 @@ export default Vue.extend({
   async fetch() {
     this.content = await getContent(this, '08_sectionEsd')
     this.addData({ index: this.index, data: this.content })
+
   },
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
+    //@ts-ignore
+    this.setUpComponent()
   },
 })
 </script>
