@@ -1,6 +1,7 @@
 <template>
-<div v-if="loading" class="splash">
+<div class="splash">
     <div class="loading"></div>
+    <div>preparando amartizaje...</div>
   </div>
 
 </template>
@@ -9,17 +10,7 @@
 import Vue from 'vue'
 export default Vue.extend({
   name: 'Splash',
-  data: () => ({
-      loading: false,
-    }),
-    methods: {
-      start() {
-        this.loading = true
-      },
-      finish() {
-        this.loading = false
-      },
-    },
+
 })
 </script>
 
@@ -32,21 +23,24 @@ export default Vue.extend({
     z-index: 1000;
     padding: 1rem;
     text-align: center;
-    font-size: 3rem;
-    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0c0c0c;
+    color: white
   }
   .loading {
     display: inline-block;
-    width: 1.5rem;
-    height: 1.5rem;
-    border: 4px solid rgba(9, 133, 81, 0.705);
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 6px solid rgba(56, 61, 4, 0.705);
     border-radius: 50%;
-    border-top-color: #158876;
+    border-top-color: #edcb0a;
     animation: spin 1s ease-in-out infinite;
+    margin-bottom: 2em;
   }
   @keyframes spin {
     to {

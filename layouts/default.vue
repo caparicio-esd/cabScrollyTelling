@@ -1,5 +1,6 @@
 <template>
   <div class="root">
+    <splash-screen v-if="showHideSpinner" />
     <Nuxt />
   </div>
 </template>
@@ -8,8 +9,23 @@
 import Vue from 'vue'
 import 'assets/styles/main.css'
 import { mapActions, mapState, mapGetters } from 'vuex'
+import SplashScreen from '~/components/SplashScreen.vue'
 
 export default Vue.extend({
+  components: {
+    SplashScreen
+  },
+  data() {
+    return {
+      showHideSpinner: true
+    };
+  },
+  beforeCreate() {
+    //@ts-ignore
+    this.showHideSpinner = true;
+  },
+
+
   computed: {
     ...mapState({
       scrollable: (state: any) => state.main.ui.viewPort.scrollable,
@@ -66,6 +82,7 @@ export default Vue.extend({
         console.log('Nuxt ready!')
       })
     }
+    this.showHideSpinner = false;
   },
 })
 </script>
