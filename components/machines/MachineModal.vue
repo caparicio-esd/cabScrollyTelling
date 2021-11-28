@@ -9,9 +9,9 @@
 
     <!-- IMAGEN -->
     <div class="machine_modal_image">
-      <nuxt-img
+      <img
         id="machine_img"
-        :src="tab1Active ? tab1.images360[src] : tab2.images360[src]"
+        :src="tab1Active ? `${tab1.images360[src]}?lqip`: `${tab2.images360[src]}?lqip`"
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
       />
