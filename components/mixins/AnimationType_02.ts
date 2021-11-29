@@ -11,51 +11,40 @@ export default Vue.extend({
     },
     methods: {
         onEnterScene(ev: any) {
-
             //@ts-ignore
             const dom = this.refDom
+            //@ts-ignore
+            const duration = this.duration
             if (!dom) return false
 
             const background = (this.$refs.section as HTMLElement).querySelector("img");
-            const paragraphs = dom.querySelectorAll("p");
-
-            if (ev.scrollDirection == "FORWARD") {
-              anime.set([paragraphs], {
-                  opacity: 0,
-                  translateY: 50
-              })
-            }
+            const quotes = dom.querySelectorAll(".quote");
+            console.log(duration);
 
             this.animation = anime.timeline({
-                delay: 0,
-                endDelay: 0,
+                delay: 100,
+                endDelay: 100,
                 autoplay: false,
                 easing: "linear"
             })
                 .add({
-                    targets: [background],
-                    scale: [1, 2]
-                }, "0")
+                    targets: quotes,
+                    opacity: [0, 1, 1, 1, 0.5, 0.25, 0],
+                    delay: anime.stagger((duration / 8) * 10)
+                }, 0)
                 .add({
-                  targets: [paragraphs],
-                  translateY: [50, 0],
-                  opacity: [0, 100]
-              }, "-300")
+                    targets: [background],
+                    scale: [1, 2],
+                    duration: duration * 10
+                }, "-=" + duration * 10)
         },
         onProgressScene(ev: any) {
             this.animation.seek(ev.progress * this.animation.duration)
         },
         setUpComponent() {
-          //@ts-ignore
-          const dom = this.refDom
-          if (!dom) return false
-
-          const paragraphs = dom.querySelectorAll("p");
-
-          anime.set([...paragraphs], {
-              opacity: 0,
-              translateY: 50
-          })
-      }
+            //@ts-ignore
+            const dom = this.refDom
+            if (!dom) return false
+        }
     },
 });
