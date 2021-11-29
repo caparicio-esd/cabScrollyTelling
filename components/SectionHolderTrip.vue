@@ -12,10 +12,37 @@
         />
       </div>
       <div class="section_content_holder">
-        <div class="section_col_a col-span-2 self-center">
-          <p v-for="(p, i) in content.data[0].mainText" :key="i" v-html="p"></p>
-          <p class="author" v-html="content.data[0].author"></p>
-          <p class="position" v-html="content.data[0].position"></p>
+        <div class="section_col_a h-full col-span-2 self-center">
+          <div class="quotes h-full relative">
+            <div
+              class="quote absolute top-1/3 -translate-y-1/2 opacity-0"
+              v-for="quote in content.data"
+              :key="quote.id"
+            >
+              <div class="quote_content">
+                {{ quote.mainText }}
+              </div>
+              <div class="quote_footer">
+                <div class="author primary_color">
+                  {{ quote.author }}
+                </div>
+                <div class="position">
+                  {{ quote.position }}
+                </div>
+                <div class="source" v-if="quote.showSource">
+                  <extra-resource
+                    :resource="{
+                      url: quote.source.url,
+                      target: '_blank',
+                      icon: 'link', 
+                      title: '', 
+                      author: quote.source.author
+                    }"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -28,10 +55,14 @@ import { n2br, getContent } from '~/lib/sectionUtils'
 import '~/assets/styles/partials/section_content.css'
 import AnimationType_02 from './mixins/AnimationType_02'
 import { mapState, mapActions } from 'vuex'
+import ExtraResource from './ExtraResource.vue'
 
 export default Vue.extend({
   name: 'SectionHolderTrip',
   props: ['index'],
+  components: {
+    ExtraResource,
+  },
   data() {
     return {
       content: {},
@@ -71,12 +102,23 @@ export default Vue.extend({
   .section_content_background {
     overflow: hidden;
   }
-  .author {
-    margin-top: 40px;
-    font-weight: bold;
-  }
-  .position {
-    font-style: italic;
+  .quotes {
+    .quote {
+      @apply text-lg;
+      .quote_content {
+      }
+      .quote_footer {
+        @apply mt-4;
+        .author {
+        }
+        .position {
+          @apply text-sm opacity-70 mt-2;
+        }
+        .source {
+          @apply mt-6;
+        }
+      }
+    }
   }
 }
 </style>

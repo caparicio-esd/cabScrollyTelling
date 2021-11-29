@@ -28,7 +28,7 @@ export default {
 
 <style lang="postcss" scoped>
 .resource{
-  @apply p-2 m-4 rounded-md flex box-border;
+  @apply p-2 my-4 rounded-md flex box-border;
   background: rgba(255,255,255,0.2);
   transition: all 350ms ease;
   &:hover {
