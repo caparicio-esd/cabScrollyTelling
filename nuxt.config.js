@@ -36,13 +36,14 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@aceforth/nuxt-optimized-images',
+    '@nuxt/image',
   ],
 
   content: {
     // Options
   },
   optimizedImages: {
-    optimizeImages: false
+    optimizeImages: true
   },
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -64,6 +65,26 @@ export default {
         options: {
           name: '[path][name].[ext]'
         }
+      })
+    },
+    extend(config, ctx) {
+      config.module.rules.push({
+        test: /\.(png|jpe?g)$/,
+        loaders: [
+          {
+            loader: 'lqip-loader',
+            options: {
+              base64: true,
+              palette: false
+            }
+          },
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8000
+            }
+          }
+        ]
       })
     },
     postcss: {

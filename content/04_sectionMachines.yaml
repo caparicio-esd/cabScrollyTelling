@@ -13,7 +13,7 @@ data:
     machine: Curiosity (Rover)
     cabInstrument: REMS
     assets:
-      backgroundIllustration: /img/backgrounds/004_2.webp
+      backgroundIllustration: /img/backgrounds/004_2.jpg
     mainText:
       - <em>Coordenadas en Marte. 5° 22′ 12″ S, 137° 48′ 36″ E  (-5.37°, 137.81°)</em>
       - Gale es un cráter con un diámetro de 154 km. En su centro se sitúa un pico central de 5.500 m de altitud denominado Aeolis Mons. Algunos científicos piensan que el cráter se llenó con sedimentos a lo largo del tiempo y los vientos de Marte tallaron la montaña en el centro.
@@ -69,15 +69,16 @@ data:
         picture: "/img/machines/curiosity.webp"
         picture_flag: "/img/flags/EEUU.svg"
         images360: [
-          'img/curiosity360/Curiosity_1.png',
-          'img/curiosity360/Curiosity_2.png',
-          'img/curiosity360/Curiosity_3.png',
-          'img/curiosity360/Curiosity_4.png',
-          'img/curiosity360/Curiosity_5.png',
-          'img/curiosity360/Curiosity_6.png',
-          'img/curiosity360/Curiosity_7.png',
-          'img/curiosity360/Curiosity_8.png',
-          'img/curiosity360/Curiosity_9.png',
+          'img/curiosity360/Curiosity_00.png',
+          'img/curiosity360/Curiosity_01.png',
+          'img/curiosity360/Curiosity_02.png',
+          'img/curiosity360/Curiosity_03.png',
+          'img/curiosity360/Curiosity_04.png',
+          'img/curiosity360/Curiosity_05.png',
+          'img/curiosity360/Curiosity_06.png',
+          'img/curiosity360/Curiosity_07.png',
+          'img/curiosity360/Curiosity_08.png',
+          'img/curiosity360/Curiosity_09.png',
           'img/curiosity360/Curiosity_10.png',
           'img/curiosity360/Curiosity_11.png',
           'img/curiosity360/Curiosity_12.png',
@@ -118,8 +119,7 @@ data:
           'img/curiosity360/Curiosity_47.png',
           'img/curiosity360/Curiosity_48.png',
           'img/curiosity360/Curiosity_49.png',
-          'img/curiosity360/Curiosity_50.png',
-          'img/curiosity360/Curiosity_51.png'
+          'img/curiosity360/Curiosity_50.png'
         ]
       - #1 -- TAB 2
         meta:
@@ -140,8 +140,9 @@ data:
           - Registra la temperatura del aire
           - Resgistra la radiación ultravioleta en superficie y su correlación con cambios en variables ambientales
         curiosities:
-          - REMS forma parte de la red de estaciones meteorológicas creadas por el CAB para las últimas tres misiones en Marte de la NASA.
-          - Una especie de "chimenea" pone en contacto un sensor localizado en el interior del rover con el medio externo. Un filtro lo protege del polvo marciano. De ese modo, puede medir las variaciones de presión motivadas por diferentes sucesos meteorológicos tales como frentes, remolinos, mareas atmosféricas …
+          - A pesar de que el cráter Gale, donde aterrizó Curiosity, está cerca del ecuador, la temperatura más alta que se ha medido en verano ha sido de ocho grados centígrados, en invierno se ha llegado a registrar -90°C. En los polos se alcanzan temperaturas de -150 °C. Los dispositivos electrónicos tienen que ser capaces de trabajar a esas temperaturas tan extremas.
+          - En algunos casos la medición de los vientos ha sido de unos 100 km por hora, pero con la salvedad de que como la atmósfera es muy poco densa esos vientos rápidos no tienen el mismo efecto que en la Tierra. En Marte es como si percibiéramos en la cara una brisa.
+          - El trabajo para realizar el REMS fue de cinco años, desde el 2005 al 2011, llegando a Marte en 2012.
 
         moreinfo: true
         assets:
@@ -166,6 +167,59 @@ data:
               target: true
         picture: "/img/machines/curiosity_rems.webp"
         picture_flag: "/img/flags/spain.svg"
+        images360: [
+          'img/curiosity360REMS/Curiosity_REMS01.png',
+          'img/curiosity360REMS/Curiosity_REMS01.png',
+          'img/curiosity360REMS/Curiosity_REMS02.png',
+          'img/curiosity360REMS/Curiosity_REMS03.png',
+          'img/curiosity360REMS/Curiosity_REMS04.png',
+          'img/curiosity360REMS/Curiosity_REMS05.png',
+          'img/curiosity360REMS/Curiosity_REMS06.png',
+          'img/curiosity360REMS/Curiosity_REMS07.png',
+          'img/curiosity360REMS/Curiosity_REMS08.png',
+          'img/curiosity360REMS/Curiosity_REMS09.png',
+          'img/curiosity360REMS/Curiosity_REMS10.png',
+          'img/curiosity360REMS/Curiosity_REMS11.png',
+          'img/curiosity360REMS/Curiosity_REMS12.png',
+          'img/curiosity360REMS/Curiosity_REMS13.png',
+          'img/curiosity360REMS/Curiosity_REMS14.png',
+          'img/curiosity360REMS/Curiosity_REMS15.png',
+          'img/curiosity360REMS/Curiosity_REMS16.png',
+          'img/curiosity360REMS/Curiosity_REMS17.png',
+          'img/curiosity360REMS/Curiosity_REMS18.png',
+          'img/curiosity360REMS/Curiosity_REMS19.png',
+          'img/curiosity360REMS/Curiosity_REMS20.png',
+          'img/curiosity360REMS/Curiosity_REMS21.png',
+          'img/curiosity360REMS/Curiosity_REMS22.png',
+          'img/curiosity360REMS/Curiosity_REMS23.png',
+          'img/curiosity360REMS/Curiosity_REMS24.png',
+          'img/curiosity360REMS/Curiosity_REMS25.png',
+          'img/curiosity360REMS/Curiosity_REMS26.png',
+          'img/curiosity360REMS/Curiosity_REMS27.png',
+          'img/curiosity360REMS/Curiosity_REMS28.png',
+          'img/curiosity360REMS/Curiosity_REMS29.png',
+          'img/curiosity360REMS/Curiosity_REMS30.png',
+          'img/curiosity360REMS/Curiosity_REMS31.png',
+          'img/curiosity360REMS/Curiosity_REMS32.png',
+          'img/curiosity360REMS/Curiosity_REMS33.png',
+          'img/curiosity360REMS/Curiosity_REMS34.png',
+          'img/curiosity360REMS/Curiosity_REMS35.png',
+          'img/curiosity360REMS/Curiosity_REMS36.png',
+          'img/curiosity360REMS/Curiosity_REMS37.png',
+          'img/curiosity360REMS/Curiosity_REMS38.png',
+          'img/curiosity360REMS/Curiosity_REMS39.png',
+          'img/curiosity360REMS/Curiosity_REMS40.png',
+          'img/curiosity360REMS/Curiosity_REMS41.png',
+          'img/curiosity360REMS/Curiosity_REMS42.png',
+          'img/curiosity360REMS/Curiosity_REMS43.png',
+          'img/curiosity360REMS/Curiosity_REMS44.png',
+          'img/curiosity360REMS/Curiosity_REMS45.png',
+          'img/curiosity360REMS/Curiosity_REMS46.png',
+          'img/curiosity360REMS/Curiosity_REMS47.png',
+          'img/curiosity360REMS/Curiosity_REMS48.png',
+          'img/curiosity360REMS/Curiosity_REMS49.png',
+          'img/curiosity360REMS/Curiosity_REMS50.png'
+        ]
 
   - # 1 - Elyseum Planitia // INSIGHT
     id: 1
@@ -174,7 +228,7 @@ data:
     machine: Insight
     cabInstrument: TWINS
     assets:
-      backgroundIllustration: /img/backgrounds/004_3.webp
+      backgroundIllustration: /img/backgrounds/004_3.jpg
     mainText:
       - <em>Coordenadas en Marte. 2° 58′ 48″ N, 154° 44′ 24″ E  (2.98°, 154.74°)</em>
       - Es una llanura lisa y plana justo al norte del ecuador con una elevación lo suficientemente baja como para tener suficiente atmósfera para un amartizaje seguro. Su proximidad al ecuador asegura que el módulo de exploración alimentado por energía solar reciba suficiente luz.
@@ -224,57 +278,57 @@ data:
         picture: "/img/machines/insight.webp"
         picture_flag: "/img/flags/EEUU.svg"
         images360: [
-          'img/curiosity360/Curiosity_1.png',
-          'img/curiosity360/Curiosity_2.png',
-          'img/curiosity360/Curiosity_3.png',
-          'img/curiosity360/Curiosity_4.png',
-          'img/curiosity360/Curiosity_5.png',
-          'img/curiosity360/Curiosity_6.png',
-          'img/curiosity360/Curiosity_7.png',
-          'img/curiosity360/Curiosity_8.png',
-          'img/curiosity360/Curiosity_9.png',
-          'img/curiosity360/Curiosity_10.png',
-          'img/curiosity360/Curiosity_11.png',
-          'img/curiosity360/Curiosity_12.png',
-          'img/curiosity360/Curiosity_13.png',
-          'img/curiosity360/Curiosity_14.png',
-          'img/curiosity360/Curiosity_15.png',
-          'img/curiosity360/Curiosity_16.png',
-          'img/curiosity360/Curiosity_17.png',
-          'img/curiosity360/Curiosity_18.png',
-          'img/curiosity360/Curiosity_19.png',
-          'img/curiosity360/Curiosity_20.png',
-          'img/curiosity360/Curiosity_21.png',
-          'img/curiosity360/Curiosity_22.png',
-          'img/curiosity360/Curiosity_23.png',
-          'img/curiosity360/Curiosity_24.png',
-          'img/curiosity360/Curiosity_25.png',
-          'img/curiosity360/Curiosity_26.png',
-          'img/curiosity360/Curiosity_27.png',
-          'img/curiosity360/Curiosity_28.png',
-          'img/curiosity360/Curiosity_29.png',
-          'img/curiosity360/Curiosity_30.png',
-          'img/curiosity360/Curiosity_31.png',
-          'img/curiosity360/Curiosity_32.png',
-          'img/curiosity360/Curiosity_33.png',
-          'img/curiosity360/Curiosity_34.png',
-          'img/curiosity360/Curiosity_35.png',
-          'img/curiosity360/Curiosity_36.png',
-          'img/curiosity360/Curiosity_37.png',
-          'img/curiosity360/Curiosity_38.png',
-          'img/curiosity360/Curiosity_39.png',
-          'img/curiosity360/Curiosity_40.png',
-          'img/curiosity360/Curiosity_41.png',
-          'img/curiosity360/Curiosity_42.png',
-          'img/curiosity360/Curiosity_43.png',
-          'img/curiosity360/Curiosity_44.png',
-          'img/curiosity360/Curiosity_45.png',
-          'img/curiosity360/Curiosity_46.png',
-          'img/curiosity360/Curiosity_47.png',
-          'img/curiosity360/Curiosity_48.png',
-          'img/curiosity360/Curiosity_49.png',
-          'img/curiosity360/Curiosity_50.png',
-          'img/curiosity360/Curiosity_51.png'
+          'img/insight360/Insight_00.png',
+          'img/insight360/Insight_01.png',
+          'img/insight360/Insight_02.png',
+          'img/insight360/Insight_03.png',
+          'img/insight360/Insight_04.png',
+          'img/insight360/Insight_05.png',
+          'img/insight360/Insight_06.png',
+          'img/insight360/Insight_07.png',
+          'img/insight360/Insight_08.png',
+          'img/insight360/Insight_09.png',
+          'img/insight360/Insight_10.png',
+          'img/insight360/Insight_11.png',
+          'img/insight360/Insight_12.png',
+          'img/insight360/Insight_13.png',
+          'img/insight360/Insight_14.png',
+          'img/insight360/Insight_15.png',
+          'img/insight360/Insight_16.png',
+          'img/insight360/Insight_17.png',
+          'img/insight360/Insight_18.png',
+          'img/insight360/Insight_19.png',
+          'img/insight360/Insight_20.png',
+          'img/insight360/Insight_21.png',
+          'img/insight360/Insight_22.png',
+          'img/insight360/Insight_23.png',
+          'img/insight360/Insight_24.png',
+          'img/insight360/Insight_25.png',
+          'img/insight360/Insight_26.png',
+          'img/insight360/Insight_27.png',
+          'img/insight360/Insight_28.png',
+          'img/insight360/Insight_29.png',
+          'img/insight360/Insight_30.png',
+          'img/insight360/Insight_31.png',
+          'img/insight360/Insight_32.png',
+          'img/insight360/Insight_33.png',
+          'img/insight360/Insight_34.png',
+          'img/insight360/Insight_35.png',
+          'img/insight360/Insight_36.png',
+          'img/insight360/Insight_37.png',
+          'img/insight360/Insight_38.png',
+          'img/insight360/Insight_39.png',
+          'img/insight360/Insight_40.png',
+          'img/insight360/Insight_41.png',
+          'img/insight360/Insight_42.png',
+          'img/insight360/Insight_43.png',
+          'img/insight360/Insight_44.png',
+          'img/insight360/Insight_45.png',
+          'img/insight360/Insight_46.png',
+          'img/insight360/Insight_47.png',
+          'img/insight360/Insight_48.png',
+          'img/insight360/Insight_49.png',
+          'img/insight360/Insight_50.png'
         ]
       - #1 -- TAB 2
         meta:
@@ -293,9 +347,8 @@ data:
           - Registro de la temperatura del aire, la presión y los vientos en superficie, de un modo continuo y más preciso que en misiones previas.
           - Contribuye a una mayor y mejor comprensión del planeta
         curiosities:
-          - El diseño del TWINS está basado en el REMS (Rover Environmental Monitoring Station también creado por el CAB) que transporta el rover Curiosity.
-          - La tecnología del REMS ya demostró la capacidad y ventajas de su diseño, por el corto tiempo de desarrollo y costo, y su adaptabilidad a nuevas misiones y objetivos científicos incorporando ahora mejores prestaciones.
-
+          - Tras el amartizaje de Curiosity en 2012, la NASA hizo pública  la selección de la siguiente misión que iría a Marte, la InSight. Los investigadores del CAB fueron al despacho del responsable de la misión, Bruce Banerdt, y le propusieron que usara las unidades de reemplazo de REMS como la estación meteorológica de la nueva misión, ya que podían adaptarlas fácilmente para esa misión con coste cero y sabiendo que funcionaban, porque ya estaban en Marte. Llamaron al instrumento TWINS, como "gemelos", porque la tecnología es en esencia la misma que usaron para desarrollar REMS en la etapa anterior.
+          - El sismógrafo es tan sensible que cualquier viento que sople alrededor puede hacer que un elemento se mueva y que el sismógrafo detecte vibraciones. TWINS indica al equipo francés que tiene el sismógrafo a qué cosas no deben prestar atención porque son vientos que han perturbado y han hecho que la plataforma se mueva.
         moreinfo: true
         assets:
           resources:
@@ -313,6 +366,59 @@ data:
               target: true
         picture: "/img/machines/insight_twins.webp"
         picture_flag: "/img/flags/spain.svg"
+        images360: [
+          'img/insight360TWINS/Insight_Twins_00.png',
+          'img/insight360TWINS/Insight_Twins_01.png',
+          'img/insight360TWINS/Insight_Twins_02.png',
+          'img/insight360TWINS/Insight_Twins_03.png',
+          'img/insight360TWINS/Insight_Twins_04.png',
+          'img/insight360TWINS/Insight_Twins_05.png',
+          'img/insight360TWINS/Insight_Twins_06.png',
+          'img/insight360TWINS/Insight_Twins_07.png',
+          'img/insight360TWINS/Insight_Twins_08.png',
+          'img/insight360TWINS/Insight_Twins_09.png',
+          'img/insight360TWINS/Insight_Twins_10.png',
+          'img/insight360TWINS/Insight_Twins_11.png',
+          'img/insight360TWINS/Insight_Twins_12.png',
+          'img/insight360TWINS/Insight_Twins_13.png',
+          'img/insight360TWINS/Insight_Twins_14.png',
+          'img/insight360TWINS/Insight_Twins_15.png',
+          'img/insight360TWINS/Insight_Twins_16.png',
+          'img/insight360TWINS/Insight_Twins_17.png',
+          'img/insight360TWINS/Insight_Twins_18.png',
+          'img/insight360TWINS/Insight_Twins_19.png',
+          'img/insight360TWINS/Insight_Twins_20.png',
+          'img/insight360TWINS/Insight_Twins_21.png',
+          'img/insight360TWINS/Insight_Twins_22.png',
+          'img/insight360TWINS/Insight_Twins_23.png',
+          'img/insight360TWINS/Insight_Twins_24.png',
+          'img/insight360TWINS/Insight_Twins_25.png',
+          'img/insight360TWINS/Insight_Twins_26.png',
+          'img/insight360TWINS/Insight_Twins_27.png',
+          'img/insight360TWINS/Insight_Twins_28.png',
+          'img/insight360TWINS/Insight_Twins_29.png',
+          'img/insight360TWINS/Insight_Twins_30.png',
+          'img/insight360TWINS/Insight_Twins_31.png',
+          'img/insight360TWINS/Insight_Twins_32.png',
+          'img/insight360TWINS/Insight_Twins_33.png',
+          'img/insight360TWINS/Insight_Twins_34.png',
+          'img/insight360TWINS/Insight_Twins_35.png',
+          'img/insight360TWINS/Insight_Twins_36.png',
+          'img/insight360TWINS/Insight_Twins_37.png',
+          'img/insight360TWINS/Insight_Twins_38.png',
+          'img/insight360TWINS/Insight_Twins_39.png',
+          'img/insight360TWINS/Insight_Twins_40.png',
+          'img/insight360TWINS/Insight_Twins_41.png',
+          'img/insight360TWINS/Insight_Twins_42.png',
+          'img/insight360TWINS/Insight_Twins_43.png',
+          'img/insight360TWINS/Insight_Twins_44.png',
+          'img/insight360TWINS/Insight_Twins_45.png',
+          'img/insight360TWINS/Insight_Twins_46.png',
+          'img/insight360TWINS/Insight_Twins_47.png',
+          'img/insight360TWINS/Insight_Twins_48.png',
+          'img/insight360TWINS/Insight_Twins_49.png',
+          'img/insight360TWINS/Insight_Twins_50.png'
+        ]
 
   - # 2 - Cráter Jezero // PERSEVERANCE
     id: 2
@@ -321,7 +427,7 @@ data:
     machine: Perseverance (Rover)
     cabInstrument: MEDA
     assets:
-      backgroundIllustration: /img/backgrounds/004_1.webp
+      backgroundIllustration: /img/backgrounds/004_1.jpg
     mainText:
       - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
       - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
@@ -371,57 +477,57 @@ data:
         picture: "/img/machines/perseverance.webp"
         picture_flag: "/img/flags/EEUU.svg"
         images360: [
-          'img/curiosity360/Curiosity_1.png',
-          'img/curiosity360/Curiosity_2.png',
-          'img/curiosity360/Curiosity_3.png',
-          'img/curiosity360/Curiosity_4.png',
-          'img/curiosity360/Curiosity_5.png',
-          'img/curiosity360/Curiosity_6.png',
-          'img/curiosity360/Curiosity_7.png',
-          'img/curiosity360/Curiosity_8.png',
-          'img/curiosity360/Curiosity_9.png',
-          'img/curiosity360/Curiosity_10.png',
-          'img/curiosity360/Curiosity_11.png',
-          'img/curiosity360/Curiosity_12.png',
-          'img/curiosity360/Curiosity_13.png',
-          'img/curiosity360/Curiosity_14.png',
-          'img/curiosity360/Curiosity_15.png',
-          'img/curiosity360/Curiosity_16.png',
-          'img/curiosity360/Curiosity_17.png',
-          'img/curiosity360/Curiosity_18.png',
-          'img/curiosity360/Curiosity_19.png',
-          'img/curiosity360/Curiosity_20.png',
-          'img/curiosity360/Curiosity_21.png',
-          'img/curiosity360/Curiosity_22.png',
-          'img/curiosity360/Curiosity_23.png',
-          'img/curiosity360/Curiosity_24.png',
-          'img/curiosity360/Curiosity_25.png',
-          'img/curiosity360/Curiosity_26.png',
-          'img/curiosity360/Curiosity_27.png',
-          'img/curiosity360/Curiosity_28.png',
-          'img/curiosity360/Curiosity_29.png',
-          'img/curiosity360/Curiosity_30.png',
-          'img/curiosity360/Curiosity_31.png',
-          'img/curiosity360/Curiosity_32.png',
-          'img/curiosity360/Curiosity_33.png',
-          'img/curiosity360/Curiosity_34.png',
-          'img/curiosity360/Curiosity_35.png',
-          'img/curiosity360/Curiosity_36.png',
-          'img/curiosity360/Curiosity_37.png',
-          'img/curiosity360/Curiosity_38.png',
-          'img/curiosity360/Curiosity_39.png',
-          'img/curiosity360/Curiosity_40.png',
-          'img/curiosity360/Curiosity_41.png',
-          'img/curiosity360/Curiosity_42.png',
-          'img/curiosity360/Curiosity_43.png',
-          'img/curiosity360/Curiosity_44.png',
-          'img/curiosity360/Curiosity_45.png',
-          'img/curiosity360/Curiosity_46.png',
-          'img/curiosity360/Curiosity_47.png',
-          'img/curiosity360/Curiosity_48.png',
-          'img/curiosity360/Curiosity_49.png',
-          'img/curiosity360/Curiosity_50.png',
-          'img/curiosity360/Curiosity_51.png'
+          'img/perseverance360/Perseverance_00.png',
+          'img/perseverance360/Perseverance_01.png',
+          'img/perseverance360/Perseverance_02.png',
+          'img/perseverance360/Perseverance_03.png',
+          'img/perseverance360/Perseverance_04.png',
+          'img/perseverance360/Perseverance_05.png',
+          'img/perseverance360/Perseverance_06.png',
+          'img/perseverance360/Perseverance_07.png',
+          'img/perseverance360/Perseverance_08.png',
+          'img/perseverance360/Perseverance_09.png',
+          'img/perseverance360/Perseverance_10.png',
+          'img/perseverance360/Perseverance_11.png',
+          'img/perseverance360/Perseverance_12.png',
+          'img/perseverance360/Perseverance_13.png',
+          'img/perseverance360/Perseverance_14.png',
+          'img/perseverance360/Perseverance_15.png',
+          'img/perseverance360/Perseverance_16.png',
+          'img/perseverance360/Perseverance_17.png',
+          'img/perseverance360/Perseverance_18.png',
+          'img/perseverance360/Perseverance_19.png',
+          'img/perseverance360/Perseverance_20.png',
+          'img/perseverance360/Perseverance_21.png',
+          'img/perseverance360/Perseverance_22.png',
+          'img/perseverance360/Perseverance_23.png',
+          'img/perseverance360/Perseverance_24.png',
+          'img/perseverance360/Perseverance_25.png',
+          'img/perseverance360/Perseverance_26.png',
+          'img/perseverance360/Perseverance_27.png',
+          'img/perseverance360/Perseverance_28.png',
+          'img/perseverance360/Perseverance_29.png',
+          'img/perseverance360/Perseverance_30.png',
+          'img/perseverance360/Perseverance_31.png',
+          'img/perseverance360/Perseverance_32.png',
+          'img/perseverance360/Perseverance_33.png',
+          'img/perseverance360/Perseverance_34.png',
+          'img/perseverance360/Perseverance_35.png',
+          'img/perseverance360/Perseverance_36.png',
+          'img/perseverance360/Perseverance_37.png',
+          'img/perseverance360/Perseverance_38.png',
+          'img/perseverance360/Perseverance_39.png',
+          'img/perseverance360/Perseverance_40.png',
+          'img/perseverance360/Perseverance_41.png',
+          'img/perseverance360/Perseverance_42.png',
+          'img/perseverance360/Perseverance_43.png',
+          'img/perseverance360/Perseverance_44.png',
+          'img/perseverance360/Perseverance_45.png',
+          'img/perseverance360/Perseverance_46.png',
+          'img/perseverance360/Perseverance_47.png',
+          'img/perseverance360/Perseverance_48.png',
+          'img/perseverance360/Perseverance_49.png',
+          'img/perseverance360/Perseverance_50.png'
         ]
       - #1 -- TAB 2
         meta:
@@ -446,7 +552,9 @@ data:
           - Estudia el tamaño y forma del polvo en el terreno y en la atmósfera marcianos ya que, siendo muy abundante, condiciona el clima, la temperatura y dirige ciertos procesos químicos. Así se comprobará como afecta al rendimiento del propio rover y su instrumental.
           - Mide la radiación, con lo que ayuda a entender sus efectos sobre restos de vida que puedan yacer en las rocas. Con su sensor de humedad, detecta cómo este se intercambia entre la atmósfera y el suelo
         curiosities:
-          - MEDA no es la primera estación meteorológica española en Marte. Ya hay otras dos, una a bordo del InSight (TWINS) y otra con el Curiosity (REMS). Lo que conforma una pequeña red de estaciones meteorológicas españolas.
+          - Hay partículas muy pequeñas de polvo por todo Marte, cuando empieza a soplar el viento se elevan y pueden cubrir todo el planeta. La dinámica de la atmósfera, la temperatura, etc. dependen de ese polvo. Comprender por lo tanto cuál es su papel y cómo se eleva desde el suelo es clave, pensando no solo en entender el planeta, sino más aún en una misión tripulada futura.
+          - La atmósfera marciana tiene una densidad de 1% en comparación con la de la Tierra. En la Tierra la atmósfera nos sirve de protección de la radiación solar, pero en Marte, al ser escasa y tenue, toda la radiación incidente y nociva llega a la superficie y es capaz de hacer fallar a los sistemas. El desarrollo de una tecnología capaz de trabajar en Marte es muy complejo porque tiene que sobrevivir a esas condiciones tan extremas.
+          - La NASA hace una convocatoria abierta internacional por la que plantea una nueva misión espacial con unos determinados objetivos. Y abre un periodo para que se presenten propuestas de instrumentos que los resuelvan. Para la misión Mars 2020 Rover se presentaron 57 de todo el mundo, los expertos de la NASA seleccionaron 7, entre ellas el MEDA del CAB.
 
         moreinfo: true
         assets:
@@ -471,3 +579,56 @@ data:
               target: true
         picture: "/img/machines/perseverance_meda.webp"
         picture_flag: "/img/flags/spain.svg"
+        images360: [
+          'img/perseverance360MEDA/PerseveranceMEDA00.png',
+          'img/perseverance360MEDA/PerseveranceMEDA01.png',
+          'img/perseverance360MEDA/PerseveranceMEDA02.png',
+          'img/perseverance360MEDA/PerseveranceMEDA03.png',
+          'img/perseverance360MEDA/PerseveranceMEDA04.png',
+          'img/perseverance360MEDA/PerseveranceMEDA05.png',
+          'img/perseverance360MEDA/PerseveranceMEDA06.png',
+          'img/perseverance360MEDA/PerseveranceMEDA07.png',
+          'img/perseverance360MEDA/PerseveranceMEDA08.png',
+          'img/perseverance360MEDA/PerseveranceMEDA09.png',
+          'img/perseverance360MEDA/PerseveranceMEDA10.png',
+          'img/perseverance360MEDA/PerseveranceMEDA11.png',
+          'img/perseverance360MEDA/PerseveranceMEDA12.png',
+          'img/perseverance360MEDA/PerseveranceMEDA13.png',
+          'img/perseverance360MEDA/PerseveranceMEDA14.png',
+          'img/perseverance360MEDA/PerseveranceMEDA15.png',
+          'img/perseverance360MEDA/PerseveranceMEDA16.png',
+          'img/perseverance360MEDA/PerseveranceMEDA17.png',
+          'img/perseverance360MEDA/PerseveranceMEDA18.png',
+          'img/perseverance360MEDA/PerseveranceMEDA19.png',
+          'img/perseverance360MEDA/PerseveranceMEDA20.png',
+          'img/perseverance360MEDA/PerseveranceMEDA21.png',
+          'img/perseverance360MEDA/PerseveranceMEDA22.png',
+          'img/perseverance360MEDA/PerseveranceMEDA23.png',
+          'img/perseverance360MEDA/PerseveranceMEDA24.png',
+          'img/perseverance360MEDA/PerseveranceMEDA25.png',
+          'img/perseverance360MEDA/PerseveranceMEDA26.png',
+          'img/perseverance360MEDA/PerseveranceMEDA27.png',
+          'img/perseverance360MEDA/PerseveranceMEDA28.png',
+          'img/perseverance360MEDA/PerseveranceMEDA29.png',
+          'img/perseverance360MEDA/PerseveranceMEDA30.png',
+          'img/perseverance360MEDA/PerseveranceMEDA31.png',
+          'img/perseverance360MEDA/PerseveranceMEDA32.png',
+          'img/perseverance360MEDA/PerseveranceMEDA33.png',
+          'img/perseverance360MEDA/PerseveranceMEDA34.png',
+          'img/perseverance360MEDA/PerseveranceMEDA35.png',
+          'img/perseverance360MEDA/PerseveranceMEDA36.png',
+          'img/perseverance360MEDA/PerseveranceMEDA37.png',
+          'img/perseverance360MEDA/PerseveranceMEDA38.png',
+          'img/perseverance360MEDA/PerseveranceMEDA39.png',
+          'img/perseverance360MEDA/PerseveranceMEDA40.png',
+          'img/perseverance360MEDA/PerseveranceMEDA41.png',
+          'img/perseverance360MEDA/PerseveranceMEDA42.png',
+          'img/perseverance360MEDA/PerseveranceMEDA43.png',
+          'img/perseverance360MEDA/PerseveranceMEDA44.png',
+          'img/perseverance360MEDA/PerseveranceMEDA45.png',
+          'img/perseverance360MEDA/PerseveranceMEDA46.png',
+          'img/perseverance360MEDA/PerseveranceMEDA47.png',
+          'img/perseverance360MEDA/PerseveranceMEDA48.png',
+          'img/perseverance360MEDA/PerseveranceMEDA49.png',
+          'img/perseverance360MEDA/PerseveranceMEDA50.png'
+        ]

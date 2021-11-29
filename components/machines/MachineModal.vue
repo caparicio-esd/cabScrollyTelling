@@ -9,22 +9,26 @@
 
     <!-- IMAGEN -->
     <div class="machine_modal_image">
-      <!-- <img
-        :src="tab1Active ? tab1.picture : tab2.picture"
+      <img
+        id="machine_img"
+        :src="tab1Active ? `${tab1.images360[src]}?lqip`: `${tab2.images360[src]}?lqip`"
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
-      > -->
-      <!-- TODO: change tab2 when highlight -->
-      <vue-product-spinner
-        :images="tab1Active ? tab1.images360 : tab1.images360"
-        :slider="false"
-        :speed="1"
-        class="image_background"
-      >
-      <!-- <PreloadSpinnerComponent /> -->
-
-      </vue-product-spinner>
-
+      />
+        <label
+          for="spiner"
+          id="turn_around"
+        >
+          360º
+          <input
+            type="range"
+            name="spiner"
+            id="spiner"
+            min="0"
+            max="50"
+            v-model="value"
+          >
+        </label>
       <button
         class="cabBtn"
         :class="tab2Active ? 'active' : ''"
@@ -32,7 +36,7 @@
       >
         {{ machineData.cabInstrument }}
       </button>
-      <div class="icon360"> <ph-planet :size="48" /> Clic y arrastrar</div>
+
     </div>
 
     <!-- TAB 1 // machine -->
@@ -62,9 +66,8 @@ import { mapState } from 'vuex'
 import AnimationType_04 from '../mixins/AnimationType_04'
 import MachineModalTab1 from '~/components/machines/MachineModalTab1.vue'
 import MachineModalTab2 from '~/components/machines/MachineModalTab2.vue'
-import { PhXCircle, PhPlanet } from 'phosphor-vue'
+import { PhXCircle } from 'phosphor-vue'
 //@ts-ignore
-import VueProductSpinner from 'vue-product-spinner'
 
 export default Vue.extend({
   name: 'MachineModal',
@@ -72,9 +75,7 @@ export default Vue.extend({
   components: {
     MachineModalTab1,
     MachineModalTab2,
-    PhXCircle,
-    PhPlanet,
-    VueProductSpinner
+    PhXCircle
   },
   data() {
     return {
@@ -82,7 +83,13 @@ export default Vue.extend({
       tab2: this.machineData.tabs[1],
       tab1Active: true,
       tab2Active: false,
-
+      value: "0",
+      src: "0"
+    }
+  },
+  watch: {
+    value(val) {
+      this.src = `${val}`;
     }
   },
   props: ['machineData', 'open'],
@@ -95,14 +102,26 @@ export default Vue.extend({
     toggleTab(){
       this.tab1Active = !this.tab1Active;
       this.tab2Active = !this.tab2Active;
-    }
+    },
+
 
   },
   mixins: [AnimationType_04],
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
-    // this.setSceneScrollable(this.$refs)
+    // // this.setSceneScrollable(this.$refs)
+    // this.tab1.images360.forEach(function (imagen, index) {
+    //   let image = document.querySelector("#machine_img");
+    //   //@ts-ignore
+    //   image.src = imagen;
+    // });
+    // //@ts-ignore
+    // this.tab2.images360.forEach(function (imagen2, index) {
+    //   let image = document.querySelector("#machine_img");
+    //   //@ts-ignore
+    //   image.src = imagen2;
+    // });
   },
 })
 </script>
@@ -134,18 +153,27 @@ export default Vue.extend({
     justify-content: center;
     align-items: center;
     position: relative;
-
     .image_background{
       @apply absolute;
-      width: 65vw;
+      width: auto;
       max-width: none;
       z-index: 3;
-      &:hover ~ .icon360{
-        opacity: 0;
+      img{
+        outline: none;
+      }
+    }
+    #turn_around{
+      position: absolute;
+      bottom: 25px;
+      left: 25px;
+      color: white;
+      display: flex;
+      #spiner{
+        margin-left: 10px;
       }
     }
     .cabBtn{
-      @apply flex absolute rounded-full bg-gray-200 text-black px-4 py-2;
+      @apply flex absolute rounded-full bg-gray-200 text-black px-3 py-1;
       @apply ring-black ring-0 ring-opacity-20;
       align-items: center;
       pointer-events: initial;
@@ -178,6 +206,11 @@ export default Vue.extend({
 
   }
 
+}
+
+.slider_bar{
+  position: absolute !important;
+  bottom: 0 !important;
 }
 
 

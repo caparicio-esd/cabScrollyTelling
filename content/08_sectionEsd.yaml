@@ -14,30 +14,30 @@ data:
     #- Con ello queremos contribuir a la difusión del conocimiento científico y tecnológico, sobre todo a nivel divulgativo; y fomentar el trabajo conjunto entre científicos y diseñadores.
 
 assets:
-  backgroundIllustration: /img/backgrounds/008.webp
+  backgroundIllustration: /img/backgrounds/008.jpg
   resources:
     - #1
       title: Recetas del CAB. Planeta habitable.
       author: Aurora Merino, Ana del Pino, Lourdes Ruiz, Inmaculada Martín.
-      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      url: https://youtu.be/X6j9lLkZMCo
       icon: video
       target: true
     - #2
       title: What on earth? Extremophiles.
       author: Angélica Jiménez, Delia González, Xeli López.
-      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      url: https://youtu.be/agjvlvj-6tk
       icon: video
       target: true
     - #3
       title: Un planeta para cada extremófilo.
       author: Leonardo Berbesí, Ana Fernández-Golfín, Sara Paniagua, Cristian Iacob.
-      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      url: https://youtu.be/uFCOomATClY
       icon: video
       target: true
     - #4
       title: LUCA. Una hipótesis sobre el origen de la vida.
       author: Alba Vera, María Camarillo, Patryk Cesarz, David Güiza.
-      url: https://www.youtube.com/channel/UCMZ8Tje0_MC_xWcf8iwS1aQ
+      url: https://youtu.be/uGt-SV6NmeY
       icon: video
       target: true
     - #5

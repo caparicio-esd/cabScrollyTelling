@@ -1,5 +1,6 @@
 @import './lib/fontface.css';
 @import './partials/resources.css';
+@import './partials/inputs.css';
 
 * {
   /* @apply border border-blue-400; */
@@ -43,7 +44,7 @@ p {
 .btn_next{
   @apply absolute bottom-12 w-36 text-center flex bg-white text-black;
   left: calc(50% - 36px);
-  border-radius: 3px;
+  border-radius: 5px;
   box-sizing: border-box;
   background-clip: padding-box;
   height: 2.5rem;
