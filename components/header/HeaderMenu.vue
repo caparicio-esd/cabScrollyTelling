@@ -9,6 +9,7 @@
         :openedId="inWhichSceneIAm - 1"
         :index="i"
         :focusedId="999"
+        :mustBeLight="mustBeLight"
       >
         <div class="header_menu_item" v-if="dItem.index > 0">
           {{ dItem.menuTitle || dItem.title }}
@@ -26,7 +27,7 @@ import Ticks from '../dsys/Ticks.vue'
 export default Vue.extend({
   components: { Ticks },
   name: 'HeaderMenu',
-  props: ['goToScrollIndex'],
+  props: ['goToScrollIndex', 'mustBeLight'],
   data() {
     return {
       hovered: -1,
