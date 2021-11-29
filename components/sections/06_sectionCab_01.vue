@@ -122,15 +122,17 @@ export default Vue.extend({
   }
 
   .pic {
-    @apply bg-gray-400 h-44 my-6;
     overflow: hidden;
     img {
       object-fit: cover;
       height: 100%;
+      width: 100%;
     }
   }
   .pic_horizontal {
     img {
+      object-fit: cover;
+      height: 100%;
       width: 100%;
     }
   }

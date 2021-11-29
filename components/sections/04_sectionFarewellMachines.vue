@@ -64,13 +64,14 @@ export default Vue.extend({
   async fetch() {
     this.content = await getContent(this, '04_sectionFarewellMachines')
     this.addData({ index: this.index, data: this.content })
-        //@ts-ignore
-    this.setUpComponent()
+
   },
   async mounted() {
     await this.$nextTick()
     //@ts-ignore
     this.setSceneScrollable(this.$refs)
+    //@ts-ignore
+    this.setUpComponent()
   },
 })
 </script>
