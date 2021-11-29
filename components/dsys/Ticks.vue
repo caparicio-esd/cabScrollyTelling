@@ -1,11 +1,16 @@
 <template>
-  <div class="tick_area" @click.stop="clickHndlr" :style="{ ...style_ }">
+  <div
+    class="tick_area"
+    @click.stop="clickHndlr"
+    :style="{ ...style_ }"
+  >
     <div
       :class="[
         `tick_item`,
         openedId == index ? `tick_item_active` : ``,
         focusedId == index ? `tick_item_focused` : ``,
         focusedId != index && focusedId >= 0 ? `tick_item_unfocused` : ``,
+        mustBeLight ? 'lightTheme' : ''
       ]"
     >
       <slot />
@@ -17,7 +22,15 @@
 import Vue from 'vue'
 export default Vue.extend({
   name: 'Tick',
-  props: ['active', 'focusedId', 'index', 'openedId', 'style_', 'clickHndlr'],
+  props: [
+    'active',
+    'focusedId',
+    'index',
+    'openedId',
+    'style_',
+    'clickHndlr',
+    'mustBeLight',
+  ],
 })
 </script>
 
@@ -57,6 +70,23 @@ export default Vue.extend({
     background-color: rgba(255, 255, 255, 0.6);
     border: 3px solid rgba(255, 255, 255, 0.6);
     transition: all 350ms ease;
+  }
+
+  &.lightTheme {
+    @apply bg-gray-700 ring-gray-500;
+    &.tick_item_active {
+      @apply ring-gray-500;
+      opacity: .8;
+    }
+    &.tick_item_focused,
+    &:hover {
+      @apply ring-gray-500;
+      opacity: .8;
+    }
+    &.tick_item_unfocused {
+      background-color: rgba(0, 0, 0, 0.2);
+      border: 3px solid rgba(0, 0, 0, 0.2); 
+    }
   }
 }
 </style>

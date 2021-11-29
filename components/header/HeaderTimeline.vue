@@ -1,5 +1,9 @@
 <template>
-  <div class="header_timeline" @click="goToScrollPoint">
+  <div
+    class="header_timeline"
+    @click="goToScrollPoint"
+    :class="[{ lightTheme: mustBeLight }]"
+  >
     <div
       class="header_timeline_completed"
       :style="{ width: `${(getScroll / documentTotalHeight) * 100}%` }"
@@ -12,7 +16,7 @@ import Vue from 'vue'
 import { mapGetters } from 'vuex'
 export default Vue.extend({
   name: 'HeaderTimeline',
-  props: ['goToScrollPoint'],
+  props: ['goToScrollPoint', 'mustBeLight'],
   computed: {
     ...mapGetters({
       getScroll: 'main/getScroll',
@@ -35,6 +39,13 @@ export default Vue.extend({
   .header_timeline_completed {
     height: 4px;
     background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  &.lightTheme {
+    background-color: rgba(0, 0, 0, 0.15);
+    .header_timeline_completed {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
   }
 }
 </style>

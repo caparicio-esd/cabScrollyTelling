@@ -1,12 +1,25 @@
 <template>
-  <a class="resource" :href="resource.url" :target="resource.target ? '_blank' : '_self'">
-    <ph-file-pdf class="primary_color" :size="32" v-if="resource.icon == 'file-pdf'"/>
-    <ph-file class="primary_color" :size="32" v-if="resource.icon == 'file'"/>
-    <ph-link class="primary_color" :size="32" v-if="resource.icon == 'link'"/>
-    <ph-youtube-logo class="primary_color" :size="32" v-if="resource.icon == 'video'" />
+  <a
+    class="resource"
+    :href="resource.url"
+    :target="resource.target ? '_blank' : '_self'"
+    :class="[{ lightTheme: mustBeLight }]"
+  >
+    <ph-file-pdf
+      class="primary_color"
+      :size="32"
+      v-if="resource.icon == 'file-pdf'"
+    />
+    <ph-file class="primary_color" :size="32" v-if="resource.icon == 'file'" />
+    <ph-link class="primary_color" :size="32" v-if="resource.icon == 'link'" />
+    <ph-youtube-logo
+      class="primary_color"
+      :size="32"
+      v-if="resource.icon == 'video'"
+    />
     <div class="txt_box">
-      <div class="title">{{resource.title}}</div>
-      <div class="author">{{resource.author}}</div>
+      <div class="title">{{ resource.title }}</div>
+      <div class="author">{{ resource.author }}</div>
     </div>
   </a>
 </template>
@@ -20,35 +33,37 @@ export default {
     PhFile,
     PhFilePdf,
     PhLink,
-    PhYoutubeLogo
+    PhYoutubeLogo,
   },
-  props: ['resource']
+  props: ['resource', 'mustBeLight'],
 }
 </script>
 
 <style lang="postcss" scoped>
-.resource{
+.resource {
   @apply p-2 my-4 rounded-md flex box-border;
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   transition: all 350ms ease;
   &:hover {
     @apply ring-white ring-4 ring-opacity-40;
     //border: 3px solid transparent;
   }
-  &.dark:hover{
+  &.dark:hover {
     @apply ring-black ring-opacity-40;
   }
-  .txt_box{
+  .txt_box {
     @apply mx-2;
-    .title{
+    .title {
       font-weight: bold;
       font-style: italic;
     }
-    .author{
+    .author {
       font-size: 0.9em;
     }
   }
-
+  &.lightTheme {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+  }
 }
-
 </style>

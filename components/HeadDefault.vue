@@ -1,8 +1,8 @@
 <template>
-  <header class="header" ref="header" :class="[{ hidden: shouldHide }]">
+  <header class="header" ref="header" :class="[{ hidden: shouldHide, lightTheme: mustBeLight }]">
     <header-brand />
-    <header-timeline :goToScrollPoint="goToScrollPoint" />
-    <header-menu :goToScrollIndex="goToScrollIndex" />
+    <header-timeline :goToScrollPoint="goToScrollPoint" :mustBeLight="mustBeLight" />
+    <header-menu :goToScrollIndex="goToScrollIndex" :mustBeLight="mustBeLight" />
   </header>
 </template>
 
@@ -37,6 +37,9 @@ export default Vue.extend({
       const dItem = this.dataItems.get(this.inWhichSceneIAm)
       return dItem.showMenu === false
     },
+    mustBeLight() {
+      return this.inWhichSceneIAm == 10 || this.inWhichSceneIAm == 11
+    }
   },
   methods: {
     initHeaderScrollBehaviour() {
@@ -90,5 +93,8 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 .header {
   @apply fixed top-0 left-0 w-full z-50 text-white;
+  &.lightTheme {
+    @apply text-gray-600;
+  }
 }
 </style>

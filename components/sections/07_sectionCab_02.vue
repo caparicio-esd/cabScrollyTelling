@@ -38,6 +38,7 @@
             v-for="(resource, i) in content.assets.resources"
             :key="i"
             :resource="resource"
+            :mustBeLight="true"
           />
         </div>
       </div>
