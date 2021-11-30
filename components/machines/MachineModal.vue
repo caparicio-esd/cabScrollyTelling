@@ -10,25 +10,28 @@
     <!-- IMAGEN -->
     <div class="machine_modal_image">
       <img
-        id="machine_img"
-        :src="tab1Active ? `${tab1.images360[src]}?lqip`: `${tab2.images360[src]}?lqip`"
+        v-for="(image, index) in tab1Active ? tab1.images360 : tab2.images360 "
+        :key="index"
+        :id="`machine${index}`"
+        :src="image"
         :alt="`Imagen del ${machineData.machine}`"
         class="image_background"
+        :class="index == src ? 'active' : ''"
       />
-        <label
-          for="spiner"
-          id="turn_around"
+      <label
+        for="spiner"
+        id="turn_around"
+      >
+        360º
+        <input
+          type="range"
+          name="spiner"
+          id="spiner"
+          min="0"
+          max="50"
+          v-model="value"
         >
-          360º
-          <input
-            type="range"
-            name="spiner"
-            id="spiner"
-            min="0"
-            max="50"
-            v-model="value"
-          >
-        </label>
+      </label>
       <button
         class="cabBtn"
         :class="tab2Active ? 'active' : ''"
@@ -97,6 +100,7 @@ export default Vue.extend({
     ...mapState({
       width: (state: any) => state.main.ui.viewPort.width,
     }),
+
   },
   methods: {
     toggleTab(){
@@ -109,19 +113,6 @@ export default Vue.extend({
   mixins: [AnimationType_04],
   async mounted() {
     await this.$nextTick()
-    //@ts-ignore
-    // // this.setSceneScrollable(this.$refs)
-    // this.tab1.images360.forEach(function (imagen, index) {
-    //   let image = document.querySelector("#machine_img");
-    //   //@ts-ignore
-    //   image.src = imagen;
-    // });
-    // //@ts-ignore
-    // this.tab2.images360.forEach(function (imagen2, index) {
-    //   let image = document.querySelector("#machine_img");
-    //   //@ts-ignore
-    //   image.src = imagen2;
-    // });
   },
 })
 </script>
@@ -158,8 +149,12 @@ export default Vue.extend({
       width: auto;
       max-width: none;
       z-index: 3;
+      display: none;
       img{
         outline: none;
+      }
+      &.active{
+        display: block;
       }
     }
     #turn_around{

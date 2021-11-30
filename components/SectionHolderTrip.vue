@@ -15,7 +15,7 @@
         <div class="section_col_a h-full col-span-2 self-center">
           <div class="quotes h-full relative">
             <div
-              class="quote absolute top-1/3 -translate-y-1/2 opacity-0"
+              class="quote absolute top-1/4 -translate-y-1/2 opacity-0"
               v-for="quote in content.data"
               :key="quote.id"
             >
@@ -34,8 +34,8 @@
                     :resource="{
                       url: quote.source.url,
                       target: '_blank',
-                      icon: 'link', 
-                      title: '', 
+                      icon: 'link',
+                      title: '',
                       author: quote.source.author
                     }"
                   />
