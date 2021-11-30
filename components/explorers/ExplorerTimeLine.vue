@@ -3,11 +3,11 @@
     <div class="explorer_timeline_holder">
       <div class="timeline">
         <div class="timeline_line"></div>
-        <Tick
+        <tick
           v-for="(year, i) in years"
           :key="i"
           :style_="{
-            right: getLeftPosition(i),
+            right: checkPrev(year) ? `${getLeftPosition(i)+1.5}%` : `${getLeftPosition(i)}%`,
           }"
           :openedId="openedId"
           :focusedId="focusedId"
@@ -17,7 +17,7 @@
           <div class="timeline_item_tooltip">
             {{ year | toYear }}
           </div>
-        </Tick>
+        </tick>
       </div>
       <ButtonNextScreen :position="`static`" />
     </div>
@@ -37,6 +37,7 @@ export default Vue.extend({
   data() {
     return {
       padding: 32,
+      prevYear: 0
     }
   },
   components: {
@@ -91,11 +92,23 @@ export default Vue.extend({
         })
       }
     },
-    getLeftPosition(i: number): string {
+    getLeftPosition(i: number): number {
       return (
-        -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100 + '%'
+        -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100
       )
     },
+    checkPrev(year: number ): boolean{
+      //@ts-ignore
+      if (year['$y'] == this.prevYear){
+        //@ts-ignore
+        this.prevYear = year['$y'];
+        return true;
+      }else{
+        //@ts-ignore
+        this.prevYear = year['$y'];
+        return false;
+      }
+    }
   },
 })
 </script>
@@ -136,7 +149,7 @@ export default Vue.extend({
 .explorer_timeline {
   @apply absolute z-10 bottom-0 w-full left-0;
   @apply border-white border-t-2;
-  @apply h-24 flex items-center px-6;
+  @apply h-24 flex items-center px-5;
   pointer-events: none;
   .explorer_timeline_holder {
     @apply w-full flex;

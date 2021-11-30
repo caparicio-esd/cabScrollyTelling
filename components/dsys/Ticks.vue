@@ -11,7 +11,7 @@
         focusedId == index ? `tick_item_focused` : ``,
         focusedId != index && focusedId >= 0 ? `tick_item_unfocused` : ``,
         mustBeLight ? 'lightTheme' : '',
-        index == 0 ? 'inicio' : ''
+
       ]"
     >
       <slot />
@@ -89,8 +89,6 @@ export default Vue.extend({
       border: 3px solid rgba(0, 0, 0, 0.2);
     }
   }
-  &.inicio{
-    left: 10px;
-  }
+
 }
 </style>

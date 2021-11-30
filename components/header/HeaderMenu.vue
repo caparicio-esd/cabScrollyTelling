@@ -10,6 +10,7 @@
         :index="i"
         :focusedId="999"
         :mustBeLight="mustBeLight"
+        :class=" i == 0 ? 'inicio' : ''"
       >
         <!-- <div class="header_menu_item" v-if="dItem.index > 0"> -->
         <div class="header_menu_item">
