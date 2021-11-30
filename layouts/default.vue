@@ -50,8 +50,8 @@ export default Vue.extend({
     setScrollLevelInComponent(ev: Event = {} as Event): void | false {
       if (this.scrollable) {
         this.setScrollLevel(scrollY)
-        console.log('scroll: ' + scrollY)
-        console.log('scene:  ' + this.inWhichSceneIAm)
+        // console.log('scroll: ' + scrollY)
+        // console.log('scene:  ' + this.inWhichSceneIAm)
       } else {
         if (!this.debug) {
           document.body.style.overflow = 'hidden'

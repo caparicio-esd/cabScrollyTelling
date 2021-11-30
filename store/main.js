@@ -51,15 +51,15 @@ export const getters = {
       return lastScene.scrollOffset() + lastScene.duration() + 8 // 8 for the last padding
     }
   },
-  inWhichSceneIAmOld(state) {
-    const scroll = getters.getScroll(state)
-    const index = state.scenes.scenes.findIndex((scene, id) => {
-      const slimits = getters.scrollOffsetLimitsByScene(state)(id)
-      getters.scrollOffsetLimitsByScene02(state, id)
-      return scroll > slimits[0] && scroll <= slimits[1]
-    })
-    return Math.max(0, index)
-  },
+  // inWhichSceneIAmOld(state) {
+  //   const scroll = getters.getScroll(state)
+  //   const index = state.scenes.scenes.findIndex((scene, id) => {
+  //     const slimits = getters.scrollOffsetLimitsByScene(state)(id)
+  //     getters.scrollOffsetLimitsByScene02(state, id)
+  //     return scroll > slimits[0] && scroll <= slimits[1]
+  //   })
+  //   return Math.max(0, index)
+  // },
   inWhichSceneIAm(state) {
     const scroll = getters.getScroll(state)
     let index = -1;
@@ -67,7 +67,7 @@ export const getters = {
       const slimits = getters.scrollOffsetLimitsByScene(state)(id)
       if (scroll > slimits[0] && scroll <= slimits[1]) {
         index = id
-      } 
+      }
     })
     return Math.max(0, index)
   },

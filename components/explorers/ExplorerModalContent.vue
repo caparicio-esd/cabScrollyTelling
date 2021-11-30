@@ -170,11 +170,11 @@ export default Vue.extend({
       if (this.$refs.explorer_modal) {
         //@ts-ignore
         this.$refs.explorer_modal.parentNode.scrollTo(0, 0)
-        console.log(this.$children.filter((ch: any) => ch.opened !== undefined))
+        //console.log(this.$children.filter((ch: any) => ch.opened !== undefined))
         this.$children
           .filter((ch: any) => ch.opened !== undefined)
           .slice(1)
-          .forEach((vNode: Vue) => {            
+          .forEach((vNode: Vue) => {
             //@ts-ignore
             vNode.toggled = false
           })

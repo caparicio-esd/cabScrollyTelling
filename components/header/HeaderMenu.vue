@@ -2,16 +2,17 @@
   <client-only>
     <div class="header_menu">
       <ticks
-        v-for="(dItem, i) in menuData.slice(1)"
+        v-for="(dItem, i) in menuData"
         :key="`b` + dItem.index"
         :style_="setPosition(dItem)"
         :clickHndlr="(ev) => goToScrollIndex(dItem.index)"
-        :openedId="inWhichSceneIAm - 1"
+        :openedId="inWhichSceneIAm"
         :index="i"
         :focusedId="999"
         :mustBeLight="mustBeLight"
       >
-        <div class="header_menu_item" v-if="dItem.index > 0">
+        <!-- <div class="header_menu_item" v-if="dItem.index > 0"> -->
+        <div class="header_menu_item">
           {{ dItem.menuTitle || dItem.title }}
         </div>
       </ticks>
@@ -61,7 +62,7 @@ export default Vue.extend({
       )
     },
     setPosition(dItem: any): any {
-      if (dItem.index == 0) return false
+      //if (dItem.index == 0) return false
       const soffset = this.scrollOffsetLimitsByScene(dItem.index)[0]
       const relativeOffset = soffset / this.getTotalScenesDuration02
       return {
@@ -108,12 +109,13 @@ export default Vue.extend({
       @apply font-sans text-sm uppercase text-center;
       transform: translateX(-50%);
       top: 1rem;
-      max-width: 20ch;
+      width: 12ch;
       transition: all 350ms ease;
       cursor: pointer;
       pointer-events: none;
       visibility: hidden;
     }
+
   }
 }
 </style>
