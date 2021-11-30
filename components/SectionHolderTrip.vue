@@ -76,6 +76,7 @@ export default Vue.extend({
       width: (state: any) => state.main.ui.viewPort.width,
       height: (state: any) => state.main.ui.viewPort.height,
     }),
+
   },
   methods: {
     ...mapActions({
@@ -105,7 +106,7 @@ export default Vue.extend({
   }
   .quotes {
     .quote {
-      @apply text-lg;
+      /* @apply text-lg; */
       .quote_content {
       }
       .quote_footer {

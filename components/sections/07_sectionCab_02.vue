@@ -101,7 +101,7 @@ export default Vue.extend({
   }
 }
 .pic {
-  @apply bg-gray-400 my-6;
+  @apply my-6;
   height: 20rem;
   overflow: hidden;
   img {
