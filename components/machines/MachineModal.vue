@@ -9,7 +9,7 @@
 
     <!-- IMAGEN -->
     <div class="machine_modal_image">
-      <img
+      <nuxt-img
         v-for="(image, index) in tab1Active ? tab1.images360 : tab2.images360 "
         :key="index"
         :id="`machine${index}`"
@@ -149,12 +149,12 @@ export default Vue.extend({
       width: auto;
       max-width: none;
       z-index: 3;
-      display: none;
+      opacity: 0;
       img{
         outline: none;
       }
       &.active{
-        display: block;
+        opacity: 1;
       }
     }
     #turn_around{

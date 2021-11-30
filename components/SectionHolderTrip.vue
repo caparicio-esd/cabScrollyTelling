@@ -29,15 +29,16 @@
                 <div class="position">
                   {{ quote.position }}
                 </div>
-                <div class="source" v-if="quote.showSource">
+
+                <!-- extra resources -->
+                <div
+                  class="resources"
+                  v-if="quote.showSource"
+                >
                   <extra-resource
-                    :resource="{
-                      url: quote.source.url,
-                      target: '_blank',
-                      icon: 'link',
-                      title: '',
-                      author: quote.source.author
-                    }"
+                    v-for="(resource, i) in quote.resources"
+                    :key="i"
+                    :resource="resource"
                   />
                 </div>
               </div>

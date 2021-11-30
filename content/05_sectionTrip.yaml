@@ -10,39 +10,48 @@ data:
   - #1
     id: 1
     order: 1
-    mainText: > 
+    mainText: >
       No se trata única y exclusivamente de hacer un instrumento, sino después de sacarle el mayor partido. Requiere científicos de muchas disciplinas: biólogos, geólogos, atmosféricos, físicos... Y necesitas también a los mejores ingenieros que puedas encontrar para poder materializar esos requisitos científicos: electrónicos, mecánicos, en estructuras, térmicos, de software... Y que todos tengan una visión global. Después, entran de nuevo en la cadena los científicos, una vez que esté el dispositivo operando en Marte, para analizar toda esa información
     author: José Antonio Rodríguez Manfredi.
     position: Investigador principal del Centro de Astrobiología (CAB, CSIC-INTA) para las misiones REMS, TWINS y MEDA.
-    source: 
-      url: https://elcorreoweb.es/sevilla/de-nino-me-gustaba-cacharrear-y-ahora-disfruto-creando-robotica-para-marte-FX4374403
-      author: El Correo de Sevilla
-      title: 
     showSource: true
+    resources:
+      - #1
+        title: Entrevista a J.A. Rodríguez Manfredi
+        author: Juan Luis Pavón. El Correo de Sevilla
+        url: https://elcorreoweb.es/sevilla/de-nino-me-gustaba-cacharrear-y-ahora-disfruto-creando-robotica-para-marte-FX4374403
+        icon: link
+        target: true
   - #2
     id: 2
     order: 2
     mainText: >
       La ciencia conjuga verbos como preguntar, imaginar, idear, construir, experimentar, calcular, publicar, discutir, criticar, divulgar, fracasar, superar, responder... Todos ellos son necesarios para superar los límites de nuestro conocimiento sobre la realidad y avanzar de manera lenta, pero segura, en nuestro entendimiento de todo lo que existe
     author: Pablo G. Pérez González
-    position: Director del Departamento de Astrofísica (CAB, CSIC-INTA) 
-    source: 
-      url: https://elpais.com/ciencia/2021-03-16/ciencia-clickbait-sensacionalismo-y-conocimiento.html
-      author: El País Ciencia
-      title: 
+    position: Director del Departamento de Astrofísica (CAB, CSIC-INTA)
     showSource: true
+    resources:
+      - #1
+        title: Artículo. Ciencia, ‘clickbait’, sensacionalismo y conocimiento
+        author: Pablo G. Pérez González. El País Ciencia
+        url: https://elpais.com/ciencia/2021-03-16/ciencia-clickbait-sensacionalismo-y-conocimiento.html
+        icon: link
+        target: true
   - #3
     id: 3
     order: 3
-    mainText: > 
+    mainText: >
       La ciencia no proporciona nunca una narrativa sólida de las cosas. No dice esto es así y será así siempre. El conocimiento cambia continuamente y este proceso puede generar desasosiego. La educación desde que somos niños es clave. Aprender a cuestionarnos las cosas sin problema, aprender a pensar por nosotros mismos, ayuda a la ciencia
     author: Eva Villaver
-    position: Investigadora en el Centro de Astrobiología (CAB, CSIC-INTA) 
-    source: 
-      url: https://www.nobbot.com/entrevistas/eva-villaver-astrobiologia/
-      author: Nobbot
-      title: 
+    position: Investigadora en el Centro de Astrobiología (CAB, CSIC-INTA)
     showSource: true
+    resources:
+      - #1
+        title: Entrevista a Eva Villaver
+        author: Juan F. Samaniego. Nobbot
+        url: https://www.nobbot.com/entrevistas/eva-villaver-astrobiologia/
+        icon: link
+        target: true
   - #4
     id: 4
     order: 4
@@ -50,11 +59,14 @@ data:
       Lo que es seguro es que la curiosidad del ser humano, y quizás la necesidad de encontrar otro hogar en caso de que nuestro planeta se vuelva demasiado inhóspito, nos llevará a continuar con la exploración del espacio que casi acabamos de iniciar (...). Nuestro destino está en nuestras manos. Ojalá que este sea el mejor posible
     author: Ester Lázaro Lázaro
     position: Directora del Departamento de Evolución Molecular (CAB, CSIC-INTA)
-    source: 
-      url: https://www.conmishijos.com/educacion/entrevista-a-ester-lazaro-lazaro/
-      author: Conmishijos.com
-      title: 
     showSource: true
+    resources:
+      - #1
+        title: Entrevista a Ester Lázaro
+        author: Eva Frutos Lucas. Conmishijos
+        url: https://www.conmishijos.com/educacion/entrevista-a-ester-lazaro-lazaro/
+        icon: link
+        target: true
   - #5
     id: 5
     order: 5
@@ -62,46 +74,58 @@ data:
       La idea de hacer una cartografía de nuestro entorno tiene, en mi opinión, una gran carga emotiva, casi poética, porque nos plantea nuestro lugar en el gran orden del Cosmos
     author: Michelangelo Pantaleoni González
     position: Estudiante del Grado de CC. Físicas de la Universidad Complutense de Madrid. Investigador en el Centro de Astrobiología (CAB, CSIC-INTA)
-    source: 
-      url: https://www.youtube.com/watch?v=axSVeW2KEEc&ab_channel=CNNenEspa%C3%B1ol
-      author: YouTube - CNN en Español
-      title: 
     showSource: true
+    resources:
+      - #1
+        title: Video. Descubren una estructura oculta en la Vía Láctea
+        author: CNN en Español. Youtube
+        url: https://www.youtube.com/watch?v=axSVeW2KEEc&ab_channel=CNNenEspa%C3%B1ol
+        icon: video
+        target: true
   - #6
     id: 6
     order: 6
     mainText: >
       Ver la Tierra desde fuera te pone a ti mismo en el contexto del Universo y te hace ver lo pequeño que eres, que somos todos los seres humanos, toda la biodiversidad que compartimos esta biosfera
     author: Carlos Briones
-    position: Investigador en el Centro de Astrobiología (CAB, CSIC-INTA) 
-    source: 
-      url: https://www.youtube.com/watch?v=8JZxoHTPYgY&ab_channel=AprendemosJuntos
-      author: Fundación BBVA
-      title: 
+    position: Investigador en el Centro de Astrobiología (CAB, CSIC-INTA)
     showSource: true
+    resources:
+      - #1
+        title: Video. Tres historias de la exploración espacial y un mensaje para la humanidad
+        author: BBVA Aprendemos juntos. Youtube
+        url: https://www.youtube.com/watch?v=8JZxoHTPYgY&ab_channel=AprendemosJuntos
+        icon: video
+        target: true
   - #7
     id: 7
     order: 7
-    mainText: > 
+    mainText: >
       ¿Estamos convencidos de que hay que ir a Marte? Yo sí, desde luego. Creo que la inquietud por explorar nuevos mundos es inevitable
     author: Víctor Parro García
     position: Director del Centro de Astrobiología (CAB, CSIC-INTA)
-    source: 
-      url: https://www.youtube.com/watch?v=AOxNrraOyh0&t=684s&ab_channel=Tendencias21
-      author: Tendencias
-      title: 
     showSource: true
+    resources:
+      - #1
+        title: Video. Entrevista a Víctor Parro
+        author: Tendencias21. Youtube
+        url: https://www.youtube.com/watch?v=AOxNrraOyh0&t=684s&ab_channel=Tendencias21
+        icon: video
+        target: true
   - #8
     id: 8
     order: 8
     mainText: >
       Cuando hemos pensado que habíamos alcanzado los límites del conocimiento, los paradigmas se han roto y hemos descubierto nuevos fenómenos físicos. Esto nos permite encontrar respuestas, pero sobre todo preguntas adicionales
     author: David Barrado Navascués
-    position: Investigador en el Centro de Astrobiología (CAB, CSIC-INTA) 
-    source: 
-      url: https://www.efe.com/efe/america/sociedad/david-barrado-cientifico-la-astronomia-puede-hacernos-algo-mas-humildes/20000013-4589666
-      author: Agencia EFE
-      title: 
+    position: Investigador en el Centro de Astrobiología (CAB, CSIC-INTA)
     showSource: true
+    resources:
+      - #1
+        title: Entrevista a David Barrado
+        author: Noemí G. Gómez. Agencia EFE
+        url: https://www.efe.com/efe/america/sociedad/david-barrado-cientifico-la-astronomia-puede-hacernos-algo-mas-humildes/20000013-4589666
+        icon: link
+        target: true
 
 

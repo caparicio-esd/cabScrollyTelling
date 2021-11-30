@@ -37,6 +37,7 @@ export default Vue.extend({
                     scale: [1, 2],
                     duration: duration * 10
                 }, "-=" + duration * 10)
+
         },
         onProgressScene(ev: any) {
             this.animation.seek(ev.progress * this.animation.duration)
