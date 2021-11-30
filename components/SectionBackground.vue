@@ -4,7 +4,7 @@
     :style="{ width: `${width}px`, height: `${height}px` }"
   >
     <img :src="background" :alt="title" :height="height" />
-    <img class="noise" src="~/static/img/noise.gif" alt="jarl..." />
+    <!-- <img class="noise" src="~/static/img/noise.gif" alt="jarl..." /> -->
   </div>
 </template>
 

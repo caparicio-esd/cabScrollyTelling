@@ -9,9 +9,8 @@ data:
   mainText:
     - Las instalaciones principales del <strong>CAB</strong> se sitúan en Torrejón de Ardoz (campus del INTA) y en Villanueva de la Cañada (sede del Centro Europeo de Astronomía Espacial, ESAC) ambas localidades cercanas a Madrid.
     - <strong>Su equipo multidisciplinar de científicos e ingenieros</strong> (astrofísicos, planetólogos, geólogos, geoquímicos, químicos, geomicrobiólogos, microbiólogos moleculares, ingenieros e ingenieros de sistemas) <strong>lo convierten en un centro de investigación transdisciplinar ideal para abordar la astrobiología</strong>.
-    - Actualmente el CAB cuenta con más de 150 trabajadores organizados funcionalmente en cuatro departamentos, <strong>Astrofísica, Evolución Molecular, Planetología y Habitabilidad e Instrumentación Avanzada. </strong>.
+    - Actualmente el CAB cuenta con más de 150 trabajadores organizados funcionalmente en cuatro departamentos, <strong>Astrofísica, Evolución Molecular, Planetología y Habitabilidad e Instrumentación Avanzada. </strong>
   secondaryText:
-    - Cuenta con varios <strong>laboratorios</strong> equipados con instalaciones e instrumentación para múltiples técnicas.
     - El CAB ha sido reconocido con el <strong>premio de Excelencia Científica «María de Maeztu»</strong> por el Ministerio de Ciencia español.
     - La investigación en el CAB se centra principalmente en cuatro líneas de investigación.
     - <strong>Formación y evolución de galaxias, el medio interestelar, estrellas y planetas.</strong>
@@ -22,11 +21,11 @@ data:
 assets:
   backgroundIllustration: /img/001.webp
   pictures:
-    - /img/CAB/intro_01.webp
-    - /img/CAB/intro_02.webp
-    - /img/CAB/intro_03.webp
-    - /img/CAB/intro_04.webp
-    - /img/CAB/intro_05.webp
+    - /img/CAB/intro_01.jpg
+    - /img/CAB/intro_02.jpg
+    - /img/CAB/intro_03.jpg
+    - /img/CAB/intro_04.jpg
+    - /img/CAB/intro_05.jpg
   logos:
     - /img/cab_logo.png
     - /img/inta_logo.png

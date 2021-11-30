@@ -114,15 +114,9 @@ export default Vue.extend({
     align-self: center;
   }
 
-  .col_01 {
-  }
-  .col_02 {
-  }
-  .col_03 {
-  }
-
   .pic {
     overflow: hidden;
+    margin: 1em 0;
     img {
       object-fit: cover;
       height: 100%;

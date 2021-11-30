@@ -18,10 +18,10 @@ data:
 assets:
   backgroundIllustration: /img/001.webp
   pictures:
-    - /img/CAB/futu_01.webp
-    - /img/CAB/futu_02.webp
-    - /img/CAB/futu_03.webp
-    - /img/CAB/futu_04.webp
+    - /img/CAB/futu_01.jpg
+    - /img/CAB/futu_02.jpg
+    - /img/CAB/futu_03.jpg
+    - /img/CAB/futu_04.jpg
   logos:
     - /img/cab_logo.png
     - /img/inta_logo.png

@@ -41,7 +41,7 @@ data:
       A los 90 segundos tras el aterrizaje el módulo de descenso comenzó a transmitir datos hacia el orbitador. A los 20 segundos se perdió la conexión. Consiguió mandar una imagen parcial de 70 líneas que muestran un fondo gris sin detalles."
     contribution: "
       La sonda Mars 3 fue la primera que realizó un amartizaje suave en la superficie de Marte."
-    picture: "/img/explorers/01.webp"
+    picture: "/img/explorers/01.jpg"
     picture_flag: "/img/flags/URSS.svg"
   - # 1 - VIKING 1 (Sonda de amartizaje)
     id: 1
@@ -75,7 +75,7 @@ data:
       Envió la primera imagen nítida de la superficie marciana y la primera imagen panorámica.
       Un fallo humano en una actualización de software hizo que se perdieran las comunicaciones, terminando la misión."
     contribution: "Los orbitadores de las misiones Viking enviaron 52.663 imágenes y mapearon alrededor del 97% de la superficie marciana y las sondas de amartizaje mandaron 4.500 fotografías de los dos lugares de amartizaje."
-    picture: "/img/explorers/02.webp"
+    picture: "/img/explorers/02.jpg"
     picture_flag: "/img/flags/EEUU.svg"
   - # 2 - VIKING 2 (Sonda de amartizaje)
     id: 2
@@ -106,7 +106,7 @@ data:
       Brazo robótico por control remoto."
     curiosities: ""
     contribution: "Los orbitadores de las misiones Viking enviaron 52.663 imágenes y mapearon alrededor del 97% de la superficie marciana y las sondas de amartizaje mandaron 4.500 fotografías de los dos lugares de amartizaje."
-    picture: "/img/explorers/03.webp"
+    picture: "/img/explorers/03.jpg"
     picture_flag: "/img/flags/EEUU.svg"
   - # 3 - MARS PATHFINDER Y SOJOURNER
     id: 3
@@ -148,7 +148,7 @@ data:
       Estimó en una micra el diámetro de las partículas de polvo en suspensión.\\n
       Identificó la composición de rocas.\\n
       Encontró dunas con forma de luna creciente, idénticas a las dunas barcanoides que se forman en la Tierra."
-    picture: "/img/explorers/04.webp"
+    picture: "/img/explorers/04.jpg"
     picture_flag: "/img/flags/EEUU.svg"
   - # 4 - SPIRIT
     id: 4
@@ -189,7 +189,7 @@ data:
       Encontró evidencias de antiguos manantiales en ebullición.\\n
       Descubrió evidencias de la existencia pasada de una atmósfera densa y de agua dulce.\\n
       Identificó evidencias de un ciclo activo del agua."
-    picture: "/img/explorers/05.webp"
+    picture: "/img/explorers/05.jpg"
     picture_flag: "/img/flags/EEUU.svg"
   - # 5 - OPPORTUNITY (Rover)
     id: 5
@@ -226,7 +226,7 @@ data:
       Encontró minerales de arcilla formados en agua de pH neutro.\\n
       Ha visitado y estudiado la geología de más de 100 cráteres de impacto aportando información que permite estudiar cómo se forman y erosionan a lo largo del tiempo.\\n
       Ha recogido datos que permiten estudiar las nubes y el polvo de Marte, la opacidad (tau) de su atmósfera y cómo afecta a los paneles solares (energía solar)."
-    picture: "/img/explorers/06.webp"
+    picture: "/img/explorers/06.jpg"
     picture_flag: "/img/flags/EEUU.svg"
   - # 6 - PHOENIX (sonda)
     id: 6
@@ -265,7 +265,7 @@ data:
       Distintos experimentos revelaron rastros de reacciones químicas entre minerales del suelo marciano y agua líquida en el pasado. \\n
       Algunos datos de muestras sugieren la presencia de carbonato cálcico.\\n
       El análisis de algunas imágenes muestra lo que parecen ser gotas de agua líquida salina que salpicaron las patas de la sonda tras su aterrizaje"
-    picture: "/img/explorers/07.webp"
+    picture: "/img/explorers/07.jpg"
     picture_flag: "/img/flags/EEUU.svg"
   - # 7 - ZHURONG (Rover)
     id: 7
@@ -301,5 +301,5 @@ data:
       Cámara de navegación y topografía (NTC)."
     curiosities: "Zhurong es un dios del fuego y del sur."
     contribution: "Primera misión y primer éxito de la CNSA en la exploración de Marte con tecnología propia, no dependiendo ni de otras agencias ni del sector privado."
-    picture: "/img/explorers/011.webp"
+    picture: "/img/explorers/011.jpg"
     picture_flag: "/img/flags/china.svg"
