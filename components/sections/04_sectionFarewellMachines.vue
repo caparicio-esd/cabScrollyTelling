@@ -17,11 +17,11 @@
         <p v-for="(p, i) in content.data.mainText" :key="i">{{ p }}</p>
       </div>
       <div class="section_col_b col-start-3 col-span-2 self-center">
-        <!-- <img
+        <img
           class="graph"
-          src="img/temperatureGraph/graph_tempG.gif"
+          src="img/temperatureGraph/graph.gif"
           alt="Gráfico con la evolución de las temperaturas en Marte"
-        > -->
+        >
 
       </div>
     </div>
@@ -79,6 +79,6 @@ export default Vue.extend({
 <style lang="postcss" scoped>
   .graph{
     max-width: none;
-    width: 150%;
+    width: 55vw;
   }
 </style>
