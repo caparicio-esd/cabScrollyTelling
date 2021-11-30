@@ -27,10 +27,10 @@ export default Vue.extend({
         require('scrollmagic-plugins').ScrollMagicPluginIndicator
       ScrollMagicPluginIndicator(ScrollMagic)
 
-      this.controller = new ScrollMagic.Controller({ addIndicators: true })
+      this.controller = new ScrollMagic.Controller({ addIndicators: false })
       this.$root.$emit('controller_created', this.controller)
 
-      this.$root.$on('scene_created', (scene: any, index: number) => {        
+      this.$root.$on('scene_created', (scene: any, index: number) => {
         this.controller.addScene(scene)
         this.addScene({ scene, index })
       })
