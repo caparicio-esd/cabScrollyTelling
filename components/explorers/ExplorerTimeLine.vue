@@ -37,7 +37,6 @@ export default Vue.extend({
   data() {
     return {
       padding: 32,
-      prevYear: 0
     }
   },
   components: {
@@ -51,6 +50,7 @@ export default Vue.extend({
       activeContent: (state: any) => state.explorers.explorer.activeContent,
       content: (state: any) => state.explorers.content?.data,
       scrollable: (state: any) => state.main.ui.viewPort.scrollable,
+      prevYear: (state: any) => state.main.utils.prevYear
     }),
     years(): Array<dayjs.Dayjs> {
       //@ts-ignore
@@ -94,10 +94,13 @@ export default Vue.extend({
     },
     getLeftPosition(i: number, year: any): number{
       let pos = -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100;
-      if(year['$y'] == this.prevYear){
-        pos = pos + 1.5;
-      }
-      this.prevYear = year['$y'];
+
+
+      // if(year['$y'] == this.prevYear){
+      //   pos = pos + 1.5;
+      // }
+
+      // return(pos)
       return(pos)
     },
   },

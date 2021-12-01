@@ -17,6 +17,9 @@ export const state = () => ({
     currentScene: -1,
     tutorial: true,
   },
+  utils: {
+    prevYear: 0
+  }
 })
 
 export const getters = {
