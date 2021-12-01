@@ -11,7 +11,6 @@
         focusedId == index ? `tick_item_focused` : ``,
         focusedId != index && focusedId >= 0 ? `tick_item_unfocused` : ``,
         mustBeLight ? 'lightTheme' : '',
-
       ]"
     >
       <slot />
