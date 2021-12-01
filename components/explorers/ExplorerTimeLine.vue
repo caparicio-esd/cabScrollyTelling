@@ -7,7 +7,7 @@
           v-for="(year, i) in years"
           :key="i"
           :style_="{
-            right: checkPrev(year) ? `${getLeftPosition(i)+1.5}%` : `${getLeftPosition(i)}%`,
+            right: `${getLeftPosition(i, year)}%`,
           }"
           :openedId="openedId"
           :focusedId="focusedId"
@@ -19,7 +19,7 @@
           </div>
         </tick>
       </div>
-      <ButtonNextScreen :position="`static`" />
+      <button-next-screen :position="`static`" />
     </div>
   </div>
 </template>
@@ -92,23 +92,14 @@ export default Vue.extend({
         })
       }
     },
-    getLeftPosition(i: number): number {
-      return (
-        -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100
-      )
-    },
-    checkPrev(year: number ): boolean{
-      //@ts-ignore
-      if (year['$y'] == this.prevYear){
-        //@ts-ignore
-        this.prevYear = year['$y'];
-        return true;
-      }else{
-        //@ts-ignore
-        this.prevYear = year['$y'];
-        return false;
+    getLeftPosition(i: number, year: any): number{
+      let pos = -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100;
+      if(year['$y'] == this.prevYear){
+        pos = pos + 1.5;
       }
-    }
+      this.prevYear = year['$y'];
+      return(pos)
+    },
   },
 })
 </script>
