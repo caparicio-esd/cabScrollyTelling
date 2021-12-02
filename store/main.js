@@ -16,9 +16,6 @@ export const state = () => ({
     scenes: new Map(),
     currentScene: -1,
     tutorial: true,
-  },
-  utils: {
-    prevYear: 0
   }
 })
 
