@@ -168,7 +168,7 @@ data:
         picture: "/img/machines/curiosity_rems.webp"
         picture_flag: "/img/flags/spain.svg"
         images360: [
-          'img/curiosity360REMS/Curiosity_REMS01.png',
+          'img/curiosity360REMS/Curiosity_REMS00.png',
           'img/curiosity360REMS/Curiosity_REMS01.png',
           'img/curiosity360REMS/Curiosity_REMS02.png',
           'img/curiosity360REMS/Curiosity_REMS03.png',
