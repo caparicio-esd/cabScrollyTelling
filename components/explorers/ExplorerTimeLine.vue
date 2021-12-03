@@ -95,7 +95,7 @@ export default Vue.extend({
       let pos = -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100;
       if((year['$y'] == 1975 && year['$M'] == 7) ||
       (year['$y'] == 2003 && year['$M'] == 5) ){
-        pos = pos + 1.5;
+        pos += 1.5;
       }
       return(pos)
     },
