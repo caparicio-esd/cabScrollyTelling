@@ -31,7 +31,7 @@
                 </div>
 
                 <!-- extra resources -->
-                <div
+                <!-- <div
                   class="resources"
                   v-if="quote.showSource"
                 >
@@ -40,7 +40,7 @@
                     :key="i"
                     :resource="resource"
                   />
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

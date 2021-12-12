@@ -88,7 +88,7 @@ data:
       activity: "1316 días (3,6 años) o 1281 soles"
       land: "EEUU"
       agency: "NASA"
-      status: "Exito parcial"
+      status: "Exito"
     position:
       lon: 88
       lat: 20
@@ -161,7 +161,7 @@ data:
       activity: "2249 días (6,2 años) o 2208 soles"
       land: "EEUU"
       agency: "NASA"
-      status: "Exito parcial"
+      status: "Exito"
     position:
       lon: 97
       lat: 55
@@ -202,7 +202,7 @@ data:
       activity: "14 años. (previstos 92,5 días terrestres)."
       land: "EEUU"
       agency: "NASA"
-      status: "Exito parcial"
+      status: "Exito"
     position:
       lon: 50
       lat: 50
@@ -239,7 +239,7 @@ data:
       activity: "157 soles"
       land: "EEUU"
       agency: "NASA"
-      status: "Exito parcial"
+      status: "Exito"
     position:
       lon: 15
       lat: 10
@@ -278,7 +278,7 @@ data:
       activity: "Sigue en activo"
       land: "China"
       agency: "CNSA"
-      status: "Exito parcial"
+      status: "Exito"
     position:
       lon: 85
       lat: 23
