@@ -2,7 +2,7 @@
   <section class="section" ref="section">
     <explorers />
     <explorer-modal />
-    <explorer-modal-tutorial />
+    <explorer-modal-tutorial :progress="progress" />
     <explorer-time-line />
   </section>
 </template>
@@ -12,6 +12,7 @@ import Vue from 'vue'
 import Explorers from '~/components/explorers/Explorers.vue'
 import ExplorerModal from '~/components/explorers/ExplorerModal.vue'
 import ExplorerTimeLine from '~/components/explorers/ExplorerTimeLine.vue'
+//@ts-ignore
 import ExplorerModalTutorial from './explorers/ExplorerModalTutorial.vue'
 import { mapActions, mapState } from 'vuex'
 import { getContent } from '~/lib/sectionUtils'
@@ -29,7 +30,7 @@ export default Vue.extend({
   mixins: [Scrollable],
   data() {
     return {
-      duration: 100, 
+      duration: 100,
       content: {},
       progress: 0,
       lastBin: 0,
@@ -43,7 +44,7 @@ export default Vue.extend({
   async fetch(): Promise<void> {
     this.content = await getContent(this, '03_sectionExplorers')
     this.fetchContent(this.content)
-    this.addData({index: this.index, data: this.content})
+    this.addData({ index: this.index, data: this.content })
   },
   computed: {
     ...mapState({
@@ -65,16 +66,6 @@ export default Vue.extend({
         this.setScrollable(false)
       }
     },
-    // onProgressScene(ev: any) {
-    //   const bin = Math.max(Math.ceil(this.progress * this.dataLength) - 1, 0)
-    //   if (this.lastBin != bin) {
-    //     this.setExplorerOpened({
-    //       explorerId: bin,
-    //       activeContent: (this.content as any).data[bin],
-    //     })
-    //     this.lastBin = bin
-    //   }
-    // },
   },
 })
 </script>
