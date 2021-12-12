@@ -7,7 +7,7 @@ export default [
         },
         component: {
             dom: null as Element | null,
-            origin: ["top", "left"],
+            origin: ["bottom", "left"],
             direction: ["bottom", "right"]
         },
     },

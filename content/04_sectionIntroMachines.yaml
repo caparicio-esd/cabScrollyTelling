@@ -11,33 +11,22 @@ data:
     - <strong>Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo</strong>.
     - <ul><li><strong>REMS</strong> (desde 2012, en el rover Curiosity, en el Cráter Gale)</li><li><strong>TWINS</strong> (desde 2018, en el Insight, en la región de Elyseum Planitia)</li><li><strong>MEDA</strong> (desde febrero de 2021 en el rover Perseverance, en al Cráter Jezero)</li></ul>
   # secondaryText:
-    # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
+  # - Hoy se puede concluir que gran parte de la superficie marciana es mucho más vieja de lo que previamente se había pensado. Y nuevas investigaciones sugieren que el planeta ha mantenido actividad geológica hasta nuestros días. Con la misión ruso-europea ExoMars Trace Gas Orbiter (2016, observando cómo las enormes tormentas de polvo marcianas se forman), en particular la Mars Insight (2018), Curiosity (2012) y Perseverance (2021) y las apuestas de otras agencias internacionales, seguimos a la expectativa de nuevas confirmaciones y de grandes hallazgos que nos desvelen los misterios de nuestro fascinante vecino rojo.
   explorers:
     - # 0
-      name: "Curiosity"
+      name: 'Curiosity'
       position:
         lon: 85
         lat: 60
     - # 1
-      name: "Insight"
+      name: 'Insight'
       position:
         lon: 84
         lat: 53
     - # 2
-      name: "Perseverance"
+      name: 'Perseverance'
       position:
         lon: 74
         lat: 40
 assets:
   backgroundIllustration: /img/backgrounds/003_b.jpg
-
-
-
-
-
-
-
-
-
-
-

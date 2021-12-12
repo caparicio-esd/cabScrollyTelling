@@ -14,9 +14,9 @@ data:
 assets:
   backgroundIllustration: /img/backgrounds/001.jpg
   #logos:
-    #- /img/cab_logo.png
-    #- /img/inta_logo.png
-    #- /img/placeholder_logo.png
+  #- /img/cab_logo.png
+  #- /img/inta_logo.png
+  #- /img/placeholder_logo.png
   players:
     - #1
       title: El viento en Marte
