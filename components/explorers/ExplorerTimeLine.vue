@@ -12,7 +12,11 @@
           :openedId="openedId"
           :focusedId="focusedId"
           :index="i"
-          :clickHndlr="(ev) => openExplorerModal(year, i, ev)"
+          :clickHndlr="
+            (ev) => {
+              if (!tutorial) openExplorerModal(year, i, ev)
+            }
+          "
         >
           <div class="timeline_item_tooltip">
             {{ year | toYear }}
@@ -50,6 +54,7 @@ export default Vue.extend({
       activeContent: (state: any) => state.explorers.explorer.activeContent,
       content: (state: any) => state.explorers.content?.data,
       scrollable: (state: any) => state.main.ui.viewPort.scrollable,
+      tutorial: (state: any) => state.main.scenes.tutorial,
     }),
     years(): Array<dayjs.Dayjs> {
       //@ts-ignore
