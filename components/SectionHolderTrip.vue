@@ -31,10 +31,7 @@
                 </div>
 
                 <!-- extra resources -->
-                <div
-                  class="resources"
-                  v-if="quote.showSource"
-                >
+                <div class="resources" v-if="quote.showSource">
                   <extra-resource
                     v-for="(resource, i) in quote.resources"
                     :key="i"
@@ -102,6 +99,9 @@ export default Vue.extend({
   @apply min-h-screen bg-black text-white;
   .section_content_background {
     overflow: hidden;
+    img {
+      filter: hue-rotate(185deg) saturate(0.2);
+    }
   }
   .quotes {
     .quote {
