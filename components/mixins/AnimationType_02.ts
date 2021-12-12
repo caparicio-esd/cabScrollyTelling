@@ -19,7 +19,6 @@ export default Vue.extend({
 
             const background = (this.$refs.section as HTMLElement).querySelector("img");
             const quotes = dom.querySelectorAll(".quote");
-            console.log(duration);
 
             this.animation = anime.timeline({
                 delay: 100,
