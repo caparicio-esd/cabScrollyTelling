@@ -31,16 +31,13 @@
                 </div>
 
                 <!-- extra resources -->
-                <!-- <div
-                  class="resources"
-                  v-if="quote.showSource"
-                >
+                <div class="resources" v-if="quote.showSource">
                   <extra-resource
                     v-for="(resource, i) in quote.resources"
                     :key="i"
                     :resource="resource"
                   />
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
