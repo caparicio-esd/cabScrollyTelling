@@ -12,7 +12,11 @@
           :openedId="openedId"
           :focusedId="focusedId"
           :index="i"
-          :clickHndlr="(ev) => openExplorerModal(year, i, ev)"
+          :clickHndlr="
+            (ev) => {
+              if (!tutorial) openExplorerModal(year, i, ev)
+            }
+          "
         >
           <div class="timeline_item_tooltip">
             {{ year | toYear }}
@@ -49,7 +53,8 @@ export default Vue.extend({
       focusedId: (state: any) => state.explorers.explorer.focusedId,
       activeContent: (state: any) => state.explorers.explorer.activeContent,
       content: (state: any) => state.explorers.content?.data,
-      scrollable: (state: any) => state.main.ui.viewPort.scrollable
+      scrollable: (state: any) => state.main.ui.viewPort.scrollable,
+      tutorial: (state: any) => state.main.scenes.tutorial,
     }),
     years(): Array<dayjs.Dayjs> {
       //@ts-ignore
@@ -91,13 +96,16 @@ export default Vue.extend({
         })
       }
     },
-    getLeftPosition(i: number, year: any): number{
-      let pos = -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100;
-      if((year['$y'] == 1975 && year['$M'] == 7) ||
-      (year['$y'] == 2003 && year['$M'] == 5) ){
-        pos += 1.5;
+    getLeftPosition(i: number, year: any): number {
+      let pos =
+        -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100
+      if (
+        (year['$y'] == 1975 && year['$M'] == 7) ||
+        (year['$y'] == 2003 && year['$M'] == 5)
+      ) {
+        pos += 1.5
       }
-      return(pos)
+      return pos
     },
   },
 })

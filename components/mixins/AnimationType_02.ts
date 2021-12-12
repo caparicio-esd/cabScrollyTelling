@@ -18,25 +18,45 @@ export default Vue.extend({
             if (!dom) return false
 
             const background = (this.$refs.section as HTMLElement).querySelector("img");
-            const quotes = dom.querySelectorAll(".quote");
-            //console.log(duration);
-
+            const quotes = dom.querySelectorAll(".quote") as HTMLElement[];
+            anime.set(quotes, {
+                visibility: "hidden"
+            })
+            anime.set(background, {
+                filter: "filter: hue-rotate(185deg) saturate(0.2)"
+            })
             this.animation = anime.timeline({
-                delay: 100,
-                endDelay: 100,
+                delay: 200,
+                endDelay: 200,
                 autoplay: false,
                 easing: "linear"
             })
-                .add({
-                    targets: quotes,
-                    opacity: [0, 1, 1, 1, 0.5, 0.25, 0],
-                    delay: anime.stagger((duration / 8) * 10)
-                }, 0)
-                .add({
-                    targets: [background],
-                    scale: [1, 2],
-                    duration: duration * 10
-                }, "-=" + duration * 10)
+            quotes.forEach((quote: HTMLElement, i: number) => {
+                this.animation.add({
+                    targets: [quote],
+                    opacity: [0, 1, 0],
+                    easing: "easeInOutCirc",
+                    duration: (duration / quotes.length) * 100,
+                    begin() {
+                        anime.set(quote, {
+                            visibility: "visible"
+                        })
+                    },
+                    complete() {
+                        anime.set(quote, {
+                            visibility: "hidden"
+                        })
+                    }
+                }, "+=20")
+            });
+            this.animation.add({
+                targets: [background],
+                scale: [1, 2],
+                duration: duration * 100,
+                update(anim) {
+                    background!.style.filter = `hue-rotate(185deg) saturate(${0.2 + anim.progress / 90})`
+                }
+            }, "-=" + duration * 100)
 
         },
         onProgressScene(ev: any) {
@@ -46,6 +66,7 @@ export default Vue.extend({
             //@ts-ignore
             const dom = this.refDom
             if (!dom) return false
+
         }
     },
 });

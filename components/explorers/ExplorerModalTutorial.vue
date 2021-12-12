@@ -1,5 +1,5 @@
 <template>
-  <div class="explorer_modal_tutorial" v-if="state.opened && showingTutorial">
+  <div class="explorer_modal_tutorial" v-if="state.opened && tutorial">
     <div class="overlay"></div>
     <div class="steps">
       <explorer-modal-tutorial-step
@@ -30,13 +30,18 @@ export default {
         opened: true,
       },
       steps: steps,
-      tutorialThreeshold: 0.5,
-      showingTutorial: false,
+      tutorialThreeshold: 0.3,
+      innerProgress: 0,
     }
   },
   computed: {
     ...mapGetters({
       scrollOffsetLimitsByScene: 'main/scrollOffsetLimitsByScene',
+      getViewportSizes: 'main/getViewportSizes',
+      getScroll: 'main/getScroll',
+    }),
+    ...mapState({
+      tutorial: (state) => state.main.scenes.tutorial,
     }),
   },
   methods: {
@@ -47,33 +52,50 @@ export default {
     initTutorial() {
       const doNotShowTutorial = localStorage.getItem('cab_doNotShowTutorial')
       if (doNotShowTutorial == null || doNotShowTutorial == false) {
-        this.showingTutorial = true
         this.setStepDomElements()
-        this.$parent.duration = this.$parent.duration + 200
+        this.$parent.duration = this.$parent.duration + 400
+      } else {
+        this.setTutorial(false)
       }
     },
     setCurrentStep(direction) {
       const index = this.$parent.index
+      const viewPort = this.getViewportSizes.height
       const bounds = this.scrollOffsetLimitsByScene(index)
-      const diff =
-        ((bounds[1] - bounds[0]) * this.tutorialThreeshold) / this.steps.length
+      const diff = (bounds[1] - bounds[0]) * this.tutorialThreeshold
+      const cBounds = [
+        bounds[0] + viewPort * 2,
+        bounds[0] + viewPort * 2 + diff,
+      ]
+      const cDiff = cBounds[1] - cBounds[0]
       const diffBounds = [...Array(this.steps.length).keys()].map(
-        (i) => i * diff + bounds[0]
+        (i) => i * cDiff + cBounds[0]
       )
-      const viz = bounds[1] - (bounds[1] - bounds[0]) * this.tutorialThreeshold
+      const viz =
+        bounds[1] -
+        (bounds[1] - (bounds[0] + viewPort)) * this.tutorialThreeshold
 
       // navigation
-      if (direction == 'next' && this.state.current < this.steps.length - 1) {
+      if (
+        direction == 'next' &&
+        this.state.current >= 0 &&
+        this.state.current <= this.steps.length
+      ) {
         this.state.current = this.state.current + 1
-        scrollTo(0, diffBounds[this.state.current])
+        this.state.opened = true
+        this.setTutorial(true)
+        scrollBy(0, cDiff / this.steps.length + 1)
       } else {
         this.state.current = -1
         this.state.opened = false
+        this.setTutorial(false)
         scrollTo(0, viz)
       }
       // localstorage
       if (direction == 'none') {
-        this.showingTutorial = false
+        this.setTutorial(false)
+        this.$parent.duration = this.$parent.duration - 400
+        scrollTo(0, viz)
         localStorage.setItem('cab_doNotShowTutorial', true)
       }
     },
@@ -91,14 +113,27 @@ export default {
     this.initTutorial()
   },
   watch: {
-    progress(currentProgress) {
-      this.state.opened = currentProgress < this.tutorialThreeshold
-      this.state.current = Math.floor(
-        this.steps.length -
-          (Math.max((this.tutorialThreeshold - currentProgress) * 200, 0) /
-            100) *
-            this.steps.length
-      )
+    getScroll() {
+      const index = this.$parent.index
+      const viewPort = this.getViewportSizes.height
+      const bounds = this.scrollOffsetLimitsByScene(index)
+      const diff = (bounds[1] - bounds[0]) * this.tutorialThreeshold
+      const cBounds = [
+        bounds[0] + viewPort * 2,
+        bounds[0] + viewPort * 2 + diff,
+      ]
+      const progress = (this.getScroll - cBounds[0]) / (cBounds[1] - cBounds[0])
+      this.innerProgress = progress
+    },
+    innerProgress(progress) {
+      const whereTo = Math.floor(progress * this.steps.length)
+      if (whereTo <= this.steps.length - 1) {
+        this.state.current = Math.floor(progress * this.steps.length)
+        this.setTutorial(true)
+      } else {
+        this.state.current = -1
+        this.setTutorial(false)
+      }
     },
   },
 }

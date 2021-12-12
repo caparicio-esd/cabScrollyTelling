@@ -26,42 +26,39 @@ p {
   @apply text-base mb-2;
 }
 
-.main_scroll_controller{
+.main_scroll_controller {
   overflow: hidden;
 }
 
-.scrollmagic-pin-spacer{
-   top:0 !important
+.scrollmagic-pin-spacer {
+  top: 0 !important;
 }
 
-.btn_primary{
+.btn_primary {
   @apply flex items-center py-2 px-4 bg-gray-400;
   svg {
     @apply ml-2;
   }
 }
 
-.btn_next{
-  @apply absolute bottom-12 w-36 text-center flex bg-white text-black;
+.btn_next {
+  @apply absolute bottom-12 text-center flex bg-white text-black;
   left: calc(50% - 36px);
   border-radius: 5px;
   box-sizing: border-box;
   background-clip: padding-box;
-  height: 2.5rem;
   border: 3px solid transparent;
 
-  &:hover{
+  &:hover {
     @apply ring-white ring-4 ring-opacity-40;
     border: 3px solid transparent;
     transition: all 350ms ease;
   }
 }
 
-.primary_color{
+.primary_color {
   color: #edcb0a;
 }
-.bg_primary_color{
+.bg_primary_color {
   background-color: #edcb0a;
 }
-
-

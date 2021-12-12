@@ -76,7 +76,6 @@ export default Vue.extend({
       width: (state: any) => state.main.ui.viewPort.width,
       height: (state: any) => state.main.ui.viewPort.height,
     }),
-
   },
   methods: {
     ...mapActions({
@@ -103,6 +102,9 @@ export default Vue.extend({
   @apply min-h-screen bg-black text-white;
   .section_content_background {
     overflow: hidden;
+    img {
+      filter: hue-rotate(185deg) saturate(0.2);
+    }
   }
   .quotes {
     .quote {
