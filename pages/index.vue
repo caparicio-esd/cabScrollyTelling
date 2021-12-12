@@ -112,5 +112,6 @@ export default Vue.extend({
     SectionCredits,
     SectionFoot,
   },
+  scrollToTop: true,
 })
 </script>
