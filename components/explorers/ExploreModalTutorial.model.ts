@@ -3,7 +3,7 @@ export default [
         description: {
             step: '1/3',
             content:
-                'Puedes navegar entre las diferentes misiones, haciendo click en los iconos, simplemente, haciendo scroll hacia abajo.',
+                'Puedes navegar entre las diferentes misiones, haciendo click en los iconos.',
         },
         component: {
             dom: null as Element | null,
