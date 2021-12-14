@@ -1,6 +1,7 @@
 @import './lib/fontface.css';
 @import './partials/resources.css';
 @import './partials/inputs.css';
+@import './not_scoped/ticks.css';
 
 * {
   /* @apply border border-blue-400; */

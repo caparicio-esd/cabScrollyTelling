@@ -111,38 +111,6 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="postcss">
-.tick_area {
-  transform: translate(50%, -50%);
-  &:hover {
-    .timeline_item_tooltip {
-      visibility: visible;
-    }
-  }
-}
-.tick_item {
-  &.tick_item_active {
-    .timeline_item_tooltip {
-      visibility: visible;
-    }
-  }
-  .timeline_item_tooltip {
-    @apply px-2 py-1 text-sm rounded-full bg-white text-black font-sans;
-    @apply absolute;
-    bottom: calc(100% + 0.75rem);
-    transform: translateX(-50%);
-    visibility: hidden;
-
-    &::after {
-      content: ' ';
-      width: 20px;
-      height: 20px;
-      transform: translate(-50%, -50%) rotate(45deg);
-      @apply bg-white shadow-sm;
-    }
-  }
-}
-</style>
 <style lang="postcss" scoped>
 .explorer_timeline {
   @apply absolute z-10 bottom-0 w-full left-0;
