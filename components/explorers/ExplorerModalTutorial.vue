@@ -1,10 +1,10 @@
 <template>
-  <div class="explorer_modal_tutorial" v-if="state.opened && tutorial">
+  <div class="explorer_modal_tutorial" v-if="tutorial">
     <div class="overlay"></div>
     <div class="steps">
       <explorer-modal-tutorial-step
         v-for="(step, i) in steps"
-        :current="state.current == i"
+        :current="currentStep == i"
         :key="i"
         :description="step.description"
         :component="step.component"
@@ -25,10 +25,7 @@ export default {
   name: 'ExplorerModalTutorial',
   data() {
     return {
-      state: {
-        current: 0,
-        opened: true,
-      },
+      currentStep: 0,
       steps: steps,
       tutorialThreeshold: 0.3,
       innerProgress: 0,
@@ -78,16 +75,14 @@ export default {
       // navigation
       if (
         direction == 'next' &&
-        this.state.current >= 0 &&
-        this.state.current <= this.steps.length
+        this.currentStep >= 0 &&
+        this.currentStep <= this.steps.length
       ) {
-        this.state.current = this.state.current + 1
-        this.state.opened = true
+        this.currentStep++
         this.setTutorial(true)
         scrollBy(0, cDiff / this.steps.length + 1)
       } else {
-        this.state.current = -1
-        this.state.opened = false
+        this.currentStep = -1
         this.setTutorial(false)
         scrollTo(0, viz)
       }
@@ -128,10 +123,10 @@ export default {
     innerProgress(progress) {
       const whereTo = Math.floor(progress * this.steps.length)
       if (whereTo <= this.steps.length - 1) {
-        this.state.current = Math.floor(progress * this.steps.length)
+        this.currentStep = Math.floor(progress * this.steps.length)
         this.setTutorial(true)
       } else {
-        this.state.current = -1
+        this.currentStep = -1
         this.setTutorial(false)
       }
     },
