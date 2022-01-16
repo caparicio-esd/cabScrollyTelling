@@ -139,11 +139,6 @@ export default Vue.extend({
           }
         }
         .tick_item {
-          &.tick_item_active {
-            .timeline_item_tooltip {
-              visibility: visible;
-            }
-          }
           .timeline_item_tooltip {
             @apply px-2 py-1 text-sm rounded-full bg-white text-black font-sans;
             @apply absolute;
@@ -157,6 +152,11 @@ export default Vue.extend({
               height: 20px;
               transform: translate(-50%, -50%) rotate(45deg);
               @apply bg-white shadow-sm;
+            }
+          }
+          &.tick_item_active {
+            .timeline_item_tooltip {
+              visibility: visible;
             }
           }
         }

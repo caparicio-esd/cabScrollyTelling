@@ -100,11 +100,7 @@ export default Vue.extend({
   .tick_item {
     top: 20%;
     left: 0;
-    &.tick_item_active {
-      .timeline_item_tooltip {
-        visibility: visible;
-      }
-    }
+
     .header_menu_item {
       @apply absolute;
       @apply font-sans text-sm uppercase text-center;
