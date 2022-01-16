@@ -1,4 +1,4 @@
-.tick_area {
+/* .tick_area {
   transform: translate(50%, -50%);
   &:hover {
     .timeline_item_tooltip {
@@ -27,4 +27,4 @@
       @apply bg-white shadow-sm;
     }
   }
-}
+} */

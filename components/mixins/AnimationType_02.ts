@@ -23,7 +23,7 @@ export default Vue.extend({
                 visibility: "hidden"
             })
             anime.set(background, {
-                filter: "filter: hue-rotate(185deg) saturate(0.2)"
+                filter: "filter: saturate(0.2)"
             })
             this.animation = anime.timeline({
                 delay: 200,
@@ -54,7 +54,7 @@ export default Vue.extend({
                 scale: [1, 2],
                 duration: duration * 100,
                 update(anim) {
-                    background!.style.filter = `hue-rotate(185deg) saturate(${0.2 + anim.progress / 90})`
+                    background!.style.filter = `saturate(${0.2 + anim.progress / 90})`
                 }
             }, "-=" + duration * 100)
 

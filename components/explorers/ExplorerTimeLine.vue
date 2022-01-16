@@ -23,9 +23,9 @@
           </div>
         </tick>
       </div>
-      <!-- <div class="btn_scroll">
+      <!--
         <button-next-screen />
-      </div> -->
+       -->
     </div>
   </div>
 </template>
@@ -123,48 +123,46 @@ export default Vue.extend({
   pointer-events: none;
   .explorer_timeline_holder {
     @apply w-full flex;
-
-  }
-}
-.timeline {
-  @apply relative w-full mr-8;
-  pointer-events: none;
-  .timeline_line {
-    @apply absolute;
-    @apply h-1 w-full bg-white opacity-60 rounded;
-    top: -2px;
-  }
-  .tick_area {
-    transform: translate(50%, -50%);
-    &:hover {
-      .tick_item .timeline_item_tooltip {
-        visibility: visible;
-      }
-    }
-    .tick_item {
-      &.tick_item_active {
-        .timeline_item_tooltip {
-          visibility: visible;
-        }
-      }
-      .timeline_item_tooltip {
-        @apply px-2 py-1 text-sm rounded-full bg-white text-black font-sans;
+    .timeline {
+      @apply relative w-full mr-8;
+      pointer-events: none;
+      .timeline_line {
         @apply absolute;
-        bottom: calc(100% + 0.75rem);
-        transform: translateX(-50%);
-        visibility: hidden;
+        @apply h-1 w-full bg-white opacity-60 rounded;
+        top: -2px;
+      }
+      .tick_area {
+        transform: translate(50%, -50%);
+        &:hover {
+          .tick_item .timeline_item_tooltip {
+            visibility: visible;
+          }
+        }
+        .tick_item {
+          &.tick_item_active {
+            .timeline_item_tooltip {
+              visibility: visible;
+            }
+          }
+          .timeline_item_tooltip {
+            @apply px-2 py-1 text-sm rounded-full bg-white text-black font-sans;
+            @apply absolute;
+            bottom: calc(100% + 0.75rem);
+            transform: translateX(-50%);
+            visibility: hidden;
 
-        &::after {
-          content: ' ';
-          width: 20px;
-          height: 20px;
-          transform: translate(-50%, -50%) rotate(45deg);
-          @apply bg-white shadow-sm;
+            &::after {
+              content: ' ';
+              width: 20px;
+              height: 20px;
+              transform: translate(-50%, -50%) rotate(45deg);
+              @apply bg-white shadow-sm;
+            }
+          }
         }
       }
     }
   }
-
-
 }
+
 </style>
