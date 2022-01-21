@@ -105,7 +105,9 @@ export default {
   },
   async mounted() {
     await this.$nextTick()
-    this.initTutorial()
+    if (this.tutorial) {
+      this.initTutorial()
+    }
   },
   watch: {
     getScroll() {

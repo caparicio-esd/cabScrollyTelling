@@ -15,7 +15,7 @@ export const state = () => ({
     amount: 0,
     scenes: new Map(),
     currentScene: -1,
-    tutorial: true,
+    tutorial: false,
   }
 })
 

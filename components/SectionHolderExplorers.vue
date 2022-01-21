@@ -2,7 +2,7 @@
   <section class="section" ref="section">
     <explorers />
     <explorer-modal />
-    <explorer-modal-tutorial :progress="progress" />
+    <explorer-modal-tutorial :progress="progress" v-if="tutorial" />
     <explorer-time-line />
   </section>
 </template>
@@ -30,7 +30,7 @@ export default Vue.extend({
   mixins: [Scrollable],
   data() {
     return {
-      duration: 100,
+      // duration: 400,
       content: {},
       progress: 0,
       lastBin: 0,
@@ -49,6 +49,7 @@ export default Vue.extend({
   computed: {
     ...mapState({
       debug: (state: any) => state.explorers.debug,
+      tutorial: (state: any) => state.main.scenes.tutorial
     }),
     dataLength(): number {
       return (this.content as any).data.length
