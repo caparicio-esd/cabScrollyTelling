@@ -116,6 +116,7 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
+
 .explorer_timeline {
   @apply absolute z-10 bottom-0 w-full left-0;
   @apply border-white border-t-2;
