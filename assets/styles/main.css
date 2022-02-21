@@ -63,3 +63,8 @@ p {
 .bg_primary_color {
   background-color: #edcb0a;
 }
+
+.list{
+  list-style: disc;
+  padding: 1em;
+}

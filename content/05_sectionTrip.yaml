@@ -127,3 +127,18 @@ data:
         url: https://www.youtube.com/watch?v=AOxNrraOyh0&t=684s&ab_channel=Tendencias21
         icon: video
         target: true
+  - #9
+    id: 9
+    order: 9
+    mainText: >
+      “Si quieres enviar humanos a Marte alguna vez, primero tienes que demostrar que puedes traer algo a salvo”.
+    author: María Paz Zorzano
+    position: Investigadora en el Centro de Astrobiología (CAB, CSIC-INTA)
+    showSource: true
+    resources:
+      - #1
+        title: Artículo. Rocks, Rockets and Robots. The Plan to Bring Mars Down to Earth
+        author: Robin George Andrews. Scientific American
+        url: https://www.scientificamerican.com/article/rocks-rockets-and-robots-the-plan-to-bring-mars-down-to-earth1/
+        icon: link
+        target: true

@@ -113,9 +113,7 @@ export default Vue.extend({
 </script>
 
 <style lang="postcss" scoped>
-.section_content_holder p.with-ul ul {
-  list-style: circle;
-}
+
 .machines {
   @apply col-span-full row-span-full relative;
   pointer-events: none;

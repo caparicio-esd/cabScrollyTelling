@@ -7,11 +7,12 @@ menuTitle: Marte como lugar
 data:
   title: <span class="primary_color">Marte como lugar.</span> <br>La exploración de la superficie marciana a partir de la década de 1960.
   mainText:
-    - Las distintas misiones enviadas a Marte, ya sea para orbitar a su alrededor o para posarse en él, han aportado ingentes datos sobre la geografía marciana.
-    - <strong>La observación orográfica en alto detalle del planeta ha demostrado que alguna vez fue geológicamente tan activo como la Tierra</strong>.
+    - Las distintas misiones enviadas a Marte, ya sea para orbitar a su alrededor o para posarse en él, han aportado una ingente cantidad de datos sobre la geografía marciana.
+    - <strong>La observación geológica en alto detalle del planeta ha demostrado que alguna vez fue tan activo como la Tierra.</strong>.
     - Uno de los objetivos principales desde el inicio fue buscar pruebas de la posible existencia de agua.
-    - <strong>Hoy se da por supuesto que, en algún momento, hubo agua líquida por su superficie y que actualmente hay hielo debajo del casquete polar y en el subsuelo</strong>.
-    - Esa presencia de agua en Marte sugiere que <strong>el planeta pudo haber sido habitable o habitado</strong>.
+    - <strong>Hoy se da por supuesto que hace 3700-3500 millones de años, tuvo océanos, lagos y ríos corriendo por su superficie. Actualmente hay hielo en los casquetes polares y en el subsuelo.</strong>.
+    - Esa presencia de agua en Marte sugiere que <strong>el planeta pudo reunir las condiciones para albergar vida</strong>.
+
   #secondaryText:
   #- Desde la década de 1960, las distintas misiones rusas, las <em>Mariner</em> y las <em>Viking</em> americanas, han aportado ingentes datos sobre la geografía marciana que han permitido a los científicos <strong>abrir otra línea de investigación&#58; la edad e historia de Marte</strong>, estableciendo relaciones con la Tierra a partir de ciertas similitudes orográficas.
   #- En 1971, la Mariner 9 proporcionó tal cantidad de imágenes de la superficie marciana que en 1978 se pudo publicar el primer gran mapa geológico representando el relieve del planeta de un modo hasta entonces sólo posible para la Luna o la Tierra. <strong>La observación orográfica en alto detalle de Marte ha demostrado que alguna vez, fue geológicamente tan activo como la Tierra</strong>.

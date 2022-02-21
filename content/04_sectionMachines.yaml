@@ -15,11 +15,11 @@ data:
       backgroundIllustration: /img/backgrounds/004_2.jpg
     mainText:
       - <em>Coordenadas en Marte. 5° 22′ 12″ S, 137° 48′ 36″ E  (-5.37°, 137.81°)</em>
-      - Gale es un cráter con un diámetro de 154 km. En su centro se sitúa un pico central de 5.500 m de altitud denominado Aeolis Mons. Algunos científicos piensan que el cráter se llenó con sedimentos a lo largo del tiempo y los vientos de Marte tallaron la montaña en el centro.
-      - Esta formación en secciones de rocas sedimentarias expuestas es un registro que puede revelar  historias que datan de miles de millones de años. La arcilla se deposita lentamente en el agua y forma pequeñas plaquetas que se colocan alrededor de las cosas, endureciéndose con el tiempo y envolviéndolas como un "molde". Si alguna vez existieron en Marte compuestos orgánicos, podrían estar preservados en la arcilla.
+      - Gale es un cráter con un diámetro de 154 km, que se formó por el impacto de un asteroide o cometa hace 3800-3500 millones de años, en el que se piensa que albergó un lago tras su formación. En su centro se sitúa un pico central de 5.500 m de altitud denominado Aeolis Mons (también llamado informalmente Monte Sharp). Algunos científicos piensan que el cráter se llenó con sedimentos a lo largo del tiempo y los vientos de Marte tallaron la montaña en el centro.
+      - Esta formación en secciones de rocas sedimentarias expuestas es un registro que puede revelar  historias que datan de miles de millones de años. La arcilla se deposita lentamente en el agua y forma pequeñas plaquetas. Si alguna vez existieron en Marte compuestos orgánicos, podrían estar preservados en la arcilla envueltas como en un molde.
     #secondaryText:
     #- En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
-    # - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+    # - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el InSight, región Elysium Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
     position:
       lon: 70
       lat: 50
@@ -222,21 +222,22 @@ data:
             'img/curiosity360REMS/Curiosity_REMS50.png',
           ]
 
-  - # 1 - Elyseum Planitia // INSIGHT
+  - # 1 - Elysium Planitia // INSIGHT
     id: 1
-    title: 'Elyseum Planitia'
+    title: 'Elysium Planitia'
     subtitle: 'Analizar la corteza, el manto y el núcleo de Marte para y buscar las huellas de los procesos que formaron los planetas terrestres'
-    machine: Insight
+    machine: InSight
     cabInstrument: TWINS
     assets:
       backgroundIllustration: /img/backgrounds/004_3.jpg
     mainText:
       - <em>Coordenadas en Marte. 2° 58′ 48″ N, 154° 44′ 24″ E  (2.98°, 154.74°)</em>
-      - Es una llanura lisa y plana justo al norte del ecuador con una elevación lo suficientemente baja como para tener suficiente atmósfera para un amartizaje seguro. Su proximidad al ecuador asegura que el módulo de exploración alimentado por energía solar reciba suficiente luz.
-      - Además es una zona poco rocosa y con una superficie adecuada para que los instrumentos puedan sondear el interior. Por lo tanto es el lugar perfecto desde el que estudiar el interior profundo marciano.
+      - Es una llanura lisa y plana justo al norte del ecuador con una elevación lo suficientemente baja como para tener suficiente atmósfera para un amartizaje seguro. Su proximidad al ecuador permite maximizar la energía solar recibida que carga sus baterías.
+      - Además es una zona poco rocosa y con una superficie adecuada para que los instrumentos puedan sondear el interior, objetivo fundamental de la misión. Por lo tanto es el lugar perfecto desde el que estudiar el interior profundo marciano.
+
     #secondaryText:
     # - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
-    # - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el Insight, región Elyseum Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
+    # - Los equipos multidisciplinares del CAB ya están estudiando la atmósfera de Marte desde tres estaciones ambientales independientes construidas y operativas bajo su liderazgo, REMS (desde 2012, en el rover Curiosity, Cráter Gale), TWINS (desde 2018, en el InSight, región Elysium Planitia) y MEDA (2021, en el rover Perseverance, Cráter Jezero, desde febrero de 2021).
     position:
       lon: 70
       lat: 50
@@ -271,7 +272,7 @@ data:
         assets:
           resources:
             - #1
-              title: Para conocer mejor el Insight
+              title: Para conocer mejor el InSight
               author: Página web de la NASA
               url: https://mars.nasa.gov/insight/
               icon: link
@@ -342,7 +343,7 @@ data:
           head_researcher: José Antonio Rodríguez-Manfredi
           status: 'Exito'
         goals:
-          - Registrar de modo continuo las condiciones ambientales en el área de posicionamiento del Insight (Elyseum Planitia)
+          - Registrar de modo continuo las condiciones ambientales en el área de posicionamiento del Insight (Elysium Planitia)
         instruments:
           - Se compone de dos sensores, un termómetro para medir la temperatura y un anemómetro para medir la velocidad y la dirección del viento dos veces por segundo.
         contribution:
@@ -433,8 +434,8 @@ data:
       backgroundIllustration: /img/backgrounds/004_1.jpg
     mainText:
       - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
-      - Cráter Jezero, 45 kilómetros de ancho. Se cree que albergó un lago hace miles de millones de años. El Jezero parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
-      - Hace más de 3.500 millones de años, vías fluviales alimentaron el cráter generando el lago y el delta con su peculiar forma de abanico. Su lecho es rico en sedimentos lacustres arcillosos, convirtiéndolo en un lugar propicio para la búsqueda de biofirmas.
+      - El cráter Jezero, de 45 km de ancho, parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
+      - Hace más de 3500 millones de años, vías fluviales alimentaban un lago en el cráter, formando el delta con su peculiar forma en abanico. Su lecho es rico en sedimentos lacustres arcillosos (que se forman en presencia de agua) y en rocas ígneas, como olivino y piroxeno, carbonatos y sulfatos, rocas alteradas por el agua.
     #secondaryText:
     #- Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
     #- Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos. En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar.
@@ -544,7 +545,7 @@ data:
           status: 'Exito'
         goals:
           - Estudiar la dinámica atmosférica de Marte
-          - Cómo se comporta y como se relacionan la temperatura, la radiación o la humedad en sus capas bajas
+          - Cómo se comporta y cómo se relacionan la temperatura, la radiación o la humedad en sus capas bajas
           - Cuál es la acción del polvo marciano en dicha atmósfera
           - Cómo son los cambios cíclicos que allí se producen
         instruments:
@@ -552,8 +553,8 @@ data:
           - La medición sistemática y según una cadencia y frecuencia configuradas de acuerdo con la disponibilidad de recursos, es uno de sus principales valores. MEDA tiene un alto grado de autonomía operativa, se activa cada hora y después de grabar y almacenar datos, entra en reposo independientemente de las demás actividades del Perseverance, tanto de día como de noche.
 
         contribution:
-          - Suministra datos sobre las condiciones meteorológicas (temperatura, humedad, velocidad y dirección del viento en torno al Perseverance. Los datos del MEDA contribuyen a predecir el clima de Marte de manera más precisa, lo que será de fundamental importancia en futuras colonizaciones
-          - Estudia el tamaño y forma del polvo en el terreno y en la atmósfera marcianos ya que, siendo muy abundante, condiciona el clima, la temperatura y dirige ciertos procesos químicos. Así se comprobará como afecta al rendimiento del propio rover y su instrumental.
+          - Suministra datos sobre las condiciones meteorológicas (temperatura, humedad, velocidad y dirección del viento) en torno al Perseverance. Los datos recogidos por los instrumentos REMS, TWINS y MEDA contribuyen a predecir el clima de Marte de manera más precisa, lo que será de fundamental importancia en futuras colonizaciones
+          - Estudia el tamaño y forma del polvo en el terreno y en la atmósfera marcianos ya que, siendo muy abundante, condiciona el clima, la temperatura y dirige ciertos procesos químicos. Así se comprobará cómo afecta al rendimiento del propio rover y su instrumental.
           - Mide la radiación, con lo que ayuda a entender sus efectos sobre restos de vida que puedan yacer en las rocas. Con su sensor de humedad, detecta cómo este se intercambia entre la atmósfera y el suelo
         curiosities:
           - Hay partículas muy pequeñas de polvo por todo Marte, cuando empieza a soplar el viento se elevan y pueden cubrir todo el planeta. La dinámica de la atmósfera, la temperatura, etc. dependen de ese polvo. Comprender por lo tanto cuál es su papel y cómo se eleva desde el suelo es clave, pensando no solo en entender el planeta, sino más aún en una misión tripulada futura.
