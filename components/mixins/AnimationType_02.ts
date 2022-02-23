@@ -51,7 +51,7 @@ export default Vue.extend({
             });
             this.animation.add({
                 targets: [background],
-                scale: [1, 2],
+                scale: [1, 1.5],
                 duration: duration * 100,
                 update(anim) {
                     background!.style.filter = `saturate(${0.2 + anim.progress / 90})`
