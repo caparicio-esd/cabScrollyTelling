@@ -63,6 +63,7 @@ export default Vue.extend({
       return {
         top: `${explorer.position.lat}%`,
         left: `${explorer.position.lon}%`,
+        backgroundColor: `${explorer.cabCollaboration ? '#edcb0a' : 'white'}`
       }
     },
     openExplorerModal(explorer: any, i: number, ev: Event): void {

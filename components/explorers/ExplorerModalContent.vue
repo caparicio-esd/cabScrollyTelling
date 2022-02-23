@@ -84,6 +84,13 @@
         </template>
       </collapsible>
     </div>
+    <!-- si el cab ha collaborado, no mostramos ni objetivos ni desplegables, solo un texto
+          y un botón que permita navegar hacia el cacharro-->
+    <div class="explorer_modal_content_title" v-if="activeContent.cabCollaboration">
+      <div class="explorer_modal_content_title_tagline">
+        {{ activeContent.cabCollaboration }}
+      </div>
+    </div>
     <div
       class="explorer_modal_content_collapsible"
       v-if="activeContent.instruments"

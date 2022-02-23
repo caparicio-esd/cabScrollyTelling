@@ -267,6 +267,60 @@ data:
       El análisis de algunas imágenes muestra lo que parecen ser gotas de agua líquida salina que salpicaron las patas de la sonda tras su aterrizaje"
     picture: "/img/explorers/07.jpg"
     picture_flag: "/img/flags/EEUU.svg"
+  - # 8 - CURIOSITY
+    id: 8
+    title: "CURIOSITY (Rover)"
+    subtitle: "El objetivo principal de Curiosity es saber si Marte tuvo alguna vez condiciones ambientales adecuadas para que pudieran surgir formas de vida microbianas."
+    meta:
+      launch: "26.11.2011 - 15:02 UTC"
+      arrival: "06.08.2012 - 01:31 EDT"
+      place: "Cráter Gale"
+      activity: "Sigue en activo"
+      land: "EEUU"
+      agency: "NASA"
+      status: "Exito"
+    position:
+      lon: 85
+      lat: 60
+    cabCollaboration: "En páginas siguientes podrás conocer en profundidad todos los detalles y objetivos de ésta misión del Curiosity de la NASA y del REMS del CAB."
+    picture: "/img/explorers/08.jpg"
+    picture_flag: "/img/flags/EEUU.svg"
+  - # 9 - INSIGHT
+    id: 9
+    title: "INSIGHT"
+    subtitle: "Analizar la corteza, el manto y el núcleo de Marte para buscar las huellas de los procesos que formaron los planetas terrestres."
+    meta:
+      launch: "05.05.2018 - 11:05 UTC"
+      arrival: "26.11.2018 - 07:54 UTC"
+      place: "Elysium Planitia"
+      activity: "Sigue en activo"
+      land: "EEUU"
+      agency: "NASA"
+      status: "Exito"
+    position:
+      lon: 84
+      lat: 53
+    cabCollaboration: "En páginas siguientes podrás conocer en profundidad todos los detalles y objetivos de ésta misión del Curiosity de la NASA y del REMS del CAB."
+    picture: "/img/explorers/09.jpg"
+    picture_flag: "/img/flags/EEUU.svg"
+  - # 10 - PERSEVERANCE
+    id: 10
+    title: "PERSEVERANCE (Rover)"
+    subtitle: "Perseverance recorrerá el Cráter Jezero, que se cree que fue el lugar que albergó un lago marciano hace miles de millones de años."
+    meta:
+      launch: "30.07.2020 - 07:50 EDT"
+      arrival: "18.02.2021 - 15:55 EDT"
+      place: "Cráter Jezero"
+      activity: "Sigue en activo"
+      land: "EEUU"
+      agency: "NASA"
+      status: "Exito"
+    position:
+      lon: 74
+      lat: 40
+    cabCollaboration: "En páginas siguientes podrás conocer en profundidad todos los detalles y objetivos de ésta misión del Curiosity de la NASA y del REMS del CAB."
+    picture: "/img/explorers/10.jpg"
+    picture_flag: "/img/flags/EEUU.svg"
   - # 7 - ZHURONG (Rover)
     id: 7
     title: "ZHURONG (Rover)"
@@ -303,3 +357,5 @@ data:
     contribution: "Primera misión y primer éxito de la CNSA en la exploración de Marte con tecnología propia, no dependiendo ni de otras agencias ni del sector privado."
     picture: "/img/explorers/011.jpg"
     picture_flag: "/img/flags/china.svg"
+
+

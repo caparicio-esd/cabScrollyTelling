@@ -105,7 +105,8 @@ export default Vue.extend({
         -((this.yearsAsTimestamp[i] - this.yearMax) / this.yearDiff) * 100
       if (
         (year['$y'] == 1975 && year['$M'] == 7) ||
-        (year['$y'] == 2003 && year['$M'] == 5)
+        (year['$y'] == 2003 && year['$M'] == 5) ||
+        (year['$y'] == 2020 && year['$D'] == 30)
       ) {
         pos += 1.5
       }
