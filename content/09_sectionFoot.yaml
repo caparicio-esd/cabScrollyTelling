@@ -25,14 +25,18 @@ assets:
       src: /img/logos/cab.jpg
       alt: Página web CAB
       url: https://cab.inta-csic.es/
-    - #1
-      src: /img/logos/csic.jpg
-      alt: Página web CSIC
-      url: https://www.csic.es/es
-    - #2
-      src: /img/logos/inta.png
-      alt: Página web INTA
-      url: https://www.inta.es/INTA/es/index.html
+    - #0
+      src: /img/logos/maeztu.jpg
+      alt: Página web premios María de Maeztu
+      url: https://www.ciencia.gob.es/Organismos-y-Centros/Centros-y-Unidades-de-Excelencia.html;jsessionid=E18C3926C15C4B399049D5E931598862.1
+    # - #1
+    #   src: /img/logos/csic.jpg
+    #   alt: Página web CSIC
+    #   url: https://www.csic.es/es
+    # - #2
+    #   src: /img/logos/inta.png
+    #   alt: Página web INTA
+    #   url: https://www.inta.es/INTA/es/index.html
     - #3
       src: /img/logos/esd_logo.svg
       alt: Página web ESD
