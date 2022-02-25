@@ -32,7 +32,7 @@ data:
           activity: '1 año marciano (1,88 años terrestres; 686 días). Aunque en 2021 aún sigue operativo.'
           land: 'USA'
           agency: 'NASA'
-          status: 'Exito'
+          status: 'Éxito'
         goals:
           - Determinar si existió vida alguna vez en Marte
           - Caracterizar el clima de Marte
@@ -129,7 +129,7 @@ data:
           land: 'España'
           agency: 'Centro de Astrobiología (CAB)'
           head_researcher: Javier Gómez-Elvira
-          status: 'Exito'
+          status: 'Éxito'
         goals:
           - Medir y proporcionar reportes diarios y estacionales sobre la presión atmosférica, la humedad, la radiación ultravioleta en superficie; la temperatura del aire y la temperatura del suelo alrededor del Curiosity.
         instruments:
@@ -250,7 +250,7 @@ data:
           activity: 'Sigue en activo.'
           land: 'USA'
           agency: 'NASA'
-          status: 'Exito'
+          status: 'Éxito'
         goals:
           - Entender la formación y evolución de los planetas terrestres a través de la investigación de la estructura interior y los procesos de Marte
           - Determinar el nivel actual de actividad tectónica y la tasa de impacto de meteoritos en Marte
@@ -341,7 +341,7 @@ data:
           land: 'España'
           agency: 'Centro de Astrobiología (CAB)'
           head_researcher: José Antonio Rodríguez-Manfredi
-          status: 'Exito'
+          status: 'Éxito'
         goals:
           - Registrar de modo continuo las condiciones ambientales en el área de posicionamiento del Insight (Elysium Planitia)
         instruments:
@@ -451,7 +451,7 @@ data:
           activity: 'Sigue en activo. Periodo previsto, al menos un año marciano (unos 687 días terrestres).'
           land: 'USA'
           agency: 'NASA'
-          status: 'Exito'
+          status: 'Éxito'
         goals:
           - Identificar entornos pasados capaces de albergar vida microbiana
           - Buscar signos de posible vida microbiana en el pasado en esos entornos habitables, particularmente en rocas especiales que se sabe que conservan signos de vida a lo largo del tiempo
@@ -542,7 +542,7 @@ data:
           land: 'España'
           agency: 'Centro de Astrobiología (CAB)'
           head_researcher: José Rodríguez-Manfredi
-          status: 'Exito'
+          status: 'Éxito'
         goals:
           - Estudiar la dinámica atmosférica de Marte
           - Cómo se comporta y cómo se relacionan la temperatura, la radiación o la humedad en sus capas bajas
