@@ -233,7 +233,7 @@ data:
     mainText:
       - <em>Coordenadas en Marte. 2° 58′ 48″ N, 154° 44′ 24″ E  (2.98°, 154.74°)</em>
       - Es una llanura lisa y plana justo al norte del ecuador con una elevación lo suficientemente baja como para tener suficiente atmósfera para un amartizaje seguro. Su proximidad al ecuador permite maximizar la energía solar recibida que carga sus baterías.
-      - Además es una zona poco rocosa y con una superficie adecuada para que los instrumentos puedan sondear el interior, objetivo fundamental de la misión. Por lo tanto es el lugar perfecto desde el que estudiar el interior profundo marciano.
+      - Además es una zona poco rocosa y con una superficie adecuada para que los instrumentos puedan sondear el interior del planeta, objetivo fundamental de la misión. Por lo tanto es el lugar perfecto desde el que estudiar el interior profundo marciano.
 
     #secondaryText:
     # - En 1998 científicos españoles y norteamericanos presentaron a la NASA una propuesta para unir el CAB al entonces recién creado NASA Astrobiology Institute (NAI). Su integración se produjo en abril de 2.000 convirtiéndose en el primer Miembro Asociado al NAI fuera de los Estados Unidos.
@@ -435,7 +435,7 @@ data:
     mainText:
       - <em>Coordenadas en Marte. 18º 26’ 40.56” N, 77º 27’ 3.24” E  (18.4446º,77.4509º)</em>
       - El cráter Jezero, de 45 km de ancho, parece haberse formado cuando un objeto de grandes dimensiones impactó en la superficie marciana elevando rocas de las profundidades de la corteza.
-      - Hace más de 3500 millones de años, vías fluviales alimentaban un lago en el cráter, formando el delta con su peculiar forma en abanico. Su lecho es rico en sedimentos lacustres arcillosos (que se forman en presencia de agua) y en rocas ígneas, como olivino y piroxeno, carbonatos y sulfatos, rocas alteradas por el agua.
+      - Hace más de 3500 millones de años, vías fluviales alimentaban un lago en el cráter, formando el delta con su peculiar forma en abanico. Su lecho es rico en sedimentos lacustres arcillosos (que se forman en presencia de agua). En las rocas analizadas se han identificado minerales tales como olivino y piroxeno, carbonatos y sulfatos (rocas alteradas por el agua).
     #secondaryText:
     #- Su misión es recabar información sobre la composición del suelo, posibilidad de agua, vida pasada… Pero no es una misión aislada, sino que enlaza con misiones anteriores, algunas de las cuales siguen aún operativas sobre la superficie marciana.
     #- Controlará siete instrumentos científicos para estudiar la superficie marciana, empezando desde el cráter Jezero, y llevará a bordo 23 cámaras y dos micrófonos. En la misión también navegará el helicóptero explorador Ingenuity, que ayudará al Perseverance a encontrar posibles lugares de interés para estudiar.
